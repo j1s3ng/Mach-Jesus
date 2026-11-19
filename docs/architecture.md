@@ -1,6 +1,6 @@
 # System architecture
 
-Mach-Jesus combines a learned LiDAR detector and supervised driving policy with
+LiDAR Racing combines a learned LiDAR detector and supervised driving policy with
 map-aware planning, tracking and conventional control. It uses supplied own-car
 localization and a known approximate course. RGB is recorded for viewing and is
 not the input to the racing detector.

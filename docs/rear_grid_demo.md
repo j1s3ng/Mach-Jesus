@@ -2,7 +2,7 @@
 
 Historical media links below resolve to the [local archive catalog](archive.md). Source/evidence receipts retain their original artifact identities.
 
-The [112-second demo](Mach_Jesus_Demo.mp4) and matching
+The [112-second demo](LiDAR_Racing_Demo.mp4) and matching
 [presentation](presentation.pdf) show a new engineering chase. Rich005 seed 7,
 the winner of the earlier recorded heat, starts at P20 in a 20-car field.
 Every car receives the same long race distance; the supervisor stops when the
@@ -47,5 +47,5 @@ new model training, official benchmark AP, or evidence of real F1 performance.
 Video SHA-256:
 `73b3f83b7ff3e5b69fc81c3b5f56bb27274ecf2db7cb755fa65c81c88380b7f4`.
 
-Keep `Mach_Jesus_Demo.mp4` beside `presentation.pdf` when copying the PDF for its
+Keep `LiDAR_Racing_Demo.mp4` beside `presentation.pdf` when copying the PDF for its
 local video link. The editable course presentation also embeds that exact movie.

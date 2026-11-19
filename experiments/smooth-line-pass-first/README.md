@@ -97,7 +97,7 @@ recorded in `manifest.json`; private raw logs are excluded.
 
 ## Apply the source overlay
 
-Start with a separate working copy of the Mach-Jesus repository, which already
+Start with a separate working copy of the LiDAR Racing repository, which already
 contains the complete base-study source export. Copy the contents of this
 experiment's `source/` folder onto that copy's repository root, preserving the
 relative paths. From the eventual experiment location

@@ -14,7 +14,7 @@
     "webots/controllers/tournament_director/tournament_director.py": "63ff24133c8865f7c888c07ed837f28f56ee470fec8c6237beb8e1f9e09e3417"
   },
   "video": {
-    "repository_relative_path": "docs/Mach_Jesus_Demo.mp4",
+    "repository_relative_path": "docs/LiDAR_Racing_Demo.mp4",
     "sha256": "73b3f83b7ff3e5b69fc81c3b5f56bb27274ecf2db7cb755fa65c81c88380b7f4",
     "seconds": 112.0
   },

@@ -13,8 +13,8 @@
       "bytes": 3361
     },
     "README.md": {
-      "sha256": "4d50926e72b613c204f687d2f4a2edcd3d787050496a63075ad4e58bfbf66eda",
-      "bytes": 6252
+      "sha256": "96b49a7c9b022a1a2f0de409fbf870d85d4ec86afa499cc24d9a63a5a42963c6",
+      "bytes": 6256
     },
     "evidence/altered-grid-pair.json": {
       "sha256": "af9ac00cfdf2cdcdbb569d2a22c06565bd41c5f0e3fd3f9c84e3b93b8b7de787",
@@ -53,12 +53,12 @@
       "bytes": 22463
     },
     "figures/matched-budget-summary.png": {
-      "sha256": "ebabc53139f693b62be65d994e6df55251c91761641ce041c6d7b6a8e6e69892",
-      "bytes": 91624
+      "sha256": "60a9f35732d68d9c75570ab2a5ce2857d4eac37c3c4352490d778eb74317e8d1",
+      "bytes": 92270
     },
     "media.json": {
-      "sha256": "6656f5d95d3451a4975cebd59245dc90d85e9a07cf0b662f4788ab0a2a16d2b1",
-      "bytes": 4332
+      "sha256": "cfdf92e974c42370be9c5cff215c57675d0358d80137c8afffcdfbb646a4ad70",
+      "bytes": 5042
     },
     "overlay/src/race_lidar/aggressive_hybrid.py": {
       "sha256": "832cfb5c1f47eadeb8c327de2f32c762ebc3ddf242c0456ad1891caa63086362",
@@ -79,7 +79,7 @@
   },
   "checks": {
     "private_path_ip_gpu_scan_passed": true,
-    "bytes_excluding_manifest_and_movies": 629051,
+    "bytes_excluding_manifest_and_movies": 630411,
     "under_two_megabytes_excluding_movie": true,
     "new_source_media_and_timestep_metadata_audit_passed": true
   },
@@ -89,21 +89,21 @@
   "parent_completed_science_manifest_sha256": "d8c8679e0b135dbf5295fd4f3e81011fed3e6b4cfc53305c73a90752cf2ab42d",
   "hosted_publication_performed": false,
   "media_repository_files": {
-    "docs/Mach_Jesus_Qualified_Highlight.mp4": {
-      "sha256": "ca7e8fa41531f469f2c24001c8c1b105508f4c30b45921092c2804fccfe7ed67",
-      "bytes": 10001512
+    "docs/LiDAR_Racing_Qualified_Highlight.mp4": {
+      "sha256": "ab5da08ebb671561be6b7f9793884a91b630ff0ba31c50be173f559235050905",
+      "bytes": 11397564
     },
-    "docs/Mach_Jesus_Full_Flying_Lap_1x.mp4": {
-      "sha256": "89c55f32008f090e33ace4d69dacff36dec5f722da4532c36499e6653340b378",
-      "bytes": 15298587
+    "docs/LiDAR_Racing_Full_Flying_Lap_1x.mp4": {
+      "sha256": "e3f06d61162e6c4cb31f1d1312162c6c4f1c3804e86fd0bca3124cc7fac34dc4",
+      "bytes": 17683343
     },
     "docs/control-cadence-demo.png": {
-      "sha256": "d7700ed0979c4162d8652dfaa4860d2b152d5e077ee465350d254fbd7c79b8c5",
-      "bytes": 262528
+      "sha256": "610b1c539e52baec50a9e8cbca1434fe81db11b3a3f3c011adb94d5002ec7ff3",
+      "bytes": 263023
     },
     "docs/Presentation_Update.pdf": {
-      "sha256": "b1cbab0ccadd6a1d309cd157ab0cb479d30595a93f4b55e4647c8c0ac5721768",
-      "bytes": 354364
+      "sha256": "afb2cbbdac9aeb39b81dd8e42146aeeb1890194bb7e3b980d7905a54055d853e",
+      "bytes": 1232242
     }
   },
   "release_curator_sha256": "b42410a0b63e085227193e8cc1f65400f3755fe169f2025918d79b843937c809",
@@ -113,13 +113,15 @@
   "completion_curator_sha256": "e33bb66ee27f76a44067f1a9584f59a2c9fa870ef451e9853f1320f302c66d30",
   "supporting_repository_files": {
     "docs/Presentation_Update_Notes.md": {
-      "sha256": "86f195d7242b118d160b1b69716590c10972d97c58d41c28f71463e321822404",
-      "bytes": 9385
+      "sha256": "695e38bd4be95cbe0e73a84798ceceeb0ca895058137909be21bf580a371ed5a",
+      "bytes": 9399
     }
   },
   "pre_clock_context_manifest_sha256": "c28152cb359d89c002fbcebb6f5bb23d2019771dbc6e8ce1239cf2a0191c4be1",
   "context_curator_sha256": "2a7631cbeba5f921bae50f724b4f8a5ddefa82731209551b9ff16517c70d1a3d",
   "pre_cut_label_correction_manifest_sha256": "c4dbb213900211f6742dfdc7db51e1a23d83c0569e197c81cc242133319154ab",
   "cut_card_label_corrected": true,
-  "cut_label_curator_sha256": "7977cbf08a8fa7cc138cb439141019836641657eddc78699b9fdd602fb020752"
+  "cut_label_curator_sha256": "7977cbf08a8fa7cc138cb439141019836641657eddc78699b9fdd602fb020752",
+  "pre_presentation_rename_manifest_sha256": "89d3692a16c5ed9d3421501fd6f4f24c3f455e42eb4da1d2116891460de2d535",
+  "presentation_rename_record": "../../docs/provenance/project-rename.json"
 }

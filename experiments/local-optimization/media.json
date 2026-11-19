@@ -1,8 +1,8 @@
 {
   "schema": "native-two-circuit-engineering-demo-media-v1",
-  "status": "QUALIFIED_AND_FULLY_DECODE_VERIFIED",
+  "status": "QUALIFIED_SOURCE_PRESENTATION_REBRANDED_AND_FULLY_DECODE_VERIFIED",
   "highlight": {
-    "repository_path": "docs/Mach_Jesus_Qualified_Highlight.mp4",
+    "repository_path": "docs/LiDAR_Racing_Qualified_Highlight.mp4",
     "frames": 3036,
     "fps": 25.0,
     "seconds": 121.44,
@@ -13,14 +13,14 @@
     "full_ffmpeg_decode_passed": true,
     "codec": "h264",
     "pixel_format": "yuv420p",
-    "decode_log_sha256": "7aa254e2f549a6086d6783cd838dbe771ee0a788c9a16f3b90bcab99ba90699d",
-    "sha256": "ca7e8fa41531f469f2c24001c8c1b105508f4c30b45921092c2804fccfe7ed67",
-    "bytes": 10001512
+    "decode_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sha256": "ab5da08ebb671561be6b7f9793884a91b630ff0ba31c50be173f559235050905",
+    "bytes": 11397564
   },
   "poster": {
     "repository_path": "docs/control-cadence-demo.png",
-    "sha256": "d7700ed0979c4162d8652dfaa4860d2b152d5e077ee465350d254fbd7c79b8c5",
-    "bytes": 262528
+    "sha256": "610b1c539e52baec50a9e8cbca1434fe81db11b3a3f3c011adb94d5002ec7ff3",
+    "bytes": 263023
   },
   "first_observed_P1_race_s": 85.4,
   "full_reference_crossings": [
@@ -93,10 +93,10 @@
     "full_ffmpeg_decode_passed": true,
     "codec": "h264",
     "pixel_format": "yuv420p",
-    "decode_log_sha256": "8023be6f04168613bd1bdc66317431259730b0599aa44f4d65111048854f8382",
-    "sha256": "89c55f32008f090e33ace4d69dacff36dec5f722da4532c36499e6653340b378",
-    "bytes": 15298587,
-    "repository_path": "docs/Mach_Jesus_Full_Flying_Lap_1x.mp4"
+    "decode_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sha256": "e3f06d61162e6c4cb31f1d1312162c6c4f1c3804e86fd0bca3124cc7fac34dc4",
+    "bytes": 17683343,
+    "repository_path": "docs/LiDAR_Racing_Full_Flying_Lap_1x.mp4"
   },
   "clock_basis": "Simulation time for control, sensor and video cadences; native 1x means 1x simulated time.",
   "recording_wall_cost": {
@@ -109,5 +109,16 @@
   },
   "original_render_provenance_sha256": "131d06f19371a7e31f5ad23e7ea760c94e25e209a3467f51b52dcc25ba2d96c4",
   "cut_card_label_corrected": true,
-  "cut_card_correction_provenance_sha256": "d1ad3ac66322a660a3bb147f862cd22cf0a8338b54c785bfb73a3d03c4b5aa00"
+  "cut_card_correction_provenance_sha256": "d1ad3ac66322a660a3bb147f862cd22cf0a8338b54c785bfb73a3d03c4b5aa00",
+  "presentation_rebrand": {
+    "date": "2026-11-19",
+    "project_title": "LiDAR Racing",
+    "operation": "Title graphics only; same frame count, order, cadence and cuts. Videos are lossy presentation transcodes, not pixel-identical originals.",
+    "new_training_or_simulation": false,
+    "physical_results_changed": false,
+    "historical_qualification_applies_to_original_recording": true,
+    "original_highlight_sha256": "ca7e8fa41531f469f2c24001c8c1b105508f4c30b45921092c2804fccfe7ed67",
+    "original_flying_lap_sha256": "89c55f32008f090e33ace4d69dacff36dec5f722da4532c36499e6653340b378",
+    "provenance_repository_path": "docs/provenance/project-rename.json"
+  }
 }

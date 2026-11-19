@@ -15,7 +15,7 @@ Start with the [project overview](../README.md), then choose the material below.
 
 - [Final report](report.pdf) and [study results](final_study.md).
 - [Original study demo](demo.mp4) and [tournament protocol](tournament_protocol.md).
-- [Presentation slides](presentation.pdf), [speaker notes](presentation_notes.md), and [matching chase recording](Mach_Jesus_Demo.mp4).
+- [Presentation slides](presentation.pdf), [speaker notes](presentation_notes.md), and [matching chase recording](LiDAR_Racing_Demo.mp4).
 - [Final evidence](final_evidence.md) and [artifact provenance](final_artifact_provenance.json).
 - [Source/export provenance](provenance/README.md) and [independent reviews](reviews).
 - [Track/reference provenance](f1_reference.md).
@@ -25,7 +25,7 @@ comparison. Later chase demos are separate engineering extensions.
 
 ## Latest engineering demonstration
 
-- [Two-minute native demo](Mach_Jesus_Qualified_Highlight.mp4), [complete flying lap at 1x](Mach_Jesus_Full_Flying_Lap_1x.mp4), and [updated presentation](Presentation_Update.pdf), and [timed speaker cues](Presentation_Update_Notes.md).
+- [Two-minute native demo](LiDAR_Racing_Qualified_Highlight.mp4), [complete flying lap at 1x](LiDAR_Racing_Full_Flying_Lap_1x.mp4), and [updated presentation](Presentation_Update.pdf), and [timed speaker cues](Presentation_Update_Notes.md).
 - [Six-run comparison, exact source and limitations](../experiments/local-optimization/README.md).
 - [Native media provenance](../experiments/local-optimization/media.json) and [timestep-label audit](../experiments/local-optimization/evidence/timestep-label-audit.json).
 - [Engineering experiment index](../experiments/README.md): evolution, ablations and negative cases.

@@ -1,12 +1,12 @@
-# Mach-Jesus
+# LiDAR Racing
 
 LiDAR perception and hybrid autonomous racing in Webots. A CMPE249 project by
 Bradley Yong, developed with AI coding assistance.
 
-[![Native two-circuit chase](docs/control-cadence-demo.png)](docs/Mach_Jesus_Qualified_Highlight.mp4)
+[![Native two-circuit chase](docs/control-cadence-demo.png)](docs/LiDAR_Racing_Qualified_Highlight.mp4)
 
-[Watch the two-minute demo](docs/Mach_Jesus_Qualified_Highlight.mp4) ·
-[Complete flying lap at 1x](docs/Mach_Jesus_Full_Flying_Lap_1x.mp4) ·
+[Watch the two-minute demo](docs/LiDAR_Racing_Qualified_Highlight.mp4) ·
+[Complete flying lap at 1x](docs/LiDAR_Racing_Full_Flying_Lap_1x.mp4) ·
 [Updated presentation](docs/Presentation_Update.pdf) ·
 [Measured results and source](experiments/local-optimization/README.md)
 
@@ -24,7 +24,7 @@ See the [system architecture](docs/architecture.md) for the actual data flow.
 | [CPU reproductions](reproduction/README.md) | Saved-prediction matching/counts that run without a GPU or simulator. |
 | [Saved motion ablation](reproduction/control-cadence/README.md) | Recomputable pace, motion and compute tradeoffs from three solo recordings. |
 | [Updated presentation](docs/Presentation_Update.pdf) and [speaker cues](docs/Presentation_Update_Notes.md) | Twelve slides; the ten-minute plan includes the two-minute native demo. |
-| [Original presentation](docs/presentation.pdf) and [matching recording](docs/Mach_Jesus_Demo.mp4) | The retained course deck and its original linked chase video. |
+| [Original presentation](docs/presentation.pdf) and [matching recording](docs/LiDAR_Racing_Demo.mp4) | The retained course deck and its original linked chase video. |
 
 **Study finding:** higher offline detector recall did not guarantee better
 driving. The neural finalist was 3.74% slower by paired median and was not

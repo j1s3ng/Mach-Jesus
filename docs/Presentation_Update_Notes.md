@@ -1,10 +1,10 @@
-# Mach-Jesus — final 10-minute presentation cues
+# LiDAR Racing — final 10-minute presentation cues
 
 **Bradley Yong · CMPE249 · San José State University**
 
-Canonical repository: [github.com/j1s3ng/Mach-Jesus](https://github.com/j1s3ng/Mach-Jesus).
+Canonical repository: [github.com/j1s3ng/lidar-racing](https://github.com/j1s3ng/lidar-racing).
 
-**Planned slot: 10:00 = 478.56 s spoken + 121.44 s playback.** The real [qualified highlight](Mach_Jesus_Qualified_Highlight.mp4) plays after slide 8, from **5:10 to 7:11.44**. Keep the PDF and movie in the same folder. The video itself has no audio narration; speak briefly before/after it, within the spoken allocations. Do not add two minutes of commentary over the playback.
+**Planned slot: 10:00 = 478.56 s spoken + 121.44 s playback.** The real [qualified highlight](LiDAR_Racing_Qualified_Highlight.mp4) plays after slide 8, from **5:10 to 7:11.44**. Keep the PDF and movie in the same folder. The video itself has no audio narration; speak briefly before/after it, within the spoken allocations. Do not add two minutes of commentary over the playback.
 
 ## 1 · Three evidence tracks · 0:00–0:25
 
@@ -56,9 +56,9 @@ Canonical repository: [github.com/j1s3ng/Mach-Jesus](https://github.com/j1s3ng/M
 
 ## Play the actual highlight · 5:10–7:11.44
 
-Play [Mach_Jesus_Qualified_Highlight.mp4](Mach_Jesus_Qualified_Highlight.mp4) at its encoded native 1× speed. It is 121.44 s, 3036 frames at 25 fps; every source frame is retained in the separate 9331-frame full movie. Original learned weights, all 17 actor imports, 100 Hz control, 50 Hz saved trace and 5 Hz actual cloud/prediction pairing qualify. The offline GT map is labelled; unequal caps remain an engineering-chase limitation.
+Play [LiDAR_Racing_Qualified_Highlight.mp4](LiDAR_Racing_Qualified_Highlight.mp4) at its encoded native 1× speed. It is 121.44 s, 3036 frames at 25 fps; every source frame is retained in the separate 9331-frame full movie. Original learned weights, all 17 actor imports, 100 Hz control, 50 Hz saved trace and 5 Hz actual cloud/prediction pairing qualify. The offline GT map is labelled; unequal caps remain an engineering-chase limitation.
 
-The optional [complete flying lap at native 1×](Mach_Jesus_Full_Flying_Lap_1x.mp4) is 172.44 s/4311 frames and fully decode verified. It is for extended review, outside the timed 10-minute presentation; do not play both videos in this slot.
+The optional [complete flying lap at native 1×](LiDAR_Racing_Full_Flying_Lap_1x.mp4) is 172.44 s/4311 frames and fully decode verified. It is for extended review, outside the timed 10-minute presentation; do not play both videos in this slot.
 
 ## 9 · Solo cadence sensitivity · 7:11.44–8:06.44
 
@@ -86,7 +86,7 @@ The optional [complete flying lap at native 1×](Mach_Jesus_Full_Flying_Lap_1x.m
 
 - [Final deck](Presentation_Update.pdf) · [real poster](control-cadence-demo.png) · [source/media hashes](../experiments/local-optimization/media.json)
 - Original study: `docs/final_study.md`; matched public citation: `experiments/local-optimization/evidence/matched-budget-report.json`.
-- Qualification SHA256: `e2d61fbd7c48dadc9f70ca86baf07e74cf081b446af8967e74ba833ca72c3856`. Highlight SHA256: `ca7e8fa41531f469f2c24001c8c1b105508f4c30b45921092c2804fccfe7ed67`.
+- Qualification SHA256: `e2d61fbd7c48dadc9f70ca86baf07e74cf081b446af8967e74ba833ca72c3856`. Highlight SHA256: `ab5da08ebb671561be6b7f9793884a91b630ff0ba31c50be173f559235050905`.
 - Earlier working decks remain in the local project; the original course deck is preserved in this repository. No optional grid outputs or incomplete media are read by the final builder. The complete normal-speed movie/source bindings remain in the private project.
 
 ## Optional Q&A: later grid check

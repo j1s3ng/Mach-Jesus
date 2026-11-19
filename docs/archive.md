@@ -3,7 +3,7 @@
 The complete checkout was backed up before cleanup, including Git metadata,
 untracked files and ignored working output. Superseded media and generated
 working files were then moved byte-for-byte to the local project archive
-`Mach-Jesus-cleanup-20261118-001`. Nothing in this catalog is a hosted download.
+`project-cleanup-20261118-001`. Nothing in this catalog is a hosted download.
 
 The latest demo, native recording, replay and poster remain in `docs/`, as do
 the final report/presentation, original study demo and the presentation's
@@ -52,7 +52,7 @@ Point `RACE_PROJECT_ARCHIVE` to the preserved archive directory in your
 development project. It contains the original repository-relative paths:
 
 ```sh
-export RACE_PROJECT_ARCHIVE=/path/to/race-lidar/archives/Mach-Jesus-cleanup-20261118-001
+export RACE_PROJECT_ARCHIVE=/path/to/race-lidar/archives/project-cleanup-20261118-001
 cp "$RACE_PROJECT_ARCHIVE/docs/Apex_Demo.mp4" docs/Apex_Demo.mp4
 shasum -a 256 docs/Apex_Demo.mp4
 ```

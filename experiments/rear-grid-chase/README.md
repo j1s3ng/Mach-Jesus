@@ -1,6 +1,6 @@
 # Rear-grid chase: exact demo source
 
-[Watch the 112-second demo](../../docs/Mach_Jesus_Demo.mp4) ·
+[Watch the 112-second demo](../../docs/LiDAR_Racing_Demo.mp4) ·
 [Presentation](../../docs/presentation.pdf) · [File and parameter manifest](manifest.json)
 
 This folder preserves the six exact source overrides used by the new chase demo.

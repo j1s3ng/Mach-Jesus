@@ -54,3 +54,9 @@ reproduction.
 
 The original measured source archives and immutable delivery remain separate
 from this public-facing working copy.
+
+The November 19 [project-title revision](project-rename.json) records current
+asset hashes and their original counterparts. It changes presentation titles,
+repository/media links and filenames, with unchanged experimental data, model
+weights, runtime source and numerical results. Original artifacts remain in the
+pre-revision Git commit and verified local backups.

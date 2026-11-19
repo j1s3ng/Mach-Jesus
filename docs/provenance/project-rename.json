@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "project_title": "LiDAR Racing",
+  "repository": "https://github.com/j1s3ng/lidar-racing",
+  "previous_commit": "0b11b088669c5a7be6bcad4694bf58f630e6303c",
+  "scope": "Project title, repository/media links, filenames, and presentation title graphics only. No model fitting, simulation, policy, metric, split or numerical result change.",
+  "original_artifacts": "Previous commit and verified local backups preserve all original bytes.",
+  "pdf_verification": {
+    "page_counts_preserved": true,
+    "numeric_tokens_preserved": true,
+    "text_tokens_preserved_except_branding": true,
+    "original_hyperlink_targets_preserved_and_renamed": true,
+    "original_deck_slide10_relative_video_link": "LiDAR_Racing_Demo.mp4"
+  },
+  "media_verification": {
+    "original_course_demo_byte_identical": true,
+    "rebranded_movies_full_decode_passed": true,
+    "frame_counts_rates_durations_and_cuts_preserved": true,
+    "lossy_presentation_transcodes_are_pixel_identical": false,
+    "no_sensor_or_physical_trace_edit": true
+  },
+  "local_archive_policy": "A neutral directory alias points to the original archive without changing its contents.",
+  "changed_preexisting_files": [
+    {
+      "path": "README.md",
+      "before_sha256": "490cdc9e1bb030f28660cf6352d4811c2264f6134e186f833e1bf7bde50d0b6b",
+      "before_bytes": 6531,
+      "after_sha256": "c3f92358690b8b93355945fd9723db732d277f8defdef7195410eeb809b818f3",
+      "after_bytes": 6541
+    },
+    {
+      "path": "docs/LiDAR_Racing_Demo.mp4",
+      "before_sha256": "73b3f83b7ff3e5b69fc81c3b5f56bb27274ecf2db7cb755fa65c81c88380b7f4",
+      "before_bytes": 12771969,
+      "after_sha256": "73b3f83b7ff3e5b69fc81c3b5f56bb27274ecf2db7cb755fa65c81c88380b7f4",
+      "after_bytes": 12771969
+    },
+    {
+      "path": "docs/LiDAR_Racing_Full_Flying_Lap_1x.mp4",
+      "before_sha256": "89c55f32008f090e33ace4d69dacff36dec5f722da4532c36499e6653340b378",
+      "before_bytes": 15298587,
+      "after_sha256": "e3f06d61162e6c4cb31f1d1312162c6c4f1c3804e86fd0bca3124cc7fac34dc4",
+      "after_bytes": 17683343
+    },
+    {
+      "path": "docs/LiDAR_Racing_Qualified_Highlight.mp4",
+      "before_sha256": "ca7e8fa41531f469f2c24001c8c1b105508f4c30b45921092c2804fccfe7ed67",
+      "before_bytes": 10001512,
+      "after_sha256": "ab5da08ebb671561be6b7f9793884a91b630ff0ba31c50be173f559235050905",
+      "after_bytes": 11397564
+    },
+    {
+      "path": "docs/Presentation_Update.pdf",
+      "before_sha256": "b1cbab0ccadd6a1d309cd157ab0cb479d30595a93f4b55e4647c8c0ac5721768",
+      "before_bytes": 354364,
+      "after_sha256": "afb2cbbdac9aeb39b81dd8e42146aeeb1890194bb7e3b980d7905a54055d853e",
+      "after_bytes": 1232242
+    },
+    {
+      "path": "docs/Presentation_Update_Notes.md",
+      "before_sha256": "86f195d7242b118d160b1b69716590c10972d97c58d41c28f71463e321822404",
+      "before_bytes": 9385,
+      "after_sha256": "695e38bd4be95cbe0e73a84798ceceeb0ca895058137909be21bf580a371ed5a",
+      "after_bytes": 9399
+    },
+    {
+      "path": "docs/README.md",
+      "before_sha256": "ef042805ee79bf0aefa96d05dc2ad406217e932c02938c1c9efde2c7dfc1f4df",
+      "before_bytes": 3504,
+      "after_sha256": "eedd49ddf139b5222a69a362f81ccef7495a840482b51f67fa4423336ed93a85",
+      "after_bytes": 3510
+    },
+    {
+      "path": "docs/architecture.md",
+      "before_sha256": "52fc427b64d394cc9fa67a89f5d9fd06bd043e5754e8701f52fc50eeda72315b",
+      "before_bytes": 3762,
+      "after_sha256": "3d8354443794f98d804bc0a2638726e70a97e2935da1361273bae18725479281",
+      "after_bytes": 3764
+    },
+    {
+      "path": "docs/archive.md",
+      "before_sha256": "60276b0bd8f91e5cb9417f32688bba3a665c1d351b46d611e7da6d13b12939c7",
+      "before_bytes": 4318,
+      "after_sha256": "b9aa5ae4b6b551f8ab301a8f2db4c0dfa877ccad3bd366fca71254e814643d2a",
+      "after_bytes": 4312
+    },
+    {
+      "path": "docs/archive_manifest.json",
+      "before_sha256": "6e06e7e9fe9c3a44046870cc2a54a63cc92f5a3c21d6c89fdfc04a9889afba83",
+      "before_bytes": 5509,
+      "after_sha256": "6035b72ed3e46c01bb2908a5eb2ad741a8e8ccf6a33a93562eea6b42348b540c",
+      "after_bytes": 5506
+    },
+    {
+      "path": "docs/control-cadence-demo.png",
+      "before_sha256": "d7700ed0979c4162d8652dfaa4860d2b152d5e077ee465350d254fbd7c79b8c5",
+      "before_bytes": 262528,
+      "after_sha256": "610b1c539e52baec50a9e8cbca1434fe81db11b3a3f3c011adb94d5002ec7ff3",
+      "after_bytes": 263023
+    },
+    {
+      "path": "docs/presentation.pdf",
+      "before_sha256": "d5fdd8e372a9ca86d5f3dd056483251f26934d054ef674a732e64d169a819e3e",
+      "before_bytes": 1009569,
+      "after_sha256": "adbac1ad417ebcd384f0e2072d5d0d78f3100ff7f1097609b6592aa6d1e28554",
+      "after_bytes": 1432113
+    },
+    {
+      "path": "docs/provenance/DOCUMENTATION_AMENDMENTS.json",
+      "before_sha256": "a03ba0a48fa0865c1a7e312298486fc376e883687a1ecc95ac162d29508c9470",
+      "before_bytes": 3531,
+      "after_sha256": "fed2009082e5480dbe67fe0e1cac9ca9af338b105c215c63059ed1a44d9c6a32",
+      "after_bytes": 3590
+    },
+    {
+      "path": "docs/provenance/README.md",
+      "before_sha256": "e012d430c327b3f228105b4e0ffb8919366b0b3c2975d8376fafd0ee337d987f",
+      "before_bytes": 3198,
+      "after_sha256": "e7e435bb10310490d5c6d72085888b53cf67869e3dda7b82fb7fad0f65082950",
+      "after_bytes": 3565
+    },
+    {
+      "path": "docs/rear_grid_demo.md",
+      "before_sha256": "acf3b70cc7b90687717036f69760f405bf6ce4392478fe4daa986ef2ad89ce57",
+      "before_bytes": 2802,
+      "after_sha256": "762cba6ff86da441bd7eadbaa81327a63e046d68c2c8741579de0bfe3fea9827",
+      "after_bytes": 2806
+    },
+    {
+      "path": "experiments/local-optimization/README.md",
+      "before_sha256": "4d50926e72b613c204f687d2f4a2edcd3d787050496a63075ad4e58bfbf66eda",
+      "before_bytes": 6252,
+      "after_sha256": "96b49a7c9b022a1a2f0de409fbf870d85d4ec86afa499cc24d9a63a5a42963c6",
+      "after_bytes": 6256
+    },
+    {
+      "path": "experiments/local-optimization/figures/matched-budget-summary.png",
+      "before_sha256": "ebabc53139f693b62be65d994e6df55251c91761641ce041c6d7b6a8e6e69892",
+      "before_bytes": 91624,
+      "after_sha256": "60a9f35732d68d9c75570ab2a5ce2857d4eac37c3c4352490d778eb74317e8d1",
+      "after_bytes": 92270
+    },
+    {
+      "path": "experiments/local-optimization/manifest.json",
+      "before_sha256": "89d3692a16c5ed9d3421501fd6f4f24c3f455e42eb4da1d2116891460de2d535",
+      "before_bytes": 5172,
+      "after_sha256": "bd2edf3e952b9b6edba68bfc5494ba8e80675d3100be06d7c4436b1b0cb80d78",
+      "after_bytes": 5367
+    },
+    {
+      "path": "experiments/local-optimization/media.json",
+      "before_sha256": "6656f5d95d3451a4975cebd59245dc90d85e9a07cf0b662f4788ab0a2a16d2b1",
+      "before_bytes": 4332,
+      "after_sha256": "cfdf92e974c42370be9c5cff215c57675d0358d80137c8afffcdfbb646a4ad70",
+      "after_bytes": 5042
+    },
+    {
+      "path": "experiments/rear-grid-chase/README.md",
+      "before_sha256": "41d5eec5f2f5eeeecf3d5ff50eda8d279634e8d06ef2e6beed923f938606b7e4",
+      "before_bytes": 1855,
+      "after_sha256": "ed7167787fc2a425455dbf98d930a5923b87cf3a814416215b24bb0ed9988b51",
+      "after_bytes": 1857
+    },
+    {
+      "path": "experiments/rear-grid-chase/manifest.json",
+      "before_sha256": "78837cf079a27cf23db5486f83e6aa138dfd41b8b47a768f9ad65ddf820ca473",
+      "before_bytes": 3572,
+      "after_sha256": "078fb563b97ec04181f30ce57920b28f1dc4e213bd647a3488ce46883cf321fe",
+      "after_bytes": 3574
+    },
+    {
+      "path": "experiments/smooth-line-pass-first/README.md",
+      "before_sha256": "a448b8e0ed45acd4bcb6dea7f5ecf2f742c8e9a793fa03648eecfe102568f0f6",
+      "before_bytes": 9048,
+      "after_sha256": "be5bef66116e09d94559fd12d949b00477f21c8c99adbb2a143f28d8d0fd14af",
+      "after_bytes": 9050
+    }
+  ],
+  "movie_records": [
+    {
+      "path": "docs/LiDAR_Racing_Demo.mp4",
+      "before_sha256": "73b3f83b7ff3e5b69fc81c3b5f56bb27274ecf2db7cb755fa65c81c88380b7f4",
+      "after_sha256": "73b3f83b7ff3e5b69fc81c3b5f56bb27274ecf2db7cb755fa65c81c88380b7f4",
+      "frames": 3360,
+      "fps": 30.0,
+      "seconds": 112.0,
+      "operation": "Filename rename only; all bytes unchanged"
+    },
+    {
+      "path": "docs/LiDAR_Racing_Full_Flying_Lap_1x.mp4",
+      "before_sha256": "89c55f32008f090e33ace4d69dacff36dec5f722da4532c36499e6653340b378",
+      "after_sha256": "e3f06d61162e6c4cb31f1d1312162c6c4f1c3804e86fd0bca3124cc7fac34dc4",
+      "frames": 4311,
+      "fps": 25.0,
+      "seconds": 172.44,
+      "operation": "Same-order same-rate presentation-title transcode; no frames inserted, dropped, interpolated or retimed"
+    },
+    {
+      "path": "docs/LiDAR_Racing_Qualified_Highlight.mp4",
+      "before_sha256": "ca7e8fa41531f469f2c24001c8c1b105508f4c30b45921092c2804fccfe7ed67",
+      "after_sha256": "ab5da08ebb671561be6b7f9793884a91b630ff0ba31c50be173f559235050905",
+      "frames": 3036,
+      "fps": 25.0,
+      "seconds": 121.44,
+      "operation": "Same-order same-rate presentation-title transcode; no frames inserted, dropped, interpolated or retimed"
+    }
+  ],
+  "unchanged_source_and_science_files_verified": 280
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "race-lidar"
+version = "0.1.0"
+description = "Local racing LiDAR replay, Webots sensor simulation, and VoxelNeXt adaptation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "Pillow>=10,<14", "opencv-python-headless>=4.8,<5", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+data = ["huggingface-hub>=0.26,<2"]
+test = ["pytest>=8,<10"]
+reproduction = ["numpy==1.26.4", "scipy==1.16.2", "shapely==2.1.2"]
+
+[project.scripts]
+race-lidar = "race_lidar.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["race_lidar", "training"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]

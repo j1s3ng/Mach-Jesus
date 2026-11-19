@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "frames": 8955,
+  "visible_targets": 20536,
+  "cache_sha256": "e87de9943cf64269d1faa56330b4005f1d220a76a11e0674632264ec0d05895c",
+  "source_artifacts": {
+    "runs/improvement-12h/training/detector-calibrated-qualification-data-001/val.jsonl": "58e8f929bc21e8973ec14724f6f0e46fc2f6263dc26adbb69e473bb0d29f2110",
+    "runs/improvement-12h/training/detector-eval-calibrated-fresh149-131/pretrained_predictions.jsonl": "fd25df339572f53da729647c1b0993e3af423e84701496a4be15d7f0922c465a",
+    "runs/improvement-12h/training/detector-eval-calibrated-fresh149-131/adapted_predictions.jsonl": "793a05918c69904be006440f1585148179dbb213c9363684d236b62bce43a69d"
+  },
+  "reports": [
+    {
+      "path": "examples/qualification/qualification_calibration-fresh-reference20-seed131.json",
+      "sha256": "9788b97ccb4cc6e77e88d8d756abe150f7759908b5f37d1e99fe7578e3d54ee7"
+    },
+    {
+      "path": "examples/qualification/qualification_aggregate.json",
+      "sha256": "904b05c5bbb0aa7102c632d8e0aa32bb4760b28fc5bf8abdbe5161fecea42b07"
+    },
+    {
+      "path": "examples/qualification/qualification_calibration-fresh-mixed20-seed149.json",
+      "sha256": "74dbd7238e4fb251fd207e7d936cc5e9ab674804995165a76b2f61612a67764b"
+    }
+  ],
+  "selection": "all frames, no outcome-based filtering",
+  "original_raw_threshold": 0.35,
+  "adapted_raw_threshold": 0.425,
+  "source_original_raw_floor": 0.1,
+  "source_adapted_raw_floor": 0.425,
+  "center_matching_m": 2.0,
+  "GT_visibility_min_points": 3,
+  "GT_range_xy_m": 50.0,
+  "purpose": "CPU reproduction only; this does not collect a new qualification or change old decisions"
+}

@@ -1,0 +1,98 @@
+{
+  "case_ids": [
+    "solo_20ms",
+    "solo_10ms",
+    "solo_5ms"
+  ],
+  "compressed_measurement_bytes": 1856459,
+  "declared_changes": {
+    "control_rates_hz": [
+      50,
+      100,
+      200
+    ],
+    "median_filter_nominal_sample_horizons_ms": [
+      100,
+      50,
+      25
+    ],
+    "physics_control_steps_ms": [
+      20,
+      10,
+      5
+    ],
+    "recording_rate_hz": 50,
+    "unchanged_median_filter_samples": 5
+  },
+  "files": {
+    "README.md": {
+      "bytes": 5174,
+      "sha256": "dc1da18ed04d1254df4dff552c539cd21513cd2337f7007d42e115bc58c90dfa"
+    },
+    "case_metadata.json": {
+      "bytes": 1997,
+      "sha256": "2fb1bb9a3d3919389e4933b5e5784cdb3bc0679956887563cf487f6fe50ce728"
+    },
+    "expected_reports.json": {
+      "bytes": 6343,
+      "sha256": "9c452208b1b52b9de9cea5ae413cb405801915b62d77358fb9602a4dcfea275d"
+    },
+    "export_bundle.py": {
+      "bytes": 14105,
+      "sha256": "1567572f0ce8d9b86fea07ac05583b974f2b2c52295d704442b991faf4bed122"
+    },
+    "metric.py": {
+      "bytes": 6930,
+      "sha256": "f77ac5b5e3fc9cebf581c74782e28daf5d078d8788480fe5f05b2d9fa83c6d0b"
+    },
+    "provenance.json": {
+      "bytes": 12874,
+      "sha256": "68bc5cc75fd90f2becb454ebdd965bf545240a6f4ae77ce85a5a30d838ca19c7"
+    },
+    "reproduce.py": {
+      "bytes": 16606,
+      "sha256": "fc6111d51c99df4f5eaccd0dcc6e0f05db66a45cd60a1d0535040b8dd1fc2800"
+    },
+    "requirements.txt": {
+      "bytes": 28,
+      "sha256": "ff2220266685199bcc2e738dad9a37367146f8b27ebf7dee3a0293232469099b"
+    },
+    "solo_10ms.npz": {
+      "bytes": 612039,
+      "sha256": "d4685acb3e8979af1f18ef44e00e6d87a73fa53cd456a0fb1a8e8b945cf518d6"
+    },
+    "solo_20ms.npz": {
+      "bytes": 630282,
+      "sha256": "511c63b17461c9aef4a87d742880424a0625c4aef029273546da514031ab57f4"
+    },
+    "solo_5ms.npz": {
+      "bytes": 614138,
+      "sha256": "8bbb07c85f1292c454641f47947751c7065e43d58f102aca20798d7225ef87f5"
+    }
+  },
+  "limitations": {
+    "all_band_improvement_claimed": false,
+    "cases_per_condition": 1,
+    "clear_one_car_only": true,
+    "convergence_claimed": false,
+    "new_training_inference_or_simulation": false,
+    "physical_tire_force_claimed": false,
+    "promotion_claimed": false,
+    "pure_physics_isolation_claimed": false
+  },
+  "manifest_sha256": "e63e3280eb887e56b0be47433b5acee7641c1fb221f58764b9e5f1a78191719b",
+  "native_sample_count": 27801,
+  "numeric_tolerance": {
+    "absolute": 1e-12,
+    "relative": 1e-12
+  },
+  "recording_hz": 50,
+  "requirements": {
+    "numpy": "1.26.4",
+    "python": "3.11",
+    "scipy": "1.16.2"
+  },
+  "schema_version": 1,
+  "scope": "SAVED_MEASUREMENTS_ONLY_COUPLED_INTEGRATION_CONTROL_CADENCE",
+  "source_path_policy": "Public logical source IDs and hashes only; private evidence specifications and raw logs are not shipped."
+}

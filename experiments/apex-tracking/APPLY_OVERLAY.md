@@ -1,0 +1,7 @@
+# Apply-order recipe
+
+Use a separate compatible base study checkout. Apply the relative files from these existing extensions, in order: `apex-and-gap/overlay`, `smooth-steering/overlay`, `trajectory-trail-brake/overlay`, then this package's `overlay`. The dependency receipt verifies all 17 actor runtime destinations against the closed selected run. Five files here are imported by the actor; the two `scripts/generate_*_world.py` edits are bound to preparation and are not called actor runtime imports.
+
+Provide the external hash-matched reference, road geometry, line plan, learned weights and original detector from the preceding extension manifests. NumPy/SciPy and simulator/perception dependencies remain required. No weights, NPZ archives, raw logs or generated world are included. Paths and the local inference endpoint must be rebound for the target machine; `evidence/selected_settings.json` is a portable review extract, not a directly runnable archived config.
+
+For this selected run, decorative trackside posts are disabled. The existing fixed/nominal tracking geometry is used; continuous-reference geometry, finite return, checked-return options and yaw/sideslip stability are disabled. The learned hero retains its existing map feedforward, trail/brake coordination, enhanced pass overlay and 100 m/s software maximum; base rivals retain their different policies/limits. This is an engineering benchmark, not a fair learned-model tournament. Do not enable unused experimental options and assume they reproduce the selected demonstration.

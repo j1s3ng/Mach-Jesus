@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "READY_FOR_LOCAL_REVIEW",
+  "source_handoff_sha256": "4bfe2e1e95042259e3eac15bef03c36fe7dc0cc7bc8b60c701621d60cf039db8",
+  "source_handoff_created_utc": "2026-11-17T19:51:07.527723+00:00",
+  "selected_treatment": "sigma1m known-map spatial curvature FF only; no stable-entry dwell",
+  "physical_audit_sha256": "e7a9a23b7b7df0366516898914ab2dc05e1e8bc194c5a5a5c94dc0b768b22e71",
+  "assets": {
+    "video": {
+      "sha256": "3e78f764361f5154396cf6fab3d1f31508bca36b5541f579e3d5081eece68118",
+      "bytes": 11915926,
+      "frames": 3360,
+      "fps": 30.0,
+      "seconds": 112.0,
+      "size": [
+        1280,
+        720
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "full_ffmpeg_decode_passed": true,
+      "verification_method": "OpenCV container metadata plus full FFmpeg decode and final progress frame count",
+      "decode_log_sha256": "8820348793f962b0e7bb0b9a42cf4fa6ba0c180e5e0283d949fcbdefe7e0f97d",
+      "public_relative_link": "../../docs/Smooth_Steering_Demo.mp4"
+    },
+    "full_normal_speed": {
+      "sha256": "d2b1ec8a6237e43d99cce686b6fc92ce6bac6fd6a806b4e8896ba24ebab36a66",
+      "bytes": 15670410,
+      "frames": 1166,
+      "fps": 5.0,
+      "size": [
+        1280,
+        720
+      ],
+      "full_ffmpeg_decode_passed": true,
+      "decode_log_sha256": "a0fd58f78c9035296ee60fe49cb9791787cbe72cc4cdf23f83fa05aca075e439",
+      "seconds": 233.2,
+      "public_relative_link": "../../docs/Smooth_Steering_Normal_Speed.mp4"
+    },
+    "poster": {
+      "sha256": "e2f116649c83d59702ff49cf5acb5a0c33391280dd11c8abf376417a4b936618",
+      "bytes": 175441,
+      "public_relative_link": "../../docs/smooth-steering-demo.jpg"
+    }
+  },
+  "native_camera_frames": 1166,
+  "all_native_camera_frames_retained": true,
+  "driving_section_simulation_speed_multiplier": 2.3320000000000003,
+  "builder": {
+    "sha256": "1aabcc9343af32a5d6a0be5d7a485ab6d3cb4f948fef72609284bfd212086c0c",
+    "bytes": 81762,
+    "logical_name": "build_full_circuit.py"
+  },
+  "qa": {
+    "status": "ACTUAL_ENCODED_FRAME_QA_PASS",
+    "full_decode_passed": true,
+    "sampled_encoded_frame_visual_review": "PASS_ROOT_REVIEW",
+    "source_handoff_receipt_sha256": "4bfe2e1e95042259e3eac15bef03c36fe7dc0cc7bc8b60c701621d60cf039db8",
+    "provenance_sha256": "0cf720ac9b7248f19d5f1bb8486ea638d18606b254c4b9b9bd8d8c190201a972",
+    "frame_qa_sha256": "e2a449662d4df6e2ff1430ae00e6865f79b86505906fb01d90237b6f72ff9035",
+    "source_binding_sha256": "4e5f560eb992b7f23c44a20197c1fbacb2e7cc50623cc335e0d4e6389d66c690",
+    "alignment_sha256": "48a19714c2851c34b9734bac810c419b98f7db665b2014a29095df2b2f42cbbe",
+    "contact_sheet_sha256": "6e218cd139c87af3fdf3b3e090116c9576c313e32d677707bd12ce8074ba785c",
+    "inspected_frame_count": 8,
+    "steering_history_no_future_samples": true,
+    "steering_history_display_smoothing": false,
+    "visual_findings": [
+      "Actual encoded intro, traffic, fixed command history, 2/4wheel frame, P1 interval, circuit threshold and outcome inspected; readable, no RGB/standings/tyre obstruction.",
+      "Sigma1 spatial feedforward and no temporal command filter labels match selected config; stable-entry ablation is not used.",
+      "All19 observed progress crossings left; no retirement gains or full20lap race victory asserted.",
+      "The display does not assert completely smooth steering, improved reversal counts, or every apex executed."
+    ]
+  },
+  "scope": "Selected feedforward-only1m traffic run; no stable-entry dwell. Modest mixed traffic command change, not globally smooth driving or formal20-lap victory.",
+  "new_middle_video_created": false,
+  "redactions": [
+    "Original absolute media/source/infrastructure locations omitted.",
+    "Raw per-frame command/pose/LiDAR records are not distributed here."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "EXACT_ARCHIVED_SOURCE_BYTES_NOT_A_PORTABLE_MAIN_ENTRYPOINT",
+  "source_project_relative": "runs/improvement-12h/rich-driver-006/source",
+  "files": {
+    "frozen005_teacher.py": "f45e70ca80321dc0bff1e32f4166c1e1b06910156d79563f330fa787385046bd",
+    "frozen005_fitter.py": "8f4fcf3325c3fc2d1393e1bb43f00ab0596eedf2241c5487107196d5b2bf15ae",
+    "scripts/rich006_teacher.py": "375564c15d5c60d82c9ee86e90b351a6575151baeea3bcf7c1f34ed5ed0dc63e",
+    "scripts/train_rich_robust.py": "a1931f015020b91fd77c2f8cac4256a734aa159b65552455ea1a27a11fb315c3"
+  },
+  "original_sources_modified": false,
+  "original_canonical_training_provenance_not_rehomed": true
+}

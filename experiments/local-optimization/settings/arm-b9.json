@@ -1,0 +1,47 @@
+{
+  "path_tracking": {
+    "continuous_reference_geometry_enabled": false,
+    "rejoin_trajectory": {
+      "enabled": false,
+      "attempt_interval_s": 0.2,
+      "allow_coasting_retention": false,
+      "coasting_brake_floor_mps2": 0.25,
+      "reference_progress_parameterization_enabled": false,
+      "allow_initial_coasting_return": false,
+      "replan_after_traffic_conflict": false,
+      "traffic_horizon_s": 2.0,
+      "independent_geometry_enabled": false
+    },
+    "continuous_reference_feedforward_sigma_m": 1.0,
+    "feedforward_curvature_smoothing_sigma_m": 1.0,
+    "yaw_sideslip_stability": {
+      "enabled": false
+    },
+    "yaw_rate_damping": {
+      "enabled": false,
+      "gain": 0.15,
+      "maximum_correction_rad": 0.04
+    }
+  },
+  "telemetry_period_ms": 20,
+  "aggressive_hybrid": {
+    "sweep_all_passing_routes": false,
+    "prefer_checked_nominal_return": false,
+    "checked_nominal_goal_priority": false
+  },
+  "scope": "Portable numeric override; paths/assets supplied separately",
+  "limits": {
+    "max_speed_mps": 100.0,
+    "lateral_accel_mps2": 9.0
+  },
+  "cadence": {
+    "physics_step_ms": 10,
+    "control_hz": 100,
+    "telemetry_period_ms": 20,
+    "sensor_period_ms": 200,
+    "video_period_ms": 40
+  },
+  "required_plan_sha256": "9acc5653c5e88dba094e084a407532e16850d68880a28042385a819ea7516229",
+  "planning_and_corrective_budget_are_coupled": true,
+  "corrective_lateral_budget_before_unchanged_final_friction_bound_mps2": 14.4
+}

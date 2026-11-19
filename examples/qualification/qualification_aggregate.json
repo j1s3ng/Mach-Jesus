@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "eligibility": "physical trial only; not formal promotion",
+  "checks": {
+    "recall_nonregression": true,
+    "false_positive_increase_bound": true,
+    "false_positive_absolute_bound": true,
+    "common_center_absolute_bound": true,
+    "common_center_degradation_bound": true,
+    "far_recall_nonregression_when_adequate": true
+  },
+  "original_effective_raw_score_threshold": 0.35,
+  "candidate_effective_raw_score_threshold": 0.425,
+  "score_scope": "Original uses gate threshold; candidate also enforces its frozen pipeline's declared raw score floor.",
+  "qualification_groups": [
+    "calibration-fresh-mixed20-seed149",
+    "calibration-fresh-reference20-seed131"
+  ],
+  "definition": {
+    "declared_utc": "2026-11-14T12:07:27.191349+00:00",
+    "operating_score_threshold": 0.35,
+    "center_matching_threshold_m": 2.0,
+    "recall_requirement": "adapted >= pretrained",
+    "false_positives_per_frame": {
+      "maximum_increase": 0.01,
+      "absolute_maximum": 0.02
+    },
+    "center_error_common_matched_targets": {
+      "adapted_mean_max_m": 0.5,
+      "maximum_mean_degradation_m": 0.1
+    },
+    "far_range_m": [
+      30,
+      50
+    ],
+    "far_minimum_targets_for_additional_gate": 30,
+    "far_requirement_when_adequate": "adapted recall >= pretrained",
+    "candidate_sha256": "0a68a778cb676eea56d1da60131ac55ab190a78e2ba14537fec13c2b996d63f6",
+    "status": "frozen_before_any_new_qualification_input_or_model_score",
+    "promotion_scope": "eligible for physical trial only; not formal promotion",
+    "fit_on_qualification": false,
+    "candidate_effective_raw_score_threshold": 0.425,
+    "original_effective_raw_score_threshold": 0.35,
+    "required_decision": "both_individual_groups_must_pass_unchanged_bounds",
+    "qualification_runs": [
+      "calibration-fresh-mixed20-seed149",
+      "calibration-fresh-reference20-seed131"
+    ]
+  },
+  "definition_sha256": "0d53c38ad657906b2421da4bb79cf52292b55f1f8a52b9e937e57bccfdca1503",
+  "input_scope": "run-separated, exact-cloud-deduplicated moving subset",
+  "raw_qualification_frames": 8955,
+  "excluded_exact_training_clouds": 0,
+  "frames": 8955,
+  "visible_targets": 20536,
+  "common_matched_targets": 10997,
+  "pretrained": {
+    "recall": 0.540660303856642,
+    "false_positives": 256,
+    "false_positives_per_frame": 0.028587381351200446,
+    "common_matched_center_mean_m": 0.30030495715569827
+  },
+  "adapted": {
+    "recall": 0.9139072847682119,
+    "false_positives": 109,
+    "false_positives_per_frame": 0.012171970965940816,
+    "common_matched_center_mean_m": 0.1701065034892731
+  },
+  "far_targets": 11154,
+  "far_count_adequate": true,
+  "pretrained_far_recall": 0.5478752017213556,
+  "adapted_far_recall": 0.8452573067957684,
+  "far_scope": "frame-level targets may be temporally correlated; not independent physical scenes",
+  "new_only_matches": 7771,
+  "pretrained_only_matches": 106,
+  "fit_on_qualification": false,
+  "metric_scope": "custom2mXY-center diagnostic on visible simulated cars; not A2RL/nuScenes benchmark AP"
+}

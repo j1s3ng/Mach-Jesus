@@ -1,0 +1,109 @@
+{
+  "status": "VERIFIED_MOVED_ISOLATED_OFFLINE_REPRODUCTION",
+  "verified_utc": "2026-11-14T16:11:16.069442+00:00",
+  "command": "python -I reproduce.py --output reproduced.json",
+  "tests_command": "python -I test_reproduction.py",
+  "test_count": 12,
+  "python_version": "3.11.6",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "shapely": "2.1.2"
+  },
+  "isolated_interpreter": true,
+  "original_repository_reads_explicitly_forbidden": true,
+  "network_and_child_process_access_explicitly_forbidden": true,
+  "sanitized_environment_without_PYTHONPATH": true,
+  "moved_folder_outside_original_repository": true,
+  "audited_access_counts": {
+    "original_repo_file_opens": 0,
+    "network_events": 0,
+    "child_process_events": 0
+  },
+  "elapsed_wall_seconds_not_a_benchmark": 0.5224792500957847,
+  "all24_reports_and_all_numeric_geometry_fields_exactly_equal": true,
+  "fixed_cohort_counts": [
+    102,
+    41,
+    41
+  ],
+  "numeric_GT_rows": 512,
+  "numeric_prediction_rows": 3072,
+  "cache_score_floor": 0.425,
+  "frozen_visible_targets_per_angle": 174,
+  "manifest_sha256": "5081891c41299c026f57779910832e97b8b464905975ad15ed6ed543cf4d06de",
+  "verified_output_sha256": "d72d037a7960df2431f63ca7e17fd606fa21be0752886fe5ab7f8b9291a40493",
+  "isolated_output_sha256": "d72d037a7960df2431f63ca7e17fd606fa21be0752886fe5ab7f8b9291a40493",
+  "privacy_scan": {
+    "files": [
+      {
+        "file": "README.md",
+        "scanned_bytes": 3599,
+        "decompressed": false
+      },
+      {
+        "file": "expected_cohorts.json",
+        "scanned_bytes": 13741,
+        "decompressed": false
+      },
+      {
+        "file": "expected_reports.json",
+        "scanned_bytes": 179009,
+        "decompressed": false
+      },
+      {
+        "file": "frames.jsonl.gz",
+        "scanned_bytes": 209726,
+        "decompressed": true
+      },
+      {
+        "file": "manifest.json",
+        "scanned_bytes": 2146,
+        "decompressed": false
+      },
+      {
+        "file": "metric.py",
+        "scanned_bytes": 4845,
+        "decompressed": false
+      },
+      {
+        "file": "predictions.jsonl.gz",
+        "scanned_bytes": 1179712,
+        "decompressed": true
+      },
+      {
+        "file": "provenance.json",
+        "scanned_bytes": 8826,
+        "decompressed": false
+      },
+      {
+        "file": "reproduce.py",
+        "scanned_bytes": 13081,
+        "decompressed": false
+      },
+      {
+        "file": "requirements.txt",
+        "scanned_bytes": 29,
+        "decompressed": false
+      },
+      {
+        "file": "test_reproduction.py",
+        "scanned_bytes": 6673,
+        "decompressed": false
+      },
+      {
+        "file": "verified_output.json",
+        "scanned_bytes": 190934,
+        "decompressed": false
+      }
+    ],
+    "patterns_checked": [
+      "private_home",
+      "private_LAN",
+      "GPU_identifier",
+      "credential_material"
+    ],
+    "findings": [],
+    "gzip_payloads_scanned_after_decompression": true
+  },
+  "scope": "Known development cached numeric metrics only; frozen3return/50m labels cannot recompute observability; no GPU inference, fitting, qualification or selection."
+}

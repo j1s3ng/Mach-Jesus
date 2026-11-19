@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "scope": "Sanitized experiment setup; configurations are review extracts, not complete runnable worlds.",
+  "source_preparation_notes_sha256": "0f40f9868da5f71bbb9dfea2d129c919a91d582620ab83db53f7da645211da1f",
+  "baseline_behavior_change": false,
+  "baseline_instrumentation": "Per-entry telemetry_period_ms; hero20ms, other entries preserveglobal100ms default",
+  "candidate_config_key": "path_tracking.feedforward_curvature_smoothing_sigma_m",
+  "legacy_default": 0.0,
+  "physical_candidates_sigma_m": [
+    1.0,
+    2.0
+  ],
+  "smoothing_units": "Gaussian standard deviation in physical route metres; symmetric support radius3sigma",
+  "runs": {
+    "baseline-clear-001": {
+      "status": "CLOSED_BASELINE",
+      "preparation_sha256": "d1ae0992efccdd316a698a9a69970da345db1b5e614fc1fdb8fef68b61f76915",
+      "configuration_sha256": "3898ebc9fe164c7ad8391784788ec1a733fce4208f7cb28e958d2db72aa8356d",
+      "frozen_source_and_asset_pin_count": 68,
+      "source_module_sha256": {
+        "src/race_lidar/path_tracking.py": "32610b8cabfdb797bbc5080d17bd9624e404a8b4e9f07760401d8e37a06004a4",
+        "webots/controllers/tournament_racer/tournament_racer.py": "5af4ca31c1cd5d8407ba7be77be178d02f6e0bca36e3ad04db81b8928c6efc58"
+      },
+      "hero_path_tracking": {
+        "enabled": true,
+        "profile_preview_m": 0.0,
+        "profile_acceleration_feedforward": true,
+        "steering_method": "curvature_feedback",
+        "nominal_route_lane_rate_max_mps": 16.0,
+        "steering_lateral_reserve_factor": 1.6,
+        "understeer_gradient_s2_per_m": 0.002
+      },
+      "hero_telemetry_period_ms": 20,
+      "field_size": 1,
+      "seed": 607,
+      "perception_enabled": false,
+      "global_software_limits": {
+        "max_speed_mps": 60.0,
+        "lateral_accel_mps2": 8.0,
+        "brake_decel_mps2": 8.0,
+        "acceleration_mps2": 5.0
+      },
+      "hero_limits_override": {
+        "max_speed_mps": 100.0
+      }
+    },
+    "baseline-chase-001": {
+      "status": "CLOSED_QUALIFIED_WITH_EXACT_GUI_LAYOUT_EXCEPTION",
+      "preparation_sha256": "2c2f8b5099b14faf685010365c781dac8cb7d7bd2b0fd011e85d80764aa902ec",
+      "configuration_sha256": "b839418453c8b4bb03a50ca86cc8cd18ddaad6c1eb32fad06c340d4f7710d8ca",
+      "frozen_source_and_asset_pin_count": 64,
+      "source_module_sha256": {
+        "src/race_lidar/path_tracking.py": "32610b8cabfdb797bbc5080d17bd9624e404a8b4e9f07760401d8e37a06004a4",
+        "webots/controllers/tournament_racer/tournament_racer.py": "5af4ca31c1cd5d8407ba7be77be178d02f6e0bca36e3ad04db81b8928c6efc58"
+      },
+      "hero_path_tracking": {
+        "enabled": true,
+        "profile_preview_m": 0.0,
+        "profile_acceleration_feedforward": true,
+        "steering_method": "curvature_feedback",
+        "nominal_route_lane_rate_max_mps": 16.0,
+        "steering_lateral_reserve_factor": 1.6,
+        "understeer_gradient_s2_per_m": 0.002
+      },
+      "hero_telemetry_period_ms": 20,
+      "field_size": 20,
+      "seed": 607,
+      "perception_enabled": true,
+      "global_software_limits": {
+        "max_speed_mps": 60.0,
+        "lateral_accel_mps2": 8.0,
+        "brake_decel_mps2": 8.0,
+        "acceleration_mps2": 5.0
+      },
+      "hero_limits_override": {
+        "max_speed_mps": 100.0
+      },
+      "source_ui_adjudication_sha256": "f5b74a6c175395ed31382ac713cd07281cb58b58ce8779443f34670d236c8ebb"
+    },
+    "ff-sigma1-clear-001": {
+      "status": "CLOSED_CLEAN_SELECTED",
+      "preparation_sha256": "df459f97559e25a5482b57e0eaa9356ce6f6e1fc6f59a80f9db1a219ce67b279",
+      "configuration_sha256": "d6264cf3b42ff9b35d268f62e489ba77be34421091a1017670ee04400b5814c8",
+      "frozen_source_and_asset_pin_count": 68,
+      "source_module_sha256": {
+        "src/race_lidar/path_tracking.py": "c54abf9aec44f0c1afbca9d279d09ea0f4305cb1332d567defbf06bf0e7fe745",
+        "webots/controllers/tournament_racer/tournament_racer.py": "5af4ca31c1cd5d8407ba7be77be178d02f6e0bca36e3ad04db81b8928c6efc58"
+      },
+      "hero_path_tracking": {
+        "enabled": true,
+        "profile_preview_m": 0.0,
+        "profile_acceleration_feedforward": true,
+        "steering_method": "curvature_feedback",
+        "nominal_route_lane_rate_max_mps": 16.0,
+        "steering_lateral_reserve_factor": 1.6,
+        "understeer_gradient_s2_per_m": 0.002,
+        "feedforward_curvature_smoothing_sigma_m": 1.0
+      },
+      "hero_telemetry_period_ms": 20,
+      "field_size": 1,
+      "seed": 607,
+      "perception_enabled": false,
+      "global_software_limits": {
+        "max_speed_mps": 60.0,
+        "lateral_accel_mps2": 8.0,
+        "brake_decel_mps2": 8.0,
+        "acceleration_mps2": 5.0
+      },
+      "hero_limits_override": {
+        "max_speed_mps": 100.0
+      }
+    },
+    "ff-sigma2-clear-001": {
+      "status": "CLOSED_CLEAN_REJECTED",
+      "preparation_sha256": "b8cf3f4398d0541996763cd8bcef6a21eb4f75ac2b0f6028b887ab387541de7e",
+      "configuration_sha256": "e8a021f2759e3ea2b6512c8b59daeb940a0b213e48dd232fbbc2425038c3a8e9",
+      "frozen_source_and_asset_pin_count": 68,
+      "source_module_sha256": {
+        "src/race_lidar/path_tracking.py": "c54abf9aec44f0c1afbca9d279d09ea0f4305cb1332d567defbf06bf0e7fe745",
+        "webots/controllers/tournament_racer/tournament_racer.py": "5af4ca31c1cd5d8407ba7be77be178d02f6e0bca36e3ad04db81b8928c6efc58"
+      },
+      "hero_path_tracking": {
+        "enabled": true,
+        "profile_preview_m": 0.0,
+        "profile_acceleration_feedforward": true,
+        "steering_method": "curvature_feedback",
+        "nominal_route_lane_rate_max_mps": 16.0,
+        "steering_lateral_reserve_factor": 1.6,
+        "understeer_gradient_s2_per_m": 0.002,
+        "feedforward_curvature_smoothing_sigma_m": 2.0
+      },
+      "hero_telemetry_period_ms": 20,
+      "field_size": 1,
+      "seed": 607,
+      "perception_enabled": false,
+      "global_software_limits": {
+        "max_speed_mps": 60.0,
+        "lateral_accel_mps2": 8.0,
+        "brake_decel_mps2": 8.0,
+        "acceleration_mps2": 5.0
+      },
+      "hero_limits_override": {
+        "max_speed_mps": 100.0
+      }
+    }
+  },
+  "external_artifacts_inherited_unchanged_from_apex": true,
+  "candidate_performance_and_avoidance_qualification": "CLOSED_CLEAR_TRAFFIC_AND_CONTROLLED_MIDDLE_PASS",
+  "selected_sigma_m": 1.0,
+  "selection_scope": "Closed clear/traffic comparisons and one controlled middle pass; single run per condition, no general emergency-avoidance or multi-seed guarantee.",
+  "selection_audit_sha256": "415b05327fe776950c2c1723b188e379f4c49af763782abb354793dc5f3d9143",
+  "selected_traffic_candidate": {
+    "logical_run": "candidate-chase-001",
+    "sigma_m": 1.0,
+    "status": "CLOSED_CLEAN_STRICT_SOURCE_PINS",
+    "frozen_source_and_asset_pin_count": 62
+  },
+  "controlled_middle_candidate": {
+    "logical_run": "ff-sigma1-middle-001",
+    "sigma_m": 1.0,
+    "status": "CLOSED_CONTROLLED_MIDDLE_PASS"
+  },
+  "final_runtime_choice": "FEEDFORWARD_ONLY_SIGMA1_NO_ENTRY_DWELL",
+  "package_readiness": "READY_FOR_LOCAL_REVIEW"
+}

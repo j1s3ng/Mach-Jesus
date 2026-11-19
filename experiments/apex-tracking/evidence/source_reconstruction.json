@@ -1,0 +1,126 @@
+{
+  "all_17_runtime_and_2_generation_files_match": true,
+  "overlay_order": [
+    "base",
+    "apex-and-gap",
+    "smooth-steering",
+    "trajectory-trail-brake",
+    "selected-apex-tracking"
+  ],
+  "files": {
+    "webots/controllers/tournament_racer/tournament_racer.py": {
+      "match": true,
+      "layer": "selected-apex-tracking",
+      "sha256": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a",
+      "expected_sha256": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a"
+    },
+    "src/race_lidar/race_policy.py": {
+      "match": true,
+      "layer": "trajectory-trail-brake",
+      "sha256": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+      "expected_sha256": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8"
+    },
+    "src/race_lidar/race_control.py": {
+      "match": true,
+      "layer": "apex-and-gap",
+      "sha256": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+      "expected_sha256": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9"
+    },
+    "src/race_lidar/hotlap_driver.py": {
+      "match": true,
+      "layer": "apex-and-gap",
+      "sha256": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+      "expected_sha256": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad"
+    },
+    "src/race_lidar/learned_driver.py": {
+      "match": true,
+      "layer": "base",
+      "sha256": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+      "expected_sha256": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d"
+    },
+    "src/race_lidar/lidar_hazards.py": {
+      "match": true,
+      "layer": "base",
+      "sha256": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+      "expected_sha256": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd"
+    },
+    "src/race_lidar/rich_driver.py": {
+      "match": true,
+      "layer": "base",
+      "sha256": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+      "expected_sha256": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617"
+    },
+    "src/race_lidar/remote.py": {
+      "match": true,
+      "layer": "base",
+      "sha256": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+      "expected_sha256": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d"
+    },
+    "src/race_lidar/aggressive_hybrid.py": {
+      "match": true,
+      "layer": "selected-apex-tracking",
+      "sha256": "e2f71cd3048ce3d41a93bde7c4ba3dd7c2260254f25867dbdf0adddfb37ea6e0",
+      "expected_sha256": "e2f71cd3048ce3d41a93bde7c4ba3dd7c2260254f25867dbdf0adddfb37ea6e0"
+    },
+    "src/race_lidar/demo_chase.py": {
+      "match": true,
+      "layer": "apex-and-gap",
+      "sha256": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3",
+      "expected_sha256": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3"
+    },
+    "src/race_lidar/smooth_racing_line.py": {
+      "match": true,
+      "layer": "apex-and-gap",
+      "sha256": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+      "expected_sha256": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99"
+    },
+    "src/race_lidar/path_tracking.py": {
+      "match": true,
+      "layer": "selected-apex-tracking",
+      "sha256": "4ebe4956cd2bb6f7a78e122c9fec14ed1837d48a45e62be0cd2561d06c1ee840",
+      "expected_sha256": "4ebe4956cd2bb6f7a78e122c9fec14ed1837d48a45e62be0cd2561d06c1ee840"
+    },
+    "src/race_lidar/road_tyre_bounds.py": {
+      "match": true,
+      "layer": "apex-and-gap",
+      "sha256": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf",
+      "expected_sha256": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf"
+    },
+    "src/race_lidar/trail_braking.py": {
+      "match": true,
+      "layer": "trajectory-trail-brake",
+      "sha256": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+      "expected_sha256": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a"
+    },
+    "src/race_lidar/traffic_trajectories.py": {
+      "match": true,
+      "layer": "trajectory-trail-brake",
+      "sha256": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+      "expected_sha256": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86"
+    },
+    "src/race_lidar/continuous_geometry.py": {
+      "match": true,
+      "layer": "selected-apex-tracking",
+      "sha256": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+      "expected_sha256": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca"
+    },
+    "src/race_lidar/rejoin_trajectory.py": {
+      "match": true,
+      "layer": "selected-apex-tracking",
+      "sha256": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7",
+      "expected_sha256": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7"
+    },
+    "scripts/generate_hotlap_world.py": {
+      "match": true,
+      "layer": "selected-apex-tracking",
+      "sha256": "d1eff323d56b270a0b6e3c1ac01ba45f822e93beab8ae248aeb667b561878e2b",
+      "expected_sha256": "d1eff323d56b270a0b6e3c1ac01ba45f822e93beab8ae248aeb667b561878e2b"
+    },
+    "scripts/generate_tournament_world.py": {
+      "match": true,
+      "layer": "selected-apex-tracking",
+      "sha256": "efb62bb40c8bce2bc7bc35a672badd01297de833c15ee5bfc39d489f3d6badf3",
+      "expected_sha256": "efb62bb40c8bce2bc7bc35a672badd01297de833c15ee5bfc39d489f3d6badf3"
+    }
+  }
+}

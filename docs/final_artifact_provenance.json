@@ -1,0 +1,222 @@
+{
+  "status": "COMPLETE_SOURCE_VERIFIED73_STUDY_AND_ACTUAL_FINAL_MEDIA",
+  "documentation_cutoff_utc": "2026-11-14T20:47:10+00:00",
+  "publication": "deferred_by_project_owner",
+  "hosted_repository_dataset_checkpoint_or_video_URLs": null,
+  "source_reports": [
+    {
+      "role": "controlled_four_fits",
+      "original_project_relative_path": "runs/improvement-12h/training/controlled-ablation-report-001/controlled_table.json",
+      "sha256": "14577de6c4493e3ca88e549f05ac0669c99f1c492f5a79cdd51117ea28bcb5b7",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "native_augmentation_pair",
+      "original_project_relative_path": "runs/improvement-12h/training/rotation-augmentation-unrotated-analysis-001/result.json",
+      "sha256": "01f942744a697f14ea75b7e2130ab2bf7673bc42a842d83f74ada154eb325a3f",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "common_cutoff_qualification_diagnostic",
+      "original_project_relative_path": "final-submission/analysis/matched_cutoff_results.json",
+      "sha256": "19581634560ad638b2e553c42ad5fe8dc22a5f3e7a4a6e96b56f40e3e7849e43",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "capacity_five_rows",
+      "original_project_relative_path": "final-submission/analysis/hardware-capacity-20261114/report-002/table.json",
+      "sha256": "eebdf3449a0dbe015ed27146842ea174a0020b1404a310ca6a7c1f2503f9fb6a",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "CEM_independent_closed_search",
+      "original_project_relative_path": "runs/improvement-12h/analysis/cem-negative-independent-reaudit-001.json",
+      "sha256": "7c3eb3e8a5c6f3672b96dd939b9facba2f7dadd1c5b3b8af5a916ee31948f02f",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "completed_reference_baseline",
+      "original_project_relative_path": "runs/improvement-12h/evaluation-fast70-bootstrap/report.json",
+      "sha256": "c52dfc65905e4c8a86aef1857840400e2250364c1e79bf2ae54488054ce0f545",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "actual_frozen_roster",
+      "original_project_relative_path": "runs/improvement-12h/final-selection-001/roster.json",
+      "sha256": "2449870784392b64237495224027e2fdd715ea6f7dc2535ffa3494c4a57c6f0d",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "actual_complete73_evidence",
+      "original_project_relative_path": "runs/improvement-12h/final-evidence-002/evidence_report.json",
+      "sha256": "e5ba3c86e90fc30aedd8adc7efb150f07000d4f2bcaaaed316d071fe395c1628",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "actual_strict28_championship",
+      "original_project_relative_path": "runs/improvement-12h/final-championship-001/final-analysis/results.json",
+      "sha256": "dde4806157d745c233c31c3cc9aa1143cef91393abf93e2a4fd7e857db89ea27",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "actual_complete73_independent_verification",
+      "original_project_relative_path": "runs/improvement-12h/analysis/final73-current-full-verification-002.json",
+      "sha256": "98920429d5958aded4f17a3595f8b192a88308220117a2fbad3f3987d02a1df0",
+      "raw_report_requires_private_evidence_archive": true
+    },
+    {
+      "role": "actual_verifier_argument_repair_review",
+      "original_project_relative_path": "runs/improvement-12h/analysis/fresh73-roster-repair-independent-review-001.json",
+      "sha256": "cabcd953790b5fd3a3cd0177ae80d51f2c58d3016210389ce485f46452c65a7a",
+      "raw_report_requires_private_evidence_archive": true
+    }
+  ],
+  "completed_reference_baseline": {
+    "closed_cases": 15,
+    "clean_laps": 127,
+    "lap_entrants": 128,
+    "retained_20car_DNF": 1,
+    "passed_hazards": 3
+  },
+  "completed_CEM": {
+    "generations": 2,
+    "proposals_per_generation": 6,
+    "fitness_cases": 60,
+    "paired_development_validation_cases": 2,
+    "training_gain_seconds": 0.37543785112245587,
+    "paired_development_gain_seconds": -2.1868419185958032,
+    "eligible_for_larger_field_advancement": false
+  },
+  "completed_capacity": {
+    "cars": [
+      20,
+      24,
+      32,
+      48,
+      64
+    ],
+    "simulated_seconds_per_case": 60,
+    "frames_per_car": 300,
+    "total_verified_frames": 56400,
+    "64car_simulation_to_wall_ratio": 0.19563233753825687,
+    "full_lap_or_global_hardware_maximum_claimed": false
+  },
+  "final_aggregate_results": {
+    "status": "COMPLETE_SOURCE_VERIFIED_STUDY",
+    "required_cases": {
+      "baseline": 15,
+      "confirmation": 30,
+      "championship": 4,
+      "fresh_geometry": 24,
+      "total": 73
+    },
+    "current_verified73_report_sha256": "e5ba3c86e90fc30aedd8adc7efb150f07000d4f2bcaaaed316d071fe395c1628",
+    "current_verifier_sha256": "88c08afc0acae0e871e24829a36f7287c43863bf1d192c1fd0a560e5c2197fba",
+    "complete_source_verified_study": true,
+    "formal_promoted": false,
+    "qualified_champion_released": true,
+    "champion_policies": [
+      "reference"
+    ],
+    "confirmation_each_clean_laps": [
+      128,
+      128
+    ],
+    "confirmation_each_hazards_passed": [
+      3,
+      3
+    ],
+    "median_neural_to_reference_clean_time_ratio": 1.037373053170732,
+    "championship_valid_and_clean": [
+      80,
+      80
+    ],
+    "fresh_geometry_passes": [
+      24,
+      24
+    ],
+    "primary_scored_input_files": 3213,
+    "championship_ranked_policies": [
+      {
+        "rank": 1,
+        "policy": "reference",
+        "attempts": 20,
+        "clean_completions": 20,
+        "mean_position": 8.75,
+        "mean_finish_time_s": 268.80754477769807,
+        "race_wins": 1
+      },
+      {
+        "rank": 2,
+        "policy": "neural_rich005_seed17",
+        "attempts": 20,
+        "clean_completions": 20,
+        "mean_position": 9.7,
+        "mean_finish_time_s": 273.4406589328175,
+        "race_wins": 1
+      },
+      {
+        "rank": 3,
+        "policy": "neural_rich006_seed17",
+        "attempts": 20,
+        "clean_completions": 20,
+        "mean_position": 11.75,
+        "mean_finish_time_s": 280.40149285587364,
+        "race_wins": 1
+      },
+      {
+        "rank": 4,
+        "policy": "neural_rich005_seed7",
+        "attempts": 20,
+        "clean_completions": 20,
+        "mean_position": 11.8,
+        "mean_finish_time_s": 280.02728840338216,
+        "race_wins": 1
+      }
+    ],
+    "first_heat_winner_policy": "neural_rich005_seed7",
+    "fastest_individual_finish": {
+      "heat_id": "heat-2",
+      "car_id": "R02",
+      "policy": "neural_rich005_seed17",
+      "finish_time_s": 236.12370650870312,
+      "clean_finish": true
+    },
+    "all_heat_winner_starting_grid_indices": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "final_media": {
+    "status": "VERIFIED_ACTUAL116_SOURCE_FULL_DECODE_AND_FINAL_DECK",
+    "actual_video_sha256": "9c9269968cc1af98287c8a645f6dede2ff5a02ec5e110369cb6c4ddc0fd3df6d",
+    "actual_video_project_relative_path": "presentation/final-demo-v2/actual-render-002/final_demo_v2.mp4",
+    "actual_video_bytes": 9433184,
+    "seconds": 116,
+    "frames": 3480,
+    "normal_speed_seconds": 311,
+    "normal_speed_movie_sha256": "f9cf4eff4118ebbf06d9f804fac2b7d422817ecb5cc04779bbf745f3b8d5adfb",
+    "actual_final_paper_sha256": "de0768ebf081319d252da4bad7e222d2b03c941f72270c9ca1bf8f7c22165d84",
+    "actual_final_presentation_sha256": "347be96c14cd535ec7884ef2de658ab8d5393237fbabd713567cda1655cb498e",
+    "actual_final_presentation_PDF_sha256": "271ca075708c1e83db96776b7f8168abaea348ce9eb66d21a7e0fd0b9204140a",
+    "final_presentation_manifest_sha256": "b587e360620a4995cd74eaab74170f36466d3845978c8f7adccd00c975caa5bf",
+    "final_presentation_verification_sha256": "538cad268737d094f1b3cd15c4845976fc260e763146c6ea9595325d3e3eb75d",
+    "exact_movie_embedded_in_final_presentation": true,
+    "video_provenance_sha256": "5f65f8b5e7e9e370832fa39f37aa927308d6348547cbb04863d2220d6e472164",
+    "video_source_binding_sha256": "35ba2ce3536896a64e87543f52501bee4a969b66cfd84d51718711003d02fbf0",
+    "video_alignment_sha256": "14d6b993676c3865ed801d41d835b332e13677eef7b899d22aa6c64dd767e5c8",
+    "hosted_video_URL": null,
+    "actual_final_paper_source_sha256": "63ad26084b75f46c99be2f9b234b3d862d147a20c9988baa31df4e927cddeb16",
+    "actual_final_paper_buildproof_sha256": "f10e0036f2a02a989d3fe366295bf36d9418d365e8aedadcab4882f3371b5976",
+    "actual_final_paper_evidence_manifest_sha256": "b7d1dd486aee85815504482686d8b575c016b82a34f0b339777b88fc813a6f14"
+  },
+  "private_original_artifact_paths_receipts_or_archives_embedded": false,
+  "new_scoring_fitting_or_publication": false,
+  "source_code_snapshot_context": "Actual Git history retains65a094a->9e8c8ca->e3537b7; reviewed current verifier repair88c08afc is included in the later local export update.",
+  "historical_audit_failure": {
+    "original_failed_audit_and_old_verifier_retained": true,
+    "argument_spelling_repair_changes_scoring_or_outcomes": false
+  }
+}

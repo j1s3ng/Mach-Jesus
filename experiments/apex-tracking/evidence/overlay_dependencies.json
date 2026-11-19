@@ -1,0 +1,206 @@
+{
+  "status": "ALL_17_RUNTIME_DESTINATIONS_RESOLVE_EXACTLY",
+  "apply_order": [
+    "apex-and-gap",
+    "smooth-steering",
+    "trajectory-trail-brake",
+    "apex-tracking"
+  ],
+  "dependencies": [
+    {
+      "package": "apex-and-gap",
+      "manifest_sha256": "01b53aa69f489c71ee2fdccad5053e76e20d2552d5e0186bc3e5384279ab1ef1",
+      "files": [
+        {
+          "path": "overlay/src/race_lidar/aggressive_hybrid.py",
+          "destination": "src/race_lidar/aggressive_hybrid.py",
+          "sha256": "08bc7b9ece1b2bf7f64227c7825fab705ec91b883e6deddd20c8c457154a9b35"
+        },
+        {
+          "path": "overlay/src/race_lidar/path_tracking.py",
+          "destination": "src/race_lidar/path_tracking.py",
+          "sha256": "32610b8cabfdb797bbc5080d17bd9624e404a8b4e9f07760401d8e37a06004a4"
+        },
+        {
+          "path": "overlay/src/race_lidar/road_tyre_bounds.py",
+          "destination": "src/race_lidar/road_tyre_bounds.py",
+          "sha256": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf"
+        },
+        {
+          "path": "overlay/src/race_lidar/smooth_racing_line.py",
+          "destination": "src/race_lidar/smooth_racing_line.py",
+          "sha256": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99"
+        },
+        {
+          "path": "overlay/src/race_lidar/hotlap_driver.py",
+          "destination": "src/race_lidar/hotlap_driver.py",
+          "sha256": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad"
+        },
+        {
+          "path": "overlay/src/race_lidar/race_control.py",
+          "destination": "src/race_lidar/race_control.py",
+          "sha256": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9"
+        },
+        {
+          "path": "overlay/src/race_lidar/demo_chase.py",
+          "destination": "src/race_lidar/demo_chase.py",
+          "sha256": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3"
+        },
+        {
+          "path": "overlay/webots/controllers/tournament_racer/tournament_racer.py",
+          "destination": "webots/controllers/tournament_racer/tournament_racer.py",
+          "sha256": "75944a30803d2eb9c65b25cfd2c7413cf57259a756c626118b12eaf59cb0dd46"
+        },
+        {
+          "path": "overlay/webots/controllers/tournament_director/tournament_director.py",
+          "destination": "webots/controllers/tournament_director/tournament_director.py",
+          "sha256": "0bd9f32c34a4f0ed2ab7ae76ff45f6b9dced784e420eb19e8bccc0133cad80e6"
+        }
+      ]
+    },
+    {
+      "package": "smooth-steering",
+      "manifest_sha256": "682546a8cd846f8399b4050a89c6eb75e37310f56c54cf93b6486e1219ce9e2c",
+      "files": [
+        {
+          "path": "overlay/src/race_lidar/path_tracking.py",
+          "destination": "src/race_lidar/path_tracking.py",
+          "sha256": "c54abf9aec44f0c1afbca9d279d09ea0f4305cb1332d567defbf06bf0e7fe745"
+        },
+        {
+          "path": "overlay/webots/controllers/tournament_racer/tournament_racer.py",
+          "destination": "webots/controllers/tournament_racer/tournament_racer.py",
+          "sha256": "5af4ca31c1cd5d8407ba7be77be178d02f6e0bca36e3ad04db81b8928c6efc58"
+        }
+      ]
+    },
+    {
+      "package": "trajectory-trail-brake",
+      "manifest_sha256": "8327b2bee5a59e0616965d238aa3c69e1b0c44a877f41904b0d4250e2f342896",
+      "files": [
+        {
+          "path": "overlay/src/race_lidar/trail_braking.py",
+          "destination": "src/race_lidar/trail_braking.py",
+          "sha256": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a"
+        },
+        {
+          "path": "overlay/src/race_lidar/traffic_trajectories.py",
+          "destination": "src/race_lidar/traffic_trajectories.py",
+          "sha256": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86"
+        },
+        {
+          "path": "overlay/src/race_lidar/aggressive_hybrid.py",
+          "destination": "src/race_lidar/aggressive_hybrid.py",
+          "sha256": "a6bbb7bf68cd7345b0738e577b23949c8c6667861a0789b4f70a0412f0f7309e"
+        },
+        {
+          "path": "overlay/src/race_lidar/race_policy.py",
+          "destination": "src/race_lidar/race_policy.py",
+          "sha256": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8"
+        },
+        {
+          "path": "overlay/webots/controllers/tournament_racer/tournament_racer.py",
+          "destination": "webots/controllers/tournament_racer/tournament_racer.py",
+          "sha256": "7b01d1da4f8f433f60a47b8a50cdbb71b3f822541743950beb58233d71052aaf"
+        },
+        {
+          "path": "overlay/src/race_lidar/path_tracking.py",
+          "destination": "src/race_lidar/path_tracking.py",
+          "sha256": "cebd55228022f6a4498f568e31d1efbf0593b1a3c5f3fe12f9810a2c72e8818a"
+        }
+      ]
+    }
+  ],
+  "actual_runtime_modules": [
+    {
+      "destination": "webots/controllers/tournament_racer/tournament_racer.py",
+      "sha256": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/race_policy.py",
+      "sha256": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/race_control.py",
+      "sha256": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/hotlap_driver.py",
+      "sha256": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/learned_driver.py",
+      "sha256": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/lidar_hazards.py",
+      "sha256": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/rich_driver.py",
+      "sha256": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/remote.py",
+      "sha256": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/aggressive_hybrid.py",
+      "sha256": "e2f71cd3048ce3d41a93bde7c4ba3dd7c2260254f25867dbdf0adddfb37ea6e0",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/demo_chase.py",
+      "sha256": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/smooth_racing_line.py",
+      "sha256": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/path_tracking.py",
+      "sha256": "4ebe4956cd2bb6f7a78e122c9fec14ed1837d48a45e62be0cd2561d06c1ee840",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/road_tyre_bounds.py",
+      "sha256": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/trail_braking.py",
+      "sha256": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/traffic_trajectories.py",
+      "sha256": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/continuous_geometry.py",
+      "sha256": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+      "matches_actual_import": true
+    },
+    {
+      "destination": "src/race_lidar/rejoin_trajectory.py",
+      "sha256": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7",
+      "matches_actual_import": true
+    }
+  ],
+  "generation_edits_not_actor_imports": [
+    "scripts/generate_hotlap_world.py",
+    "scripts/generate_tournament_world.py"
+  ],
+  "no_overlay_applied_during_packaging": true
+}

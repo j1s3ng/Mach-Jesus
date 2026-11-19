@@ -1,0 +1,245 @@
+{
+  "status": "downloads_not_hosted_yet",
+  "artifacts": [
+    {
+      "role": "original_detector",
+      "source": "runs/improvement-12h/checkpoints/official_voxelnext.pth",
+      "exists": true,
+      "bytes": 32157961,
+      "sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "learned_full_backbone",
+      "source": "runs/improvement-12h/training/detector-full-dense1200-s7/candidate_step_1200.pth",
+      "exists": true,
+      "bytes": 32161011,
+      "sha256": "a178d77381ad5f6a8d1af8bea6e6a77f7de12034d17bc6b5d49875e4bdc7eaed",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": null
+    },
+    {
+      "role": "calibrated_detector_pipeline",
+      "source": "runs/improvement-12h/training/full-dense-score-calibration-001/candidate_tau0425.pth",
+      "exists": true,
+      "bytes": 32161579,
+      "sha256": "0a68a778cb676eea56d1da60131ac55ab190a78e2ba14537fec13c2b996d63f6",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "hard_negative_miner_for_exact_retraining",
+      "source": "runs/improvement-12h/training/detector-head-600-neg3-s7/candidate_step_600.pth",
+      "exists": true,
+      "bytes": 32160271,
+      "sha256": "b6bcd4122af93becdc22327afb01a1bdc786be7d5ef52b9dc841da31c7358f5a",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": null
+    },
+    {
+      "role": "rich005_seed7",
+      "source": "runs/improvement-12h/rich-driver-005/seed-7/model.npz",
+      "exists": true,
+      "bytes": 277960,
+      "sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "rich005_seed17",
+      "source": "runs/improvement-12h/rich-driver-005/seed-17/model.npz",
+      "exists": true,
+      "bytes": 277964,
+      "sha256": "d9837d76d29f80368dae8ec8f611aa67b4c3e7885ed5bab51876fbff34afd9da",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": null
+    },
+    {
+      "role": "track_reference",
+      "source": ".local/f1-reference/reference.npz",
+      "exists": true,
+      "bytes": 19930,
+      "sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "controlled-head-lr1e-4-s7",
+      "source": "runs/improvement-12h/training/controlled-head-lr1e-4-s7/candidate_step_1200.pth",
+      "exists": true,
+      "bytes": 32161011,
+      "sha256": "26fbe1e89849f560acdef019f74aa34607cd19327ee388e17c17b3216e23c893",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "controlled-full-uniform-lr1e-4-s7",
+      "source": "runs/improvement-12h/training/controlled-full-uniform-lr1e-4-s7/candidate_step_1200.pth",
+      "exists": true,
+      "bytes": 32161011,
+      "sha256": "dfc7d9fabbb06f8634651d7fcfa7106981707e5618dd5c03430509a017afbe6c",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "controlled-full-uniform-lr1e-5-s7",
+      "source": "runs/improvement-12h/training/controlled-full-uniform-lr1e-5-s7/candidate_step_1200.pth",
+      "exists": true,
+      "bytes": 32161011,
+      "sha256": "bd8c1ecf79bfd9f1f783131f057ad4763e8eb71df9814175dbe5dc4f34bf5b41",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "controlled-full-mixed-head1e-4-backbone1e-5-s7",
+      "source": "runs/improvement-12h/training/controlled-full-mixed-head1e-4-backbone1e-5-s7/candidate_step_1200.pth",
+      "exists": true,
+      "bytes": 32161011,
+      "sha256": "1767d6a1b460b3b415ea0b3448ce49ac09cff45703d4b9ce8c3c813fa40e5125",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "controlled-full-mixed-rotaug4-v2-s7",
+      "source": "runs/improvement-12h/training/controlled-full-mixed-rotaug4-v2-s7/candidate_step_1200.pth",
+      "exists": true,
+      "bytes": 32161587,
+      "sha256": "d83d7e1b4b19c40c5e72ac86712a8141a6ea2e9e1037cd918a76df2dd3c4da9e",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "rich006_seed17",
+      "source": "runs/improvement-12h/rich-driver-006/seed-17/model.npz",
+      "exists": true,
+      "bytes": 281320,
+      "sha256": "730802bc23036458e76007f0f17b8f13a3894457e14d82b642f8f571f84d83c6",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": false
+    },
+    {
+      "role": "rich006_fitting_examples",
+      "source": "runs/improvement-12h/rich-driver-006/fitting_examples.npz",
+      "exists": true,
+      "bytes": 47833026,
+      "sha256": "f853564c13d4699dece84030aac0bf32256458193980706be64d27c821dd17ba",
+      "download_url": null,
+      "delivery": "separate_processed_TRAIN_companion",
+      "publication_terms_verified": false
+    }
+  ],
+  "dataset_release": {
+    "download_url": null,
+    "unique_point_bytes_before_compression": 6151686624,
+    "sets": [
+      {
+        "role": "train",
+        "dataset": "training/detector-dense-dataset-001",
+        "manifest": "train.jsonl",
+        "frames": 10233,
+        "visible_targets": 16613,
+        "point_bytes": 2484891072,
+        "manifest_sha256": "3eecae9f9568d4108d2511ca7a19e4c463db032100ae8f5126f7aaafa132edf7"
+      },
+      {
+        "role": "development",
+        "dataset": "training/detector-dense-dataset-001",
+        "manifest": "val.jsonl",
+        "frames": 6144,
+        "visible_targets": 8155,
+        "point_bytes": 1485526432
+      },
+      {
+        "role": "qualification_only",
+        "dataset": "training/detector-calibrated-qualification-data-001",
+        "manifest": "val.jsonl",
+        "frames": 8955,
+        "visible_targets": 20536,
+        "point_bytes": 2181269120,
+        "manifest_sha256": "58e8f929bc21e8973ec14724f6f0e46fc2f6263dc26adbb69e473bb0d29f2110"
+      }
+    ],
+    "preserve": [
+      "dataset.json, train.jsonl, val.jsonl and exact point-file hashes",
+      "training_sources.json + exact source_configs bytes and grandfathering exception manifest",
+      "whole-run split roles, sealed ancestor configs and exact-cloud duplicate-exclusion report",
+      "offline raw GT pose logs + capture manifests and point-path mapping for exporter reproduction",
+      "original predictions, per-group gate definitions/decisions, all earlier rejections",
+      "actual historical trainer snapshot, environment, mining/gradient/input audits",
+      "TRAIN-only score protocol, report, selection and reservation hashes"
+    ],
+    "deduplicate_shared_training_clouds": true,
+    "heldout_inputs_may_be_used_for_training": false
+  },
+  "official_source": {
+    "component": "VoxelNeXt",
+    "repository": "https://github.com/JIA-Lab-research/VoxelNeXt",
+    "revision": "b5b7d393cd1d0ecbbaeaca365b453b488791035d",
+    "model_config": "tools/cfgs/nuscenes_models/cbgs_voxel0075_voxelnext.yaml",
+    "model_config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d"
+  },
+  "full_retraining_requires_external_artifacts": true,
+  "v2_status": "The complete 73-case study is source verified. Reference qualifies among four tested policies; the neural finalist is not promoted. Models and fitting arrays are verified local private artifacts. Publication and hosted access are deferred. The actual 116-second same-heat movie is fully decoded and source verified; its 311-second normal-speed counterpart is retained.",
+  "historical_media": [
+    {
+      "role": "hosted_video_candidate",
+      "source": "presentation/CMPE249_Demo.mp4",
+      "exists": true,
+      "bytes": 4901632,
+      "sha256": "4ef438c4b7e3ef391f1b51a40355d40ce4376fcf69faf3ea221acca8d094bb64",
+      "download_url": null,
+      "delivery": "separate_hash_verified_artifact",
+      "publication_terms_verified": null
+    }
+  ],
+  "final_study": {
+    "status": "COMPLETE_SOURCE_VERIFIED_STUDY",
+    "evidence_report_sha256": "e5ba3c86e90fc30aedd8adc7efb150f07000d4f2bcaaaed316d071fe395c1628",
+    "required_case_counts": {
+      "baseline": 15,
+      "confirmation": 30,
+      "championship": 4,
+      "fresh_geometry": 24,
+      "total": 73
+    },
+    "formal_promoted": false,
+    "qualified_champion_released": true,
+    "champion_policies": [
+      "reference"
+    ]
+  },
+  "final_media": {
+    "status": "VERIFIED_ACTUAL116_FULL_DECODE_AND_SOURCE_PROOF",
+    "source": "presentation/final-demo-v2/actual-render-002/final_demo_v2.mp4",
+    "sha256": "9c9269968cc1af98287c8a645f6dede2ff5a02ec5e110369cb6c4ddc0fd3df6d",
+    "bytes": 9433184,
+    "seconds": 116,
+    "frames": 3480,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "audio": false,
+    "download_url": null,
+    "publication_terms_verified": false,
+    "normal_speed_source": "presentation/final-demo-v2/actual-render-002/full_heat_normal_speed.mp4",
+    "normal_speed_sha256": "f9cf4eff4118ebbf06d9f804fac2b7d422817ecb5cc04779bbf745f3b8d5adfb",
+    "normal_speed_seconds": 311,
+    "final_presentation_pptx_sha256": "347be96c14cd535ec7884ef2de658ab8d5393237fbabd713567cda1655cb498e",
+    "final_presentation_PDF_sha256": "271ca075708c1e83db96776b7f8168abaea348ce9eb66d21a7e0fd0b9204140a"
+  }
+}

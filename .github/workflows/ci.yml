@@ -1,0 +1,43 @@
+name: CPU checks
+
+"on": [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  portable:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install CPU dependencies
+        run: python -m pip install -e '.[test,reproduction]'
+      - name: Check installed imports outside the checkout
+        working-directory: ${{ runner.temp }}
+        run: python -c 'import race_lidar, training.inference, training.workflow'
+      - name: Check local capabilities
+        run: python -m race_lidar doctor
+      - name: Run portable regression tests
+        run: python -m pytest -q -p no:cacheprovider --basetemp "$RUNNER_TEMP/race-lidar-pytest"
+      - name: Reproduce cached qualification metrics
+        run: python scripts/evaluate_cached_qualification.py --output "$RUNNER_TEMP/qualification.json"
+      - name: Reproduce cached native-view metrics
+        run: python -I reproduction/controlled-native/reproduce.py --output "$RUNNER_TEMP/native.json"
+      - name: Reproduce cached rotation metrics
+        run: python -I reproduction/controlled-rotation/reproduce.py --output "$RUNNER_TEMP/rotation.json"
+      - name: Reproduce saved motion measurements
+        run: python -I reproduction/control-cadence/reproduce.py --output-dir "$RUNNER_TEMP/control-cadence"
+      - name: Run the synthetic CPU demo
+        run: python -m race_lidar demo --output "$RUNNER_TEMP/cpu-demo" --frames 20

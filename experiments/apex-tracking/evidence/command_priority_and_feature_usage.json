@@ -1,0 +1,56 @@
+{
+  "scope": "CLOSED own-body yaw feedback and provisional checked-return audit; no driving/safety improvement inferred solely from arithmetic conformity.",
+  "attempt": "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001",
+  "terminal_command_poststep_world_s": 214.42000000000002,
+  "postterminal_cached_rows_excluded": 0,
+  "input_alignment": "Metadata at row i uses previous own-body poststep state row i-1; logged own gyro/slip at row i belong to its resulting body state.",
+  "yaw_feedback": {
+    "counts": {},
+    "failures": {},
+    "passed": true,
+    "failure_examples": [],
+    "active_commands": []
+  },
+  "static_actuator_return_evidence": {
+    "scope": "Static frozen source evidence only: final method returns steering/metadata; caller does not assign throttle/brake from that return. No missing pre-throttle counterfactual is inferred.",
+    "actor_return_assignment_targets": [
+      "(steering, tracking_metadata)"
+    ],
+    "method_return_expressions": [
+      "(command, result)",
+      "(steering, metadata)"
+    ],
+    "caller_assigns_only_steering_and_metadata": true,
+    "method_return_shape_is_steering_metadata_only": true,
+    "source_sha256": {
+      "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001/source/webots/controllers/tournament_racer/tournament_racer.py": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a",
+      "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001/source/src/race_lidar/path_tracking.py": "4ebe4956cd2bb6f7a78e122c9fec14ed1837d48a45e62be0cd2561d06c1ee840"
+    }
+  },
+  "checked_nominal_probes": {
+    "counts": {},
+    "failures": {},
+    "passed": true,
+    "events": []
+  },
+  "preterminal_final_command_priority": {
+    "scope": "Final recorded brake/steering commands, software floors and existing limits; not measured tire forces.",
+    "counts": {
+      "computed_commands": 10671,
+      "mandatory_brake_commands": 155,
+      "point88_brake_commands": 296,
+      "zero_steering_budget_commands": 0
+    },
+    "violations": {},
+    "violation_examples": [],
+    "passed": true
+  },
+  "native_safety_clean": true,
+  "passed": true,
+  "script_sha256": "fd56e88a15a67e8f8f75cef7e7969e3d9ef25d25030f173b3b40ccfc91eacdf8",
+  "input_sha256": {
+    "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001/race/cars/R20/control_trace.jsonl": "b3ce26278ff270d0933ef2be9e9b3538c59346ccc0dff3e319fe02fefd5f4c78",
+    "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001/race/cars/R20/policy_actions.jsonl": "37594071a1cacabb637a39eb029713ec7029ed9c4c226df71d77492758f66b17",
+    "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001/terminal.json": "3290911cb491d287c1da385b1c0ecd2010ceb5c994d2fd1f9fe87696b32c678f"
+  }
+}

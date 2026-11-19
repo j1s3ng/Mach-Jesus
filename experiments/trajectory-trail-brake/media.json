@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "status": "READY_FOR_LOCAL_REVIEW",
+  "selected_risk_weight_mps": 0.0,
+  "source_handoff_sha256": "493de0eb544cc873479d6b839f0f3d434825af60d30e85b2c1944665371c232e",
+  "source_handoff_created_utc": "2026-11-17T21:33:34.229054+00:00",
+  "assets": {
+    "short_video": {
+      "sha256": "11551374072785eed50ac940aae4d300b559c5bfc4418559b6a075bb135a38b0",
+      "bytes": 12312146,
+      "public_relative_link": "../../docs/Trajectory_Trail_Brake_Demo.mp4",
+      "frames": 3360,
+      "fps": 30.0,
+      "seconds": 112.0,
+      "size": [
+        1280,
+        720
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p",
+      "full_ffmpeg_decode_passed": true,
+      "verification_method": "OpenCV container metadata plus full FFmpeg decode and final progress frame count",
+      "decode_log_sha256": "9a9a17cbf63fd911524a2bc12ad3b04a96efdc9562d908366109c6ed33eedb15"
+    },
+    "normal_video": {
+      "sha256": "fe789d0d0eae6ee93c0bd21f875c02d6019dfeb81dddc6bda713d7aa702abb9c",
+      "bytes": 16278210,
+      "public_relative_link": "../../docs/Trajectory_Trail_Brake_Normal_Speed.mp4",
+      "frames": 1189,
+      "fps": 5.0,
+      "size": [
+        1280,
+        720
+      ],
+      "full_ffmpeg_decode_passed": true,
+      "decode_log_sha256": "9b15bdee7fc2991b7e906668c8aad1c3e0ef15b091008625157e881659c97645",
+      "seconds": 237.8
+    },
+    "standalone_viewer": {
+      "sha256": "e7992334791d2f421ee03d6b89a91c1870ec2747e54e19d2300aaae87f42ec41",
+      "bytes": 6627990,
+      "public_relative_link": "../../docs/Trajectory_Replay.html"
+    },
+    "traffic_poster": {
+      "sha256": "f26090a8d67e9a8b35d46cb1ae110ec554544d46131a5d14f60d85ecb22efde7",
+      "bytes": 182884,
+      "public_relative_link": "../../docs/trajectory-trail-brake-demo.jpg"
+    }
+  },
+  "native_camera_frames": 1189,
+  "all_native_camera_frames_retained": true,
+  "driving_section_simulation_speed_multiplier": 2.378,
+  "actual_trail_release_summary": {
+    "samples": 11846,
+    "shaped_samples": 8,
+    "shaped_sample_duration_s": 0.16,
+    "final_comparison_samples": 11846,
+    "final_unoverridden_release_samples": 8,
+    "final_unoverridden_release_duration_s": 0.16,
+    "final_net_reduced_vs_coordinator_input_samples": 8,
+    "later_raised_after_coordinator_samples": 0,
+    "final_release_definition": "Coordinator reported shaping; final commanded brake < coordinator input-1e-9 and <=coordinator output+1e-9; not measured tyre force",
+    "state_counts": {
+      "GUARD PRIORITY": 626,
+      "BYPASS": 9951,
+      "DRIVE / COAST": 980,
+      "ACTIVE RELEASE": 8,
+      "MAP FLOOR": 281
+    },
+    "reason_counts": {
+      "traffic_road_or_mandatory_deceleration_priority": 626,
+      "selected_route_not_explicitly_approved_captured_nominal": 9792,
+      "no_requested_brake_no_tail_added": 980,
+      "current_target_braking_priority": 159,
+      "approved_turn_in_discretionary_brake_release": 8,
+      "future_profile_floor_dominates_requested_brake": 281
+    },
+    "dominant_bypass_reason": "selected_route_not_explicitly_approved_captured_nominal",
+    "display": "APPROVED COORDINATED RELEASE OBSERVED",
+    "scope": "This run's 50 Hz coordination samples before final stability/guards; actual final pedals remain separate",
+    "zero_does_not_claim_traffic_release": true
+  },
+  "actual_trajectory_evidence": {
+    "decisions": 1185,
+    "horizon_s": 3.0,
+    "opponent_GT_used": false,
+    "logged_candidate_and_hold_assessments": 6410,
+    "decisions_with_any_reported_hard_veto": 0,
+    "assessments_with_nonzero_reported_soft_risk_cost": 0,
+    "zero_is_not_a_triggered_hard_veto_demonstration": true,
+    "future_lines_are_predictions_not_actual_paths": true
+  },
+  "qa": {
+    "independent_encoded_video_and_browser_visual_review_passed": true,
+    "both_video_full_decodes_passed": true,
+    "video_provenance_sha256": "50404ed8f734e13d98ff241c73296c169e3f12c5d76294b952b4df14105956f2",
+    "frame_qa_sha256": "ac2789cab9b55e3ec22ff4d59399b00216d2234935a5a8f1b063c8eb4b2d63c7",
+    "contact_sheet_sha256": "4ab2523cb53a0afc967d52d5342192591fec70692acf43fd3217711ac903f5e4",
+    "viewer_provenance_sha256": "6ab956ac9316d4fe0ba2cc34f7e3585b2a458bfea235966af3ed89e8f0052914",
+    "viewer_qa_sha256": "8a0de349bc8dd0d5dfbca68a2b4cbfc51956383c5de25e652a35a6af8b4eedac",
+    "viewer_browser_anomaly_screenshot_sha256": "16ebc8a928df6c1b5325b3320f80c5ec3f3490bea06243cc69418396b8009fa6",
+    "raw_anomaly_snapshot_world_s": 37.2,
+    "raw_anomaly_retained_without_clamp_or_drop": true
+  },
+  "source_tools": {
+    "build_video_v4.py": {
+      "sha256": "3b3ef69decc5d5c143151d5834e99d7b4272eeb2d863b4e242f5af6a7ec827c5",
+      "bytes": 93763
+    },
+    "build_readable_viewer_v4.py": {
+      "sha256": "0de87a4cb52ed69522486581f051278348563cc8d394f399bcb72179af64d41e",
+      "bytes": 18106
+    },
+    "viewer-readable-v4.html.template": {
+      "sha256": "7d83c535536ae17452c63afd0056ad052abf20635d6c4628c9d4ead41bf834b1",
+      "bytes": 16435
+    }
+  },
+  "comparison_caption": {
+    "risk0_first_reference_crossing_s": 235.90266831254482,
+    "risk025_first_reference_crossing_s": 241.0625170033811,
+    "prior_FF1_first_reference_crossing_s": 231.36975,
+    "risk0_minus_prior_FF1_s": 4.532918312544808,
+    "risk0_steering_TV_per_s_change_vs025_percent": -12.122420183079473,
+    "native_pareto_report": {
+      "sha256": "6cc8dadcb03732fa67f696d2f5a6749e79724bf09a9b02b01e8c9d108b7874a5",
+      "bytes": 18697
+    },
+    "prior_FF1_source": "Root-verified prior native timing supplied in final rendering task; retained comparison, not recomputed by media renderer.",
+    "caption": "First reference crossing235.903s:4.533s slowerthanpriorFF1231.370s. SteeringcommandTV/time12.12%lowerthanrisk0.25. Singleengineeringcomparison,nofastest/universalbestclaim. Softforecastcostdisabled;zeroobservedhardveto,noperformanceattributiontothoseinertpathways."
+  },
+  "forecast_quality_limit": {
+    "noncredible_anomaly_track_rows": 1,
+    "noncredible_anomaly_decisions": 1,
+    "hard_credible_anomaly_rows": 0,
+    "forced_retained_decision_world_s": [
+      37.2
+    ],
+    "details": [
+      {
+        "decision_world_s": 37.2,
+        "track_id": "28",
+        "measurement_world_s": 36.6,
+        "age_s": 0.6000000000000014,
+        "vehicle_evidence": true,
+        "kind": "NONCREDIBLE_MEAN_OUTSIDE_LOGGED_INTERVAL",
+        "future_samples": [
+          {
+            "future_s": 2.8000000000000003,
+            "progress_escape_m": 1.7770179910843353,
+            "lateral_escape_m": 0.0
+          }
+        ],
+        "maximum_escape_m": 1.7770179910843353,
+        "raw_values_clamped_or_dropped": false,
+        "hard_veto_credible": false
+      }
+    ],
+    "raw_mean_and_tube_retained": true,
+    "intervals_are_not_a_guaranteed_enclosure": true
+  },
+  "forecast_exception_receipt_sha256": "6afd8884edfe3d385649ccee3d9bee4f02df2af2f43bcff2ab3440357a199b97",
+  "source_native_preflight_sha256": "6cc8dadcb03732fa67f696d2f5a6749e79724bf09a9b02b01e8c9d108b7874a5",
+  "historical_unselected_risk025_media_handoff_sha256": "b14d2bbd32eb85d175da828a891b4e463fe30c6775b8b023cfcc45ea9b32c579",
+  "ground_truth_display_only_never_driver_input": true,
+  "scope": "Selected zero-soft-cost experimental replay; slower first circuit than the prior feedforward baseline. Raw forecast-bound defect retained. No full-distance race victory, universal-best or conservative-interval guarantee.",
+  "public_copy_performed_by_export_agent": false,
+  "redactions": [
+    "Private filesystem and infrastructure locations omitted.",
+    "Raw source logs, weights and NPZ archives are not distributed."
+  ]
+}

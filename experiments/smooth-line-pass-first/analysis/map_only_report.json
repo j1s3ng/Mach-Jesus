@@ -1,0 +1,95 @@
+{
+  "version": "periodic-minimum-curvature-line-v1",
+  "optimization_executed_this_instance": true,
+  "plan_artifact_sha256": "b46bd54fdb842b33e599477fed58aaed76e4f8b7e059d03b43ae5ce02652a785",
+  "scope": "known approximate simulator map; not a surveyed F1 racing line",
+  "reference_length_m_for_ranking": 5227.131662140477,
+  "original_reference_geometry_changed": false,
+  "nominal_offset_limit_m": 2.8,
+  "passing_offset_limit_m": 4.0,
+  "maximum_nominal_offset_m": 2.7393042915516,
+  "maximum_offset_slope_m_per_m": 0.11557847348018839,
+  "nominal_lateral_rate_budget_mps": 1.4,
+  "maximum_profile_lateral_rate_mps": 1.3340821065637671,
+  "limits": {
+    "max_speed": 100.0,
+    "lateral_accel": 8.0,
+    "brake_decel": 8.0,
+    "acceleration": 5.0
+  },
+  "baseline": {
+    "line_length_m": 5227.131662140477,
+    "integrated_squared_curvature": 0.5473821577337991,
+    "maximum_absolute_curvature_per_m": 0.08474173265619023,
+    "estimated_flying_lap_s": 170.53125240484044,
+    "minimum_profile_speed_mps": 9.716197269153565,
+    "maximum_profile_speed_mps": 86.02291820041884
+  },
+  "optimized": {
+    "line_length_m": 5222.63134839992,
+    "integrated_squared_curvature": 0.46856287158797033,
+    "maximum_absolute_curvature_per_m": 0.073173570061043,
+    "estimated_flying_lap_s": 166.82777430276843,
+    "minimum_profile_speed_mps": 10.456055296651417,
+    "maximum_profile_speed_mps": 85.30841687584628
+  },
+  "optimization": {
+    "enabled": true,
+    "method": "bounded_sparse_periodic_true_curvature_least_squares",
+    "known_map_only": true,
+    "max_nfev": 300,
+    "nfev": 173,
+    "success": true,
+    "status": 2,
+    "message": "`ftol` termination condition is satisfied.",
+    "cost": 0.2123901074707985,
+    "solver_converged": true,
+    "global_optimum_claimed": false,
+    "selected_smoothing_distance_m": 6.0,
+    "selected_zero_offset_fallback": false,
+    "candidate_metrics": [
+      {
+        "smoothing_distance_m": null,
+        "line_length_m": 5227.131662140477,
+        "integrated_squared_curvature": 0.5473821577337991,
+        "maximum_absolute_curvature_per_m": 0.08474173265619023,
+        "estimated_flying_lap_s": 170.53125240484044,
+        "minimum_profile_speed_mps": 9.716197269153565,
+        "maximum_profile_speed_mps": 86.02291820041884
+      },
+      {
+        "smoothing_distance_m": 6.0,
+        "line_length_m": 5222.63134839992,
+        "integrated_squared_curvature": 0.46856287158797033,
+        "maximum_absolute_curvature_per_m": 0.073173570061043,
+        "estimated_flying_lap_s": 166.82777430276843,
+        "minimum_profile_speed_mps": 10.456055296651417,
+        "maximum_profile_speed_mps": 85.30841687584628
+      },
+      {
+        "smoothing_distance_m": 12.0,
+        "line_length_m": 5223.202668952739,
+        "integrated_squared_curvature": 0.49370988797268345,
+        "maximum_absolute_curvature_per_m": 0.0719818183788983,
+        "estimated_flying_lap_s": 169.46226829762264,
+        "minimum_profile_speed_mps": 10.542256696526017,
+        "maximum_profile_speed_mps": 85.63328192423438
+      },
+      {
+        "smoothing_distance_m": 20.0,
+        "line_length_m": 5225.04609570608,
+        "integrated_squared_curvature": 0.5007320570438047,
+        "maximum_absolute_curvature_per_m": 0.08223363163551729,
+        "estimated_flying_lap_s": 169.68715946130192,
+        "minimum_profile_speed_mps": 9.863254933973325,
+        "maximum_profile_speed_mps": 85.79555274384701
+      }
+    ]
+  },
+  "estimated_lap_time_is_model_only_not_a_simulation_result": true,
+  "construction_wall_seconds": 3.0218698749959003,
+  "module_sha256": "a6a3d68b1be0a81ecaaa307905df237a9a10298fe723f29d1ff79b991d00410f",
+  "reference_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e",
+  "curvature_energy_reduction_percent": 14.399315913428046,
+  "estimated_flying_lap_gain_seconds": 3.703478102072012
+}

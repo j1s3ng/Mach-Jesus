@@ -1,0 +1,16 @@
+{
+  "captured": true,
+  "synthetic_array_fixture": false,
+  "original_split": "train",
+  "coordinate_frame": "ego_x_forward_y_left_z_up",
+  "frame_id": "184c75ab91665e0ecc73d463",
+  "points_sha256": "25be182a66b248d8b8f0e61c5e2ebde6081c64b2fb655aded68dabcf66dea5a5",
+  "source_manifest_sha256": "3eecae9f9568d4108d2511ca7a19e4c463db032100ae8f5126f7aaafa132edf7",
+  "point_columns": [
+    "x",
+    "y",
+    "z",
+    "intensity"
+  ],
+  "GT_sent_to_inference": false
+}

@@ -1,0 +1,1308 @@
+{
+  "scope": "Three CLOSED clear-track standing laps; one run per predeclared setting, not a multi-seed racing champion or traffic-avoidance proof.",
+  "selected_candidate": "sigma1",
+  "selection_reason": "Fastest clean observed lap with balanced reductions in total variation, rate/acceleration RMS and rapid reversals; near-identical nominal capture.",
+  "candidates": {
+    "sigma1": {
+      "same_pinned_map_line_models_road_and_vehicle_assets": true,
+      "normalized_world_and_geometry_metadata_byte_equal": true,
+      "only_runtime_source_change": "src/race_lidar/path_tracking.py",
+      "config_equal_after_path_normalization_and_exact_sigma_setting_removal": true,
+      "feedforward_curvature_smoothing_sigma_m": 1.0,
+      "lap_time_s": 189.036098729852,
+      "lap_delta_s": -0.8716083289579615,
+      "valid_lap": true,
+      "supervisor_two_center_violations": 0,
+      "supervisor_minimum_centers": 2,
+      "supervisor_overlap_samples": 0,
+      "pose_resets": 0,
+      "nominal_capture_fraction": 0.9931231485399915,
+      "fixed18corner_mean_speed_delta_kph": 0.6440126274469306,
+      "fixed18corner_median_speed_delta_kph": 0.36242634008953517,
+      "fixed18corner_faster_count": 17,
+      "fixed18corner_maximum_actual_nominal_xy_error_m": 0.4310052147073916,
+      "recorded50hz_metrics": {
+        "sample_count": 9452,
+        "continuous_interval_duration_s": 189.02,
+        "command_total_variation_rad": 14.141219022100124,
+        "total_variation_rad_per_s": 0.07481334791080374,
+        "absolute_steering_rate_radps": {
+          "50": 0.03466656067462079,
+          "90": 0.15104154890656146,
+          "95": 0.2795122215403929,
+          "99": 0.8571279521503814,
+          "100": 3.174576925174346
+        },
+        "steering_rate_rms_radps": 0.15856581648585336,
+        "absolute_steering_acceleration_radps2": {
+          "50": 0.6975399702266045,
+          "90": 3.708871092487925,
+          "95": 8.490017821416613,
+          "99": 36.803451524045336,
+          "100": 208.72884625871393
+        },
+        "steering_acceleration_rms_radps2": 7.872414801452181,
+        "direction_changes_with_0point005rad_excursion": 232,
+        "rapid_successive_direction_changes_within1s": 175,
+        "highpass_above1hz_command_rms_rad": 0.006748577664414121,
+        "mean_speed_mps": 27.727367903515738,
+        "max_abs_path_cross_error_m": 1.3756983583810496,
+        "nominal_capture_fraction": 0.9931231485399915,
+        "lateral_proxy_limit_active_fraction": 0.009310198899703767,
+        "physics_slew_limit_exceeded_intervals": 6,
+        "method_switches": 2,
+        "geometry_switches": 2
+      },
+      "metric_deltas_from_baseline": {
+        "baseline": "baseline",
+        "candidate": "sigma1",
+        "same_telemetry_cadence": true,
+        "total_variation_rad_per_s": {
+          "baseline": 0.09013982903474878,
+          "candidate": 0.07481334791080374,
+          "change_percent": -17.003006648744257
+        },
+        "steering_rate_rms_radps": {
+          "baseline": 0.21368266371872133,
+          "candidate": 0.15856581648585336,
+          "change_percent": -25.793785173616325
+        },
+        "steering_acceleration_rms_radps2": {
+          "baseline": 11.781314662576573,
+          "candidate": 7.872414801452181,
+          "change_percent": -33.17880875842354
+        },
+        "highpass_above1hz_command_rms_rad": {
+          "baseline": 0.008930253941260397,
+          "candidate": 0.006748577664414121,
+          "change_percent": -24.430170644602722
+        },
+        "corner_speed_delta_kph": [
+          {
+            "corner": "C01",
+            "delta_kph": 0.023567228736001058
+          },
+          {
+            "corner": "C02",
+            "delta_kph": 0.666557712145351
+          },
+          {
+            "corner": "C03",
+            "delta_kph": 0.40847467642179114
+          },
+          {
+            "corner": "C04",
+            "delta_kph": 0.7616008127593589
+          },
+          {
+            "corner": "C05",
+            "delta_kph": 0.1461785022046243
+          },
+          {
+            "corner": "C06",
+            "delta_kph": 0.10769543392700243
+          },
+          {
+            "corner": "C07",
+            "delta_kph": 0.1052768727395037
+          },
+          {
+            "corner": "C08",
+            "delta_kph": 1.0528573706756632
+          },
+          {
+            "corner": "C09",
+            "delta_kph": 3.36350911659537
+          },
+          {
+            "corner": "C10",
+            "delta_kph": 0.3163780037572792
+          },
+          {
+            "corner": "C11",
+            "delta_kph": 1.0347979277660642
+          },
+          {
+            "corner": "C12",
+            "delta_kph": 0.45172528022679187
+          },
+          {
+            "corner": "C13",
+            "delta_kph": 0.06939922222142628
+          },
+          {
+            "corner": "C14",
+            "delta_kph": 0.2377392257928108
+          },
+          {
+            "corner": "C15",
+            "delta_kph": 2.1512235256624663
+          },
+          {
+            "corner": "C16",
+            "delta_kph": 0.7925796593398005
+          },
+          {
+            "corner": "C17",
+            "delta_kph": 0.04430730656333921
+          },
+          {
+            "corner": "C18",
+            "delta_kph": -0.14164058348989386
+          }
+        ]
+      }
+    },
+    "sigma2": {
+      "same_pinned_map_line_models_road_and_vehicle_assets": true,
+      "normalized_world_and_geometry_metadata_byte_equal": true,
+      "only_runtime_source_change": "src/race_lidar/path_tracking.py",
+      "config_equal_after_path_normalization_and_exact_sigma_setting_removal": true,
+      "feedforward_curvature_smoothing_sigma_m": 2.0,
+      "lap_time_s": 190.20265042906465,
+      "lap_delta_s": 0.29494337025468553,
+      "valid_lap": true,
+      "supervisor_two_center_violations": 0,
+      "supervisor_minimum_centers": 2,
+      "supervisor_overlap_samples": 0,
+      "pose_resets": 0,
+      "nominal_capture_fraction": 0.9931658080117758,
+      "fixed18corner_mean_speed_delta_kph": 0.10357742830648692,
+      "fixed18corner_median_speed_delta_kph": 0.03956846487120416,
+      "fixed18corner_faster_count": 10,
+      "fixed18corner_maximum_actual_nominal_xy_error_m": 0.4196823006888836,
+      "recorded50hz_metrics": {
+        "sample_count": 9511,
+        "continuous_interval_duration_s": 190.20000000000002,
+        "command_total_variation_rad": 15.755061566504168,
+        "total_variation_rad_per_s": 0.0828341827891912,
+        "absolute_steering_rate_radps": {
+          "50": 0.03734361008751538,
+          "90": 0.15961580167636608,
+          "95": 0.3019138724276864,
+          "99": 0.9999999999994886,
+          "100": 4.000000000000796
+        },
+        "steering_rate_rms_radps": 0.1997671760012441,
+        "absolute_steering_acceleration_radps2": {
+          "50": 0.8360339255542795,
+          "90": 3.963905213224011,
+          "95": 10.02978906754245,
+          "99": 51.54740370996784,
+          "100": 250.00000000003732
+        },
+        "steering_acceleration_rms_radps2": 13.471212302635141,
+        "direction_changes_with_0point005rad_excursion": 292,
+        "rapid_successive_direction_changes_within1s": 237,
+        "highpass_above1hz_command_rms_rad": 0.0051306439807067466,
+        "mean_speed_mps": 27.561405036462126,
+        "max_abs_path_cross_error_m": 1.3756983583810496,
+        "nominal_capture_fraction": 0.9931658080117758,
+        "lateral_proxy_limit_active_fraction": 0.014614656713279361,
+        "physics_slew_limit_exceeded_intervals": 25,
+        "method_switches": 2,
+        "geometry_switches": 2
+      },
+      "metric_deltas_from_baseline": {
+        "baseline": "baseline",
+        "candidate": "sigma2",
+        "same_telemetry_cadence": true,
+        "total_variation_rad_per_s": {
+          "baseline": 0.09013982903474878,
+          "candidate": 0.0828341827891912,
+          "change_percent": -8.104792658017201
+        },
+        "steering_rate_rms_radps": {
+          "baseline": 0.21368266371872133,
+          "candidate": 0.1997671760012441,
+          "change_percent": -6.512221195349155
+        },
+        "steering_acceleration_rms_radps2": {
+          "baseline": 11.781314662576573,
+          "candidate": 13.471212302635141,
+          "change_percent": 14.343880020678323
+        },
+        "highpass_above1hz_command_rms_rad": {
+          "baseline": 0.008930253941260397,
+          "candidate": 0.0051306439807067466,
+          "change_percent": -42.54761382538447
+        },
+        "corner_speed_delta_kph": [
+          {
+            "corner": "C01",
+            "delta_kph": 0.05277860749564383
+          },
+          {
+            "corner": "C02",
+            "delta_kph": 0.7681387492340207
+          },
+          {
+            "corner": "C03",
+            "delta_kph": -0.0015704349618232527
+          },
+          {
+            "corner": "C04",
+            "delta_kph": 0.06743137450018537
+          },
+          {
+            "corner": "C05",
+            "delta_kph": 0.18160945363330683
+          },
+          {
+            "corner": "C06",
+            "delta_kph": -0.07487265128171146
+          },
+          {
+            "corner": "C07",
+            "delta_kph": -0.08574181936880017
+          },
+          {
+            "corner": "C08",
+            "delta_kph": 0.026358322246764487
+          },
+          {
+            "corner": "C09",
+            "delta_kph": 2.078782612174514
+          },
+          {
+            "corner": "C10",
+            "delta_kph": -0.93032193299413
+          },
+          {
+            "corner": "C11",
+            "delta_kph": 0.34702709324873243
+          },
+          {
+            "corner": "C12",
+            "delta_kph": 0.16668965630749924
+          },
+          {
+            "corner": "C13",
+            "delta_kph": -1.8631344997579746
+          },
+          {
+            "corner": "C14",
+            "delta_kph": -0.22944272855738035
+          },
+          {
+            "corner": "C15",
+            "delta_kph": 2.041842846606859
+          },
+          {
+            "corner": "C16",
+            "delta_kph": -0.5438359086184121
+          },
+          {
+            "corner": "C17",
+            "delta_kph": -0.26229590150213866
+          },
+          {
+            "corner": "C18",
+            "delta_kph": 0.12495087111160928
+          }
+        ]
+      }
+    }
+  },
+  "sigma2_negative_result": "Lower>1Hzcommand RMS alone did not yield the best handling: lap slower than baseline, steering acceleration RMS higher, more command notches/reversals.",
+  "rapid_avoidance_claimed_from_clear_lap": false,
+  "body_force_or_measured_road_wheel_angle_claimed": false,
+  "all_runtime_source_or_probe_inputs_changed_by_this_audit": false,
+  "baseline": {
+    "label": "baseline",
+    "closed": true,
+    "total_frozen_pins_checked": 68,
+    "source_pins_verified": 68,
+    "source_pin_status": "ALL_MATCH",
+    "ui_adjudication_receipt_sha256": null,
+    "runtime_import_pins_verified": 13,
+    "runtime_model_pin_verified": true,
+    "config_pin_verified": true,
+    "model_pins": {
+      "models/neural_rich006_seed17.npz": "730802bc23036458e76007f0f17b8f13a3894457e14d82b642f8f571f84d83c6",
+      "models/neural_rich005_seed7.npz": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+      "models/neural_rich005_seed17.npz": "d9837d76d29f80368dae8ec8f611aa67b4c3e7885ed5bab51876fbff34afd9da"
+    },
+    "cadence_status": "ACTUAL_50HZ_RECORDED_COMMANDS",
+    "median_command_sample_dt_s": 0.019999999999999574,
+    "actual_command_samples": 9496,
+    "result_status": "completed",
+    "valid_lap": true,
+    "completed_lap_time_s": 189.90770705880996,
+    "track_violation_steps": 0,
+    "minimum_actual_wheel_contacts": 2,
+    "two_contact_steps": 938,
+    "pose_resets": 0,
+    "authoritative_supervisor_hero_wheel_audit": {
+      "samples": 9497,
+      "minimum_on_track_count": 2,
+      "two_tyres_on_track_steps": 938,
+      "three_tyres_on_track_steps": 366,
+      "tyre_limit_violation_steps": 0,
+      "patch_margin_violation_steps": 0,
+      "diagonal_only_two_center_steps": 0,
+      "first_violation": null,
+      "violation_clusters": []
+    },
+    "authoritative_supervisor_hero_overlap_samples": 0,
+    "authoritative_supervisor_all_actor_overlap_samples": 0,
+    "all": {
+      "sample_count": 9496,
+      "continuous_interval_duration_s": 189.9,
+      "command_total_variation_rad": 17.117553533698793,
+      "total_variation_rad_per_s": 0.09013982903474878,
+      "absolute_steering_rate_radps": {
+        "50": 0.036183581483025196,
+        "90": 0.16463291392279203,
+        "95": 0.37423131502008994,
+        "99": 1.0000000000001985,
+        "100": 3.305236691150685
+      },
+      "steering_rate_rms_radps": 0.21368266371872133,
+      "absolute_steering_acceleration_radps2": {
+        "50": 0.7360204938576449,
+        "90": 3.955691779710613,
+        "95": 9.323876047040685,
+        "99": 45.490253604511025,
+        "100": 215.26183455754878
+      },
+      "steering_acceleration_rms_radps2": 11.781314662576573,
+      "direction_changes_with_0point005rad_excursion": 282,
+      "rapid_successive_direction_changes_within1s": 228,
+      "highpass_above1hz_command_rms_rad": 0.008930253941260397,
+      "mean_speed_mps": 27.60293026181681,
+      "max_abs_path_cross_error_m": 1.3756983583810496,
+      "nominal_capture_fraction": 0.9931550126368998,
+      "lateral_proxy_limit_active_fraction": 0.015585509688289806,
+      "physics_slew_limit_exceeded_intervals": 21,
+      "method_switches": 2,
+      "geometry_switches": 2
+    },
+    "stable_unchanged_method_geometry_and_mode": {
+      "sample_count": 9444,
+      "continuous_interval_duration_s": 188.84,
+      "command_total_variation_rad": 16.70671499204246,
+      "total_variation_rad_per_s": 0.08847021283648836,
+      "absolute_steering_rate_radps": {
+        "50": 0.03583611421871474,
+        "90": 0.15670023966822577,
+        "95": 0.35750596357342296,
+        "99": 1.0000000000001985,
+        "100": 3.305236691150685
+      },
+      "steering_rate_rms_radps": 0.21214815112263516,
+      "absolute_steering_acceleration_radps2": {
+        "50": 0.7390452935864529,
+        "90": 3.9646464624107423,
+        "95": 9.319227611671113,
+        "99": 45.46142735327185,
+        "100": 215.26183455754878
+      },
+      "steering_acceleration_rms_radps2": 11.783441218049958,
+      "direction_changes_with_0point005rad_excursion": 281,
+      "rapid_successive_direction_changes_within1s": 227,
+      "highpass_above1hz_command_rms_rad": 0.00891564259796604,
+      "mean_speed_mps": 27.73256046653245,
+      "max_abs_path_cross_error_m": 1.3756983583810496,
+      "nominal_capture_fraction": 0.9968233799237611,
+      "lateral_proxy_limit_active_fraction": 0.015671325709445152,
+      "physics_slew_limit_exceeded_intervals": 21,
+      "method_switches": 0,
+      "geometry_switches": 0
+    },
+    "variable_nominal": {
+      "sample_count": 9431,
+      "continuous_interval_duration_s": 188.6,
+      "command_total_variation_rad": 16.69712693978315,
+      "total_variation_rad_per_s": 0.08853195620245573,
+      "absolute_steering_rate_radps": {
+        "50": 0.03583611421871474,
+        "90": 0.1569726453115961,
+        "95": 0.3558773016241799,
+        "99": 1.0000000000001985,
+        "100": 3.305236691150685
+      },
+      "steering_rate_rms_radps": 0.21226337016822813,
+      "absolute_steering_acceleration_radps2": {
+        "50": 0.738222540272636,
+        "90": 3.964811678844928,
+        "95": 9.319654261292136,
+        "99": 45.46943377523169,
+        "100": 215.26183455754878
+      },
+      "steering_acceleration_rms_radps2": 11.798424927527865,
+      "direction_changes_with_0point005rad_excursion": 280,
+      "rapid_successive_direction_changes_within1s": 226,
+      "highpass_above1hz_command_rms_rad": 0.00892699539797447,
+      "mean_speed_mps": 27.77325890073052,
+      "max_abs_path_cross_error_m": 1.231701504047346,
+      "nominal_capture_fraction": 1.0,
+      "lateral_proxy_limit_active_fraction": 0.01569292757925989,
+      "physics_slew_limit_exceeded_intervals": 21,
+      "method_switches": 0,
+      "geometry_switches": 0
+    },
+    "guarded_constant": {
+      "sample_count": 64,
+      "continuous_interval_duration_s": 1.2600000000000002,
+      "command_total_variation_rad": 0.395669987073894,
+      "total_variation_rad_per_s": 0.3140237992649952,
+      "absolute_steering_rate_radps": {
+        "50": 0.3859748383253564,
+        "90": 0.44842072683605116,
+        "95": 0.4588654904406955,
+        "99": 0.46096634830504457,
+        "100": 0.4610430079477051
+      },
+      "steering_rate_rms_radps": 0.3476038240409555,
+      "absolute_steering_acceleration_radps2": {
+        "50": 0.4504026387356457,
+        "90": 0.8716839800574965,
+        "95": 2.3606213814052164,
+        "99": 9.083861361991211,
+        "100": 10.782776948898892
+      },
+      "steering_acceleration_rms_radps2": 1.854638285054349,
+      "direction_changes_with_0point005rad_excursion": 2,
+      "rapid_successive_direction_changes_within1s": 1,
+      "highpass_above1hz_command_rms_rad": 0.009459665073385411,
+      "mean_speed_mps": 2.9347042722330734,
+      "max_abs_path_cross_error_m": 1.3756983583810496,
+      "nominal_capture_fraction": 0.0,
+      "lateral_proxy_limit_active_fraction": 0.0,
+      "physics_slew_limit_exceeded_intervals": 0,
+      "method_switches": 0,
+      "geometry_switches": 0
+    },
+    "welch_power_above1hz_fraction": 0.024997696049205646,
+    "fixed_original_corner_anchors": [
+      {
+        "corner": "C01",
+        "original_progress_m": 361.8289211307665,
+        "observed": true,
+        "race_s": 14.97040614757774,
+        "speed_mps": 13.414373986159953,
+        "steering_rad": 0.14062953312549062,
+        "path_cross_error_m": 0.1148589393785602,
+        "actual_nominal_xy_error_m": 0.15482436805831234,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 152,
+          "continuous_interval_duration_s": 3.0200000000000014,
+          "command_total_variation_rad": 0.6163565858432876,
+          "total_variation_rad_per_s": 0.2040915847163203,
+          "absolute_steering_rate_radps": {
+            "50": 0.09151280530254624,
+            "90": 0.5486676368122295,
+            "95": 1.0000000000000209,
+            "99": 1.0000000000000215,
+            "100": 1.0000000000000215
+          },
+          "steering_rate_rms_radps": 0.3374647539921443,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.9307185812588297,
+            "90": 12.669592484351176,
+            "95": 22.014859002978802,
+            "99": 35.370710471300306,
+            "100": 49.60009598723305
+          },
+          "steering_acceleration_rms_radps2": 9.27339846835159,
+          "direction_changes_with_0point005rad_excursion": 9,
+          "rapid_successive_direction_changes_within1s": 8,
+          "highpass_above1hz_command_rms_rad": 0.019099583530705014,
+          "mean_speed_mps": 16.906763060414445,
+          "max_abs_path_cross_error_m": 0.18040354897486968,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C02",
+        "original_progress_m": 623.6070275298533,
+        "observed": true,
+        "race_s": 25.173016719294523,
+        "speed_mps": 33.81874497321938,
+        "steering_rad": 0.005476448515830785,
+        "path_cross_error_m": 0.058479963609120715,
+        "actual_nominal_xy_error_m": 0.08057377622143326,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 81,
+          "continuous_interval_duration_s": 1.6000000000000014,
+          "command_total_variation_rad": 0.09013502145295818,
+          "total_variation_rad_per_s": 0.05633438840809881,
+          "absolute_steering_rate_radps": {
+            "50": 0.05292555657629564,
+            "90": 0.08968704580922705,
+            "95": 0.09466872486789885,
+            "99": 0.172718718399434,
+            "100": 0.18790377770015138
+          },
+          "steering_rate_rms_radps": 0.06631396190531594,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.049192565193261,
+            "90": 4.088004702056431,
+            "95": 4.757882441008092,
+            "99": 7.205458740780414,
+            "100": 8.421888440492456
+          },
+          "steering_acceleration_rms_radps2": 2.2522734647420584,
+          "direction_changes_with_0point005rad_excursion": 2,
+          "rapid_successive_direction_changes_within1s": 1,
+          "highpass_above1hz_command_rms_rad": 0.0019053648020175241,
+          "mean_speed_mps": 33.72116002399238,
+          "max_abs_path_cross_error_m": 0.18707095907509605,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C03",
+        "original_progress_m": 767.472484340089,
+        "observed": true,
+        "race_s": 29.250256497507813,
+        "speed_mps": 24.55718801318428,
+        "steering_rad": 0.030020897931340433,
+        "path_cross_error_m": 0.2410987058973861,
+        "actual_nominal_xy_error_m": 0.2625104639047393,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 120,
+          "continuous_interval_duration_s": 2.379999999999999,
+          "command_total_variation_rad": 0.6302508706156815,
+          "total_variation_rad_per_s": 0.2648112901746562,
+          "absolute_steering_rate_radps": {
+            "50": 0.1342451932755271,
+            "90": 0.7551235474025796,
+            "95": 1.0000000000000215,
+            "99": 2.5716821913443275,
+            "100": 3.018095138283477
+          },
+          "steering_rate_rms_radps": 0.5091255124667573,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.054226418178959,
+            "90": 19.83230689009249,
+            "95": 64.13788917936074,
+            "99": 190.53039559980235,
+            "100": 200.90475691416134
+          },
+          "steering_acceleration_rms_radps2": 37.28934379390368,
+          "direction_changes_with_0point005rad_excursion": 10,
+          "rapid_successive_direction_changes_within1s": 9,
+          "highpass_above1hz_command_rms_rad": 0.010748898161739517,
+          "mean_speed_mps": 24.93929500275029,
+          "max_abs_path_cross_error_m": 0.4489459932120156,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.125,
+          "physics_slew_limit_exceeded_intervals": 3,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C04",
+        "original_progress_m": 841.3314562921321,
+        "observed": true,
+        "race_s": 33.88477537207211,
+        "speed_mps": 17.789594532123196,
+        "steering_rad": -0.013844646280774892,
+        "path_cross_error_m": 0.09052192849933065,
+        "actual_nominal_xy_error_m": 0.10743862414272529,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 191,
+          "continuous_interval_duration_s": 3.799999999999997,
+          "command_total_variation_rad": 0.3513825922199936,
+          "total_variation_rad_per_s": 0.09246910321578786,
+          "absolute_steering_rate_radps": {
+            "50": 0.09570040277826394,
+            "90": 0.14328369154782356,
+            "95": 0.16534373102881503,
+            "99": 0.3301500314825459,
+            "100": 0.5179204104146208
+          },
+          "steering_rate_rms_radps": 0.11297838656816514,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.7378207662329915,
+            "90": 6.629603388697941,
+            "95": 11.849286474582787,
+            "99": 19.050498474021314,
+            "100": 30.24797877682178
+          },
+          "steering_acceleration_rms_radps2": 4.913612844099398,
+          "direction_changes_with_0point005rad_excursion": 7,
+          "rapid_successive_direction_changes_within1s": 5,
+          "highpass_above1hz_command_rms_rad": 0.0021146007925332156,
+          "mean_speed_mps": 16.720064513583534,
+          "max_abs_path_cross_error_m": 0.20809966502260963,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C05",
+        "original_progress_m": 1403.050900160805,
+        "observed": true,
+        "race_s": 52.5096074587623,
+        "speed_mps": 11.480717637296491,
+        "steering_rad": 0.21305050373335538,
+        "path_cross_error_m": 0.1413478461185693,
+        "actual_nominal_xy_error_m": 0.1543647358293209,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 159,
+          "continuous_interval_duration_s": 3.1600000000000037,
+          "command_total_variation_rad": 1.1070316516904262,
+          "total_variation_rad_per_s": 0.3503264720539319,
+          "absolute_steering_rate_radps": {
+            "50": 0.22883273317666009,
+            "90": 0.9999999999998438,
+            "95": 0.9999999999998971,
+            "99": 1.0000000000001992,
+            "100": 1.0000000000001992
+          },
+          "steering_rate_rms_radps": 0.4897666367832593,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.128524890017646,
+            "90": 23.46532846958919,
+            "95": 35.32447591013488,
+            "99": 53.82861378837576,
+            "100": 75.39039526092114
+          },
+          "steering_acceleration_rms_radps2": 14.530347655921753,
+          "direction_changes_with_0point005rad_excursion": 9,
+          "rapid_successive_direction_changes_within1s": 8,
+          "highpass_above1hz_command_rms_rad": 0.029889513059726945,
+          "mean_speed_mps": 14.843174913402704,
+          "max_abs_path_cross_error_m": 0.2386960075740506,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C06",
+        "original_progress_m": 2610.439400324675,
+        "observed": true,
+        "race_s": 82.19077494541666,
+        "speed_mps": 12.283771020509455,
+        "steering_rad": -0.23144889924219278,
+        "path_cross_error_m": -0.43746090787685843,
+        "actual_nominal_xy_error_m": 0.4450672946919433,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 223,
+          "continuous_interval_duration_s": 4.439999999999998,
+          "command_total_variation_rad": 1.2042272839589565,
+          "total_variation_rad_per_s": 0.2712223612520174,
+          "absolute_steering_rate_radps": {
+            "50": 0.16937615734196745,
+            "90": 0.761833934659189,
+            "95": 1.0000000000001985,
+            "99": 1.0000000000001992,
+            "100": 1.0000000000001992
+          },
+          "steering_rate_rms_radps": 0.3950103905366294,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.178376364998502,
+            "90": 12.653901743517135,
+            "95": 19.639912897028267,
+            "99": 52.2718705134436,
+            "100": 61.897205137254836
+          },
+          "steering_acceleration_rms_radps2": 10.295584012953844,
+          "direction_changes_with_0point005rad_excursion": 7,
+          "rapid_successive_direction_changes_within1s": 5,
+          "highpass_above1hz_command_rms_rad": 0.011790561042585955,
+          "mean_speed_mps": 13.9539199408372,
+          "max_abs_path_cross_error_m": 0.4658181053297627,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C07",
+        "original_progress_m": 2662.0713661926334,
+        "observed": true,
+        "race_s": 85.9699084189631,
+        "speed_mps": 7.948105945115514,
+        "steering_rad": -0.21744358150469742,
+        "path_cross_error_m": -0.15298070944207823,
+        "actual_nominal_xy_error_m": 0.1506100963179921,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 206,
+          "continuous_interval_duration_s": 4.1000000000000085,
+          "command_total_variation_rad": 1.4196076026509008,
+          "total_variation_rad_per_s": 0.34624575674412145,
+          "absolute_steering_rate_radps": {
+            "50": 0.23637834539203034,
+            "90": 0.999999999999488,
+            "95": 1.0000000000001985,
+            "99": 1.0000000000001992,
+            "100": 1.0000000000001998
+          },
+          "steering_rate_rms_radps": 0.467945940589801,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.524072824381816,
+            "90": 15.57101154607383,
+            "95": 32.20264730695362,
+            "99": 70.06962631998243,
+            "100": 83.9378318757241
+          },
+          "steering_acceleration_rms_radps2": 14.24439517422139,
+          "direction_changes_with_0point005rad_excursion": 11,
+          "rapid_successive_direction_changes_within1s": 10,
+          "highpass_above1hz_command_rms_rad": 0.030756295136606274,
+          "mean_speed_mps": 11.367463872598421,
+          "max_abs_path_cross_error_m": 0.24042763462179503,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C08",
+        "original_progress_m": 3593.777196240377,
+        "observed": true,
+        "race_s": 109.68,
+        "speed_mps": 21.176982451930435,
+        "steering_rad": 0.07424875353732176,
+        "path_cross_error_m": 0.07713186190237234,
+        "actual_nominal_xy_error_m": 0.07231101300846922,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 142,
+          "continuous_interval_duration_s": 2.819999999999993,
+          "command_total_variation_rad": 0.39152960166254036,
+          "total_variation_rad_per_s": 0.13884028427749692,
+          "absolute_steering_rate_radps": {
+            "50": 0.049005412156244814,
+            "90": 0.20522713387653413,
+            "95": 0.8289677167386557,
+            "99": 1.5541794991264435,
+            "100": 2.234608679114139
+          },
+          "steering_rate_rms_radps": 0.34285480512780275,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.838396832801835,
+            "90": 13.904790247521932,
+            "95": 44.95375731712915,
+            "99": 155.66639843459387,
+            "100": 161.7304339556916
+          },
+          "steering_acceleration_rms_radps2": 27.43664968576003,
+          "direction_changes_with_0point005rad_excursion": 12,
+          "rapid_successive_direction_changes_within1s": 11,
+          "highpass_above1hz_command_rms_rad": 0.006852738769072743,
+          "mean_speed_mps": 22.24515031574315,
+          "max_abs_path_cross_error_m": 0.4347843832889965,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.06338028169014084,
+          "physics_slew_limit_exceeded_intervals": 2,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C09",
+        "original_progress_m": 3651.6304174004904,
+        "observed": true,
+        "race_s": 111.98934624029178,
+        "speed_mps": 27.316279701058274,
+        "steering_rad": -0.0034704092705480746,
+        "path_cross_error_m": -0.06407414836876046,
+        "actual_nominal_xy_error_m": 0.12434508199925356,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 107,
+          "continuous_interval_duration_s": 2.1199999999999903,
+          "command_total_variation_rad": 0.1363625272908521,
+          "total_variation_rad_per_s": 0.06432194683530788,
+          "absolute_steering_rate_radps": {
+            "50": 0.0649430165104614,
+            "90": 0.10394575473447124,
+            "95": 0.11990611029866813,
+            "99": 0.22466897939715763,
+            "100": 0.24558184291932553
+          },
+          "steering_rate_rms_radps": 0.0762027862674691,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.9313962077722963,
+            "90": 4.747762186895174,
+            "95": 6.586152714110046,
+            "99": 11.668347219649803,
+            "100": 13.898846506045421
+          },
+          "steering_acceleration_rms_radps2": 3.124429318732728,
+          "direction_changes_with_0point005rad_excursion": 2,
+          "rapid_successive_direction_changes_within1s": 1,
+          "highpass_above1hz_command_rms_rad": 0.0009720586143192474,
+          "mean_speed_mps": 25.22782563429341,
+          "max_abs_path_cross_error_m": 0.16973404439487966,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C10",
+        "original_progress_m": 3801.2933165380446,
+        "observed": true,
+        "race_s": 119.03355055887566,
+        "speed_mps": 27.70861922377347,
+        "steering_rad": -0.03398596695939887,
+        "path_cross_error_m": -0.126785860542042,
+        "actual_nominal_xy_error_m": 0.26498211737153976,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 102,
+          "continuous_interval_duration_s": 2.019999999999996,
+          "command_total_variation_rad": 0.12351708635213035,
+          "total_variation_rad_per_s": 0.0611470724515498,
+          "absolute_steering_rate_radps": {
+            "50": 0.06541977360335037,
+            "90": 0.09590690494059922,
+            "95": 0.10307492914125392,
+            "99": 0.11397578419806183,
+            "100": 0.11472851857787376
+          },
+          "steering_rate_rms_radps": 0.0687488260652956,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.531712049947111,
+            "90": 2.4602591239756544,
+            "95": 5.869862204439053,
+            "99": 7.423898311581997,
+            "100": 7.636707273511004
+          },
+          "steering_acceleration_rms_radps2": 1.9657502510173057,
+          "direction_changes_with_0point005rad_excursion": 2,
+          "rapid_successive_direction_changes_within1s": 0,
+          "highpass_above1hz_command_rms_rad": 0.0014517734792040013,
+          "mean_speed_mps": 27.46505155409252,
+          "max_abs_path_cross_error_m": 0.14925647760986882,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C11",
+        "original_progress_m": 4189.083447065769,
+        "observed": true,
+        "race_s": 134.8512146597364,
+        "speed_mps": 23.17053487105094,
+        "steering_rad": 0.06029465020682642,
+        "path_cross_error_m": 0.2262043621117237,
+        "actual_nominal_xy_error_m": 0.2437838035680747,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 118,
+          "continuous_interval_duration_s": 2.3400000000000034,
+          "command_total_variation_rad": 0.21110054302650005,
+          "total_variation_rad_per_s": 0.09021390727628194,
+          "absolute_steering_rate_radps": {
+            "50": 0.09099091363026045,
+            "90": 0.12850899922622738,
+            "95": 0.14083107048537113,
+            "99": 0.18626094057978493,
+            "100": 0.21022633573694852
+          },
+          "steering_rate_rms_radps": 0.09686106564734415,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.9708376779658019,
+            "90": 3.559698834733264,
+            "95": 8.458243165699892,
+            "99": 14.954159260278507,
+            "100": 15.930497148214616
+          },
+          "steering_acceleration_rms_radps2": 3.629975482549275,
+          "direction_changes_with_0point005rad_excursion": 2,
+          "rapid_successive_direction_changes_within1s": 1,
+          "highpass_above1hz_command_rms_rad": 0.0015781045163068166,
+          "mean_speed_mps": 25.026721216608294,
+          "max_abs_path_cross_error_m": 0.23131194077041575,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C12",
+        "original_progress_m": 4314.830473108133,
+        "observed": true,
+        "race_s": 141.2089867280388,
+        "speed_mps": 12.952309888728049,
+        "steering_rad": -0.20769156466494793,
+        "path_cross_error_m": -0.15207250250839713,
+        "actual_nominal_xy_error_m": 0.18279173127137718,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 165,
+          "continuous_interval_duration_s": 3.280000000000001,
+          "command_total_variation_rad": 0.9530823848992181,
+          "total_variation_rad_per_s": 0.2905738978351274,
+          "absolute_steering_rate_radps": {
+            "50": 0.10607926318667897,
+            "90": 0.9999999999994884,
+            "95": 1.000000000000909,
+            "99": 1.0000000000009097,
+            "100": 2.295617735454296
+          },
+          "steering_rate_rms_radps": 0.4724697692382661,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.1079048885262175,
+            "90": 12.52071744565685,
+            "95": 48.035985324273604,
+            "99": 86.73176980185082,
+            "100": 164.78088677279305
+          },
+          "steering_acceleration_rms_radps2": 21.238915668133895,
+          "direction_changes_with_0point005rad_excursion": 15,
+          "rapid_successive_direction_changes_within1s": 14,
+          "highpass_above1hz_command_rms_rad": 0.02193068421910095,
+          "mean_speed_mps": 15.22706862069164,
+          "max_abs_path_cross_error_m": 0.2708327465800951,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.006060606060606061,
+          "physics_slew_limit_exceeded_intervals": 1,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C13",
+        "original_progress_m": 4388.594957034398,
+        "observed": true,
+        "race_s": 144.98744104232455,
+        "speed_mps": 22.841332689571377,
+        "steering_rad": 0.05500685560059039,
+        "path_cross_error_m": 0.10703789510782667,
+        "actual_nominal_xy_error_m": 0.15905441235508586,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 132,
+          "continuous_interval_duration_s": 2.619999999999976,
+          "command_total_variation_rad": 0.3619708764545435,
+          "total_variation_rad_per_s": 0.1381568230742545,
+          "absolute_steering_rate_radps": {
+            "50": 0.07947237523424036,
+            "90": 0.3416992534159699,
+            "95": 0.49198268205029516,
+            "99": 0.7083123647732624,
+            "100": 0.9668160123444459
+          },
+          "steering_rate_rms_radps": 0.20953164821454393,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.521983576423,
+            "90": 12.629412031759523,
+            "95": 14.56112373195793,
+            "99": 29.048570159480757,
+            "100": 37.61880453309356
+          },
+          "steering_acceleration_rms_radps2": 7.167646411286344,
+          "direction_changes_with_0point005rad_excursion": 5,
+          "rapid_successive_direction_changes_within1s": 4,
+          "highpass_above1hz_command_rms_rad": 0.012169720845950582,
+          "mean_speed_mps": 20.68614290678419,
+          "max_abs_path_cross_error_m": 0.16320866708757026,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C14",
+        "original_progress_m": 4488.431597189924,
+        "observed": true,
+        "race_s": 149.94,
+        "speed_mps": 16.647116420355538,
+        "steering_rad": 0.1058069764225909,
+        "path_cross_error_m": 0.09031371500807887,
+        "actual_nominal_xy_error_m": 0.0821123919624402,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 188,
+          "continuous_interval_duration_s": 3.7399999999999807,
+          "command_total_variation_rad": 0.26079919044093436,
+          "total_variation_rad_per_s": 0.06973240386121275,
+          "absolute_steering_rate_radps": {
+            "50": 0.048604453860960045,
+            "90": 0.15515018772416417,
+            "95": 0.17740553149930188,
+            "99": 0.3564512082825591,
+            "100": 0.3620161700264923
+          },
+          "steering_rate_rms_radps": 0.09889451757795349,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.7133623571572396,
+            "90": 10.411436761904495,
+            "95": 13.750676095727442,
+            "99": 22.53159653746805,
+            "100": 25.701072219454087
+          },
+          "steering_acceleration_rms_radps2": 5.856826302699744,
+          "direction_changes_with_0point005rad_excursion": 18,
+          "rapid_successive_direction_changes_within1s": 16,
+          "highpass_above1hz_command_rms_rad": 0.0026177363897339173,
+          "mean_speed_mps": 17.88630846802762,
+          "max_abs_path_cross_error_m": 0.12668706686429995,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C15",
+        "original_progress_m": 4558.207219685118,
+        "observed": true,
+        "race_s": 153.9112264492638,
+        "speed_mps": 23.10269907312187,
+        "steering_rad": -0.032039907116917836,
+        "path_cross_error_m": -0.12423595678463797,
+        "actual_nominal_xy_error_m": 0.13383684053025655,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 123,
+          "continuous_interval_duration_s": 2.4399999999999977,
+          "command_total_variation_rad": 0.14742158957510815,
+          "total_variation_rad_per_s": 0.06041868425209356,
+          "absolute_steering_rate_radps": {
+            "50": 0.06513367385752977,
+            "90": 0.09089812524385585,
+            "95": 0.09588027845097725,
+            "99": 0.1039106958870786,
+            "100": 0.13854841822891317
+          },
+          "steering_rate_rms_radps": 0.0663256359176306,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.6545501150491777,
+            "90": 2.8142682923158056,
+            "95": 3.9110218506124417,
+            "99": 8.912370535343019,
+            "100": 9.884947287698761
+          },
+          "steering_acceleration_rms_radps2": 2.133244145730583,
+          "direction_changes_with_0point005rad_excursion": 2,
+          "rapid_successive_direction_changes_within1s": 0,
+          "highpass_above1hz_command_rms_rad": 0.0009654633269815171,
+          "mean_speed_mps": 22.946207100619425,
+          "max_abs_path_cross_error_m": 0.12983608508075234,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C16",
+        "original_progress_m": 4782.060345429304,
+        "observed": true,
+        "race_s": 164.67814978857797,
+        "speed_mps": 19.371908167266444,
+        "steering_rad": -0.061547937243036574,
+        "path_cross_error_m": -0.18690216177081134,
+        "actual_nominal_xy_error_m": 0.21426493470509275,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 200,
+          "continuous_interval_duration_s": 3.9799999999999898,
+          "command_total_variation_rad": 0.4400869632293959,
+          "total_variation_rad_per_s": 0.11057461387673292,
+          "absolute_steering_rate_radps": {
+            "50": 0.09582527016536765,
+            "90": 0.1721246852926353,
+            "95": 0.18912123667142938,
+            "99": 0.49956380004433404,
+            "100": 1.0435159276837078
+          },
+          "steering_rate_rms_radps": 0.16166940488431855,
+          "absolute_steering_acceleration_radps2": {
+            "50": 1.3047951006084944,
+            "90": 7.100163970697692,
+            "95": 15.150024568174251,
+            "99": 43.51415641384628,
+            "100": 102.1757963842512
+          },
+          "steering_acceleration_rms_radps2": 10.616095198561245,
+          "direction_changes_with_0point005rad_excursion": 13,
+          "rapid_successive_direction_changes_within1s": 11,
+          "highpass_above1hz_command_rms_rad": 0.00301885843869618,
+          "mean_speed_mps": 16.064645706412698,
+          "max_abs_path_cross_error_m": 0.2697215056193511,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.005,
+          "physics_slew_limit_exceeded_intervals": 1,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C17",
+        "original_progress_m": 4847.944240985181,
+        "observed": true,
+        "race_s": 169.53076007737278,
+        "speed_mps": 15.677045020427634,
+        "steering_rad": 0.10427399178754876,
+        "path_cross_error_m": 0.21913423118999006,
+        "actual_nominal_xy_error_m": 0.21326841059181254,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 183,
+          "continuous_interval_duration_s": 3.640000000000015,
+          "command_total_variation_rad": 0.42066208128021565,
+          "total_variation_rad_per_s": 0.11556650584621263,
+          "absolute_steering_rate_radps": {
+            "50": 0.11211981903426957,
+            "90": 0.17340215216754928,
+            "95": 0.1795542465037317,
+            "99": 0.3872377681453835,
+            "100": 0.5836247280921023
+          },
+          "steering_rate_rms_radps": 0.13484423316694474,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.7093154202126299,
+            "90": 2.967351763014051,
+            "95": 11.659361136041458,
+            "99": 32.28048919843712,
+            "100": 36.98349046840053
+          },
+          "steering_acceleration_rms_radps2": 6.160241372042296,
+          "direction_changes_with_0point005rad_excursion": 8,
+          "rapid_successive_direction_changes_within1s": 6,
+          "highpass_above1hz_command_rms_rad": 0.002424554999131431,
+          "mean_speed_mps": 17.34014728262953,
+          "max_abs_path_cross_error_m": 0.23762533529705632,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      },
+      {
+        "corner": "C18",
+        "original_progress_m": 5053.243464722782,
+        "observed": true,
+        "race_s": 182.25013888686487,
+        "speed_mps": 10.391544450738229,
+        "steering_rad": -0.20490262326421388,
+        "path_cross_error_m": 0.035242919943527344,
+        "actual_nominal_xy_error_m": 0.03272244358629447,
+        "geometry": "variable_nominal_path",
+        "mode": "nominal_line",
+        "same_original_progress_window_plusminus30m": {
+          "sample_count": 193,
+          "continuous_interval_duration_s": 3.8400000000000034,
+          "command_total_variation_rad": 1.0348310303584705,
+          "total_variation_rad_per_s": 0.2694872474891848,
+          "absolute_steering_rate_radps": {
+            "50": 0.10790140631892498,
+            "90": 0.999999999999488,
+            "95": 0.9999999999994886,
+            "99": 1.0000000000009097,
+            "100": 1.0000000000009097
+          },
+          "steering_rate_rms_radps": 0.4289498187168084,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.8653810070670163,
+            "90": 7.932620430947176,
+            "95": 21.7879606822235,
+            "99": 56.264811369536304,
+            "100": 65.87781552433626
+          },
+          "steering_acceleration_rms_radps2": 11.031412949790148,
+          "direction_changes_with_0point005rad_excursion": 9,
+          "rapid_successive_direction_changes_within1s": 7,
+          "highpass_above1hz_command_rms_rad": 0.024470053981535518,
+          "mean_speed_mps": 14.037185138964121,
+          "max_abs_path_cross_error_m": 0.16528467079174788,
+          "nominal_capture_fraction": 1.0,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 0,
+          "geometry_switches": 0
+        }
+      }
+    ]
+  },
+  "source_selection_audit_sha256": "415b05327fe776950c2c1723b188e379f4c49af763782abb354793dc5f3d9143",
+  "source_three_arm_report_sha256": "79c03b3506609d563ccadd5d59b550ad3d047e15f8f2de5454189dd0a976928f",
+  "redactions": [
+    "Absolute run locations and raw input hash-location indices omitted."
+  ],
+  "actual_body_heading_diagnostic": {
+    "source_sha256": "8af81cbf0b9db25c3369efd6aa3eb20ebb12e1b1e99667b4fcd7669a05e09dc2",
+    "scope": "Actual simulator body-yaw finite differences, no measured tire-force claim; high-pass is offline measurement only.",
+    "runs": {
+      "baseline-clear-001": {
+        "measured_simulator_rear_axle_heading": true,
+        "actual_50hz": true,
+        "samples": 9495,
+        "yaw_rate_rms_radps": 0.2539450626541832,
+        "yaw_acceleration_rms_radps2": 1.36712063982914,
+        "yaw_rate_above1hz_rms_radps": 0.029544976311770346
+      },
+      "ff-sigma1-clear-001": {
+        "measured_simulator_rear_axle_heading": true,
+        "actual_50hz": true,
+        "samples": 9451,
+        "yaw_rate_rms_radps": 0.25268987296576567,
+        "yaw_acceleration_rms_radps2": 1.1827444872825041,
+        "yaw_rate_above1hz_rms_radps": 0.02506374591031641
+      },
+      "ff-sigma2-clear-001": {
+        "measured_simulator_rear_axle_heading": true,
+        "actual_50hz": true,
+        "samples": 9510,
+        "yaw_rate_rms_radps": 0.25031475760102656,
+        "yaw_acceleration_rms_radps2": 1.3828764461314211,
+        "yaw_rate_above1hz_rms_radps": 0.02456219578555317
+      }
+    }
+  }
+}

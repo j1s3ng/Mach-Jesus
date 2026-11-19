@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/cyberbotics/webots",
+  "commit": "c85603f2280c68ebdcc0a4102e43026fcbf2bc71",
+  "license": "Upstream Webots asset license; see preserved file headers",
+  "files": {
+    "Car.proto": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/Car.proto",
+      "sha256": "e849e17bb099c7b5b54d15f8ea0b65e03a3b37dc497554a8169bc67f3b64b290",
+      "bytes": 16305
+    },
+    "VehicleLights.proto": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/VehicleLights.proto",
+      "sha256": "7f82fe2a3c637a9a1f140714a38866552e7e8f54f7a3f410cd4be36000e7454b",
+      "bytes": 2020
+    },
+    "VehicleWheel.proto": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/VehicleWheel.proto",
+      "sha256": "0f1b6ee3b9ed01669c23ab8aa144d1eff3736def246ce08d36de6d778c1fe6aa",
+      "bytes": 21714
+    },
+    "AckermannVehicle.proto": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/AckermannVehicle.proto",
+      "sha256": "bce91d0b7b66381925bdbfffdfc00ea6abd32f6cc0e797c41ca3e044eb7b5ecd",
+      "bytes": 8212
+    },
+    "GenericTireAppearance.proto": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/GenericTireAppearance.proto",
+      "sha256": "6f417ecfaf9612bf195885dddae8ddb8e86c3dc3a676aaa9a49971d82b6f4d31",
+      "bytes": 1027
+    },
+    "sounds/engine.wav": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/sounds/engine.wav",
+      "sha256": "0e8346d6894c36f9bdcfbf1956e0b472d3540cc78a6a5482f4ca2dc53e9f5fc8",
+      "bytes": 33840
+    },
+    "GenericTireAppearance/textures/tire_texture_base_color.jpg": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/GenericTireAppearance/textures/tire_texture_base_color.jpg",
+      "sha256": "e6547b480c91e0b1088b40f7e00044d066b01b3a56840a26740e8e345be5ac0c",
+      "bytes": 56075
+    },
+    "GenericTireAppearance/textures/tire_texture_roughness.jpg": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/GenericTireAppearance/textures/tire_texture_roughness.jpg",
+      "sha256": "a37bd061759b99b701f2a1fe4581de634dca0ac2d93047613dc87a0cf3916035",
+      "bytes": 138249
+    },
+    "GenericTireAppearance/textures/tire_texture_normal.jpg": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/GenericTireAppearance/textures/tire_texture_normal.jpg",
+      "sha256": "161e0e829a11c36f3d05ed55dfc887447c70706a7a6befa50898f6b078ceb4a6",
+      "bytes": 155470
+    },
+    "GenericTireAppearance/textures/tire_texture_occlusion.jpg": {
+      "source": "https://raw.githubusercontent.com/cyberbotics/webots/c85603f2280c68ebdcc0a4102e43026fcbf2bc71/projects/vehicles/protos/abstract/GenericTireAppearance/textures/tire_texture_occlusion.jpg",
+      "sha256": "55a8799316330118a25581bdcc68dc6902a57ca08eaf597556dff71ddd4c9a72",
+      "bytes": 121611
+    }
+  }
+}

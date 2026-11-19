@@ -1,0 +1,146 @@
+{
+  "solo_10ms": {
+    "body": {
+      "XY_difference_body_lateral_acceleration_rms_mps2": 5.006650184228788,
+      "XY_difference_body_lateral_jerk_rms_mps3": 10.874451800465152,
+      "actual_XY_driven_distance_m": 5236.296477960898,
+      "body_lateral_acceleration_above1hz_rms_mps2": 0.3956719569590634,
+      "forward_difference_yaw_acceleration_rms_radps2": 0.4476050966407335,
+      "forward_difference_yaw_rate_rms_radps": 0.2571963393006753,
+      "measured_yaw_acceleration_rms_radps2": 0.43859617048358657,
+      "measured_yaw_rate_rms_radps": 0.2571435701624085,
+      "steering_band_1to6hz_power_rad2": 6.980308168468373e-05,
+      "steering_variation_rad_per_driven_km": 2.1594177835425645,
+      "yaw_rate_above1hz_rms_radps": 0.021611466956402554,
+      "yaw_rate_band_1to6hz_power_rad2ps2": 0.0006656970088549676
+    },
+    "steering": {
+      "absolute_steering_acceleration_radps2": {
+        "100": 65.86780143965264,
+        "50": 0.3296999917781961,
+        "90": 2.7581072694839253,
+        "95": 6.732259821407297,
+        "99": 23.202278470606764
+      },
+      "absolute_steering_rate_radps": {
+        "100": 1.0000000000009104,
+        "50": 0.026313466969026894,
+        "90": 0.13116783867799503,
+        "95": 0.22860939726203242,
+        "99": 0.6878816290269497
+      },
+      "command_total_variation_rad": 11.30735173441006,
+      "continuous_interval_duration_s": 183.28,
+      "direction_changes_with_0point005rad_excursion": 156,
+      "geometry_switches": 2,
+      "highpass_above1hz_command_rms_rad": 0.006966070770793152,
+      "lateral_proxy_limit_active_fraction": 0.0,
+      "max_abs_path_cross_error_m": 1.3715978240299627,
+      "mean_speed_mps": 28.57189583764143,
+      "method_switches": 2,
+      "nominal_capture_fraction": 0.9929078014184397,
+      "physics_slew_limit_exceeded_intervals": 0,
+      "rapid_successive_direction_changes_within1s": 104,
+      "sample_count": 9165,
+      "steering_acceleration_rms_radps2": 4.483638724886885,
+      "steering_rate_rms_radps": 0.1351995350490903,
+      "total_variation_rad_per_s": 0.06169441147102826
+    }
+  },
+  "solo_20ms": {
+    "body": {
+      "XY_difference_body_lateral_acceleration_rms_mps2": 5.108722971685049,
+      "XY_difference_body_lateral_jerk_rms_mps3": 59.381066134039436,
+      "actual_XY_driven_distance_m": 5242.283273765954,
+      "body_lateral_acceleration_above1hz_rms_mps2": 1.4363965381410884,
+      "forward_difference_yaw_acceleration_rms_radps2": 1.7801403408684804,
+      "forward_difference_yaw_rate_rms_radps": 0.2570489379518793,
+      "measured_yaw_acceleration_rms_radps2": 0.8622783304926963,
+      "measured_yaw_rate_rms_radps": 0.2564188140648276,
+      "steering_band_1to6hz_power_rad2": 5.390181495955017e-05,
+      "steering_variation_rad_per_driven_km": 2.6670468649806858,
+      "yaw_rate_above1hz_rms_radps": 0.027803073391732488,
+      "yaw_rate_band_1to6hz_power_rad2ps2": 0.0006018511100458265
+    },
+    "steering": {
+      "absolute_steering_acceleration_radps2": {
+        "100": 66.06589141026836,
+        "50": 0.9863279901885891,
+        "90": 4.0643290029906485,
+        "95": 6.7095363126969385,
+        "99": 23.526805889003263
+      },
+      "absolute_steering_rate_radps": {
+        "100": 1.0000000000009097,
+        "50": 0.03858767008907203,
+        "90": 0.15304427097891493,
+        "95": 0.2453500898650913,
+        "99": 0.7251801150380832
+      },
+      "command_total_variation_rad": 13.981415170638172,
+      "continuous_interval_duration_s": 188.78,
+      "direction_changes_with_0point005rad_excursion": 202,
+      "geometry_switches": 2,
+      "highpass_above1hz_command_rms_rad": 0.00682407661202891,
+      "lateral_proxy_limit_active_fraction": 0.0011652542372881357,
+      "max_abs_path_cross_error_m": 1.3756983583810496,
+      "mean_speed_mps": 27.769912921024748,
+      "method_switches": 2,
+      "nominal_capture_fraction": 0.993114406779661,
+      "physics_slew_limit_exceeded_intervals": 0,
+      "rapid_successive_direction_changes_within1s": 144,
+      "sample_count": 9440,
+      "steering_acceleration_rms_radps2": 4.936053486461141,
+      "steering_rate_rms_radps": 0.1436220128954385,
+      "total_variation_rad_per_s": 0.07406195132237617
+    }
+  },
+  "solo_5ms": {
+    "body": {
+      "XY_difference_body_lateral_acceleration_rms_mps2": 4.960245028304621,
+      "XY_difference_body_lateral_jerk_rms_mps3": 8.41871052245813,
+      "actual_XY_driven_distance_m": 5235.05617418058,
+      "body_lateral_acceleration_above1hz_rms_mps2": 0.3981836544793931,
+      "forward_difference_yaw_acceleration_rms_radps2": 0.44326516948747424,
+      "forward_difference_yaw_rate_rms_radps": 0.25581852556198303,
+      "measured_yaw_acceleration_rms_radps2": 0.4373092464106732,
+      "measured_yaw_rate_rms_radps": 0.25576641727887756,
+      "steering_band_1to6hz_power_rad2": 6.899755674032404e-05,
+      "steering_variation_rad_per_driven_km": 2.0979304009168898,
+      "yaw_rate_above1hz_rms_radps": 0.022019455683209815,
+      "yaw_rate_band_1to6hz_power_rad2ps2": 0.0006829285096181043
+    },
+    "steering": {
+      "absolute_steering_acceleration_radps2": {
+        "100": 60.7788689243542,
+        "50": 0.3304808451911859,
+        "90": 2.846146014913253,
+        "95": 6.8931734898155685,
+        "99": 22.424172132987966
+      },
+      "absolute_steering_rate_radps": {
+        "100": 1.0000000000009104,
+        "50": 0.024566089444241518,
+        "90": 0.12884789095214655,
+        "95": 0.22191617511098524,
+        "99": 0.6684392649559476
+      },
+      "command_total_variation_rad": 10.982783498321101,
+      "continuous_interval_duration_s": 183.9,
+      "direction_changes_with_0point005rad_excursion": 162,
+      "geometry_switches": 2,
+      "highpass_above1hz_command_rms_rad": 0.006943035657817185,
+      "lateral_proxy_limit_active_fraction": 0.0,
+      "max_abs_path_cross_error_m": 1.372358708439446,
+      "mean_speed_mps": 28.46961529012107,
+      "method_switches": 2,
+      "nominal_capture_fraction": 0.9929317094388864,
+      "physics_slew_limit_exceeded_intervals": 0,
+      "rapid_successive_direction_changes_within1s": 110,
+      "sample_count": 9196,
+      "steering_acceleration_rms_radps2": 4.381943138704351,
+      "steering_rate_rms_radps": 0.13317956181089047,
+      "total_variation_rad_per_s": 0.05972149808766232
+    }
+  }
+}

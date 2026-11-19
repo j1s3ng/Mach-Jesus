@@ -1,0 +1,115 @@
+{
+  "status": "READY_FOR_LOCAL_REVIEW",
+  "package": "apex-tracking",
+  "visibility": "LOCAL_REVIEW_ONLY",
+  "source_case": "yaw-feature-off-chase-001",
+  "source_files": 7,
+  "runtime_imported_source_copies": 5,
+  "prepared_generation_source_copies": 2,
+  "runtime_modules_resolved": 17,
+  "original_metrics_manifest_sha256": "74a09af99d9683920702fa5fad3da2ae267d0b550f56bf5fea0c50716d437e19",
+  "source_bytes_preserved": true,
+  "no_private_paths_or_lan_addresses_in_new_text": true,
+  "files": {
+    "README.md": {
+      "sha256": "53cdf000cc663ac0fcd3f999087d117e4f725e631237f4836e26dc231443c3c7",
+      "bytes": 6178
+    },
+    "media.json": {
+      "sha256": "b32cb8993a8a3e0a8c801c72447da065849575b904c24ee79bbb49b986478c22",
+      "bytes": 4014
+    },
+    "APPLY_OVERLAY.md": {
+      "sha256": "886d0fe816ca56cf81656a23b55fddd2f91fefdae34533ee0a7c257c4d09e4f4",
+      "bytes": 1555
+    },
+    "evidence/selected_demo_metrics.json": {
+      "sha256": "91cb8ec22f21116fdb5a5cbb7013ad85fc41bb4e6e3ab14d482d8ad6f0eb158c",
+      "bytes": 41213
+    },
+    "evidence/native_source_and_motion.json": {
+      "sha256": "ec66f5a6512b96ba54ca3934b87eeec453e1fed114bf88153d2f17b4bdcd93f5",
+      "bytes": 297215
+    },
+    "evidence/controlled_middle_pass.json": {
+      "sha256": "db3a420ba4685f35d5a0e19ab8e4d19e3945dd5026367052ce0a4a3f4b89a988",
+      "bytes": 18822
+    },
+    "evidence/selected_settings.json": {
+      "sha256": "cc88365c53c9b53349fade053776647f1ef8dcb01d16d0bc977b579df2c95141",
+      "bytes": 5442
+    },
+    "evidence/source_reconstruction.json": {
+      "sha256": "d610311d6504129787b1954f91e86f2071734cd93c3cd97ba62fa38e42b2df0c",
+      "bytes": 5572
+    },
+    "evidence/command_priority_and_feature_usage.json": {
+      "sha256": "da18b53f60c949b1404212702e7b4ad2bb4e35ee2b4a1d81cdc993f35aefa365",
+      "bytes": 2784
+    },
+    "evidence/matched_first_circuit.json": {
+      "sha256": "02e2e4ae84e8f30f17c6ddfe719164530002adbd053dae8acb1c939778d592b2",
+      "bytes": 20289
+    },
+    "evidence/browser_and_visual_qa.json": {
+      "sha256": "10378d6d58eb3b3ea61e7367165785b47525b44a2ec213e791dec3ab60d9e852",
+      "bytes": 721
+    },
+    "evidence/overlay_dependencies.json": {
+      "sha256": "5c570c493c796dc0f2a36cee2d60c165fbbd8aa2a0a3832ceb78d4bad6f2a22d",
+      "bytes": 8299
+    },
+    "evidence/source_binding.json": {
+      "sha256": "704392aac68684d27532c474a2e6800a7f857a0dc615859c3bb0b2b3bffbded9",
+      "bytes": 6489
+    },
+    "evidence/cutin_safety.json": {
+      "sha256": "c766cce1f9e521a7e3c1a5ab7bceecc565510c7d8c099c381e580974ab3cf687",
+      "bytes": 9008
+    },
+    "evidence/rear_safety.json": {
+      "sha256": "895927c94185adbca37fb91f4a0788cf2bee2430d19d33dbeb059e040fcbcea6",
+      "bytes": 8595
+    },
+    "figures/planned-anchors-and-motion.pdf": {
+      "sha256": "6d02637d055037afe64280485e75109578ca21ebe244d526b486eb9240c68b7e",
+      "bytes": 27149
+    },
+    "figures/planned-anchors-and-motion.png": {
+      "sha256": "47483b894c4aec3ba5225fef1fa0908283a5d8519932ea8059bd0c1c1c402722",
+      "bytes": 240308
+    },
+    "overlay/scripts/generate_tournament_world.py": {
+      "sha256": "efb62bb40c8bce2bc7bc35a672badd01297de833c15ee5bfc39d489f3d6badf3",
+      "bytes": 2980
+    },
+    "overlay/scripts/generate_hotlap_world.py": {
+      "sha256": "d1eff323d56b270a0b6e3c1ac01ba45f822e93beab8ae248aeb667b561878e2b",
+      "bytes": 12380
+    },
+    "overlay/webots/controllers/tournament_racer/tournament_racer.py": {
+      "sha256": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a",
+      "bytes": 48050
+    },
+    "overlay/src/race_lidar/rejoin_trajectory.py": {
+      "sha256": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7",
+      "bytes": 65859
+    },
+    "overlay/src/race_lidar/aggressive_hybrid.py": {
+      "sha256": "e2f71cd3048ce3d41a93bde7c4ba3dd7c2260254f25867dbdf0adddfb37ea6e0",
+      "bytes": 58676
+    },
+    "overlay/src/race_lidar/path_tracking.py": {
+      "sha256": "4ebe4956cd2bb6f7a78e122c9fec14ed1837d48a45e62be0cd2561d06c1ee840",
+      "bytes": 64351
+    },
+    "overlay/src/race_lidar/continuous_geometry.py": {
+      "sha256": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+      "bytes": 10524
+    }
+  },
+  "media_status": "READY_FOR_LOCAL_REVIEW_FULL_DECODE_BROWSER_VISUAL_PASS",
+  "source_reconstruction_receipt_sha256": "d610311d6504129787b1954f91e86f2071734cd93c3cd97ba62fa38e42b2df0c",
+  "media_manifest_sha256": "b32cb8993a8a3e0a8c801c72447da065849575b904c24ee79bbb49b986478c22",
+  "prior_source_and_media_preserved": true
+}

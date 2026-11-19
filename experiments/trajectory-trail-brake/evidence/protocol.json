@@ -1,0 +1,90 @@
+{
+  "source_baseline_protocol_sha256": "b3c965d30561dfb893cf3639d09603e91546ff7bab3d048767a329576a4eaaf2",
+  "source_baseline_measurements_sha256": "9c33fddd62c37de2a3883286ac52f8952ef854395b3e4e5a77967f11e34fd7e5",
+  "measurement_definitions": {
+    "brake_active": "Recorded brake intensity>.05.",
+    "meaningful_body_turn": "Speed>5m/s and speed*absolute finite-difference rear-axle yawrate>1m/s²; kinematic turn proxy, not measured tireforce.",
+    "sample_seconds": "Count of qualifying20ms command records times.02; boundary-record convention differs by at mostone tick from interval integration.",
+    "corners": "18 predeclared original-map curvature anchors. Entry/exit±30originalmapmetres; not a claim of exact actual apex. Adjacent windows mayoverlap and are not summed as independent trials.",
+    "combined_proxy": "hypot(raw one-tick speed-derivative estimate,estimated body lateral demand fromcommand). Neither term is measured tireforce; raw derivative is noisy.",
+    "clearance": "Offline5Hz projected full3Dbox-footprint minimum, not continuous-time/contact sensor measurement. Native20ms conservative supervisor overlap audit is separate."
+  },
+  "comparison_scope": "Finite single-run engineering ablations; fixed map, profiles, hardware/grip, weights, road rule, initial scene and rival settings. Different closed-loop trajectories remain possible.",
+  "observed_track_scope": "Union of provided hazards and retained/coasted measured identities; no top-N; not all unseen cars or omniscient ground truth.",
+  "control_priorities": [
+    "Current safety/stopping/road/spin guards remain authoritative.",
+    "Trail release only on approved captured nominal route, before stability and final minimum-deceleration override.",
+    "Hard trajectory veto requires fresh reliable vehicle evidence and coherent motion; unknown/stale tracks do not establish free space."
+  ],
+  "closed_evidence": [
+    "Disabled full integration9518rows exactFF1.",
+    "No-observation combined9403rows exactstrongtrail.",
+    "Clear release variants and isolated risk075/risk025 chases.",
+    "Previous combined-final traffic candidate failed; no trail release occurred.",
+    "Baseline physical cut-in stimulus and clear response observed over30s.",
+    "New stability-positive clear lap independently reconstructed at all9440 estimator/final-cap samples; nonzero traffic floor not exercised.",
+    "Risk0.25 main run:64 strict pins,20 actors with15 verified imports,zero native safety/reset counts.",
+    "Risk0.25 paired cut-in, bounded rear and actual middle cases, with invalid original rear stimulus retained.",
+    "Risk0.25 encoded video and standalone offline viewer QA.",
+    "Zero-cost main run met the predeclared speed/steering-variation comparison and all source/native safety gates.",
+    "Fresh selected-zero cut-in, constrained rear and actual middle fixtures met their declared scopes.",
+    "One noncredible forecast-bound exception retained and reproduced without source patching."
+  ],
+  "claims_not_supported": [
+    "Fewer recorded contacts versus an already zero-contact baseline.",
+    "Improved minimum observed clearance from current isolated planner cases.",
+    "Calibrated probabilistic tube confidence or full-body containment.",
+    "New hard-veto benefit in trials with zero hard-credible tracks.",
+    "Global all-tick tire-force or friction guarantees."
+  ],
+  "experimental_stability_option_default_enabled": false,
+  "new_physical_world_and_settings_protocol": {
+    "source_sha256": "4b62c7464485fcb1f12afbf864674a4ebff6aab7a05b62234f7c77fdffce4a89",
+    "audit": {
+      "physical_world_byte_equal_after_attempt_path_normalization": true,
+      "config_differences_after_attempt_path_normalization": [
+        "/cars/R20/path_tracking/gross_heading_hold_enabled",
+        "/cars/R20/path_tracking/longitudinal_accel_filter_tau_s",
+        "/cars/R20/path_tracking/longitudinal_accel_median_samples",
+        "/cars/R20/path_tracking/longitudinal_friction_estimator_enabled",
+        "/entrants/19/path_tracking/gross_heading_hold_enabled",
+        "/entrants/19/path_tracking/longitudinal_accel_filter_tau_s",
+        "/entrants/19/path_tracking/longitudinal_accel_median_samples",
+        "/entrants/19/path_tracking/longitudinal_friction_estimator_enabled"
+      ],
+      "no_vehicle_road_sensor_or_model_changes": true
+    }
+  },
+  "predeclared_cost_ablation_selection": {
+    "source_protocol_sha256": "b5f47619538f5607464c669f1269de9eb5e0094798a583f02568ce62f4abe8cb",
+    "audit": {
+      "utc": "2026-11-17T21:11:02.558664+00:00",
+      "scope": "FINAL_CONFIG_ONLY_SOFT_RISK_ABLATION",
+      "risk_weights": [
+        0.25,
+        0.0
+      ],
+      "only_config_difference_after_paths": "hero.aggressive_hybrid.trajectory_planning.risk_weight_mps",
+      "path_only_derived_file_hash_differences": [
+        "webots/worlds/apex_chase.wbt",
+        "webots/worlds/.apex_chase_track.geometry.json"
+      ],
+      "all_runtime_source_model_sensor_road_and_vehicle_inputs_unchanged": true,
+      "forecasts_and_hard_gates_remain_enabled": true,
+      "existing_collision_brake_grip_guards_unchanged": true,
+      "selection_predeclared_before_result": {
+        "eligibility": "CLOSED strict source/model/rule checks, full-circuit lead, all20active, zero native overlaps/road violations/resets; actual guard and brake floors reconstructed",
+        "preferred_if": "Eligible zero-cost case is no slower at the first5227crossing and has no higher steering total variation per second than eligible0.25case; then require same three physical fixture gates before local promotion",
+        "mixed_outcome": "Retain both as qualified experiments with stated tradeoffs; no claim of universal optimum",
+        "legacy_baseline": "Preserved regardless; compare separately and disclose regressions",
+        "maximum_extra_20car_trials": 1
+      },
+      "qualification": "CLOSED_ZERO_COST_SELECTED_AFTER_FRESH_FIXTURES"
+    }
+  },
+  "completed_final_qualification": [
+    "Selected zero-cost main, native safety and post-command reconstruction.",
+    "Fresh bounded cut-in, constrained rear and actual whole-body middle fixtures.",
+    "V4 selected-zero full-video decoding, encoded-frame and browser anomaly visual QA."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "source_rejection_receipt_sha256": "bab5b797d6f9235edf470803b9c4ff7763952b036ccff1081da5bda894c91f27",
+  "status": "REJECTED_EXCLUDED_FROM_PRODUCTION_OVERLAY",
+  "scope": "Separate stable-entry dwell prototype; not the selected feedforward-only source.",
+  "stable_entry_dwell_seconds": 0.24,
+  "original_receipt": {
+    "requested_utc": "2026-11-17T19:48:40.096298+00:00",
+    "reason": "Engineering rejection: persistent zero progress under enforced stopping guard; stable-entry delay did not qualify for full-circuit pacing. Preserve all logs/source; do not weaken braking or traffic guards.",
+    "last_race_time_s": 178.98,
+    "stationary_interval_start_s": 86.10000000000001,
+    "stationary_duration_s": 92.87999999999998,
+    "progress_m": 1425.1424912375558,
+    "guard_flags": [
+      "predictive_stopping_gap",
+      "stopping_brake_feedforward"
+    ],
+    "selected_for_final": false
+  },
+  "clear_lap_replay_observation": "All9518recorded clear commands/poses matched feedforward-only1m; traffic did not qualify.",
+  "completed_full_reference_circuit": false,
+  "lead_or_full_distance_race_win_claimed": false,
+  "prototype_source_distributed": false,
+  "prototype_tests_counted_as_selected_feedforward_tests": false
+}

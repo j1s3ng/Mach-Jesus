@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "scope": "SOURCE_ONLY_SMOOTH_LINE_AND_PASS_FIRST_OVERLAY_LOCAL_REVIEW",
+  "status": "CLOSED_ENGINEERING_CHASE_REVIEWED",
+  "created_utc": "2026-11-17T17:07:55.033259+00:00",
+  "public_promotion_performed": false,
+  "new_training_performed": false,
+  "formal_study_result_claimed": false,
+  "base_study_historical_export_commit": "ca985876a6539cf4630091d72554a91501ae3eef",
+  "baseline_engineering_demo": "overtake-demo-20261116-004",
+  "candidate_engineering_demo": "racing-line-20261117-001",
+  "candidate_actual_source_manifest_sha256": "995b4cadd26c78035547611acb7d50c4d3eb04af4759eb9000217d0fad57a748",
+  "source_paths_relative_to": "source/",
+  "source_files_sha256": {
+    "src/race_lidar/aggressive_hybrid.py": "e2a93f988bf5754c6a3e9c8b1d967b9c3fa7b5f4a110168c0c82793f8ec56a64",
+    "src/race_lidar/demo_chase.py": "41776c70201a0392f1dc6417b6be52fbae31ab6b1ec1ea04766f10d030462a10",
+    "src/race_lidar/race_control.py": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+    "src/race_lidar/hotlap_driver.py": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+    "webots/controllers/tournament_racer/tournament_racer.py": "acc7c0a4d285bbf0011a180a8dcccdfaf5b0e94c46acebb2f86503766329d1d8",
+    "webots/controllers/tournament_director/tournament_director.py": "63ff24133c8865f7c888c07ed837f28f56ee470fec8c6237beb8e1f9e09e3417",
+    "src/race_lidar/smooth_racing_line.py": "a6a3d68b1be0a81ecaaa307905df237a9a10298fe723f29d1ff79b991d00410f"
+  },
+  "supporting_files_sha256": {
+    "analysis/racing_line_comparison.png": "eb6c204e7913e13932923752c25e8b3d0837083d4e0bd7fdfdfa81411da06304",
+    "analysis/racing_line_comparison.pdf": "97ae5aa77ff41452a2e8beb8d9717564f5d7477a1f24d95676a4a430a219d9ec",
+    "analysis/map_only_report.json": "c636effc3f07ba716f7fa7036d9d99920ef08a0508f4f4e4061adc7263ac5548",
+    "README.md": "a448b8e0ed45acd4bcb6dea7f5ecf2f742c8e9a793fa03648eecfe102568f0f6"
+  },
+  "external_frozen_plan": {
+    "included": false,
+    "filename": "map_line_plan.npz",
+    "sha256": "b46bd54fdb842b33e599477fed58aaed76e4f8b7e059d03b43ae5ce02652a785",
+    "runtime_optimizer_required": false,
+    "geometry_reference_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e",
+    "planner_module_sha256": "a6a3d68b1be0a81ecaaa307905df237a9a10298fe723f29d1ff79b991d00410f",
+    "regeneration_note": "README documents map-only regeneration. A regenerated artifact must be separately hashed and pinned; byte-identical NPZ output is not promised across numerical environments."
+  },
+  "models": {
+    "original_voxelnext_checkpoint_sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b",
+    "hero_rich005_seed7_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+    "rival_rich005_seed17_sha256": "d9837d76d29f80368dae8ec8f611aa67b4c3e7885ed5bab51876fbff34afd9da",
+    "rival_rich006_seed17_sha256": "730802bc23036458e76007f0f17b8f13a3894457e14d82b642f8f571f84d83c6",
+    "reference_npz_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e"
+  },
+  "models_unchanged_from_baseline": true,
+  "hero_parameters": {
+    "policy": "neural_rich005_seed7",
+    "car_id": "R20",
+    "grid_index": 19,
+    "start_progress_m": -228.0,
+    "start_lane_m": 2.5,
+    "seed": 626,
+    "flat_out_no_lift": false,
+    "ignore_reference_source_speed": true,
+    "maximum_lane_m": 4.0,
+    "aggressive_hybrid": {
+      "version": "pass-first-bidirectional-racing-line-v1",
+      "commit_seconds": 2.5,
+      "switch_gain_mps": 4.0,
+      "relax_blanket_visibility_cap": true,
+      "racing_guard_parameters": {
+        "lane_rate_mps": 1.8,
+        "ego_half_width_m": 1.05,
+        "lateral_margin_m": 0.1,
+        "position_uncertainty_cap_m": 0.5,
+        "lead_speed_sigma_factor": 0.25,
+        "reaction_seconds": 0.2,
+        "following_gap_m": 5.0
+      },
+      "maximum_lane_m": 4.0,
+      "minimum_pass_gain_mps": 1.0,
+      "transient_conflict_hold_seconds": 0.6
+    },
+    "racing_guard_parameters": {
+      "lane_rate_mps": 1.8,
+      "ego_half_width_m": 1.05,
+      "lateral_margin_m": 0.1,
+      "position_uncertainty_cap_m": 0.5,
+      "lead_speed_sigma_factor": 0.25,
+      "reaction_seconds": 0.2,
+      "following_gap_m": 5.0
+    },
+    "software_planning_ceiling_mps": 100.0,
+    "lateral_accel_budget_mps2": 8.0,
+    "brake_decel_mps2": 8.0,
+    "acceleration_mps2": 5.0
+  },
+  "line_parameters": {
+    "nominal_offset_bound_m": 2.8,
+    "passing_absolute_offset_bound_m": 4.0,
+    "nominal_lateral_rate_budget_mps": 1.4,
+    "max_nfev": 300,
+    "smoothing_distances_m": [
+      6.0,
+      12.0,
+      20.0
+    ],
+    "offset_weight": 1e-06,
+    "slope_weight": 0.002,
+    "bend_weight": 0.2,
+    "original_map_used_for_progress_ranking_traffic_and_learned_inputs": true
+  },
+  "shared_demo_parameters": {
+    "cars": 20,
+    "seed": 607,
+    "grid_spacing_m": 12.0,
+    "grid_jitter_m": 0.0,
+    "sensor_period_ms": 200,
+    "physics_step_ms": 20,
+    "visibility_m": 70.0,
+    "nominal_lap_target": 20,
+    "chase_stop": {
+      "hero_car_id": "R20",
+      "lead_hold_seconds": 1.0,
+      "lead_margin_m": 2.5,
+      "failure_hold_seconds": 1.0
+    }
+  },
+  "physics": {
+    "vehicle_model": "generic Webots Car 880kg electric",
+    "friction_coefficient": 1.5,
+    "total_vehicle_mass_kg": 880.0,
+    "track_error_limit_m": 6.0,
+    "rival_software_planning_ceiling_mps": 60.0,
+    "rival_configs_unchanged": 19,
+    "vehicle_power_grip_and_tire_changes": false
+  },
+  "baseline_observed_passing_sides": {
+    "scope": "Prior 004 run only; both sides were already supported. Offline observed progress crossings, not driver inputs.",
+    "left": 11,
+    "right": 8,
+    "classification_definition": "Side of hero relative to rival in original-map Frenet lateral coordinates at first sustained crossing",
+    "classification_sha256": "b38a03e3f07042f3cc1fda858c9851331394919c3f2009bbe90333a337148ab6"
+  },
+  "validation": {
+    "policy_behavior": {
+      "passed": 20,
+      "scope": "Synthetic controlled scenes, including mirrored pass choice, rear/alongside blockers, braking fallback, hysteresis, true-coordinate recovery and current-to-destination profile cap.",
+      "test_source_sha256": "8c7eab1c3f5c1c84162dc08a3b35c974b004d734aff6461d8333a9e9e441241b",
+      "performance_result": false
+    },
+    "saved_state_functional": {
+      "passed": 5,
+      "scope": "Five saved states from prior 004, exercised with the actual frozen map plan. Functional compatibility only; no new simulation, detector inference, or race performance evidence.",
+      "frozen_plan_sha256": "b46bd54fdb842b33e599477fed58aaed76e4f8b7e059d03b43ae5ce02652a785",
+      "performance_result": false
+    },
+    "line_unit_and_map": {
+      "passed": 11,
+      "synthetic_or_loader_tests": 10,
+      "actual_reference_map_tests": 1,
+      "scope": "Bounded map-only improvement test is separated from synthetic periodicity, symmetry, straight/circle, physical profile and frozen-loader tests.",
+      "test_source_sha256": "0b502bde8495c8dcf179547a0da83bc44fd344070a4ac41ad75d637b911ebf22",
+      "reference_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e",
+      "performance_result": false
+    },
+    "independent_integration_review": {
+      "status": "PASS",
+      "source_files_verified": 55,
+      "rival_configs_verified_unchanged": 19,
+      "prior004_source_files_verified_unchanged": 53,
+      "receipt_sha256": "05b0b2e6762b9bee96ae7828ac99af41bd5fecfc7177212712d5a4090ac1a970"
+    },
+    "closed_physical_simulation_audit": {
+      "status": "REVIEWED",
+      "audit_json_sha256": "d698fba90f1da369e33ac8b58467cd9a5c3cddcc7556e78a62d7f1fb82ebcf67",
+      "audit_markdown_sha256": "5267e3b822e1da9be15ad101caf139a560699cf96b74b71255c26674845344ec",
+      "frozen_source_files_verified": 55,
+      "unchanged_rival_configurations": 19,
+      "all20_runtime_source_model_detector_reference_pins_match": true,
+      "all20_controller_results_flushed_and_failure_free": true,
+      "shared_world_physics_grid_and_weights_match": true,
+      "no_opponent_ground_truth_control": true,
+      "hero_line_loaded_without_optimizer": true,
+      "nominal_twenty_lap_completion": false,
+      "formal_race_winner_claimed": false
+    }
+  },
+  "map_only_diagnostics": {
+    "report": "analysis/map_only_report.json",
+    "curvature_energy_reduction_percent": 14.399315913428046,
+    "estimated_flying_lap_gain_seconds": 3.703478102072012,
+    "solver_converged": true,
+    "function_evaluations": 173,
+    "global_optimum_claimed": false,
+    "measured_simulator_result": false
+  },
+  "availability": "Seven exact runtime Python overrides for the base source export included in this repository, with map-only review figures/report. External reference, frozen or regenerated plan, models, Webots assets and complete race configuration are needed for a fresh simulation. No binary arrays, model weights or raw logs are included.",
+  "closed_review_utc": "2026-11-17T17:14:56.512608+00:00",
+  "measured_candidate_time_to_lead_improvement_observed": true,
+  "component_isolated_effects_claimed": false,
+  "measured_lap_gain_claimed": false,
+  "multi_seed_generalization_claimed": false,
+  "formal_full_distance_race_win_claimed": false,
+  "closed_engineering_chase": {
+    "scope": "One matched rear-grid chase; combined smooth line, corridor and pass-first/hysteresis changes; not an isolated ablation or multi-seed result.",
+    "audit_json_sha256": "d698fba90f1da369e33ac8b58467cd9a5c3cddcc7556e78a62d7f1fb82ebcf67",
+    "audit_markdown_sha256": "5267e3b822e1da9be15ad101caf139a560699cf96b74b71255c26674845344ec",
+    "baseline004": {
+      "start_position": 20,
+      "time_to_sustained_lead_race_s": 325.5,
+      "position_at_close": 1,
+      "active_entrants_at_close": 20,
+      "observed_progress_crossings_by_side": {
+        "left": 11,
+        "right": 8,
+        "ambiguous": 0
+      },
+      "director_audit_hz": 50,
+      "all_car_overlap_samples": 0,
+      "all_car_track_violation_steps": 0,
+      "all_car_pose_resets": 0,
+      "cars_with_zero_audited_overlap_track_violation_and_reset": 20,
+      "hero_maximum_reference_error_m": 4.010415000361653,
+      "hero_peak_measured_speed_kph": 206.8514516620137,
+      "whole_chase_rapid_opposite_fixed_pass_requests": 21,
+      "whole_chase_sampled_braking_time_fraction": 0.3115207373271887,
+      "common_horizon_sampled_braking_time_fraction": 0.3214118903049307,
+      "common_horizon_steering_total_variation_rad_per_s": 0.04865828614555913,
+      "common_horizon_rapid_opposite_fixed_pass_requests": 17,
+      "full_twenty_lap_race_completed": false,
+      "formal_race_winner_claimed": false
+    },
+    "smooth_line_pass_first": {
+      "start_position": 20,
+      "time_to_sustained_lead_race_s": 299.74,
+      "position_at_close": 1,
+      "active_entrants_at_close": 20,
+      "observed_progress_crossings_by_side": {
+        "left": 13,
+        "right": 6,
+        "ambiguous": 0
+      },
+      "director_audit_hz": 50,
+      "all_car_overlap_samples": 0,
+      "all_car_track_violation_steps": 0,
+      "all_car_pose_resets": 0,
+      "cars_with_zero_audited_overlap_track_violation_and_reset": 20,
+      "hero_maximum_reference_error_m": 4.482603334486156,
+      "hero_peak_measured_speed_kph": 187.96302308804985,
+      "whole_chase_rapid_opposite_fixed_pass_requests": 1,
+      "whole_chase_sampled_braking_time_fraction": 0.3496363515046375,
+      "common_horizon_sampled_braking_time_fraction": 0.3496363515046375,
+      "common_horizon_steering_total_variation_rad_per_s": 0.05296426878287284,
+      "common_horizon_rapid_opposite_fixed_pass_requests": 1,
+      "full_twenty_lap_race_completed": false,
+      "formal_race_winner_claimed": false
+    },
+    "time_to_lead_improvement_seconds": 25.75999999999999,
+    "time_to_lead_improvement_fraction": 0.07913978494623652,
+    "common_horizon_race_seconds": 299.74,
+    "track_reference_error_limit_m": 6.0,
+    "rapid_reversal_definition": "Opposite explicit fixed outer passing corridor within 2 s of preceding outer-corridor decision; same-side decisions refresh time. Center/HOLD/nominal ignored as sides. Prior \u00b13.2 m and new \u00b14 m; smooth nominal offsets never counted.",
+    "braking_definition": "Piecewise integration of 10 Hz saved controls after common start, brake command above 0.05. Whole-chase and common-horizon values are reported separately.",
+    "steering_variation_definition": "Total absolute change in saved steering commands divided by common elapsed race duration; rad/s, from 10 Hz saved controls.",
+    "crossing_definition": "Hero-minus-rival original-map Frenet lateral at first sustained-progress-crossing sample; positive=left",
+    "crossing_ground_truth_used_for_driver": false,
+    "tradeoffs": "Earlier sustained lead and fewer rapid fixed-pass reversals, with more braking time, higher common-horizon steering variation, larger maximum reference error and lower peak speed.",
+    "measured_lap_gain_claimed": false,
+    "new_training_performed": false,
+    "formal_race_winner_claimed": false
+  },
+  "local_review_delivery_prepared": true,
+  "review_media": {
+    "paths_relative_to": "repository_root",
+    "files_sha256": {
+      "docs/Pass_First_Demo.mp4": "c638a04fff59495ad77a19cb53826e826239c7380896931786207e5e8e0fe4a1",
+      "docs/Pass_First_Normal_Speed.mp4": "3f7d403f9a6011f7f850fe5b99e330aa41c1088f39dcd6e13a41a7d59910738f",
+      "docs/pass-first-demo.jpg": "193e2a8f39a75aabdd354a12f77d03933c71d0e414da51e9ec603aa94d4d2376"
+    },
+    "short_video_seconds": 112.0,
+    "short_body_speed_factor": 3.006,
+    "normal_video_seconds": 300.6,
+    "retained_source_camera_frames": 1503,
+    "full_decode_and_actual_frame_review_passed": true,
+    "media_provenance_sha256": "9989941f8fc124eb9200af0fa6c68567b8ebbd7955e3eaac0df4e90c89c65d98"
+  }
+}

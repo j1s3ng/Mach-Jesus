@@ -1,0 +1,273 @@
+{
+  "source_audit_sha256": "b7ce3873f09c4afd82684832e22777004e46716c3b9bb4c9fb101b42c508bfc9",
+  "audit": {
+    "scope": "Three single observed CLOSED scenarios with differentclosedloop trajectories. Firstcircuit andlaterleadstop areseparate. No causal multi-seed safetyorforecast claim.",
+    "clearance_definition": "Minimum observed5Hz full3D bounding-box vertices projectedtoXY/convex-hull separation,notcontact sensors/continuous-time minimum.",
+    "TTC_definition": "Offline diagnosticat5Hz: currentlylaterally overlapping projectedbody intervals, same-directionheading within45deg, opponentinfront withbumpergap0–100m, closing along egoheading>.5m/s; TTC=gap/closing. Constant-velocity/localheading approximation,notgroundtruthfuturecollision anddoesnotcoverfuturecut-ins.",
+    "driver_ground_truth_input": false,
+    "runs": {
+      "ff1": {
+        "first_reference_circuit_crossing_race_s": 231.3697496132369,
+        "sustained_P1_fullprogress_stop_race_s": 232.38,
+        "track_rule": "Custom>=2wheelcenters onwhite-line/tarmac;kerbsexcluded,notold6mreferencequalification",
+        "all20_active": true,
+        "native50hz_all_actor_overlap_samples": 0,
+        "native50hz_all_actor_two_center_violations": 0,
+        "body_margin_and_TTC": {
+          "native_GT_hz": 5.0,
+          "native_frame_count": 1162,
+          "minimum_all_field_observed_body_clearance": {
+            "cars": [
+              "R15",
+              "R18"
+            ],
+            "race_s": 216.6,
+            "metres": 0.9271852196963671
+          },
+          "minimum_hero_observed_body_clearance": {
+            "cars": [
+              "R14",
+              "R20"
+            ],
+            "race_s": 12.8,
+            "metres": 1.9067682935533845
+          },
+          "all_pair_observations_below_clearance_m": {
+            "0.5": 0,
+            "1.0": 2,
+            "2.0": 73
+          },
+          "hero_pair_observations_below_clearance_m": {
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 1
+          },
+          "minimum_all_field_TTC_diagnostic": {
+            "follower": "R14",
+            "leader": "R11",
+            "race_s": 36.4,
+            "ttc_s": 0.3240096428689482,
+            "bumper_gap_m": 1.6597625139860384,
+            "closing_mps": 5.122571350931555
+          },
+          "minimum_hero_TTC_diagnostic": {
+            "follower": "R20",
+            "leader": "R12",
+            "race_s": 12.8,
+            "ttc_s": 2.009083360630714,
+            "bumper_gap_m": 22.191817926375528,
+            "closing_mps": 11.045742730858526
+          },
+          "all_field_directed_TTC_observations_below_s": {
+            "0.5": 2,
+            "1.0": 10,
+            "2.0": 34,
+            "3.0": 130
+          },
+          "hero_TTC_observations_below_s": {
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 0,
+            "3.0": 10
+          }
+        },
+        "soft_risk_costs": {
+          "counts": {},
+          "all_candidate_logged_risk_cost_mps": {
+            "count": 0
+          },
+          "selected_matching_candidate_logged_risk_cost_mps": {
+            "count": 0
+          },
+          "attribution_limit": "Unknown-only means all logged near-encounter IDs for that positive cost are unclassified. Mixed costs are not attributed to one class. Top-utility changes are local ranking diagnostics, not fulldriver counterfactuals because commitment/hysteresis also apply."
+        }
+      },
+      "risk075": {
+        "first_reference_circuit_crossing_race_s": 241.8399999999993,
+        "sustained_P1_fullprogress_stop_race_s": 312.12,
+        "track_rule": "Custom>=2wheelcenters onwhite-line/tarmac;kerbsexcluded,notold6mreferencequalification",
+        "all20_active": true,
+        "native50hz_all_actor_overlap_samples": 0,
+        "native50hz_all_actor_two_center_violations": 0,
+        "body_margin_and_TTC": {
+          "native_GT_hz": 5.0,
+          "native_frame_count": 1561,
+          "minimum_all_field_observed_body_clearance": {
+            "cars": [
+              "R11",
+              "R13"
+            ],
+            "race_s": 35.2,
+            "metres": 0.94416387162758
+          },
+          "minimum_hero_observed_body_clearance": {
+            "cars": [
+              "R08",
+              "R20"
+            ],
+            "race_s": 87.2,
+            "metres": 1.6599513221259345
+          },
+          "all_pair_observations_below_clearance_m": {
+            "0.5": 0,
+            "1.0": 12,
+            "2.0": 145
+          },
+          "hero_pair_observations_below_clearance_m": {
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 6
+          },
+          "minimum_all_field_TTC_diagnostic": {
+            "follower": "R13",
+            "leader": "R11",
+            "race_s": 34.8,
+            "ttc_s": 0.3606327934323333,
+            "bumper_gap_m": 2.3424116536057227,
+            "closing_mps": 6.49528189411659
+          },
+          "minimum_hero_TTC_diagnostic": {
+            "follower": "R20",
+            "leader": "R12",
+            "race_s": 13.0,
+            "ttc_s": 1.9542984721088406,
+            "bumper_gap_m": 20.077942059832708,
+            "closing_mps": 10.273733693383612
+          },
+          "all_field_directed_TTC_observations_below_s": {
+            "0.5": 1,
+            "1.0": 9,
+            "2.0": 52,
+            "3.0": 179
+          },
+          "hero_TTC_observations_below_s": {
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 1,
+            "3.0": 13
+          }
+        },
+        "soft_risk_costs": {
+          "counts": {
+            "forecast_frames": 1561,
+            "candidates": 10252,
+            "positive_cost_mixed": 2878,
+            "frames_with_eligible_candidates": 1515,
+            "top_eligible_utility_choice_changed_by_cost": 79,
+            "positive_cost_unknown_only": 3865,
+            "positive_cost_vehicle_only": 509
+          },
+          "all_candidate_logged_risk_cost_mps": {
+            "count": 10252,
+            "mean": 0.4787505491730406,
+            "median": 0.39667742431842923,
+            "p95": 1.5318566767292974,
+            "maximum": 2.0
+          },
+          "selected_matching_candidate_logged_risk_cost_mps": {
+            "count": 1530,
+            "mean": 0.3021844824444846,
+            "median": 0.02305744741619205,
+            "p95": 1.5318566767292974,
+            "maximum": 2.0
+          },
+          "attribution_limit": "Unknown-only means all logged near-encounter IDs for that positive cost are unclassified. Mixed costs are not attributed to one class. Top-utility changes are local ranking diagnostics, not fulldriver counterfactuals because commitment/hysteresis also apply."
+        }
+      },
+      "risk025": {
+        "first_reference_circuit_crossing_race_s": 240.5890566878876,
+        "sustained_P1_fullprogress_stop_race_s": 241.6,
+        "track_rule": "Custom>=2wheelcenters onwhite-line/tarmac;kerbsexcluded,notold6mreferencequalification",
+        "all20_active": true,
+        "native50hz_all_actor_overlap_samples": 0,
+        "native50hz_all_actor_two_center_violations": 0,
+        "body_margin_and_TTC": {
+          "native_GT_hz": 5.0,
+          "native_frame_count": 1209,
+          "minimum_all_field_observed_body_clearance": {
+            "cars": [
+              "R03",
+              "R07"
+            ],
+            "race_s": 129.2,
+            "metres": 0.32101000201362445
+          },
+          "minimum_hero_observed_body_clearance": {
+            "cars": [
+              "R14",
+              "R20"
+            ],
+            "race_s": 12.8,
+            "metres": 1.7251478690053859
+          },
+          "all_pair_observations_below_clearance_m": {
+            "0.5": 3,
+            "1.0": 6,
+            "2.0": 138
+          },
+          "hero_pair_observations_below_clearance_m": {
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 3
+          },
+          "minimum_all_field_TTC_diagnostic": {
+            "follower": "R07",
+            "leader": "R03",
+            "race_s": 129.0,
+            "ttc_s": 0.026551917097504384,
+            "bumper_gap_m": 0.09080533525386159,
+            "closing_mps": 3.4199163442852263
+          },
+          "minimum_hero_TTC_diagnostic": {
+            "follower": "R20",
+            "leader": "R12",
+            "race_s": 13.0,
+            "ttc_s": 1.9543552173213758,
+            "bumper_gap_m": 20.07835667558087,
+            "closing_mps": 10.273647542487241
+          },
+          "all_field_directed_TTC_observations_below_s": {
+            "0.5": 4,
+            "1.0": 9,
+            "2.0": 81,
+            "3.0": 196
+          },
+          "hero_TTC_observations_below_s": {
+            "0.5": 0,
+            "1.0": 0,
+            "2.0": 1,
+            "3.0": 4
+          }
+        },
+        "soft_risk_costs": {
+          "counts": {
+            "forecast_frames": 1209,
+            "candidates": 6723,
+            "positive_cost_mixed": 1706,
+            "frames_with_eligible_candidates": 1134,
+            "top_eligible_utility_choice_changed_by_cost": 16,
+            "positive_cost_unknown_only": 1454,
+            "positive_cost_vehicle_only": 239
+          },
+          "all_candidate_logged_risk_cost_mps": {
+            "count": 6723,
+            "mean": 0.1324358098714853,
+            "median": 0.008920135331986134,
+            "p95": 0.5458205020519878,
+            "maximum": 0.6666666666666666
+          },
+          "selected_matching_candidate_logged_risk_cost_mps": {
+            "count": 1151,
+            "mean": 0.08084996197594968,
+            "median": 0.0,
+            "p95": 0.4660847846839665,
+            "maximum": 0.6666666666666666
+          },
+          "attribution_limit": "Unknown-only means all logged near-encounter IDs for that positive cost are unclassified. Mixed costs are not attributed to one class. Top-utility changes are local ranking diagnostics, not fulldriver counterfactuals because commitment/hysteresis also apply."
+        }
+      }
+    }
+  },
+  "recorded_contact_reduction_claimed": false,
+  "clearance_margin_improvement_claimed": false
+}

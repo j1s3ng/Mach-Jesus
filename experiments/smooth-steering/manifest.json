@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "package": "smooth-steering",
+  "visibility": "LOCAL_REVIEW_ONLY",
+  "status": "READY_FOR_LOCAL_REVIEW",
+  "dependency": {
+    "package": "apex-and-gap",
+    "public_relative_readme": "../apex-and-gap/README.md",
+    "manifest_sha256": "01b53aa69f489c71ee2fdccad5053e76e20d2552d5e0186bc3e5384279ab1ef1",
+    "apply_this_overlay_after_dependency": true
+  },
+  "source_overlay_status": "READY_FOR_LOCAL_REVIEW",
+  "source_overlay_files": [
+    {
+      "path": "overlay/src/race_lidar/path_tracking.py",
+      "destination": "src/race_lidar/path_tracking.py",
+      "sha256": "c54abf9aec44f0c1afbca9d279d09ea0f4305cb1332d567defbf06bf0e7fe745",
+      "bytes": 28878
+    },
+    {
+      "path": "overlay/webots/controllers/tournament_racer/tournament_racer.py",
+      "destination": "webots/controllers/tournament_racer/tournament_racer.py",
+      "sha256": "5af4ca31c1cd5d8407ba7be77be178d02f6e0bca36e3ad04db81b8928c6efc58",
+      "bytes": 37885
+    }
+  ],
+  "candidate_configuration": {
+    "key": "path_tracking.feedforward_curvature_smoothing_sigma_m",
+    "legacy_default_sigma_m": 0.0,
+    "candidate_sigma_m": [
+      1.0,
+      2.0
+    ],
+    "temporal_filter_state_added": false,
+    "selected_sigma_m": 1.0
+  },
+  "measurement": "Actual recorded command at50Hz; not measured wheel-angle/tire-force data.",
+  "candidate_physical_results": "CLOSED_CLEAR_AND_TRAFFIC",
+  "controlled_fast_avoidance_qualification": "CLOSED_CONTROLLED_MIDDLE_PASS_ONLY",
+  "review_media_status": "READY_FOR_LOCAL_REVIEW",
+  "external_artifacts_required_not_distributed": [
+    {
+      "logical_name": "original_reference",
+      "suggested_filename": "reference.npz",
+      "sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e"
+    },
+    {
+      "logical_name": "generated_tarmac_white_line_geometry",
+      "suggested_filename": "road_tyre_bounds.npz",
+      "sha256": "0c62620ea6baed2c2aea837ebb6eafbef5f36e6ac9ab9113a3825794b7f50c3a"
+    },
+    {
+      "logical_name": "selected_8_8_5_mapped_line_plan",
+      "suggested_filename": "map_line_plan.npz",
+      "sha256": "2e1de29366dca5ab281a9025ffe715b4b8cfb28c52d6dbab8d4783b25216ceea"
+    },
+    {
+      "logical_name": "unchanged_selected_learned_model",
+      "suggested_filename": "neural_rich005_seed7.npz",
+      "sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989"
+    },
+    {
+      "logical_name": "unchanged_rival_learned_model_005_seed17",
+      "suggested_filename": "neural_rich005_seed17.npz",
+      "sha256": "d9837d76d29f80368dae8ec8f611aa67b4c3e7885ed5bab51876fbff34afd9da"
+    },
+    {
+      "logical_name": "unchanged_rival_learned_model_006_seed17",
+      "suggested_filename": "neural_rich006_seed17.npz",
+      "sha256": "730802bc23036458e76007f0f17b8f13a3894457e14d82b642f8f571f84d83c6"
+    },
+    {
+      "logical_name": "expected_external_perception_detector_checkpoint",
+      "sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b"
+    }
+  ],
+  "prior_public_preservation": {
+    "snapshot_sha256": "aeb3317d550f937c63ebea0ee17c7142aa6e6516da0e727c138eae3dd029b17c",
+    "pinned_file_count": 383,
+    "allowed_existing_file_change": "top-level README.md only",
+    "export_agent_writes_to_public": false
+  },
+  "artifact_policy": {
+    "raw_logs_included": false,
+    "npz_archives_or_weights_included": false,
+    "private_paths_or_network_identities_included": false,
+    "new_training_performed": false,
+    "physical_candidate_improvement_claimed": true,
+    "physical_candidate_improvement_scope": "Closed clear-track steering-command/lap comparison only; no traffic or rapid avoidance claim."
+  },
+  "inventory_excludes": "manifest.json (avoids a recursive self-hash)",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10031,
+      "sha256": "dd574985aeb46f8dc51ab086f16eae42da01ec217cc23f400b7d600bd7ecc432"
+    },
+    {
+      "path": "evidence/baseline_traffic_ui_exception.json",
+      "bytes": 16461,
+      "sha256": "10d7a023e290f902fa405691ac583eb481a8865c008d1394836c81141beebc34"
+    },
+    {
+      "path": "evidence/clear_selection.json",
+      "bytes": 52409,
+      "sha256": "753ca914dd1add448aeecf620ea3b5a67baae5214b46883e0d1ba6d68bc0d759"
+    },
+    {
+      "path": "evidence/controlled_middle_pass.json",
+      "bytes": 7799,
+      "sha256": "0702ef51633fedf74479b36d78619ca17189756aed65f57b4efbfbc838d76130"
+    },
+    {
+      "path": "evidence/diagnosis.json",
+      "bytes": 2490,
+      "sha256": "47580f7c3084c9431db47987145164dcbc1f5a0b7ae28a4af7e722571ace1976"
+    },
+    {
+      "path": "evidence/rejected_dwell_candidate.json",
+      "bytes": 1237,
+      "sha256": "5d8fe81b2ea7908542c9d733d1cbefbb625cbe348b7c61cddcc9e3dc1b98b2c1"
+    },
+    {
+      "path": "evidence/results.json",
+      "bytes": 254751,
+      "sha256": "550f17453dcb4d7364a1982f499812c78671786170e8cbd4e5ae0c032bc95229"
+    },
+    {
+      "path": "evidence/setup.json",
+      "bytes": 7060,
+      "sha256": "c9a67107a0b44229d5c96b626132949232c24bef8fb5d58da6c3ee9407941f12"
+    },
+    {
+      "path": "evidence/test_receipt.json",
+      "bytes": 4477,
+      "sha256": "2937ed3447821f08bd4d391fbfda94afdf65dbcbf9e1b7dae162db3a25849814"
+    },
+    {
+      "path": "evidence/traffic_comparison.json",
+      "bytes": 139342,
+      "sha256": "8d4f9a8df89e78ae7ba43f94ec85c52854d78c99e2e9bd8888ae9e3e46fc64f3"
+    },
+    {
+      "path": "figures/actual_middle_gap.png",
+      "bytes": 110608,
+      "sha256": "b03b5158604f70b6f390c3851403ae9e98c7c0277109cce9abaa2b5dcb811427"
+    },
+    {
+      "path": "figures/clear_three_arm_metrics.pdf",
+      "bytes": 24616,
+      "sha256": "2273f3eb3f41447ef5bf674ca810f3aac475c6507049c4176dddebeff9132c0b"
+    },
+    {
+      "path": "figures/clear_three_arm_metrics.png",
+      "bytes": 146346,
+      "sha256": "532a8a6f5ba4b66fa7c8f7f4397ca4227c4dbca9a74ed76518ef9e48e9960663"
+    },
+    {
+      "path": "figures/recorded_clear_commands.pdf",
+      "bytes": 115223,
+      "sha256": "23f56a0d1024a8e62eecfb4001b03fbe57b54202e6d45205925ffa7fb37ae65b"
+    },
+    {
+      "path": "figures/recorded_clear_commands.png",
+      "bytes": 355080,
+      "sha256": "ea7ed5965e48c773628d2ffe0cdc6d70220fbdd4fa769d5785bf78c822e2945e"
+    },
+    {
+      "path": "figures/traffic_comparison.pdf",
+      "bytes": 25790,
+      "sha256": "ac584b9aba69724ff28e259a6ed9000b0c07e5e952154e402ce1982b1121c90a"
+    },
+    {
+      "path": "figures/traffic_comparison.png",
+      "bytes": 148982,
+      "sha256": "24b820abe7a28a3195e45699a2b14f9bdca72e207015e318695e1d5b9437caab"
+    },
+    {
+      "path": "media.json",
+      "bytes": 3826,
+      "sha256": "7adacb05bf1acfb46998eb1326e8a6203de74a3b02bf05342d193f29a8ece218"
+    },
+    {
+      "path": "overlay/src/race_lidar/path_tracking.py",
+      "bytes": 28878,
+      "sha256": "c54abf9aec44f0c1afbca9d279d09ea0f4305cb1332d567defbf06bf0e7fe745"
+    },
+    {
+      "path": "overlay/webots/controllers/tournament_racer/tournament_racer.py",
+      "bytes": 37885,
+      "sha256": "5af4ca31c1cd5d8407ba7be77be178d02f6e0bca36e3ad04db81b8928c6efc58"
+    }
+  ],
+  "clear_selection_audit_sha256": "415b05327fe776950c2c1723b188e379f4c49af763782abb354793dc5f3d9143",
+  "clear_three_arm_report_sha256": "79c03b3506609d563ccadd5d59b550ad3d047e15f8f2de5454189dd0a976928f",
+  "baseline_traffic_pin_status": "EXACT_DOCUMENTED_NON_RUNTIME_GUI_LAYOUT_EXCEPTION",
+  "baseline_traffic_ui_adjudication_sha256": "f5b74a6c175395ed31382ac713cd07281cb58b58ce8779443f34670d236c8ebb",
+  "figure_provenance": {
+    "source_three_arm_report_sha256": "79c03b3506609d563ccadd5d59b550ad3d047e15f8f2de5454189dd0a976928f",
+    "actual_trace_sha256": {
+      "baseline": "934df76017fef540b2cde7b4f64814257b480a977802815b11f4fad797d76c62",
+      "sigma1": "65b509508846242dcc4480f847bedae6039ddeb1be4591a45cec4d50e4bac979",
+      "sigma2": "8d4cacdeedda51da0772ff20f234af2a15f3f3dddd7b94e8128bce56da3349bb"
+    },
+    "all_drawn_curves": "Actual recorded50Hz commands; no filtered-command surrogate plotted.",
+    "fixed_progress_windows": [
+      {
+        "corner": "C01",
+        "original_progress_m": 361.8289211307665,
+        "half_width_m": 30.0,
+        "selection_reason": "first original-map anchor"
+      },
+      {
+        "corner": "C06",
+        "original_progress_m": 2610.439400324675,
+        "half_width_m": 30.0,
+        "selection_reason": "tightest original-map anchor"
+      }
+    ],
+    "whole_lap_metric_table_includes_all_three_arms": true,
+    "traffic_table_source_audit_sha256": "e7a9a23b7b7df0366516898914ab2dc05e1e8bc194c5a5a5c94dc0b768b22e71",
+    "middle_figure_sha256": "b03b5158604f70b6f390c3851403ae9e98c7c0277109cce9abaa2b5dcb811427"
+  },
+  "actual_body_heading_diagnostic_sha256": "8af81cbf0b9db25c3369efd6aa3eb20ebb12e1b1e99667b4fcd7669a05e09dc2",
+  "final_runtime_choice": "FEEDFORWARD_ONLY_SIGMA1_NO_ENTRY_DWELL",
+  "source_traffic_audit_sha256": "e7a9a23b7b7df0366516898914ab2dc05e1e8bc194c5a5a5c94dc0b768b22e71",
+  "source_controlled_middle_audit_sha256": "a402a20ef1f7ecf93ee91d172ea53c0f3353164515bd2505493e0e25dbe1700a",
+  "rejected_dwell_receipt_sha256": "bab5b797d6f9235edf470803b9c4ff7763952b036ccff1081da5bda894c91f27",
+  "public_media_links": [
+    "../../docs/Smooth_Steering_Demo.mp4",
+    "../../docs/Smooth_Steering_Normal_Speed.mp4"
+  ],
+  "media_manifest_sha256": "7adacb05bf1acfb46998eb1326e8a6203de74a3b02bf05342d193f29a8ece218",
+  "media_handoff_sha256": "4bfe2e1e95042259e3eac15bef03c36fe7dc0cc7bc8b60c701621d60cf039db8",
+  "operational_cleanup": {
+    "status": "CLOSED_ALL_SEVEN_EXACT_OWNED_PROCESSES_ABSENT",
+    "source_receipt_sha256": "9c44a67618ce904a35a0a1d61fc9ee642d0ccfbf8387be02284968b61905eacb",
+    "all_owned_services_and_tunnels_closed": true,
+    "unrelated_processes_signalled": false,
+    "infrastructure_details_omitted": true
+  }
+}

@@ -1,0 +1,1593 @@
+{
+  "source_selection_sha256": "b8f937c79dbec56fcf7b071ce096f1ccfd6a0f57b1f208b2c2c82236b8b2c88f",
+  "selection": {
+    "scope": "FiniteCLOSEDsingle-clear-lap releasecomparison; noforcedpositivegains/noformalracepromotion. Strong1.0bandoff0bestpaceandsmalleststeering/bodypenaltyamongtestedtrailoptions;unchangedFF1baselineissmoothest.",
+    "recommended_trail_release_setting": {
+      "release_strength": 1.0,
+      "release_headroom_band_mps": 0.0
+    },
+    "observed_runs": {
+      "baseline": {
+        "completed_lap_s": 189.036098729852,
+        "valid_lap": true,
+        "two_center_violations": 0,
+        "minimum_centers": 2,
+        "pedal_total_variation": 65.29537780084576,
+        "pedal_on_transitions": 53,
+        "pedal_off_transitions": 54,
+        "steering_variation_radps": 0.07481334791080374,
+        "steering_acceleration_RMS_radps2": 7.8724148014524165,
+        "body_yaw_acceleration_RMS_radps2": 1.1826819728536129
+      },
+      "strong": {
+        "completed_lap_s": 186.72998782284185,
+        "valid_lap": true,
+        "two_center_violations": 0,
+        "minimum_centers": 2,
+        "pedal_total_variation": 72.46724413425554,
+        "pedal_on_transitions": 73,
+        "pedal_off_transitions": 74,
+        "steering_variation_radps": 0.0773733094705148,
+        "steering_acceleration_RMS_radps2": 8.492931254831984,
+        "body_yaw_acceleration_RMS_radps2": 1.3385680202808468
+      },
+      "moderate": {
+        "completed_lap_s": 188.1465234819443,
+        "valid_lap": true,
+        "two_center_violations": 0,
+        "minimum_centers": 2,
+        "pedal_total_variation": 60.7014100659803,
+        "pedal_on_transitions": 59,
+        "pedal_off_transitions": 60,
+        "steering_variation_radps": 0.08412030811110488,
+        "steering_acceleration_RMS_radps2": 11.846077737114367,
+        "body_yaw_acceleration_RMS_radps2": 1.463280030583656
+      },
+      "band075": {
+        "completed_lap_s": 188.26856362503895,
+        "valid_lap": true,
+        "two_center_violations": 0,
+        "minimum_centers": 2,
+        "pedal_total_variation": 67.37906243998114,
+        "pedal_on_transitions": 66,
+        "pedal_off_transitions": 67,
+        "steering_variation_radps": 0.08127059026229998,
+        "steering_acceleration_RMS_radps2": 9.72645622199981,
+        "body_yaw_acceleration_RMS_radps2": 1.478164408121155
+      },
+      "band03": {
+        "completed_lap_s": 187.40039772269137,
+        "valid_lap": true,
+        "two_center_violations": 0,
+        "minimum_centers": 2,
+        "pedal_total_variation": 69.70995864194181,
+        "pedal_on_transitions": 71,
+        "pedal_off_transitions": 72,
+        "steering_variation_radps": 0.08323920728014506,
+        "steering_acceleration_RMS_radps2": 10.75393552424612,
+        "body_yaw_acceleration_RMS_radps2": 1.494025174625187
+      }
+    },
+    "important_tradeoff": "Strongreleasefasterbutpedalvariationandchatterworse;neithernarrowheadroombandnorweakstrengthproducesall-dimensionimprovement. Finalcombinedtrafficrequiresownqualification."
+  },
+  "source_entry_anchor_exit_sha256": "1638ee62c4fb33c8fa035789ced3ff820396c954ab7085641d1e3927a13a7aae",
+  "entry_anchor_exit": {
+    "scope": "All18predeclaredoriginalmapcorneranchors,entry−30m/anchor/exit+30m.Numericvalueslinearlyinterpolatedbetweenactual50Hzsamples;notclaimexactphysicalapex.",
+    "observations": {
+      "baseline": [
+        {
+          "corner": "C01",
+          "anchor_original_progress_m": 361.8289211307665,
+          "entry": {
+            "original_progress_m": 331.8289211307665,
+            "time_s": 13.56423649673008,
+            "speed_mps": 23.198388050367857,
+            "brake": 0.6790503000361227,
+            "target_speed_mps": 24.83769255484217
+          },
+          "anchor": {
+            "original_progress_m": 361.8289211307665,
+            "time_s": 14.970339470703273,
+            "speed_mps": 13.42092043858662,
+            "brake": 0.7468111131869464,
+            "target_speed_mps": 14.56710298938836
+          },
+          "exit": {
+            "original_progress_m": 391.8289211307665,
+            "time_s": 16.597962375454003,
+            "speed_mps": 18.745508386128197,
+            "brake": 0.0,
+            "target_speed_mps": 19.811358451709832
+          }
+        },
+        {
+          "corner": "C02",
+          "anchor_original_progress_m": 623.6070275298533,
+          "entry": {
+            "original_progress_m": 593.6070275298533,
+            "time_s": 24.261321870982286,
+            "speed_mps": 31.372519203928004,
+            "brake": 0.0,
+            "target_speed_mps": 34.62375840225281
+          },
+          "anchor": {
+            "original_progress_m": 623.6070275298533,
+            "time_s": 25.093334455716242,
+            "speed_mps": 34.00389989325976,
+            "brake": 0.0,
+            "target_speed_mps": 37.17443090573645
+          },
+          "exit": {
+            "original_progress_m": 653.6070275298533,
+            "time_s": 25.872898688819273,
+            "speed_mps": 35.925916735648315,
+            "brake": 0.0,
+            "target_speed_mps": 38.76260258358927
+          }
+        },
+        {
+          "corner": "C03",
+          "anchor_original_progress_m": 767.472484340089,
+          "entry": {
+            "original_progress_m": 737.472484340089,
+            "time_s": 28.14867402963721,
+            "speed_mps": 32.50420609287088,
+            "brake": 0.816189367601772,
+            "target_speed_mps": 33.11130303013398
+          },
+          "anchor": {
+            "original_progress_m": 767.472484340089,
+            "time_s": 29.15095299267385,
+            "speed_mps": 24.670653201079222,
+            "brake": 0.7588101565964542,
+            "target_speed_mps": 25.465534545176748
+          },
+          "exit": {
+            "original_progress_m": 797.472484340089,
+            "time_s": 30.538654663304463,
+            "speed_mps": 18.34391373966,
+            "brake": 0.7479645136123733,
+            "target_speed_mps": 19.452454466678446
+          }
+        },
+        {
+          "corner": "C04",
+          "anchor_original_progress_m": 841.3314562921321,
+          "entry": {
+            "original_progress_m": 811.3314562921321,
+            "time_s": 31.556126343365996,
+            "speed_mps": 14.264934043310813,
+            "brake": 0.16554386925525033,
+            "target_speed_mps": 14.78695838956925
+          },
+          "anchor": {
+            "original_progress_m": 841.3314562921321,
+            "time_s": 33.738128485707406,
+            "speed_mps": 18.00115031344524,
+            "brake": 0.0,
+            "target_speed_mps": 19.776178930159766
+          },
+          "exit": {
+            "original_progress_m": 871.3314562921321,
+            "time_s": 35.35532405523678,
+            "speed_mps": 19.72556995013757,
+            "brake": 0.0,
+            "target_speed_mps": 20.6910210655915
+          }
+        },
+        {
+          "corner": "C05",
+          "anchor_original_progress_m": 1403.050900160805,
+          "entry": {
+            "original_progress_m": 1373.050900160805,
+            "time_s": 50.79901818149122,
+            "speed_mps": 20.702914476844306,
+            "brake": 0.1636294253688011,
+            "target_speed_mps": 21.111651009670123
+          },
+          "anchor": {
+            "original_progress_m": 1403.050900160805,
+            "time_s": 52.28852188804009,
+            "speed_mps": 11.521322776797776,
+            "brake": 0.0,
+            "target_speed_mps": 11.952490124131897
+          },
+          "exit": {
+            "original_progress_m": 1433.050900160805,
+            "time_s": 53.9831036097126,
+            "speed_mps": 15.77310677656894,
+            "brake": 0.0,
+            "target_speed_mps": 17.718555193704738
+          }
+        },
+        {
+          "corner": "C06",
+          "anchor_original_progress_m": 2610.439400324675,
+          "entry": {
+            "original_progress_m": 2580.439400324675,
+            "time_s": 79.54953645660567,
+            "speed_mps": 16.913150439813087,
+            "brake": 0.6193696903812026,
+            "target_speed_mps": 16.525999412161365
+          },
+          "anchor": {
+            "original_progress_m": 2610.439400324675,
+            "time_s": 81.76963709413121,
+            "speed_mps": 12.313686418822511,
+            "brake": 0.0,
+            "target_speed_mps": 12.302911006743287
+          },
+          "exit": {
+            "original_progress_m": 2640.439400324675,
+            "time_s": 84.00197159383515,
+            "speed_mps": 13.645907965647638,
+            "brake": 0.6193107148206092,
+            "target_speed_mps": 15.713609456640675
+          }
+        },
+        {
+          "corner": "C07",
+          "anchor_original_progress_m": 2662.0713661926334,
+          "entry": {
+            "original_progress_m": 2632.0713661926334,
+            "time_s": 83.4418382714206,
+            "speed_mps": 14.812827077743028,
+            "brake": 0.0,
+            "target_speed_mps": 16.57079766302234
+          },
+          "anchor": {
+            "original_progress_m": 2662.0713661926334,
+            "time_s": 85.52998447828361,
+            "speed_mps": 7.977349520876487,
+            "brake": 0.0,
+            "target_speed_mps": 8.594658524760876
+          },
+          "exit": {
+            "original_progress_m": 2692.0713661926334,
+            "time_s": 87.53060112857557,
+            "speed_mps": 14.942409477949562,
+            "brake": 0.0,
+            "target_speed_mps": 16.04808402715371
+          }
+        },
+        {
+          "corner": "C08",
+          "anchor_original_progress_m": 3593.777196240377,
+          "entry": {
+            "original_progress_m": 3563.777196240377,
+            "time_s": 107.73830107149954,
+            "speed_mps": 25.641852148549688,
+            "brake": 0.88,
+            "target_speed_mps": 24.591737304686525
+          },
+          "anchor": {
+            "original_progress_m": 3593.777196240377,
+            "time_s": 109.19127387299673,
+            "speed_mps": 21.469442832673675,
+            "brake": 0.0,
+            "target_speed_mps": 20.993967155856875
+          },
+          "exit": {
+            "original_progress_m": 3623.777196240377,
+            "time_s": 110.5124370522393,
+            "speed_mps": 24.974628234491842,
+            "brake": 0.0,
+            "target_speed_mps": 26.020538001421492
+          }
+        },
+        {
+          "corner": "C09",
+          "anchor_original_progress_m": 3651.6304174004904,
+          "entry": {
+            "original_progress_m": 3621.6304174004904,
+            "time_s": 110.43297993717854,
+            "speed_mps": 24.667431129014727,
+            "brake": 0.0,
+            "target_speed_mps": 26.0176369703522
+          },
+          "anchor": {
+            "original_progress_m": 3651.6304174004904,
+            "time_s": 111.44672340857092,
+            "speed_mps": 28.250587789001433,
+            "brake": 0.0,
+            "target_speed_mps": 30.501442989263882
+          },
+          "exit": {
+            "original_progress_m": 3681.6304174004904,
+            "time_s": 112.51578402654675,
+            "speed_mps": 21.953042727265043,
+            "brake": 0.652789519170371,
+            "target_speed_mps": 23.6212987382036
+          }
+        },
+        {
+          "corner": "C10",
+          "anchor_original_progress_m": 3801.2933165380446,
+          "entry": {
+            "original_progress_m": 3771.2933165380446,
+            "time_s": 117.34800466425484,
+            "speed_mps": 24.112144901112558,
+            "brake": 0.0,
+            "target_speed_mps": 26.00174680335688
+          },
+          "anchor": {
+            "original_progress_m": 3801.2933165380446,
+            "time_s": 118.4304676713469,
+            "speed_mps": 27.796502002594938,
+            "brake": 0.0,
+            "target_speed_mps": 31.166889097941823
+          },
+          "exit": {
+            "original_progress_m": 3831.2933165380446,
+            "time_s": 119.38629244490636,
+            "speed_mps": 30.848053463110674,
+            "brake": 0.2170630696443065,
+            "target_speed_mps": 34.767112164152685
+          }
+        },
+        {
+          "corner": "C11",
+          "anchor_original_progress_m": 4189.083447065769,
+          "entry": {
+            "original_progress_m": 4159.083447065769,
+            "time_s": 133.00192762516207,
+            "speed_mps": 26.240061089209608,
+            "brake": 0.0,
+            "target_speed_mps": 28.401039301739672
+          },
+          "anchor": {
+            "original_progress_m": 4189.083447065769,
+            "time_s": 134.11307022735377,
+            "speed_mps": 23.457978739874846,
+            "brake": 0.0,
+            "target_speed_mps": 24.890658240519542
+          },
+          "exit": {
+            "original_progress_m": 4219.083447065769,
+            "time_s": 135.32850434771,
+            "speed_mps": 24.941096386237042,
+            "brake": 0.6084269227164337,
+            "target_speed_mps": 27.125736776337433
+          }
+        },
+        {
+          "corner": "C12",
+          "anchor_original_progress_m": 4314.830473108133,
+          "entry": {
+            "original_progress_m": 4284.830473108133,
+            "time_s": 138.82035935061464,
+            "speed_mps": 21.51067722586556,
+            "brake": 0.34422302238324076,
+            "target_speed_mps": 22.596007188742217
+          },
+          "anchor": {
+            "original_progress_m": 4314.830473108133,
+            "time_s": 140.4293249215391,
+            "speed_mps": 13.077789133235491,
+            "brake": 0.0,
+            "target_speed_mps": 13.394208345980406
+          },
+          "exit": {
+            "original_progress_m": 4344.830473108133,
+            "time_s": 142.1025634747316,
+            "speed_mps": 16.971716839839946,
+            "brake": 0.0,
+            "target_speed_mps": 18.892626403723064
+          }
+        },
+        {
+          "corner": "C13",
+          "anchor_original_progress_m": 4388.594957034398,
+          "entry": {
+            "original_progress_m": 4358.594957034398,
+            "time_s": 142.90221052682813,
+            "speed_mps": 19.723141294743357,
+            "brake": 0.0,
+            "target_speed_mps": 22.30234779035784
+          },
+          "anchor": {
+            "original_progress_m": 4388.594957034398,
+            "time_s": 144.19126419095545,
+            "speed_mps": 22.86061025129955,
+            "brake": 0.0,
+            "target_speed_mps": 24.219628867275777
+          },
+          "exit": {
+            "original_progress_m": 4418.594957034398,
+            "time_s": 145.531201963807,
+            "speed_mps": 18.45089266247993,
+            "brake": 0.0,
+            "target_speed_mps": 19.423606443172748
+          }
+        },
+        {
+          "corner": "C14",
+          "anchor_original_progress_m": 4488.431597189924,
+          "entry": {
+            "original_progress_m": 4458.431597189924,
+            "time_s": 147.41793564012755,
+            "speed_mps": 22.57059428761633,
+            "brake": 0.0,
+            "target_speed_mps": 24.88150794440988
+          },
+          "anchor": {
+            "original_progress_m": 4488.431597189924,
+            "time_s": 149.12,
+            "speed_mps": 16.713155094186874,
+            "brake": 0.0,
+            "target_speed_mps": 17.53324150709876
+          },
+          "exit": {
+            "original_progress_m": 4518.431597189924,
+            "time_s": 151.15811669401828,
+            "speed_mps": 18.472582880608364,
+            "brake": 0.0,
+            "target_speed_mps": 18.127088530770983
+          }
+        },
+        {
+          "corner": "C15",
+          "anchor_original_progress_m": 4558.207219685118,
+          "entry": {
+            "original_progress_m": 4528.207219685118,
+            "time_s": 151.7128701056648,
+            "speed_mps": 19.777846385724896,
+            "brake": 0.0,
+            "target_speed_mps": 20.9865748090978
+          },
+          "anchor": {
+            "original_progress_m": 4558.207219685118,
+            "time_s": 153.0312366609229,
+            "speed_mps": 23.700261163583665,
+            "brake": 0.0,
+            "target_speed_mps": 27.036185451583993
+          },
+          "exit": {
+            "original_progress_m": 4588.207219685118,
+            "time_s": 154.11462998628278,
+            "speed_mps": 27.764412501681253,
+            "brake": 0.0,
+            "target_speed_mps": 31.30967872750035
+          }
+        },
+        {
+          "corner": "C16",
+          "anchor_original_progress_m": 4782.060345429304,
+          "entry": {
+            "original_progress_m": 4752.060345429304,
+            "time_s": 162.15283034759364,
+            "speed_mps": 18.961838028626442,
+            "brake": 0.6613348167328359,
+            "target_speed_mps": 20.802472186879065
+          },
+          "anchor": {
+            "original_progress_m": 4782.060345429304,
+            "time_s": 163.77515262987268,
+            "speed_mps": 19.59206918374972,
+            "brake": 0.6243705115039007,
+            "target_speed_mps": 21.68376008748375
+          },
+          "exit": {
+            "original_progress_m": 4812.060345429304,
+            "time_s": 166.13983127469265,
+            "speed_mps": 13.335426153196552,
+            "brake": 0.0,
+            "target_speed_mps": 13.324956615243568
+          }
+        },
+        {
+          "corner": "C17",
+          "anchor_original_progress_m": 4847.944240985181,
+          "entry": {
+            "original_progress_m": 4817.944240985181,
+            "time_s": 166.6174009439332,
+            "speed_mps": 14.454345263928428,
+            "brake": 0.0,
+            "target_speed_mps": 15.305050046621384
+          },
+          "anchor": {
+            "original_progress_m": 4847.944240985181,
+            "time_s": 168.63159457813993,
+            "speed_mps": 15.689352605584117,
+            "brake": 0.0,
+            "target_speed_mps": 16.946215216894725
+          },
+          "exit": {
+            "original_progress_m": 4877.944240985181,
+            "time_s": 170.29278343775889,
+            "speed_mps": 21.342271761043623,
+            "brake": 0.0,
+            "target_speed_mps": 23.73178975583909
+          }
+        },
+        {
+          "corner": "C18",
+          "anchor_original_progress_m": 5053.243464722782,
+          "entry": {
+            "original_progress_m": 5023.243464722782,
+            "time_s": 179.4891613765239,
+            "speed_mps": 15.525987231974998,
+            "brake": 0.0,
+            "target_speed_mps": 16.46012083633615
+          },
+          "anchor": {
+            "original_progress_m": 5053.243464722782,
+            "time_s": 181.408820633741,
+            "speed_mps": 10.352199844213258,
+            "brake": 0.0,
+            "target_speed_mps": 11.47486143506799
+          },
+          "exit": {
+            "original_progress_m": 5083.243464722782,
+            "time_s": 183.3532810408082,
+            "speed_mps": 16.859400031225785,
+            "brake": 0.0,
+            "target_speed_mps": 19.036819720771778
+          }
+        }
+      ],
+      "strong": [
+        {
+          "corner": "C01",
+          "anchor_original_progress_m": 361.8289211307665,
+          "entry": {
+            "original_progress_m": 331.8289211307665,
+            "time_s": 13.558206355618676,
+            "speed_mps": 23.195432597091525,
+            "brake": 0.6786230719493541,
+            "target_speed_mps": 24.8332804155689
+          },
+          "anchor": {
+            "original_progress_m": 361.8289211307665,
+            "time_s": 14.951962685642348,
+            "speed_mps": 14.102103325199828,
+            "brake": 0.46267915162269985,
+            "target_speed_mps": 14.592339601603758
+          },
+          "exit": {
+            "original_progress_m": 391.8289211307665,
+            "time_s": 16.551428096544594,
+            "speed_mps": 18.516658259512607,
+            "brake": 0.0,
+            "target_speed_mps": 20.000177385043497
+          }
+        },
+        {
+          "corner": "C02",
+          "anchor_original_progress_m": 623.6070275298533,
+          "entry": {
+            "original_progress_m": 593.6070275298533,
+            "time_s": 24.204466983645943,
+            "speed_mps": 32.00509111249359,
+            "brake": 0.0,
+            "target_speed_mps": 34.665477527409564
+          },
+          "anchor": {
+            "original_progress_m": 623.6070275298533,
+            "time_s": 25.028648029223596,
+            "speed_mps": 34.44724396556387,
+            "brake": 0.0,
+            "target_speed_mps": 37.46788161487675
+          },
+          "exit": {
+            "original_progress_m": 653.6070275298533,
+            "time_s": 25.796786181442112,
+            "speed_mps": 36.26165746869619,
+            "brake": 0.0,
+            "target_speed_mps": 38.78911618830825
+          }
+        },
+        {
+          "corner": "C03",
+          "anchor_original_progress_m": 767.472484340089,
+          "entry": {
+            "original_progress_m": 737.472484340089,
+            "time_s": 28.065803478795072,
+            "speed_mps": 32.570637992361405,
+            "brake": 0.7936825712783434,
+            "target_speed_mps": 33.10315991812241
+          },
+          "anchor": {
+            "original_progress_m": 767.472484340089,
+            "time_s": 29.066910067397085,
+            "speed_mps": 25.220767020808562,
+            "brake": 0.7825712997064733,
+            "target_speed_mps": 25.429255421683973
+          },
+          "exit": {
+            "original_progress_m": 797.472484340089,
+            "time_s": 30.429399930851822,
+            "speed_mps": 18.796850609790482,
+            "brake": 0.6095055598568578,
+            "target_speed_mps": 19.477912368067372
+          }
+        },
+        {
+          "corner": "C04",
+          "anchor_original_progress_m": 841.3314562921321,
+          "entry": {
+            "original_progress_m": 811.3314562921321,
+            "time_s": 31.407713609403743,
+            "speed_mps": 14.737017661376177,
+            "brake": 0.18790164067300363,
+            "target_speed_mps": 14.769958347263003
+          },
+          "anchor": {
+            "original_progress_m": 841.3314562921321,
+            "time_s": 33.56847101378527,
+            "speed_mps": 17.971606788578395,
+            "brake": 0.0,
+            "target_speed_mps": 19.647111659393303
+          },
+          "exit": {
+            "original_progress_m": 871.3314562921321,
+            "time_s": 35.13798655740236,
+            "speed_mps": 20.534216818604204,
+            "brake": 0.0,
+            "target_speed_mps": 20.701658308622868
+          }
+        },
+        {
+          "corner": "C05",
+          "anchor_original_progress_m": 1403.050900160805,
+          "entry": {
+            "original_progress_m": 1373.050900160805,
+            "time_s": 50.33829684282132,
+            "speed_mps": 20.78045481400687,
+            "brake": 0.1714031366482362,
+            "target_speed_mps": 21.132740609521743
+          },
+          "anchor": {
+            "original_progress_m": 1403.050900160805,
+            "time_s": 51.80938404236013,
+            "speed_mps": 11.95341938383748,
+            "brake": 0.05264799960868223,
+            "target_speed_mps": 11.970261184284883
+          },
+          "exit": {
+            "original_progress_m": 1433.050900160805,
+            "time_s": 53.4759952024894,
+            "speed_mps": 15.931590371399912,
+            "brake": 0.0,
+            "target_speed_mps": 18.211542128409178
+          }
+        },
+        {
+          "corner": "C06",
+          "anchor_original_progress_m": 2610.439400324675,
+          "entry": {
+            "original_progress_m": 2580.439400324675,
+            "time_s": 78.76114269530262,
+            "speed_mps": 16.955472887915796,
+            "brake": 0.6196558249386779,
+            "target_speed_mps": 16.513881522317693
+          },
+          "anchor": {
+            "original_progress_m": 2610.439400324675,
+            "time_s": 80.9694953246228,
+            "speed_mps": 12.706324559740185,
+            "brake": 0.0,
+            "target_speed_mps": 12.29701976815224
+          },
+          "exit": {
+            "original_progress_m": 2640.439400324675,
+            "time_s": 83.18715308434335,
+            "speed_mps": 13.617649406721226,
+            "brake": 0.6149126794152397,
+            "target_speed_mps": 15.693824089539042
+          }
+        },
+        {
+          "corner": "C07",
+          "anchor_original_progress_m": 2662.0713661926334,
+          "entry": {
+            "original_progress_m": 2632.0713661926334,
+            "time_s": 82.6261684732394,
+            "speed_mps": 14.761355598327095,
+            "brake": 0.0,
+            "target_speed_mps": 16.636315286511675
+          },
+          "anchor": {
+            "original_progress_m": 2662.0713661926334,
+            "time_s": 84.67076544529357,
+            "speed_mps": 8.441405246645411,
+            "brake": 0.0,
+            "target_speed_mps": 8.605896096875565
+          },
+          "exit": {
+            "original_progress_m": 2692.0713661926334,
+            "time_s": 86.63871082928556,
+            "speed_mps": 14.834320583711708,
+            "brake": 0.0,
+            "target_speed_mps": 16.424806724422023
+          }
+        },
+        {
+          "corner": "C08",
+          "anchor_original_progress_m": 3593.777196240377,
+          "entry": {
+            "original_progress_m": 3563.777196240377,
+            "time_s": 107.01821860845573,
+            "speed_mps": 25.570966208990974,
+            "brake": 0.88,
+            "target_speed_mps": 24.52521655911982
+          },
+          "anchor": {
+            "original_progress_m": 3593.777196240377,
+            "time_s": 108.48,
+            "speed_mps": 21.34712251703988,
+            "brake": 0.0,
+            "target_speed_mps": 21.1957587276195
+          },
+          "exit": {
+            "original_progress_m": 3623.777196240377,
+            "time_s": 109.81117128931824,
+            "speed_mps": 24.68194575663182,
+            "brake": 0.0,
+            "target_speed_mps": 26.069053586153576
+          }
+        },
+        {
+          "corner": "C09",
+          "anchor_original_progress_m": 3651.6304174004904,
+          "entry": {
+            "original_progress_m": 3621.6304174004904,
+            "time_s": 109.73098185989831,
+            "speed_mps": 24.555803964938896,
+            "brake": 0.0,
+            "target_speed_mps": 25.558789887566057
+          },
+          "anchor": {
+            "original_progress_m": 3651.6304174004904,
+            "time_s": 110.74904511395508,
+            "speed_mps": 28.060723346475342,
+            "brake": 0.0,
+            "target_speed_mps": 30.065365447423922
+          },
+          "exit": {
+            "original_progress_m": 3681.6304174004904,
+            "time_s": 111.81450601746108,
+            "speed_mps": 23.036180096509398,
+            "brake": 0.37104580885671534,
+            "target_speed_mps": 23.61113253705587
+          }
+        },
+        {
+          "corner": "C10",
+          "anchor_original_progress_m": 3801.2933165380446,
+          "entry": {
+            "original_progress_m": 3771.2933165380446,
+            "time_s": 116.567130078278,
+            "speed_mps": 24.217049702056684,
+            "brake": 0.0,
+            "target_speed_mps": 25.9413277717655
+          },
+          "anchor": {
+            "original_progress_m": 3801.2933165380446,
+            "time_s": 117.6484862473305,
+            "speed_mps": 27.858914439740037,
+            "brake": 0.0,
+            "target_speed_mps": 31.045183737453193
+          },
+          "exit": {
+            "original_progress_m": 3831.2933165380446,
+            "time_s": 118.60457619041215,
+            "speed_mps": 30.550785249931206,
+            "brake": 0.1684942586626291,
+            "target_speed_mps": 34.83718022360334
+          }
+        },
+        {
+          "corner": "C11",
+          "anchor_original_progress_m": 4189.083447065769,
+          "entry": {
+            "original_progress_m": 4159.083447065769,
+            "time_s": 131.90655470449434,
+            "speed_mps": 26.196868670932002,
+            "brake": 0.0,
+            "target_speed_mps": 28.728842393834874
+          },
+          "anchor": {
+            "original_progress_m": 4189.083447065769,
+            "time_s": 133.0088544456617,
+            "speed_mps": 24.646838507166386,
+            "brake": 0.0,
+            "target_speed_mps": 24.894908801639147
+          },
+          "exit": {
+            "original_progress_m": 4219.083447065769,
+            "time_s": 134.18686655484498,
+            "speed_mps": 25.2577108345512,
+            "brake": 0.6138011177823054,
+            "target_speed_mps": 27.10657234484621
+          }
+        },
+        {
+          "corner": "C12",
+          "anchor_original_progress_m": 4314.830473108133,
+          "entry": {
+            "original_progress_m": 4284.830473108133,
+            "time_s": 137.59242482511178,
+            "speed_mps": 21.5857760288058,
+            "brake": 0.37709892877120205,
+            "target_speed_mps": 22.515935565237225
+          },
+          "anchor": {
+            "original_progress_m": 4314.830473108133,
+            "time_s": 139.19049066124347,
+            "speed_mps": 13.165787583052419,
+            "brake": 0.0,
+            "target_speed_mps": 12.93962494319476
+          },
+          "exit": {
+            "original_progress_m": 4344.830473108133,
+            "time_s": 140.85804168552525,
+            "speed_mps": 16.954263000236644,
+            "brake": 0.0,
+            "target_speed_mps": 19.052989708460633
+          }
+        },
+        {
+          "corner": "C13",
+          "anchor_original_progress_m": 4388.594957034398,
+          "entry": {
+            "original_progress_m": 4358.594957034398,
+            "time_s": 141.65882332407233,
+            "speed_mps": 19.520746699941462,
+            "brake": 0.0,
+            "target_speed_mps": 22.500469407231336
+          },
+          "anchor": {
+            "original_progress_m": 4388.594957034398,
+            "time_s": 142.9680996682772,
+            "speed_mps": 22.64377441107078,
+            "brake": 0.0,
+            "target_speed_mps": 24.190088394824453
+          },
+          "exit": {
+            "original_progress_m": 4418.594957034398,
+            "time_s": 144.29290398831478,
+            "speed_mps": 18.58345286297731,
+            "brake": 0.0,
+            "target_speed_mps": 19.40085976338375
+          }
+        },
+        {
+          "corner": "C14",
+          "anchor_original_progress_m": 4488.431597189924,
+          "entry": {
+            "original_progress_m": 4458.431597189924,
+            "time_s": 146.15874722671225,
+            "speed_mps": 22.345808972807678,
+            "brake": 0.0,
+            "target_speed_mps": 24.288467985360985
+          },
+          "anchor": {
+            "original_progress_m": 4488.431597189924,
+            "time_s": 147.82,
+            "speed_mps": 17.466885451676962,
+            "brake": 0.13276153335932492,
+            "target_speed_mps": 17.443158396817083
+          },
+          "exit": {
+            "original_progress_m": 4518.431597189924,
+            "time_s": 149.82670664800878,
+            "speed_mps": 18.261559937196353,
+            "brake": 0.0,
+            "target_speed_mps": 18.707560492159114
+          }
+        },
+        {
+          "corner": "C15",
+          "anchor_original_progress_m": 4558.207219685118,
+          "entry": {
+            "original_progress_m": 4528.207219685118,
+            "time_s": 150.38683342644757,
+            "speed_mps": 19.683269416767196,
+            "brake": 0.0,
+            "target_speed_mps": 20.658930574032343
+          },
+          "anchor": {
+            "original_progress_m": 4558.207219685118,
+            "time_s": 151.7283465351381,
+            "speed_mps": 23.495981955479294,
+            "brake": 0.0,
+            "target_speed_mps": 26.61637802347252
+          },
+          "exit": {
+            "original_progress_m": 4588.207219685118,
+            "time_s": 152.81144649591732,
+            "speed_mps": 27.785702923785536,
+            "brake": 0.0,
+            "target_speed_mps": 31.421907206599737
+          }
+        },
+        {
+          "corner": "C16",
+          "anchor_original_progress_m": 4782.060345429304,
+          "entry": {
+            "original_progress_m": 4752.060345429304,
+            "time_s": 160.58802993127048,
+            "speed_mps": 19.927783482334924,
+            "brake": 0.45148846633123146,
+            "target_speed_mps": 20.797573544333275
+          },
+          "anchor": {
+            "original_progress_m": 4782.060345429304,
+            "time_s": 162.1567060217626,
+            "speed_mps": 19.686357477015562,
+            "brake": 0.5708175954579086,
+            "target_speed_mps": 21.693564085269884
+          },
+          "exit": {
+            "original_progress_m": 4812.060345429304,
+            "time_s": 164.42220176041914,
+            "speed_mps": 13.694349172883454,
+            "brake": 0.0,
+            "target_speed_mps": 13.516381819636342
+          }
+        },
+        {
+          "corner": "C17",
+          "anchor_original_progress_m": 4847.944240985181,
+          "entry": {
+            "original_progress_m": 4817.944240985181,
+            "time_s": 164.89133105528458,
+            "speed_mps": 14.846808557841271,
+            "brake": 0.0,
+            "target_speed_mps": 15.044273061380085
+          },
+          "anchor": {
+            "original_progress_m": 4847.944240985181,
+            "time_s": 166.85270930521375,
+            "speed_mps": 17.026792298344866,
+            "brake": 0.0,
+            "target_speed_mps": 16.92403850802596
+          },
+          "exit": {
+            "original_progress_m": 4877.944240985181,
+            "time_s": 168.45195395337026,
+            "speed_mps": 21.667325425471955,
+            "brake": 0.0,
+            "target_speed_mps": 23.892301723823227
+          }
+        },
+        {
+          "corner": "C18",
+          "anchor_original_progress_m": 5053.243464722782,
+          "entry": {
+            "original_progress_m": 5023.243464722782,
+            "time_s": 177.27664604400238,
+            "speed_mps": 15.97724221547056,
+            "brake": 0.0,
+            "target_speed_mps": 16.45951442539876
+          },
+          "anchor": {
+            "original_progress_m": 5053.243464722782,
+            "time_s": 179.15146153095102,
+            "speed_mps": 10.953936639633847,
+            "brake": 0.017049965747350872,
+            "target_speed_mps": 11.514667733564867
+          },
+          "exit": {
+            "original_progress_m": 5083.243464722782,
+            "time_s": 181.0476713013728,
+            "speed_mps": 16.98322632856887,
+            "brake": 0.0,
+            "target_speed_mps": 19.470283110994558
+          }
+        }
+      ],
+      "moderate": [
+        {
+          "corner": "C01",
+          "anchor_original_progress_m": 361.8289211307665,
+          "entry": {
+            "original_progress_m": 331.8289211307665,
+            "time_s": 13.55936147203699,
+            "speed_mps": 23.20823024865562,
+            "brake": 0.6783324279475558,
+            "target_speed_mps": 24.845885799161234
+          },
+          "anchor": {
+            "original_progress_m": 361.8289211307665,
+            "time_s": 14.967519673118128,
+            "speed_mps": 13.894937425075415,
+            "brake": 0.49389501994993756,
+            "target_speed_mps": 14.535728673350272
+          },
+          "exit": {
+            "original_progress_m": 391.8289211307665,
+            "time_s": 16.571661608845712,
+            "speed_mps": 18.534141413187495,
+            "brake": 0.0,
+            "target_speed_mps": 19.92863315705123
+          }
+        },
+        {
+          "corner": "C02",
+          "anchor_original_progress_m": 623.6070275298533,
+          "entry": {
+            "original_progress_m": 593.6070275298533,
+            "time_s": 24.26546102822871,
+            "speed_mps": 30.915114620744326,
+            "brake": 0.0,
+            "target_speed_mps": 34.7250004961773
+          },
+          "anchor": {
+            "original_progress_m": 623.6070275298533,
+            "time_s": 25.11187276331596,
+            "speed_mps": 33.63992530155318,
+            "brake": 0.0,
+            "target_speed_mps": 37.148648129708896
+          },
+          "exit": {
+            "original_progress_m": 653.6070275298533,
+            "time_s": 25.895222547182332,
+            "speed_mps": 35.785386238155105,
+            "brake": 0.0,
+            "target_speed_mps": 38.83382765328074
+          }
+        },
+        {
+          "corner": "C03",
+          "anchor_original_progress_m": 767.472484340089,
+          "entry": {
+            "original_progress_m": 737.472484340089,
+            "time_s": 28.175725137132943,
+            "speed_mps": 32.487440489534094,
+            "brake": 0.7958990544739215,
+            "target_speed_mps": 33.05540612959275
+          },
+          "anchor": {
+            "original_progress_m": 767.472484340089,
+            "time_s": 29.186714825345383,
+            "speed_mps": 25.07086977668322,
+            "brake": 0.6157284185302466,
+            "target_speed_mps": 25.41124410225856
+          },
+          "exit": {
+            "original_progress_m": 797.472484340089,
+            "time_s": 30.553712285397907,
+            "speed_mps": 18.645529268333004,
+            "brake": 0.6478407779286117,
+            "target_speed_mps": 19.443220822451277
+          }
+        },
+        {
+          "corner": "C04",
+          "anchor_original_progress_m": 841.3314562921321,
+          "entry": {
+            "original_progress_m": 811.3314562921321,
+            "time_s": 31.536773288690135,
+            "speed_mps": 14.701714591524604,
+            "brake": 0.18045319373632307,
+            "target_speed_mps": 14.75976471976213
+          },
+          "anchor": {
+            "original_progress_m": 841.3314562921321,
+            "time_s": 33.70736728378969,
+            "speed_mps": 17.91367286676456,
+            "brake": 0.0,
+            "target_speed_mps": 19.935597494596013
+          },
+          "exit": {
+            "original_progress_m": 871.3314562921321,
+            "time_s": 35.289700002132484,
+            "speed_mps": 20.078183583833937,
+            "brake": 0.0,
+            "target_speed_mps": 20.91680384262822
+          }
+        },
+        {
+          "corner": "C05",
+          "anchor_original_progress_m": 1403.050900160805,
+          "entry": {
+            "original_progress_m": 1373.050900160805,
+            "time_s": 50.6680596895144,
+            "speed_mps": 20.784567353385565,
+            "brake": 0.17096395155524258,
+            "target_speed_mps": 21.14559739863483
+          },
+          "anchor": {
+            "original_progress_m": 1403.050900160805,
+            "time_s": 52.14865228621119,
+            "speed_mps": 11.866687774033128,
+            "brake": 0.027054694305790793,
+            "target_speed_mps": 11.959198556620084
+          },
+          "exit": {
+            "original_progress_m": 1433.050900160805,
+            "time_s": 53.812757117048,
+            "speed_mps": 16.043973572654885,
+            "brake": 0.0,
+            "target_speed_mps": 18.161547923191915
+          }
+        },
+        {
+          "corner": "C06",
+          "anchor_original_progress_m": 2610.439400324675,
+          "entry": {
+            "original_progress_m": 2580.439400324675,
+            "time_s": 79.63251191490086,
+            "speed_mps": 16.426096297143385,
+            "brake": 0.587319485699816,
+            "target_speed_mps": 16.274732009005252
+          },
+          "anchor": {
+            "original_progress_m": 2610.439400324675,
+            "time_s": 81.86984276622967,
+            "speed_mps": 12.655050977259279,
+            "brake": 0.0,
+            "target_speed_mps": 12.148267071467787
+          },
+          "exit": {
+            "original_progress_m": 2640.439400324675,
+            "time_s": 84.07949966830874,
+            "speed_mps": 13.706454002139191,
+            "brake": 0.6192075202353994,
+            "target_speed_mps": 15.728528326529382
+          }
+        },
+        {
+          "corner": "C07",
+          "anchor_original_progress_m": 2662.0713661926334,
+          "entry": {
+            "original_progress_m": 2632.0713661926334,
+            "time_s": 83.52301620794063,
+            "speed_mps": 15.026419373830379,
+            "brake": 0.0,
+            "target_speed_mps": 16.170194480674535
+          },
+          "anchor": {
+            "original_progress_m": 2662.0713661926334,
+            "time_s": 85.57054751551975,
+            "speed_mps": 8.32622338878817,
+            "brake": 0.0,
+            "target_speed_mps": 8.602743808046219
+          },
+          "exit": {
+            "original_progress_m": 2692.0713661926334,
+            "time_s": 87.56849974459288,
+            "speed_mps": 14.768753448761437,
+            "brake": 0.0,
+            "target_speed_mps": 15.867784698269846
+          }
+        },
+        {
+          "corner": "C08",
+          "anchor_original_progress_m": 3593.777196240377,
+          "entry": {
+            "original_progress_m": 3563.777196240377,
+            "time_s": 107.93161834209268,
+            "speed_mps": 25.188627757755743,
+            "brake": 0.88,
+            "target_speed_mps": 24.4723009972193
+          },
+          "anchor": {
+            "original_progress_m": 3593.777196240377,
+            "time_s": 109.41185102251168,
+            "speed_mps": 21.28686379742724,
+            "brake": 0.0,
+            "target_speed_mps": 21.094645746673322
+          },
+          "exit": {
+            "original_progress_m": 3623.777196240377,
+            "time_s": 110.75079473265046,
+            "speed_mps": 24.735535689804113,
+            "brake": 0.0,
+            "target_speed_mps": 25.849244414787588
+          }
+        },
+        {
+          "corner": "C09",
+          "anchor_original_progress_m": 3651.6304174004904,
+          "entry": {
+            "original_progress_m": 3621.6304174004904,
+            "time_s": 110.67055225666651,
+            "speed_mps": 24.43242876835395,
+            "brake": 0.0,
+            "target_speed_mps": 25.846282774288042
+          },
+          "anchor": {
+            "original_progress_m": 3651.6304174004904,
+            "time_s": 111.69072384811588,
+            "speed_mps": 27.68118624792129,
+            "brake": 0.0,
+            "target_speed_mps": 30.323059113139283
+          },
+          "exit": {
+            "original_progress_m": 3681.6304174004904,
+            "time_s": 112.77285353682971,
+            "speed_mps": 22.600542450790588,
+            "brake": 0.4286761556672308,
+            "target_speed_mps": 23.594151350153236
+          }
+        },
+        {
+          "corner": "C10",
+          "anchor_original_progress_m": 3801.2933165380446,
+          "entry": {
+            "original_progress_m": 3771.2933165380446,
+            "time_s": 117.56084131650347,
+            "speed_mps": 24.093771273207082,
+            "brake": 0.0,
+            "target_speed_mps": 25.92613274486645
+          },
+          "anchor": {
+            "original_progress_m": 3801.2933165380446,
+            "time_s": 118.64743846493508,
+            "speed_mps": 27.926467512877775,
+            "brake": 0.0,
+            "target_speed_mps": 31.06152868188718
+          },
+          "exit": {
+            "original_progress_m": 3831.2933165380446,
+            "time_s": 119.59679226914461,
+            "speed_mps": 30.915254018496178,
+            "brake": 0.2331971946620191,
+            "target_speed_mps": 34.70073783129388
+          }
+        },
+        {
+          "corner": "C11",
+          "anchor_original_progress_m": 4189.083447065769,
+          "entry": {
+            "original_progress_m": 4159.083447065769,
+            "time_s": 132.95508605747827,
+            "speed_mps": 26.009573062358587,
+            "brake": 0.0,
+            "target_speed_mps": 28.50451298296408
+          },
+          "anchor": {
+            "original_progress_m": 4189.083447065769,
+            "time_s": 134.07005400883065,
+            "speed_mps": 24.084940816773855,
+            "brake": 0.0,
+            "target_speed_mps": 24.912369841663285
+          },
+          "exit": {
+            "original_progress_m": 4219.083447065769,
+            "time_s": 135.26353385165586,
+            "speed_mps": 25.08155223851526,
+            "brake": 0.6145047140369969,
+            "target_speed_mps": 27.11287375834458
+          }
+        },
+        {
+          "corner": "C12",
+          "anchor_original_progress_m": 4314.830473108133,
+          "entry": {
+            "original_progress_m": 4284.830473108133,
+            "time_s": 138.68991297978408,
+            "speed_mps": 21.49314071328264,
+            "brake": 0.35331208064788944,
+            "target_speed_mps": 22.53916923921077
+          },
+          "anchor": {
+            "original_progress_m": 4314.830473108133,
+            "time_s": 140.29117230502357,
+            "speed_mps": 13.12279485520069,
+            "brake": 0.0,
+            "target_speed_mps": 13.342533044454665
+          },
+          "exit": {
+            "original_progress_m": 4344.830473108133,
+            "time_s": 141.96034435767902,
+            "speed_mps": 17.07947480627428,
+            "brake": 0.0,
+            "target_speed_mps": 18.591781306339563
+          }
+        },
+        {
+          "corner": "C13",
+          "anchor_original_progress_m": 4388.594957034398,
+          "entry": {
+            "original_progress_m": 4358.594957034398,
+            "time_s": 142.75777867445572,
+            "speed_mps": 19.777041375352486,
+            "brake": 0.0,
+            "target_speed_mps": 22.066715776736764
+          },
+          "anchor": {
+            "original_progress_m": 4388.594957034398,
+            "time_s": 144.0522587079168,
+            "speed_mps": 22.62075466254463,
+            "brake": 0.0,
+            "target_speed_mps": 24.168685433210744
+          },
+          "exit": {
+            "original_progress_m": 4418.594957034398,
+            "time_s": 145.39469551981816,
+            "speed_mps": 18.561852324488683,
+            "brake": 0.0,
+            "target_speed_mps": 19.41277920792757
+          }
+        },
+        {
+          "corner": "C14",
+          "anchor_original_progress_m": 4488.431597189924,
+          "entry": {
+            "original_progress_m": 4458.431597189924,
+            "time_s": 147.28352325686006,
+            "speed_mps": 22.03252549719481,
+            "brake": 0.0,
+            "target_speed_mps": 24.61761158805684
+          },
+          "anchor": {
+            "original_progress_m": 4488.431597189924,
+            "time_s": 148.98,
+            "speed_mps": 17.253860626324123,
+            "brake": 0.08278584338836724,
+            "target_speed_mps": 17.472861772481128
+          },
+          "exit": {
+            "original_progress_m": 4518.431597189924,
+            "time_s": 150.99549234547132,
+            "speed_mps": 18.12474738037824,
+            "brake": 0.0,
+            "target_speed_mps": 17.938403029681997
+          }
+        },
+        {
+          "corner": "C15",
+          "anchor_original_progress_m": 4558.207219685118,
+          "entry": {
+            "original_progress_m": 4528.207219685118,
+            "time_s": 151.56260671811225,
+            "speed_mps": 19.340206182263504,
+            "brake": 0.0,
+            "target_speed_mps": 20.764126833471305
+          },
+          "anchor": {
+            "original_progress_m": 4558.207219685118,
+            "time_s": 152.91212894839038,
+            "speed_mps": 23.417956467506,
+            "brake": 0.0,
+            "target_speed_mps": 26.686718389095535
+          },
+          "exit": {
+            "original_progress_m": 4588.207219685118,
+            "time_s": 154.01226603770283,
+            "speed_mps": 27.469155738164336,
+            "brake": 0.0,
+            "target_speed_mps": 31.410933727249713
+          }
+        },
+        {
+          "corner": "C16",
+          "anchor_original_progress_m": 4782.060345429304,
+          "entry": {
+            "original_progress_m": 4752.060345429304,
+            "time_s": 161.86200628861533,
+            "speed_mps": 19.577540945173528,
+            "brake": 0.4855209681385873,
+            "target_speed_mps": 20.737175425107058
+          },
+          "anchor": {
+            "original_progress_m": 4782.060345429304,
+            "time_s": 163.4472683319179,
+            "speed_mps": 19.64375093941591,
+            "brake": 0.5832622666817436,
+            "target_speed_mps": 21.69855939339165
+          },
+          "exit": {
+            "original_progress_m": 4812.060345429304,
+            "time_s": 165.72928895771048,
+            "speed_mps": 13.652537505914259,
+            "brake": 0.0,
+            "target_speed_mps": 13.309338867222763
+          }
+        },
+        {
+          "corner": "C17",
+          "anchor_original_progress_m": 4847.944240985181,
+          "entry": {
+            "original_progress_m": 4817.944240985181,
+            "time_s": 166.20371239090943,
+            "speed_mps": 14.564075182168553,
+            "brake": 0.0,
+            "target_speed_mps": 14.746833698136415
+          },
+          "anchor": {
+            "original_progress_m": 4847.944240985181,
+            "time_s": 168.1906956695896,
+            "speed_mps": 16.610601609879193,
+            "brake": 0.0,
+            "target_speed_mps": 16.913168754703918
+          },
+          "exit": {
+            "original_progress_m": 4877.944240985181,
+            "time_s": 169.79571466029725,
+            "speed_mps": 21.697949512995983,
+            "brake": 0.0,
+            "target_speed_mps": 23.26711458019724
+          }
+        },
+        {
+          "corner": "C18",
+          "anchor_original_progress_m": 5053.243464722782,
+          "entry": {
+            "original_progress_m": 5023.243464722782,
+            "time_s": 178.65668350184913,
+            "speed_mps": 15.851380096160517,
+            "brake": 0.0,
+            "target_speed_mps": 16.60166091856421
+          },
+          "anchor": {
+            "original_progress_m": 5053.243464722782,
+            "time_s": 180.52926083609327,
+            "speed_mps": 10.818081956132984,
+            "brake": 0.0,
+            "target_speed_mps": 11.476424227256524
+          },
+          "exit": {
+            "original_progress_m": 5083.243464722782,
+            "time_s": 182.4288346165184,
+            "speed_mps": 17.001715260526275,
+            "brake": 0.0,
+            "target_speed_mps": 19.547686655155697
+          }
+        }
+      ]
+    },
+    "comparison_to_c54": {
+      "strong": {
+        "entry": {
+          "mean_speed_delta_kph": 0.4957456426430667,
+          "median_speed_delta_kph": 0.1957578256678204,
+          "faster_count": 10,
+          "delta_kph_per_corner": [
+            -0.010639631794795434,
+            2.277258870836103,
+            0.2391548381658879,
+            1.6995010250353098,
+            0.27914521378522894,
+            0.1523608131697529,
+            -0.185297325897362,
+            -0.2551893824113705,
+            -0.40185779067299027,
+            0.3776572833988553,
+            -0.15549270579938082,
+            0.2703556905848615,
+            -0.7286205412868213,
+            -0.8092271333111498,
+            -0.34047708824771944,
+            3.477403633350535,
+            1.412867858086237,
+            1.6245179405840198
+          ]
+        },
+        "anchor": {
+          "mean_speed_delta_kph": 1.2654107428407848,
+          "median_speed_delta_kph": 1.4845225463232792,
+          "faster_count": 13,
+          "delta_kph_per_corner": [
+            2.452258391807547,
+            1.596038660294812,
+            1.9804097510256242,
+            -0.1063566895206435,
+            1.5555477853429325,
+            1.4134973073036257,
+            1.670600612768127,
+            -0.4403531362816551,
+            -0.6835119930939257,
+            0.22468477372235612,
+            4.2798951622495425,
+            0.31679441934093905,
+            -0.7806090248235776,
+            2.7134292869643177,
+            -0.7354051491757346,
+            0.33943785575702634,
+            4.814782893938694,
+            2.1662524635141196
+          ]
+        },
+        "exit": {
+          "mean_speed_delta_kph": 0.58671768685196,
+          "median_speed_delta_kph": 0.4614956961128336,
+          "faster_count": 11,
+          "delta_kph_per_corner": [
+            -0.8238604558161257,
+            1.2086666389723604,
+            1.6305727324697372,
+            2.911128726479886,
+            0.5705409413915007,
+            -0.10173081213508298,
+            -0.3891200192562742,
+            -1.053656920296082,
+            3.8992945292796777,
+            -1.070165567446084,
+            1.139812013930971,
+            -0.06283382257188777,
+            0.47721672179056895,
+            -0.7596825962832412,
+            0.07664551957541761,
+            1.2921228708728465,
+            1.1701931919419934,
+            0.44577467043509816
+          ]
+        }
+      },
+      "moderate": {
+        "entry": {
+          "mean_speed_delta_kph": -0.2089929086310384,
+          "median_speed_delta_kph": -0.0617438086554742,
+          "faster_count": 8,
+          "delta_kph_per_corner": [
+            0.03543191383595001,
+            -1.6466564994612398,
+            -0.060356172012430424,
+            1.572409973569649,
+            0.2939503555485331,
+            -1.7533949136109286,
+            0.7689322659144615,
+            -1.631607806858203,
+            -0.8460084983787922,
+            -0.06614506045971212,
+            -0.8297568966636731,
+            -0.06313144529851798,
+            0.19404029019286356,
+            -1.9370476455174697,
+            -1.5755047324610103,
+            2.2165304995695094,
+            0.39502770566445167,
+            1.171414311067867
+          ]
+        },
+        "anchor": {
+          "mean_speed_delta_kph": 0.5931391598590909,
+          "median_speed_delta_kph": 0.8483941236952877,
+          "faster_count": 12,
+          "delta_kph_per_corner": [
+            1.7064611513596633,
+            -1.3103085301436863,
+            1.440779672174395,
+            -0.3149188080504473,
+            1.2433139900472676,
+            1.228912410372363,
+            1.2559459244820594,
+            -0.6572845268871618,
+            -2.0498455478885163,
+            0.46787583701821234,
+            2.2570634768364317,
+            0.16202059907471453,
+            -0.8634801195177148,
+            1.9465399156940961,
+            -1.0162969058795994,
+            0.18605432039827577,
+            3.316496415462273,
+            1.6771756029110123
+          ]
+        },
+        "exit": {
+          "mean_speed_delta_kph": 0.2933763560985948,
+          "median_speed_delta_kph": 0.39369173119755774,
+          "faster_count": 12,
+          "delta_kph_per_corner": [
+            -0.7609211025865278,
+            -0.5059097909755537,
+            1.0858159032228145,
+            1.2694090813069252,
+            0.9751204659094036,
+            0.21796573136959196,
+            -0.6251617050772502,
+            -0.8607331608758244,
+            2.330999004691962,
+            0.24192199938781586,
+            0.505641068201588,
+            0.3879286791636048,
+            0.3994547832315107,
+            -1.2522078008284525,
+            -1.0629243486609028,
+            1.1416008697837428,
+            1.280439907028496,
+            0.5123348254817629
+          ]
+        }
+      }
+    }
+  },
+  "source_steering_comparison_sha256": "e9d1c842ede29725e5f8695e30f9eb43d64211c72b71adb04133188de0423dd4",
+  "scope": "Closed isolated clear laps; actual final commands and speed. Strong release faster, not a smoothness win."
+}

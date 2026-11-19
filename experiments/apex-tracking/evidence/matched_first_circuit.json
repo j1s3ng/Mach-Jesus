@@ -1,0 +1,460 @@
+{
+  "scope": "Matched first common reference circuit, same start/grid to first unwrapped crossing. Whole-recording metrics remain separately preserved in the original evaluation.",
+  "method": "Native50Hz only, trim to final actual row before crossing; recompute body derivatives and offline highpass within each trimmed first-circuit sequence. Map anchor scoring uses unwrapped S\u00b110m and first crossing, never modulo/lap2.",
+  "same_measured_start_grid": true,
+  "baseline": {
+    "attempt": "race-lidar/runs/trajectory-trailbrake-20261117-001/combined-zero-risk-chase-001",
+    "first_reference_crossing_race_s": 235.90266831254482,
+    "crossed_unwrapped_reference_progress_m": 5227.131662140477,
+    "native_first_row_race_s": 0.0,
+    "native_last_row_race_s": 235.9,
+    "sample_count": 11796,
+    "initial_progress_m": -227.99999578436953,
+    "initial_XY_m": [
+      -113.89993000000824,
+      139.80825000005817
+    ],
+    "motion": {
+      "steering": {
+        "sample_count": 11796,
+        "continuous_interval_duration_s": 235.9,
+        "command_total_variation_rad": 31.88873727499556,
+        "total_variation_rad_per_s": 0.13517904737174888,
+        "absolute_steering_rate_radps": {
+          "50": 0.05992677520764509,
+          "90": 0.35274551537715904,
+          "95": 0.5429456774570063,
+          "99": 1.0000000000000215,
+          "100": 1.0000000000009097
+        },
+        "steering_rate_rms_radps": 0.2422399089513862,
+        "absolute_steering_acceleration_radps2": {
+          "50": 0.605983386539942,
+          "90": 6.86387460953043,
+          "95": 26.187966251902882,
+          "99": 62.06431986696513,
+          "100": 100.00000000000429
+        },
+        "steering_acceleration_rms_radps2": 12.108281431598124,
+        "direction_changes_with_0point005rad_excursion": 653,
+        "rapid_successive_direction_changes_within1s": 603,
+        "highpass_above1hz_command_rms_rad": 0.009635243543576677,
+        "mean_speed_mps": 23.154203488017913,
+        "max_abs_path_cross_error_m": 2.072802456043989,
+        "nominal_capture_fraction": 0.11690403526619193,
+        "lateral_proxy_limit_active_fraction": 0.010427263479145472,
+        "physics_slew_limit_exceeded_intervals": 0,
+        "method_switches": 136,
+        "geometry_switches": 14
+      },
+      "body": {
+        "measured_yaw_rate_rms_radps": 0.21284307391429816,
+        "measured_yaw_acceleration_rms_radps2": 0.6763997673405002,
+        "yaw_rate_above1hz_rms_radps": 0.031072139999672867,
+        "XY_difference_body_lateral_acceleration_rms_mps2": 3.511106562199385,
+        "XY_difference_body_lateral_jerk_rms_mps3": 41.41917474872731,
+        "body_lateral_acceleration_above1hz_rms_mps2": 1.1282747373976814,
+        "yaw_rate_band_1to6hz_power_rad2ps2": 0.001243780539289139,
+        "steering_band_1to6hz_power_rad2": 0.00011700907716504733,
+        "forward_difference_yaw_rate_rms_radps": 0.21309483598655718,
+        "forward_difference_yaw_acceleration_rms_radps2": 1.0169698837115149,
+        "actual_XY_driven_distance_m": 5461.739760714104,
+        "steering_variation_rad_per_driven_km": 5.8385676857709194
+      }
+    },
+    "same_progress_nominal_distance_within1point25m_fraction": 0.212783994574432,
+    "first_pass_unwrapped_anchor_summary": {
+      "observed_map_anchors": 18,
+      "actual_to_planned_anchor_xy_error_mean_m": 7.027928286923519,
+      "actual_to_planned_anchor_xy_error_median_m": 8.32491206241669,
+      "actual_to_planned_anchor_xy_error_max_m": 15.93348326920008,
+      "map_anchors_within_half_metre_of_planned_xy": 2,
+      "map_anchors_within_1point25m_of_planned_xy": 2
+    },
+    "nominal_requested_first_pass_anchors": {
+      "count": 6,
+      "mean_planned_XY_error_m": 5.7168878700554275,
+      "within_half_metre": 1,
+      "table": [
+        {
+          "corner": "C06",
+          "original_map_anchor_m": 2610.439400324675,
+          "race_s": 106.78,
+          "actual_to_planned_anchor_xy_error_m": 8.496471105640143,
+          "geometry_before_anchor": "guarded_constant_offset",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C08",
+          "original_map_anchor_m": 3593.777196240377,
+          "race_s": 136.52,
+          "actual_to_planned_anchor_xy_error_m": 0.082607690365519,
+          "geometry_before_anchor": "guarded_constant_offset",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C10",
+          "original_map_anchor_m": 3801.2933165380446,
+          "race_s": 150.231248124464,
+          "actual_to_planned_anchor_xy_error_m": 9.151818878900777,
+          "geometry_before_anchor": "guarded_constant_offset",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C14",
+          "original_map_anchor_m": 4488.431597189924,
+          "race_s": 190.64000000000001,
+          "actual_to_planned_anchor_xy_error_m": 5.669084683142358,
+          "geometry_before_anchor": "guarded_constant_offset",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C15",
+          "original_map_anchor_m": 4558.207219685118,
+          "race_s": 195.80992662737862,
+          "actual_to_planned_anchor_xy_error_m": 8.920574040167875,
+          "geometry_before_anchor": "guarded_constant_offset",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C16",
+          "original_map_anchor_m": 4782.060345429304,
+          "race_s": 208.67378739642555,
+          "actual_to_planned_anchor_xy_error_m": 1.9807708221159028,
+          "geometry_before_anchor": "guarded_constant_offset",
+          "mode_before_anchor": "nominal_line"
+        }
+      ]
+    }
+  },
+  "candidate": {
+    "attempt": "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001",
+    "first_reference_crossing_race_s": 212.41908130090658,
+    "crossed_unwrapped_reference_progress_m": 5227.131662140477,
+    "native_first_row_race_s": 0.0,
+    "native_last_row_race_s": 212.4,
+    "sample_count": 10621,
+    "initial_progress_m": -227.99999578436953,
+    "initial_XY_m": [
+      -113.89993000000824,
+      139.80825000005817
+    ],
+    "motion": {
+      "steering": {
+        "sample_count": 10621,
+        "continuous_interval_duration_s": 212.4,
+        "command_total_variation_rad": 24.21027092402953,
+        "total_variation_rad_per_s": 0.11398432638431982,
+        "absolute_steering_rate_radps": {
+          "50": 0.052909415763183316,
+          "90": 0.2832158937294836,
+          "95": 0.46636066343065957,
+          "99": 1.0000000000000209,
+          "100": 1.0000000000009097
+        },
+        "steering_rate_rms_radps": 0.2118316526245127,
+        "absolute_steering_acceleration_radps2": {
+          "50": 0.8603160491719867,
+          "90": 7.035802139308742,
+          "95": 19.461677163505705,
+          "99": 52.95226214114433,
+          "100": 95.18369212791033
+        },
+        "steering_acceleration_rms_radps2": 10.10924622951788,
+        "direction_changes_with_0point005rad_excursion": 457,
+        "rapid_successive_direction_changes_within1s": 406,
+        "highpass_above1hz_command_rms_rad": 0.00900338157289686,
+        "mean_speed_mps": 25.684822018955614,
+        "max_abs_path_cross_error_m": 2.1147787456741587,
+        "nominal_capture_fraction": 0.5476885415685905,
+        "lateral_proxy_limit_active_fraction": 0.006779022690895396,
+        "physics_slew_limit_exceeded_intervals": 0,
+        "method_switches": 56,
+        "geometry_switches": 8
+      },
+      "body": {
+        "measured_yaw_rate_rms_radps": 0.25075548907244316,
+        "measured_yaw_acceleration_rms_radps2": 0.7219539595631256,
+        "yaw_rate_above1hz_rms_radps": 0.029422914097537042,
+        "XY_difference_body_lateral_acceleration_rms_mps2": 4.65940512679385,
+        "XY_difference_body_lateral_jerk_rms_mps3": 42.31413219103194,
+        "body_lateral_acceleration_above1hz_rms_mps2": 1.06216464759351,
+        "yaw_rate_band_1to6hz_power_rad2ps2": 0.0009806766665889312,
+        "steering_band_1to6hz_power_rad2": 9.909817312908063e-05,
+        "forward_difference_yaw_rate_rms_radps": 0.2511257771189003,
+        "forward_difference_yaw_acceleration_rms_radps2": 1.34207761688293,
+        "actual_XY_driven_distance_m": 5455.17760068419,
+        "steering_variation_rad_per_driven_km": 4.438035330140869
+      }
+    },
+    "same_progress_nominal_distance_within1point25m_fraction": 0.6285660483946898,
+    "first_pass_unwrapped_anchor_summary": {
+      "observed_map_anchors": 18,
+      "actual_to_planned_anchor_xy_error_mean_m": 1.8423646364392137,
+      "actual_to_planned_anchor_xy_error_median_m": 0.2566845712301566,
+      "actual_to_planned_anchor_xy_error_max_m": 18.72469841994778,
+      "map_anchors_within_half_metre_of_planned_xy": 15,
+      "map_anchors_within_1point25m_of_planned_xy": 16
+    },
+    "nominal_requested_first_pass_anchors": {
+      "count": 14,
+      "mean_planned_XY_error_m": 0.21507123673055825,
+      "within_half_metre": 14,
+      "table": [
+        {
+          "corner": "C05",
+          "original_map_anchor_m": 1403.050900160805,
+          "race_s": 73.42998815615867,
+          "actual_to_planned_anchor_xy_error_m": 0.32671695032902653,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C06",
+          "original_map_anchor_m": 2610.439400324675,
+          "race_s": 106.78852780678629,
+          "actual_to_planned_anchor_xy_error_m": 0.4549006778019657,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C07",
+          "original_map_anchor_m": 2662.0713661926334,
+          "race_s": 110.47062429016634,
+          "actual_to_planned_anchor_xy_error_m": 0.08451675542848681,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C08",
+          "original_map_anchor_m": 3593.777196240377,
+          "race_s": 134.08,
+          "actual_to_planned_anchor_xy_error_m": 0.09918300131318908,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C09",
+          "original_map_anchor_m": 3651.6304174004904,
+          "race_s": 136.331530424459,
+          "actual_to_planned_anchor_xy_error_m": 0.2411966001291411,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C10",
+          "original_map_anchor_m": 3801.2933165380446,
+          "race_s": 143.24898496277552,
+          "actual_to_planned_anchor_xy_error_m": 0.14012786073390085,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C11",
+          "original_map_anchor_m": 4189.083447065769,
+          "race_s": 158.5723936798789,
+          "actual_to_planned_anchor_xy_error_m": 0.2986469694935277,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C12",
+          "original_map_anchor_m": 4314.830473108133,
+          "race_s": 164.7881924990977,
+          "actual_to_planned_anchor_xy_error_m": 0.1762132241027929,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C13",
+          "original_map_anchor_m": 4388.594957034398,
+          "race_s": 168.58868756437923,
+          "actual_to_planned_anchor_xy_error_m": 0.14068773048813343,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C14",
+          "original_map_anchor_m": 4488.431597189924,
+          "race_s": 173.44,
+          "actual_to_planned_anchor_xy_error_m": 0.32277806776341494,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C15",
+          "original_map_anchor_m": 4558.207219685118,
+          "race_s": 177.37188608505323,
+          "actual_to_planned_anchor_xy_error_m": 0.14213868098074076,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C16",
+          "original_map_anchor_m": 4782.060345429304,
+          "race_s": 187.88763584098433,
+          "actual_to_planned_anchor_xy_error_m": 0.24112665599927102,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C17",
+          "original_map_anchor_m": 4847.944240985181,
+          "race_s": 192.60747870166003,
+          "actual_to_planned_anchor_xy_error_m": 0.27217254233117205,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        },
+        {
+          "corner": "C18",
+          "original_map_anchor_m": 5053.243464722782,
+          "race_s": 204.88924398165625,
+          "actual_to_planned_anchor_xy_error_m": 0.07059159733305291,
+          "geometry_before_anchor": "variable_nominal_path",
+          "mode_before_anchor": "nominal_line"
+        }
+      ]
+    }
+  },
+  "first_crossing_delta_s": -23.483587011638235,
+  "motion_changes_percent": {
+    "steering": {
+      "sample_count": -9.961003730077989,
+      "continuous_interval_duration_s": -9.961848240779991,
+      "command_total_variation_rad": -24.078928822894564,
+      "total_variation_rad_per_s": -15.678998631454,
+      "steering_rate_rms_radps": -12.552950691942321,
+      "steering_acceleration_rms_radps2": -16.50965261563464,
+      "direction_changes_with_0point005rad_excursion": -30.015313935681466,
+      "rapid_successive_direction_changes_within1s": -32.669983416252066,
+      "highpass_above1hz_command_rms_rad": -6.5578204414048935,
+      "mean_speed_mps": 10.929413021040757,
+      "max_abs_path_cross_error_m": 2.025098412430615,
+      "nominal_capture_fraction": 368.49412881385734,
+      "lateral_proxy_limit_active_fraction": -34.987518974144635,
+      "method_switches": -58.82352941176471,
+      "geometry_switches": -42.85714285714286
+    },
+    "body": {
+      "measured_yaw_rate_rms_radps": 17.812379073894856,
+      "measured_yaw_acceleration_rms_radps2": 6.734803059104744,
+      "yaw_rate_above1hz_rms_radps": -5.307731949435047,
+      "XY_difference_body_lateral_acceleration_rms_mps2": 32.70474832513091,
+      "XY_difference_body_lateral_jerk_rms_mps3": 2.1607321916333744,
+      "body_lateral_acceleration_above1hz_rms_mps2": -5.859396440679998,
+      "yaw_rate_band_1to6hz_power_rad2ps2": -21.153560808290205,
+      "steering_band_1to6hz_power_rad2": -15.30727740951452,
+      "forward_difference_yaw_rate_rms_radps": 17.846955772659932,
+      "forward_difference_yaw_acceleration_rms_radps2": 31.96827540112672,
+      "actual_XY_driven_distance_m": -0.12014779754090377,
+      "steering_variation_rad_per_driven_km": -23.987601600359387
+    }
+  },
+  "predeclared_progress_window_m": [
+    1398.1850974947743,
+    1421.510518611581
+  ],
+  "predeclared_progress_window": {
+    "baseline": {
+      "steering": {
+        "sample_count": 101,
+        "continuous_interval_duration_s": 2.0,
+        "command_total_variation_rad": 1.0774526343295199,
+        "total_variation_rad_per_s": 0.5387263171647599,
+        "absolute_steering_rate_radps": {
+          "50": 0.5664098128442786,
+          "90": 1.0000000000001985,
+          "95": 1.0000000000001985,
+          "99": 1.0000000000001992,
+          "100": 1.0000000000001998
+        },
+        "steering_rate_rms_radps": 0.6273388204354386,
+        "absolute_steering_acceleration_radps2": {
+          "50": 1.163279999658541,
+          "90": 60.747224044496505,
+          "95": 71.34670646209462,
+          "99": 80.70961515682426,
+          "100": 82.98049410155946
+        },
+        "steering_acceleration_rms_radps2": 31.069072692523182,
+        "direction_changes_with_0point005rad_excursion": 24,
+        "rapid_successive_direction_changes_within1s": 23,
+        "highpass_above1hz_command_rms_rad": 0.025400334685778476,
+        "mean_speed_mps": 8.86619845222616,
+        "max_abs_path_cross_error_m": 0.2146282690471411,
+        "nominal_capture_fraction": 0.0,
+        "lateral_proxy_limit_active_fraction": 0.0,
+        "physics_slew_limit_exceeded_intervals": 0,
+        "method_switches": 0,
+        "geometry_switches": 0
+      },
+      "body": {
+        "measured_yaw_rate_rms_radps": 0.425656520385668,
+        "measured_yaw_acceleration_rms_radps2": 0.879117144978107,
+        "yaw_rate_above1hz_rms_radps": 0.05335508797506626,
+        "XY_difference_body_lateral_acceleration_rms_mps2": 3.8554323491285394,
+        "XY_difference_body_lateral_jerk_rms_mps3": 31.25598185212487,
+        "body_lateral_acceleration_above1hz_rms_mps2": 0.8930471117518104,
+        "yaw_rate_band_1to6hz_power_rad2ps2": 0.0011309058488550028,
+        "steering_band_1to6hz_power_rad2": 0.00025283150112805276,
+        "forward_difference_yaw_rate_rms_radps": 0.4260925069815967,
+        "forward_difference_yaw_acceleration_rms_radps2": 1.1644064342890166,
+        "actual_XY_driven_distance_m": 17.668029121730658,
+        "steering_variation_rad_per_driven_km": 60.9831819330836
+      }
+    },
+    "candidate": {
+      "steering": {
+        "sample_count": 63,
+        "continuous_interval_duration_s": 1.2399999999999949,
+        "command_total_variation_rad": 0.30203623561103543,
+        "total_variation_rad_per_s": 0.24357760936373926,
+        "absolute_steering_rate_radps": {
+          "50": 0.1686775122525157,
+          "90": 0.5183817402407597,
+          "95": 0.8151759740831995,
+          "99": 0.9999999999997655,
+          "100": 1.0000000000001985
+        },
+        "steering_rate_rms_radps": 0.34110203901113023,
+        "absolute_steering_acceleration_radps2": {
+          "50": 2.536215386936099,
+          "90": 38.076853930348804,
+          "95": 44.804688224843325,
+          "99": 54.50613597275878,
+          "100": 57.08654614591865
+        },
+        "steering_acceleration_rms_radps2": 18.62732353935356,
+        "direction_changes_with_0point005rad_excursion": 7,
+        "rapid_successive_direction_changes_within1s": 6,
+        "highpass_above1hz_command_rms_rad": 0.020384674936159402,
+        "mean_speed_mps": 12.108622726839329,
+        "max_abs_path_cross_error_m": 0.7165417221612805,
+        "nominal_capture_fraction": 0.5238095238095238,
+        "lateral_proxy_limit_active_fraction": 0.0,
+        "physics_slew_limit_exceeded_intervals": 0,
+        "method_switches": 1,
+        "geometry_switches": 1
+      },
+      "body": {
+        "measured_yaw_rate_rms_radps": 0.483957024221674,
+        "measured_yaw_acceleration_rms_radps2": 0.6669951089181553,
+        "yaw_rate_above1hz_rms_radps": 0.051335755092193805,
+        "XY_difference_body_lateral_acceleration_rms_mps2": 5.881792155748316,
+        "XY_difference_body_lateral_jerk_rms_mps3": 26.37169474162358,
+        "body_lateral_acceleration_above1hz_rms_mps2": 0.8966320455950706,
+        "yaw_rate_band_1to6hz_power_rad2ps2": 0.0022580549743227746,
+        "steering_band_1to6hz_power_rad2": 0.0002978304574299394,
+        "forward_difference_yaw_rate_rms_radps": 0.482416654732489,
+        "forward_difference_yaw_acceleration_rms_radps2": 0.7937765207780839,
+        "actual_XY_driven_distance_m": 14.994303983655623,
+        "steering_variation_rad_per_driven_km": 20.143398182420917
+      }
+    }
+  },
+  "input_sha256": {
+    "race-lidar/runs/apex-jitter-20261118-001/analysis/measurement-development/yaw-feature-off-traffic-001/evaluation.json": "38ae40300b76042f4ef54624e1a285fc8a353b6638edeaba0b9b8cf21fcdc090",
+    "race-lidar/runs/apex-jitter-20261118-001/analysis/measurement-development/yaw-feature-off-traffic-001/measured_arrays.npz": "94daf95c869cea6e27ce11297b5982090fec3e13257dd64e9b1eb8c0ffaf0e3d"
+  },
+  "script_sha256": "6b321e8d897a57f32249db55cab88e7d830fbf7f987bae27b43f4f3015b28433"
+}

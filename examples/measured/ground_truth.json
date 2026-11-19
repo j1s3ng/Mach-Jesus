@@ -1,0 +1,23 @@
+{
+  "scene_id": "stopped-004",
+  "frame_id": "184c75ab91665e0ecc73d463",
+  "gt_boxes": [
+    {
+      "car_id": "R02",
+      "center": [
+        23.666746741160253,
+        4.0919703796741365,
+        0.5168008999999023
+      ],
+      "label_geometry": "ego-upright yaw box enclosing 8 transformed physical asset corners",
+      "size": [
+        4.950000000000067,
+        2.0200000000000053,
+        1.0750000000002156
+      ],
+      "visible_points": 44,
+      "yaw": 0.0949414535361703
+    }
+  ],
+  "purpose": "offline evaluation only; never a detector/controller input"
+}

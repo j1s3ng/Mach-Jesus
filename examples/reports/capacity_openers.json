@@ -1,0 +1,86 @@
+{
+  "scope": "Sealed independent capacity opener summary, not full-lap or global-maximum evidence",
+  "original_report_sha256": "35152189e3a5b25e2a728c3a301296066235ad53adc26891b261179abe51b1bc",
+  "cases": [
+    {
+      "job_id": "capacity-20-v3-matched-control",
+      "scheduled_cars": 20,
+      "full60s_stream_window_verified": true,
+      "successful_frames": 6000,
+      "cadence_ms": 200,
+      "GPU_endpoint_counts": {
+        "http://127.0.0.1:8770": 10,
+        "http://127.0.0.1:8771": 10
+      },
+      "director_wall_seconds": 94.1545507919509,
+      "RTF": 0.637250132843598,
+      "RPC_roundtrip_ms": {
+        "p50": 151.4376875711605,
+        "p95": 210.8723941259086,
+        "p99": 217.7321005240083
+      },
+      "client_controller_failure_count": 0,
+      "no_silent_transport_fallback_source_verified": true,
+      "full300_frame_action_id_bindings_verified": true,
+      "GT_to_own_pose_join_count": 6000,
+      "GT_missing_frame_joins": [],
+      "GT_pose_max_difference_m": 0.0,
+      "clean_opening_window": true,
+      "full_lap_claim": false
+    },
+    {
+      "job_id": "capacity-24-v3-recovery1",
+      "scheduled_cars": 24,
+      "full60s_stream_window_verified": true,
+      "successful_frames": 7200,
+      "cadence_ms": 200,
+      "GPU_endpoint_counts": {
+        "http://127.0.0.1:8770": 12,
+        "http://127.0.0.1:8771": 12
+      },
+      "director_wall_seconds": 110.53987474995665,
+      "RTF": 0.5427905553151853,
+      "RPC_roundtrip_ms": {
+        "p50": 176.7709170235321,
+        "p95": 242.12019377155227,
+        "p99": 249.81587395071986
+      },
+      "client_controller_failure_count": 0,
+      "no_silent_transport_fallback_source_verified": true,
+      "full300_frame_action_id_bindings_verified": true,
+      "GT_to_own_pose_join_count": 7200,
+      "GT_missing_frame_joins": [],
+      "GT_pose_max_difference_m": 0.0,
+      "clean_opening_window": true,
+      "full_lap_claim": false
+    },
+    {
+      "job_id": "capacity-32-v3-recovery1",
+      "scheduled_cars": 32,
+      "full60s_stream_window_verified": true,
+      "successful_frames": 9600,
+      "cadence_ms": 200,
+      "GPU_endpoint_counts": {
+        "http://127.0.0.1:8770": 16,
+        "http://127.0.0.1:8771": 16
+      },
+      "director_wall_seconds": 145.20242470805533,
+      "RTF": 0.41321624016015074,
+      "RPC_roundtrip_ms": {
+        "p50": 212.5282915076241,
+        "p95": 310.6743733631447,
+        "p99": 319.65771726332605
+      },
+      "client_controller_failure_count": 0,
+      "no_silent_transport_fallback_source_verified": true,
+      "full300_frame_action_id_bindings_verified": true,
+      "GT_to_own_pose_join_count": 9600,
+      "GT_missing_frame_joins": [],
+      "GT_pose_max_difference_m": 0.0,
+      "clean_opening_window": true,
+      "full_lap_claim": false
+    }
+  ],
+  "telemetry_limit": "Original observer failed; only two late32 NVML samples. No20/24 GPU-utilization or peak-utilization claim.",
+  "actual_model_or_simulator_queries_in_export": false
+}

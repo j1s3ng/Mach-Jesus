@@ -1,0 +1,11 @@
+{
+  "status": "INDEPENDENT_SOURCE_REVIEW_CLEAR_NO_ACTUAL_FINAL_CASE_AUDIT",
+  "original_independent_review_sha256": "ece8e0a5923cfdfc9f47e596a892cb4112f20f5f7230b50d113b9a3f71eb320f",
+  "source_sha256": {
+    "scripts/final_evidence.py": "278e8924152fdacbddb52ecc5f60d9b3506046aeffa94b08797d74d675ea7dd5",
+    "scripts/final_scored_inputs.py": "8b9493981e7e7b7e8ac3b3313882ad14ccb1825712555ba5f636b1aa83751b99"
+  },
+  "independent_focused_tests_passed": 56,
+  "actual73_case_evidence_available": false,
+  "report_is_metadata_projection_original_review_preserved": true
+}

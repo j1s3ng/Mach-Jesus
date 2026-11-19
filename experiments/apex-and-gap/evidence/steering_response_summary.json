@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "source_report_sha256": "47db8f9502e817bf587c323dcab0127d1f913c26f23b9681eeead071b6360d24",
+  "status": "READ_ONLY_OBSERVATIONAL_STEERING_SYSTEM_ID",
+  "scope": "Observational command-to-motion response; not a measured wheel-angle/tire-force model or causal braking correction.",
+  "force_sensor_or_actual_wheel_angle_measurement_claimed": false,
+  "data": [
+    {
+      "name": "baseline8-clear",
+      "source_sha256": "c2d59e13338d73419c2e42b414f13cdc30dd908e48c24b7a1119c6f60e42fcea",
+      "rows": 1952,
+      "steady_samples": 155,
+      "quasisteady_samples": 637,
+      "lap_s": 196.84059179542405,
+      "valid_lap": true
+    },
+    {
+      "name": "control8-maproute-feedback",
+      "source_sha256": "cb754f096123e65d66333fae9601b5e1610a3721523a9cf9a1fa7ac3d401e9da",
+      "rows": 1867,
+      "steady_samples": 30,
+      "quasisteady_samples": 242,
+      "lap_s": 188.33770506798638,
+      "valid_lap": true
+    },
+    {
+      "name": "wide8-reserve16-001",
+      "source_sha256": "ac033bd88e08b7483a60b504ff6c1e9a24343436a8dca53082f5141b05f8baa0",
+      "rows": 2064,
+      "steady_samples": 154,
+      "quasisteady_samples": 520,
+      "lap_s": 208.06641007003898,
+      "valid_lap": false
+    }
+  ],
+  "primary_filter": {
+    "min_speed_mps": 8.0,
+    "min_abs_command_rad": 0.006,
+    "min_abs_motion_lateral_accel_mps2": 0.7,
+    "max_abs_beta_rad": 0.08,
+    "min_forward_speed_ratio": 0.995,
+    "road_minimum_centers": 2,
+    "exclude_spin_and_heading_recovery": true,
+    "steady_max_abs_long_accel": 1.5,
+    "steady_max_abs_steering_rate_rad_s": 0.035,
+    "steady_max_abs_yaw_accel_rad_s2": 0.12,
+    "primary_savgol_window_samples": 11,
+    "polynomial_order": 3,
+    "sampling_hz": 10.0
+  },
+  "primary_fit": {
+    "sample_count": 339,
+    "solver_success": true,
+    "equation": "tan(command_delta)=measured_curvature*(L0+K*v^2+Kb*v^2*clip(-along_accel/8,0,1.5))",
+    "L0_m": 3.2,
+    "K_s2_per_m": 0.002132088814692733,
+    "Kb_s2_per_m": 0.0,
+    "steering_tan_rmse": 0.006297046967109736,
+    "kinematic_tan_rmse": 0.013228316392657542,
+    "speed_range_mps": [
+      8.914948516203166,
+      59.30723367322323
+    ],
+    "effective_wheelbase_at_v20_30_40_m": [
+      4.052835525877093,
+      5.118879933223459,
+      6.611342103508372
+    ],
+    "predicted_actual_to_kinematic_lateral_gain_v20_30_40": [
+      0.7895706548090113,
+      0.625136756818771,
+      0.48401670188899915
+    ]
+  },
+  "yaw_rate_cross_check": {
+    "sample_count": 339,
+    "solver_success": true,
+    "equation": "tan(command_delta)=measured_curvature*(L0+K*v^2+Kb*v^2*clip(-along_accel/8,0,1.5))",
+    "L0_m": 3.2,
+    "K_s2_per_m": 0.002122047618054385,
+    "Kb_s2_per_m": 0.0,
+    "steering_tan_rmse": 0.0049571999594903516,
+    "kinematic_tan_rmse": 0.012487600385766264,
+    "speed_range_mps": [
+      8.914948516203166,
+      59.30723367322323
+    ],
+    "effective_wheelbase_at_v20_30_40_m": [
+      4.0488190472217545,
+      5.109842856248947,
+      6.595276188887016
+    ],
+    "predicted_actual_to_kinematic_lateral_gain_v20_30_40": [
+      0.7903539186805094,
+      0.6262423503076313,
+      0.485195753498841
+    ]
+  },
+  "heldout_run_prediction": [
+    {
+      "heldout_run": "baseline8-clear",
+      "samples": 155,
+      "fitted_steering_tan_rmse": 0.006518784891568209,
+      "kinematic_steering_tan_rmse": 0.011730988669643878
+    },
+    {
+      "heldout_run": "control8-maproute-feedback",
+      "samples": 30,
+      "fitted_steering_tan_rmse": 0.011789935516864811,
+      "kinematic_steering_tan_rmse": 0.018275022588816355
+    },
+    {
+      "heldout_run": "wide8-reserve16-001",
+      "samples": 154,
+      "fitted_steering_tan_rmse": 0.00701775778248018,
+      "kinematic_steering_tan_rmse": 0.013477076240420287
+    }
+  ],
+  "block_bootstrap": {
+    "block_seconds": 2.0,
+    "nonempty_blocks": 100,
+    "replicates": 100,
+    "seed": 626,
+    "K_percentile_2p5_50_97p5_s2_per_m": [
+      0.001963201045480953,
+      0.00212143170352676,
+      0.002351962248932361
+    ],
+    "scope": "Descriptive resampling uncertainty; closed-loop confounding is not removed."
+  },
+  "smoothing_window_K_s2_per_m": {
+    "0.7": 0.0021080933255187757,
+    "1.1": 0.002132088814692733,
+    "1.5": 0.0021610633142162003
+  },
+  "command_lag_K_s2_per_m": {
+    "0.0": 0.002132088814692733,
+    "0.1": 0.0020738955709905704,
+    "0.2": 0.0019816435881436726,
+    "0.3": 0.001851247674386748,
+    "0.4": 0.0016547165077579519
+  },
+  "subsequent_selected_clear_calibration_K_s2_per_m": 0.002,
+  "limitations": [
+    "Command steering, not measured road-wheel angle: actuator response and tire effects are not separately identifiable.",
+    "10Hz position/yaw finite differences and symmetric offline smoothing are observational, not force-sensor measurements.",
+    "Closed-loop steering, speed, braking, controller variant and track regions are correlated; braking coefficients are not causal effects.",
+    "Steady corner samples are sparse at high speed; extrapolation requires independent physical calibration.",
+    "This report preceded installation of the rounded K=.002 coefficient in the subsequent physically audited clear-lap controller. The report itself was read-only."
+  ]
+}

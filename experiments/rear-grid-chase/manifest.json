@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "scope": "EXACT_REAR_GRID_CHASE004_SOURCE_OVERRIDES_FOR_LOCAL_REVIEW",
+  "base_study_historical_export_commit": "ca985876a6539cf4630091d72554a91501ae3eef",
+  "new_training_performed": false,
+  "formal_study_or_full_twenty_lap_race_result": false,
+  "source_paths_relative_to": "source/",
+  "source_files_sha256": {
+    "src/race_lidar/aggressive_hybrid.py": "83e0e7e6bf06d1c18dc7be7b292a6a7f3b0d2aff9cfb7458c87d276ea03c264c",
+    "src/race_lidar/demo_chase.py": "41776c70201a0392f1dc6417b6be52fbae31ab6b1ec1ea04766f10d030462a10",
+    "src/race_lidar/race_control.py": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+    "src/race_lidar/hotlap_driver.py": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+    "webots/controllers/tournament_racer/tournament_racer.py": "803928ddfe5f976f562c07c25610f9d5f14f57b69c3ac39ab86fce9d3a68f872",
+    "webots/controllers/tournament_director/tournament_director.py": "63ff24133c8865f7c888c07ed837f28f56ee470fec8c6237beb8e1f9e09e3417"
+  },
+  "video": {
+    "repository_relative_path": "docs/Mach_Jesus_Demo.mp4",
+    "sha256": "73b3f83b7ff3e5b69fc81c3b5f56bb27274ecf2db7cb755fa65c81c88380b7f4",
+    "seconds": 112.0
+  },
+  "models": {
+    "original_voxelnext_checkpoint_sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b",
+    "hero_rich005_seed7_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+    "rival_rich005_seed17_sha256": "d9837d76d29f80368dae8ec8f611aa67b4c3e7885ed5bab51876fbff34afd9da",
+    "rival_rich006_seed17_sha256": "730802bc23036458e76007f0f17b8f13a3894457e14d82b642f8f571f84d83c6",
+    "reference_npz_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e"
+  },
+  "hero_parameters": {
+    "policy": "neural_rich005_seed7",
+    "car_id": "R20",
+    "grid_index": 19,
+    "start_progress_m": -228.0,
+    "flat_out_no_lift": false,
+    "ignore_reference_source_speed": true,
+    "software_planning_ceiling_mps": 100.0,
+    "lateral_accel_budget_mps2": 8.0,
+    "brake_decel_mps2": 8.0,
+    "acceleration_mps2": 5.0,
+    "racing_guard_parameters": {
+      "lane_rate_mps": 1.8,
+      "ego_half_width_m": 1.05,
+      "lateral_margin_m": 0.1,
+      "position_uncertainty_cap_m": 0.5,
+      "lead_speed_sigma_factor": 0.25,
+      "reaction_seconds": 0.2,
+      "following_gap_m": 5.0
+    },
+    "aggressive_hybrid": {
+      "version": "aggressive-hybrid-demo-v2-racing-guard",
+      "commit_seconds": 1.5,
+      "switch_gain_mps": 2.0,
+      "relax_blanket_visibility_cap": true
+    }
+  },
+  "shared_demo_parameters": {
+    "cars": 20,
+    "seed": 607,
+    "grid_spacing_m": 12.0,
+    "grid_jitter_m": 0.0,
+    "sensor_period_ms": 200,
+    "physics_step_ms": 20,
+    "visibility_m": 70.0,
+    "nominal_lap_target": 20,
+    "chase_stop": {
+      "hero_car_id": "R20",
+      "lead_hold_seconds": 1.0,
+      "lead_margin_m": 2.5,
+      "failure_hold_seconds": 1.0
+    }
+  },
+  "verified_outcome": {
+    "start_position": 20,
+    "chase_position_at_stop": 1,
+    "race_time_s": 325.5,
+    "total_signed_progress_m": 7388.488173638104,
+    "lead_margin_m": 34.023744772602186,
+    "distinct_active_rivals_passed": 19,
+    "maximum_measured_speed_mps": 57.458736572781575,
+    "hero_conservative_overlap_samples": 0,
+    "hero_track_violation_steps": 0,
+    "hero_position_resets": 0,
+    "formal_race_winner_claimed": false
+  },
+  "availability": "Source overrides only; external weights/assets/reference and complete race configuration are required for a fresh end-to-end reproduction."
+}

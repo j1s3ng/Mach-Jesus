@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root=$(cd "$(dirname "$0")" && pwd)
+cd "$root"
+if [[ -n "${RACE_PYTHON:-}" ]]; then
+  python_bin="$RACE_PYTHON"
+elif [[ -x "$root/.venv/bin/python" ]]; then
+  python_bin="$root/.venv/bin/python"
+else
+  python_bin=python3
+fi
+export PYTHONPATH="$root/src:$root${PYTHONPATH:+:$PYTHONPATH}"
+case "${1:-}" in
+  hotlap) shift; exec "$python_bin" scripts/run_hotlap.py "$@" ;;
+  tournament) shift; exec "$python_bin" scripts/run_tournament_series.py "$@" ;;
+  race-video) shift; exec "$python_bin" scripts/render_tournament.py "$@" ;;
+  sim) shift; exec "$python_bin" scripts/run_webots.py "$@" ;;
+  overlay) shift; exec "$python_bin" scripts/camera_overlay.py "$@" ;;
+  gpu|race-gpu) printf '%s\n' 'Use the configurable local/SSH inference commands in README.md.' >&2; exit 2 ;;
+  *) exec "$python_bin" -m race_lidar "$@" ;;
+esac

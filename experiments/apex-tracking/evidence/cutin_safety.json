@@ -1,0 +1,292 @@
+{
+  "status": "STIMULUS_OBSERVED_CLEAR_RESPONSE",
+  "fixture": "cut_in",
+  "scope": "Controlled own-clock physical safety fixture; actual body motion and50Hz safety audit, not a trained-racer or race-win result.",
+  "source_and_rule_checks": {
+    "terminal_closed_clean": true,
+    "all_runtime_files_pinned": true,
+    "configuration_pinned": true,
+    "fixture_definition_pinned": true,
+    "no_forced_hero_lane": true,
+    "no_actor_post_spawn_pose_or_velocity_writes": true,
+    "original_hero_weights": true,
+    "original_detector": true,
+    "original_detector_config": true,
+    "all_actual_controller_bindings_match": true,
+    "all_pace_actors_are_controlled": true,
+    "exact_requested_two_wheel_rule": true
+  },
+  "actor_checks": {
+    "R20": {
+      "runtime_source_pins_match": true,
+      "summary_source_pins_match": true,
+      "no_opponent_truth_control": true,
+      "physical_steps": 1550,
+      "failure": null,
+      "position_resets": 0,
+      "track_violations": 0
+    },
+    "P01": {
+      "runtime_source_pins_match": true,
+      "summary_source_pins_match": true,
+      "no_opponent_truth_control": true,
+      "physical_steps": 1550,
+      "failure": null,
+      "position_resets": 0,
+      "track_violations": 0,
+      "controlled_not_learned": true
+    }
+  },
+  "safety50hz": {
+    "overlap_samples": {
+      "R20": 0,
+      "P01": 0
+    },
+    "tyre_violations": {
+      "R20": 0,
+      "P01": 0
+    },
+    "minimum_wheel_contacts": {
+      "R20": 2,
+      "P01": 4
+    },
+    "controller_track_violations": {
+      "R20": 0,
+      "P01": 0
+    },
+    "resets": {
+      "R20": 0,
+      "P01": 0
+    },
+    "audit_period_s": 0.02,
+    "all_zero": true
+  },
+  "actual_events": {
+    "fixture_stimulus_observed": true,
+    "actual_center_crossing_observed": true,
+    "actual_center_crossing_race_s": 6.441774892578509,
+    "actual_ego_lateral_overlap_ttc_events": [
+      {
+        "race_s": 5.6,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 26.97710535002443,
+        "closing_mps": 15.82884784021553,
+        "ttc_s": 1.7042999984803127
+      },
+      {
+        "race_s": 5.8,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 23.705681595061694,
+        "closing_mps": 16.05087398460637,
+        "ttc_s": 1.47690908406587
+      },
+      {
+        "race_s": 6.0,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 20.540275431293225,
+        "closing_mps": 14.880577566464126,
+        "ttc_s": 1.3803412763751977
+      },
+      {
+        "race_s": 6.2,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 17.723853775621212,
+        "closing_mps": 13.057096766489849,
+        "ttc_s": 1.3574115358559857
+      },
+      {
+        "race_s": 6.4,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 15.274819438609422,
+        "closing_mps": 11.19313866054199,
+        "ttc_s": 1.3646591811156736
+      },
+      {
+        "race_s": 6.6,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 13.214006803509132,
+        "closing_mps": 9.324723779236592,
+        "ttc_s": 1.4170936444179532
+      },
+      {
+        "race_s": 6.8,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 11.543952052206244,
+        "closing_mps": 7.501858191150859,
+        "ttc_s": 1.5388123526279678
+      },
+      {
+        "race_s": 7.0,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 10.251192009725749,
+        "closing_mps": 5.75212488485613,
+        "ttc_s": 1.7821574139870484
+      },
+      {
+        "race_s": 7.199999999999999,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 9.309740580368754,
+        "closing_mps": 4.073558320627853,
+        "ttc_s": 2.2854074613896413
+      }
+    ],
+    "predeclared_nominal_lane_intrusion_ttc_events": [
+      {
+        "race_s": 5.6,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 26.97710535002443,
+        "closing_mps": 15.82884784021553,
+        "ttc_s": 1.7042999984803127
+      },
+      {
+        "race_s": 5.8,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 23.705681595061694,
+        "closing_mps": 16.05087398460637,
+        "ttc_s": 1.47690908406587
+      },
+      {
+        "race_s": 6.0,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 20.540275431293225,
+        "closing_mps": 14.880577566464126,
+        "ttc_s": 1.3803412763751977
+      },
+      {
+        "race_s": 6.2,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 17.723853775621212,
+        "closing_mps": 13.057096766489849,
+        "ttc_s": 1.3574115358559857
+      },
+      {
+        "race_s": 6.4,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 15.274819438609422,
+        "closing_mps": 11.19313866054199,
+        "ttc_s": 1.3646591811156736
+      },
+      {
+        "race_s": 6.6,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 13.214006803509132,
+        "closing_mps": 9.324723779236592,
+        "ttc_s": 1.4170936444179532
+      },
+      {
+        "race_s": 6.8,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 11.543952052206244,
+        "closing_mps": 7.501858191150859,
+        "ttc_s": 1.5388123526279678
+      },
+      {
+        "race_s": 7.0,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 10.251192009725749,
+        "closing_mps": 5.75212488485613,
+        "ttc_s": 1.7821574139870484
+      },
+      {
+        "race_s": 7.199999999999999,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 9.309740580368754,
+        "closing_mps": 4.073558320627853,
+        "ttc_s": 2.2854074613896413
+      },
+      {
+        "race_s": 9.6,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 7.547026218617383,
+        "closing_mps": 2.9620456446345997,
+        "ttc_s": 2.547910168868579
+      },
+      {
+        "race_s": 9.8,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 6.870431381095983,
+        "closing_mps": 3.8915474601417372,
+        "ttc_s": 1.7654754185744272
+      },
+      {
+        "race_s": 10.0,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 6.009013044960687,
+        "closing_mps": 4.816325847406006,
+        "ttc_s": 1.2476342413993944
+      },
+      {
+        "race_s": 10.2,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 4.962096002747083,
+        "closing_mps": 5.737406493526578,
+        "ttc_s": 0.8648674289238065
+      },
+      {
+        "race_s": 10.4,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 3.729909972679687,
+        "closing_mps": 6.654734600969277,
+        "ttc_s": 0.5604896658292604
+      },
+      {
+        "race_s": 10.6,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 2.313332136416312,
+        "closing_mps": 7.56689126737092,
+        "ttc_s": 0.3057176394739009
+      },
+      {
+        "race_s": 10.8,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 0.7136185601908505,
+        "closing_mps": 8.475559901516135,
+        "ttc_s": 0.08419721746798062
+      },
+      {
+        "race_s": 11.0,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 0.0,
+        "closing_mps": 9.381882000222504,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 11.2,
+        "actor": "P01",
+        "longitudinal_body_gap_m": 0.0,
+        "closing_mps": 10.290219193681878,
+        "ttc_s": 0.0
+      }
+    ],
+    "nominal_lane_event_is_not_actual_ego_lateral_overlap": true,
+    "ttc_limit_s": 3.0
+  },
+  "race_horizon_completed": true,
+  "actual_race_seconds": 30.0,
+  "actual_body_pose_period_s": 0.1999999999999993,
+  "ttc_speed_estimate": "finite differences of actual5Hz body-center progress; offline only",
+  "body_envelope_m": [
+    5.0,
+    2.1
+  ],
+  "body_center_local_offset_m": 1.6,
+  "config_sha256": "25a76762d629710756ebf2c506bd47e224d7b5a6c9cdd7600b3331ce44f72b70",
+  "prepared_manifest_sha256": "7addcc2be60199630590bb4f8b208c7053cd6f3f65221d5c5016da4a7b561000",
+  "input_sha256": {
+    "terminal.json": "e16899694886e2864076bc5f22160e95c5a7ae2aae177604687302f63d36f4d6",
+    "preparation.json": "7addcc2be60199630590bb4f8b208c7053cd6f3f65221d5c5016da4a7b561000",
+    "race/config.json": "25a76762d629710756ebf2c506bd47e224d7b5a6c9cdd7600b3331ce44f72b70",
+    "race/heat_results.json": "40da8b47f15da313eaff7da58d8262e0a64687f8e3e61fa24666a247729b9fda",
+    "race/gt_poses.jsonl": "5a7057f1395c5373df881d2c97bf8274e219d4302612a1b24647656eb7c3f771",
+    "race/leaderboard.jsonl": "0b2c3a8fb80af87316eb1d6f4a6a7c8f669ba3db98279a19718d966895b006e4"
+  },
+  "audit_source_sha256": "3d4444702c1795e22d7db692019da3fd94102a179eff7163f204c5367173e947",
+  "event_source_sha256": "3871b8a8fbcfa37069fa9355a148f506504f635cbab37572da38e2a8d96ff5b2",
+  "limitations": [
+    "Actual lateral-overlap and nominal-lane-intrusion TTC are reported separately.",
+    "A successful early evasion may remove actual ego lateral overlap.",
+    "No script target is accepted as proof that an event happened.",
+    "The wheel rule counts centers, not a full tire contact patch."
+  ],
+  "actual_figure_sha256": "0bb3dfbb793bb27206384e6ad6f9a297689ee85ae15f2125b68dffdefce04f39"
+}

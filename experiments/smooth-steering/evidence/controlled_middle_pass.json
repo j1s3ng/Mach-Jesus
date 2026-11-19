@@ -1,0 +1,233 @@
+{
+  "status": "MIDDLE_PASS_OBSERVED",
+  "audit_completed_utc": "2026-11-17T19:46:15.332800+00:00",
+  "scope": "Controlled physically driven pace cars; actual original-map GT/body-envelope audit. No learned-race/championship win claim.",
+  "validation": {
+    "terminal_exit_clean": true,
+    "all_prepared_source_pins_match": true,
+    "config_pin_matches": true,
+    "correct_three_controlled_entries": true,
+    "no_forced_hero_lane": true,
+    "all_three_runtime_results_bound": true,
+    "original_hero_model_bound": true,
+    "original_detector_bound": true,
+    "original_detector_config_bound": true,
+    "all_three_original_reference_bound": true,
+    "hero_plan_bound": true,
+    "opponents_are_controlled_pace_not_learned": true,
+    "two_contact_road_rule_bound": true
+  },
+  "runtime_actor_checks": {
+    "R20": {
+      "source_entries": 13,
+      "result_runtime_pins_match": true,
+      "summary_runtime_pins_match": true,
+      "no_opponent_truth_control": true,
+      "controller_flushed": true,
+      "status": "incomplete",
+      "physics_steps": 547,
+      "track_violations": 0,
+      "resets": 0
+    },
+    "P01": {
+      "source_entries": 6,
+      "result_runtime_pins_match": true,
+      "summary_runtime_pins_match": true,
+      "no_opponent_truth_control": true,
+      "controller_flushed": true,
+      "status": "incomplete",
+      "physics_steps": 547,
+      "track_violations": 0,
+      "resets": 0
+    },
+    "P02": {
+      "source_entries": 6,
+      "result_runtime_pins_match": true,
+      "summary_runtime_pins_match": true,
+      "no_opponent_truth_control": true,
+      "controller_flushed": true,
+      "status": "incomplete",
+      "physics_steps": 547,
+      "track_violations": 0,
+      "resets": 0
+    }
+  },
+  "source_pin_count": 68,
+  "actual_middle_pass_proved": true,
+  "actual_pair_progress_crossings": {
+    "P01": {
+      "first_observed_crossing_race_s": 8.4,
+      "confirmed_race_s": 9.0,
+      "both_active_at_crossing": true
+    },
+    "P02": {
+      "first_observed_crossing_race_s": 8.4,
+      "confirmed_race_s": 9.0,
+      "both_active_at_crossing": true
+    }
+  },
+  "crossing_spread_s": 0.0,
+  "crossing_window_limit_s": 2.0,
+  "sustained_crossing_confirmation_s": 0.6,
+  "minimum_required_full_envelope_side_clearance_m": 0.05,
+  "body_half_length_m": 2.5,
+  "body_half_width_m": 1.05,
+  "body_center_rear_origin_offset_m": 1.6,
+  "geometry_observation_period_s": 0.2,
+  "middle_proof_sample_count": 3,
+  "all_three_active_during_encounter": true,
+  "middle_samples": [
+    {
+      "race_s": 8.0,
+      "hero_lateral_m": 2.5531916860769077,
+      "pair_lateral_m": {
+        "P01": -0.5992072863114105,
+        "P02": 5.800773950390895
+      },
+      "right_full_envelope_clearance_m": 1.0498512075289836,
+      "left_full_envelope_clearance_m": 1.1450225985713418,
+      "simultaneous_longitudinal_overlap": true,
+      "whole_car_between": true
+    },
+    {
+      "race_s": 8.2,
+      "hero_lateral_m": 2.5568918720351923,
+      "pair_lateral_m": {
+        "P01": -0.5997829350757675,
+        "P02": 5.800180236631732
+      },
+      "right_full_envelope_clearance_m": 1.0544946119784924,
+      "left_full_envelope_clearance_m": 1.1410762614942946,
+      "simultaneous_longitudinal_overlap": true,
+      "whole_car_between": true
+    },
+    {
+      "race_s": 8.4,
+      "hero_lateral_m": 2.558412632617888,
+      "pair_lateral_m": {
+        "P01": -0.6000773426883802,
+        "P02": 5.799849660509141
+      },
+      "right_full_envelope_clearance_m": 1.0579939208659295,
+      "left_full_envelope_clearance_m": 1.1409041962232083,
+      "simultaneous_longitudinal_overlap": true,
+      "whole_car_between": true
+    }
+  ],
+  "crossing_snapshot": {
+    "race_s": 8.4,
+    "hero_lateral_m": 2.558412632617888,
+    "pair_lateral_m": {
+      "P01": -0.6000773426883802,
+      "P02": 5.799849660509141
+    },
+    "right_full_envelope_clearance_m": 1.0579939208659295,
+    "left_full_envelope_clearance_m": 1.1409041962232083,
+    "simultaneous_longitudinal_overlap": true,
+    "whole_car_between": true
+  },
+  "safety50hz": {
+    "overlap_samples_by_car": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "tyre_violation_steps_by_car": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "minimum_wheel_contacts_by_car": {
+      "R20": 4,
+      "P01": 4,
+      "P02": 4
+    },
+    "patch_margin_violations_by_car": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "controller_track_violations_by_car": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "pose_resets_by_car": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "physics_step_ms": 20,
+    "wheel_model": "four wheel contact centers; kerbs excluded, not a full contact-patch physics model",
+    "all_three_zero_overlaps_tyres_resets": true
+  },
+  "chase_stop_result": {
+    "stop_reason": "hero_took_lead",
+    "race_time_s": 9.94,
+    "lead_achieved": true,
+    "gap_to_best_rival_m": 33.320756782913804,
+    "lead_margin_required_m": 12.0,
+    "lead_hold_required_s": 1.0
+  },
+  "original_model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+  "original_detector_sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b",
+  "hero_physical_limits": {
+    "max_speed_mps": 100.0,
+    "lateral_accel_mps2": 8.0,
+    "brake_decel_mps2": 8.0,
+    "acceleration_mps2": 5.0
+  },
+  "hero_path_tracking_config": {
+    "enabled": true,
+    "profile_preview_m": 0.0,
+    "profile_acceleration_feedforward": true,
+    "steering_method": "curvature_feedback",
+    "nominal_route_lane_rate_max_mps": 16.0,
+    "steering_lateral_reserve_factor": 1.6,
+    "understeer_gradient_s2_per_m": 0.002,
+    "feedforward_curvature_smoothing_sigma_m": 1.0
+  },
+  "rules": {
+    "protocol": "race-improvement-v2",
+    "reference_length_m": 5227.131662140477,
+    "laps": 20,
+    "sensor_period_ms": 200,
+    "physics_step_ms": 20,
+    "max_speed_mps": 60.0,
+    "lateral_accel_budget_mps2": 8.0,
+    "friction_coefficient": 1.5,
+    "vehicle_model": "generic Webots Car 880kg electric",
+    "physics_threads": 8,
+    "field_size": 3,
+    "control_version": "predictive_v2",
+    "visible_distance_m": 70.0,
+    "grid_spacing_m": 12.0,
+    "post_finish_mode": "physical_staggered_runoff_parking",
+    "race_cutoff_seconds": 30.0,
+    "grid_jitter_m": 0.0,
+    "lidar_max_range_m": 100.0,
+    "brake_decel_mps2": 8.0,
+    "acceleration_mps2": 5.0,
+    "track_error_limit_m": 16.0,
+    "total_vehicle_mass_kg": 880.0,
+    "track_limit_definition": "user_requested_two_of_four_wheel_contact_centers_on_tarmac_not_official_FIA",
+    "original6mreference_cutoff_is_not_new_legality": true,
+    "controlled_opponents": true
+  },
+  "configuration_sha256": "b55ef456947972018fb3caf4b0d138b7edd4c7f200bc5111bf4610a6e84256c1",
+  "prepared_source_manifest_sha256": "f3c8714297a8978558a098f27ae4af3217f6864b700f743b9f5991d30223961a",
+  "intent_is_not_actual_middle_pass_proof": true,
+  "limitations": [
+    "Supervisor poses are sampled at5Hz; continuous safety is separately audited at50Hz.",
+    "Wheel rule counts contact centers and excludes kerbs; it does not simulate a full tire contact patch.",
+    "These two controlled pace cars are not competing learned racers; the nominal20lap distance was not completed."
+  ],
+  "figure_sha256": "b03b5158604f70b6f390c3851403ae9e98c7c0277109cce9abaa2b5dcb811427",
+  "audit_script_sha256": "bfbdb8105ee59ebfcde63f96dc436bda2c6948b6ebb9d176bb55cf8fde18997d",
+  "source_audit_sha256": "a402a20ef1f7ecf93ee91d172ea53c0f3353164515bd2505493e0e25dbe1700a",
+  "logical_snapshot": "ff-sigma1-middle-001",
+  "opponent_type": "TWO_PHYSICALLY_DRIVEN_FIXED_PACE_OPPONENTS",
+  "redactions": [
+    "Raw input/source location indices and planning-candidate diagnostic sequence omitted."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "models": [
+    "original_pretrained",
+    "head-lr1e-4-s7",
+    "full-uniform-lr1e-4-s7",
+    "full-uniform-lr1e-5-s7",
+    "full-mixed-head1e-4-backbone1e-5-s7",
+    "full-mixed-rotaug4-s7"
+  ],
+  "cutoffs": [
+    0.35,
+    0.425
+  ],
+  "exported_prediction_floor": 0.35,
+  "GT_frame_rows": 6144,
+  "prediction_rows": 36864,
+  "visible_target_count": 8155,
+  "frame_identity_sha256": "d58da6740ff1299ccbc8e6b794c47de5d2bd988d32e52b4e1646d387f6f4b330",
+  "files": {
+    "README.md": {
+      "sha256": "aeec84ffb932c91d8057a84e2ca5fa5d2ac8c90c244e877c9bb0b72b1aadff49",
+      "bytes": 3936
+    },
+    "expected_cohorts.json.gz": {
+      "sha256": "9619a59bbe0441743d75655fc140cc78bec76579df1fc4b224486cf5f558d270",
+      "bytes": 346985
+    },
+    "expected_reports.json": {
+      "sha256": "a1694b2543cf7c69587e050c6ebd2e4323729255da768813fe1a3c86f4bea1c6",
+      "bytes": 22517
+    },
+    "frames.jsonl.gz": {
+      "sha256": "30e59107b66bd6658ba5be7eac0c6c8a60273e28e89e7183a2f453f43bf5b2c7",
+      "bytes": 664856
+    },
+    "metric.py": {
+      "sha256": "8f4f65e50c4ceb76df23f79876d1cda45217cae401b919e01464d589f357a8ff",
+      "bytes": 7973
+    },
+    "predictions.jsonl.gz": {
+      "sha256": "a9c2e58dbc97c3d09f23bb6604986a3841c137d21dff3ec665795450e10f3a5f",
+      "bytes": 3823348
+    },
+    "provenance.json": {
+      "sha256": "061769c66a25315a5637e8ce14dd9c58de39ae4fef5051aa0f1697602c38ffe5",
+      "bytes": 22177
+    },
+    "reproduce.py": {
+      "bytes": 11663,
+      "sha256": "656184bf4b9460472b0b2be1f9f33a0959b40b0f7a16016726657d7205365fd2"
+    },
+    "requirements.txt": {
+      "sha256": "c36566988db1275e04db0e5b9201b3df7ba8d9d62fbe0c6711c0baf68a00959d",
+      "bytes": 29
+    },
+    "sealed_comparisons.json": {
+      "sha256": "41f5bb58dd6c395b5cfd0d3fee402a8fb479a7d6b68904aa5bb1d0c504bfecae",
+      "bytes": 16097
+    },
+    "test_reproduction.py": {
+      "bytes": 6124,
+      "sha256": "c0e4f2c85dbb9ccc8db896cd34240663cc8a93ce51aa5ab99a41f8b8a282abce"
+    }
+  },
+  "manifest_sha256": "7dda97dfa09f22d7279ab015029a5d63cad0ca38d716d3ea55dbe2dabba02e8d"
+}

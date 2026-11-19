@@ -1,0 +1,17 @@
+{
+  "status": "REVIEWED_FINAL73_ARGUMENT_REPAIR_EXPORT_CANDIDATE_NOT_APPLIED",
+  "prepared_utc": "2026-11-14T20:42:20.627040+00:00",
+  "base_actual_commit": "e3537b7fa0cdfe150c11dab14bbcec7d33193ffd",
+  "changed_first_party_sources": {
+    "scripts/final_evidence.py": "88c08afc0acae0e871e24829a36f7287c43863bf1d192c1fd0a560e5c2197fba",
+    "tests/test_final_evidence.py": "3be39e9ac9bfa208c4c17f9efe9e9cdf313b7a9241f7b3f05b284b19b7106a15"
+  },
+  "independent_original_review_sha256": "cabcd953790b5fd3a3cd0177ae80d51f2c58d3016210389ce485f46452c65a7a",
+  "review_copy": "docs/reviews/final73_roster_argument_repair_independent_review.json",
+  "review_source_had_no_private_paths_to_remove": true,
+  "repair": "Replay the unique original metadata roster argument after verifying resolved frozen-roster identity; retain exact full current-versus-bound strict28 report equality.",
+  "old_failed_evidence_and_source_preserved": true,
+  "runtime_models_rules_scoring_criteria_or_actual_outcomes_changed": false,
+  "actual_case_or_inference_calls_by_stager": false,
+  "commit_or_publication": false
+}

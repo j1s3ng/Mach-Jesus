@@ -1,0 +1,104 @@
+{
+  "status": "FF_ONLY_SOURCE_FROZEN_FOR_PHYSICAL_ABLATION",
+  "utc": "2026-11-17T19:25:55.828464+00:00",
+  "config_key": "path_tracking.feedforward_curvature_smoothing_sigma_m",
+  "legacy_default": 0.0,
+  "physical_candidates": [
+    1.0,
+    2.0
+  ],
+  "units": "Gaussian standard deviation in physical route metres; symmetric support radius3sigma",
+  "test_result": {
+    "passed": 21,
+    "failed": 0,
+    "actual_saved_input_comparisons": 608,
+    "actual_saved_guarded_input_comparisons": 15,
+    "sampled_replay_is_not_closed_loop_performance": true
+  },
+  "preserved": [
+    "current-pose heading/cross-track feedback",
+    "guarded lane and traffic guard",
+    "PP steering commands",
+    "nominal path XY and heading",
+    "raw curvature speed profiles",
+    "steering rate bound",
+    "final physical lateral/stability clamp",
+    "neural and detector weights",
+    "vehicle physics and track-limit rule"
+  ],
+  "source_cache": "one current route/lane table, no unbounded lane-key cache",
+  "source_changed_after_handoff": false,
+  "closed_loop_outcome": "CLOSED_CLEAR_TRAFFIC_AND_CONTROLLED_MIDDLE_PASS",
+  "source_verification_sha256": "8a5fbe2d161d3c9ea0013bed195c228b82bf7a81a582aad93786f47c54b68fcf",
+  "source_files_sha256": {
+    "path_tracking.py": "c54abf9aec44f0c1afbca9d279d09ea0f4305cb1332d567defbf06bf0e7fe745",
+    "test_spatial_feedforward.py": "5e1d8b2a7a4ad586602ed954f1d7e1e4f0637f6cdcec715a94cbe6606d9aaec3",
+    "check_saved_feedforward.py": "fa7ac4d25d0560735ace82dfd6021f9b2e9abb5a9091679778b6fc85a79e76d3",
+    "saved_feedforward_receipt.json": "2b8c74fac03a4ef79d3df0226366863be76959a1d7a5c84d0821bb00e57d6de9"
+  },
+  "saved_feedforward_receipt_sha256": "2b8c74fac03a4ef79d3df0226366863be76959a1d7a5c84d0821bb00e57d6de9",
+  "saved_feedforward_replay": {
+    "scope": "OFFLINE_MAP_ONLY_FEEDFORWARD_REPLAY_NOT_CLOSED_LOOP_PERFORMANCE",
+    "runs": {
+      "calibration/wide8-calibrated-001": {
+        "trace_sample_hz": 10.0,
+        "variants": {
+          "0.0": {
+            "samples": 1903,
+            "filter_used_samples": 0,
+            "feedforward_total_variation_rad": 9.496749622136512,
+            "raw_feedforward_total_variation_rad": 9.496749622136512,
+            "feedforward_change_rms_rad": 0.01267168300570152,
+            "raw_feedforward_change_rms_rad": 0.01267168300570152
+          },
+          "1.0": {
+            "samples": 1903,
+            "filter_used_samples": 1891,
+            "feedforward_total_variation_rad": 8.093735301944637,
+            "raw_feedforward_total_variation_rad": 9.496749622136512,
+            "feedforward_change_rms_rad": 0.0084783443578485,
+            "raw_feedforward_change_rms_rad": 0.01267168300570152
+          },
+          "2.0": {
+            "samples": 1903,
+            "filter_used_samples": 1891,
+            "feedforward_total_variation_rad": 7.250937474049072,
+            "raw_feedforward_total_variation_rad": 9.496749622136512,
+            "feedforward_change_rms_rad": 0.006618443320824033,
+            "raw_feedforward_change_rms_rad": 0.01267168300570152
+          }
+        }
+      },
+      "chase-004": {
+        "trace_sample_hz": 10.0,
+        "variants": {
+          "0.0": {
+            "samples": 2351,
+            "filter_used_samples": 0,
+            "feedforward_total_variation_rad": 14.025738178091087,
+            "raw_feedforward_total_variation_rad": 14.025738178091087,
+            "feedforward_change_rms_rad": 0.010909929588174801,
+            "raw_feedforward_change_rms_rad": 0.010909929588174801
+          },
+          "1.0": {
+            "samples": 2351,
+            "filter_used_samples": 1111,
+            "feedforward_total_variation_rad": 13.32381866313857,
+            "raw_feedforward_total_variation_rad": 14.025738178091087,
+            "feedforward_change_rms_rad": 0.009736340171739678,
+            "raw_feedforward_change_rms_rad": 0.010909929588174801
+          },
+          "2.0": {
+            "samples": 2351,
+            "filter_used_samples": 1111,
+            "feedforward_total_variation_rad": 12.40422723731119,
+            "raw_feedforward_total_variation_rad": 14.025738178091087,
+            "feedforward_change_rms_rad": 0.009225930419516038,
+            "raw_feedforward_change_rms_rad": 0.010909929588174801
+          }
+        }
+      }
+    }
+  },
+  "export_status_note": "Original verification preceded physical tests; source hash preserved and closed clear status updated from the independent selection audit."
+}

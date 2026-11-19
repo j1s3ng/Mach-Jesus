@@ -1,0 +1,113 @@
+{
+  "schema": "native-two-circuit-engineering-demo-media-v1",
+  "status": "QUALIFIED_AND_FULLY_DECODE_VERIFIED",
+  "highlight": {
+    "repository_path": "docs/Mach_Jesus_Qualified_Highlight.mp4",
+    "frames": 3036,
+    "fps": 25.0,
+    "seconds": 121.44,
+    "size": [
+      1280,
+      720
+    ],
+    "full_ffmpeg_decode_passed": true,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "decode_log_sha256": "7aa254e2f549a6086d6783cd838dbe771ee0a788c9a16f3b90bcab99ba90699d",
+    "sha256": "ca7e8fa41531f469f2c24001c8c1b105508f4c30b45921092c2804fccfe7ed67",
+    "bytes": 10001512
+  },
+  "poster": {
+    "repository_path": "docs/control-cadence-demo.png",
+    "sha256": "d7700ed0979c4162d8652dfaa4860d2b152d5e077ee465350d254fbd7c79b8c5",
+    "bytes": 262528
+  },
+  "first_observed_P1_race_s": 85.4,
+  "full_reference_crossings": [
+    {
+      "circuit": 1,
+      "race_s": 198.84572227309238,
+      "world_s": 199.84572227309238,
+      "method": "Linear crossing time between adjacent actual50Hz progress observations; camera remains native."
+    },
+    {
+      "circuit": 2,
+      "race_s": 371.23618143208034,
+      "world_s": 372.23618143208034,
+      "method": "Linear crossing time between adjacent actual50Hz progress observations; camera remains native."
+    }
+  ],
+  "scalar_flying_lap_s": 172.39045915898797,
+  "all20_active": true,
+  "native_audit_counts": {
+    "all_native_overlap_samples": 0,
+    "all_native_wheel_violation_steps": 0,
+    "all_native_inward_patch_violation_steps": 0,
+    "all_pose_resets": 0
+  },
+  "rates_hz": {
+    "control": 100,
+    "saved_motion": 50,
+    "perception": 5,
+    "camera": 25
+  },
+  "actual_saved_clouds": 1862,
+  "saved_clouds_and_same_capture_model_outputs_required": true,
+  "source_onboard_sha256": "ba369b03ab8437fe4b8ecd401c5fc74a8d252c1354eee6a8d8a89914950916f5",
+  "qualification_sha256": "e2d61fbd7c48dadc9f70ca86baf07e74cf081b446af8967e74ba833ca72c3856",
+  "render_provenance_sha256": "d1ad3ac66322a660a3bb147f862cd22cf0a8338b54c785bfb73a3d03c4b5aa00",
+  "full_normal_speed_retained_locally": {
+    "frames": 9331,
+    "fps": 25.0,
+    "seconds": 373.24,
+    "size": [
+      1280,
+      720
+    ],
+    "full_ffmpeg_decode_passed": true,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "decode_log_sha256": "6e54483ebcce2531cfd16db5e01f16b88a8f665e102e5a8ed54b56691e91abd0",
+    "sha256": "b120e817caa901c469ee80e5cf7101ceccb7020eadb272a97b938fe9579bcf4c",
+    "bytes": 34579619
+  },
+  "native_speed": 1,
+  "motion_interpolation": false,
+  "edit_plan_sha256": "1b9779325fabec15bbac8262365ee121e37bdffc25e162b4de314c31118cf954",
+  "complete_native_flying_lap_frames_retained": true,
+  "recording_separate_from_six_case_comparison": true,
+  "hero_software_limit_mps": 100,
+  "rival_software_limit_mps": 60,
+  "full_twenty_lap_race_win_claimed": false,
+  "fair_model_tournament_claimed": false,
+  "original_models_and_physical_assets_retained": true,
+  "map_ground_truth_used_for_offline_display_only": true,
+  "full_flying_lap": {
+    "frames": 4311,
+    "fps": 25.0,
+    "seconds": 172.44,
+    "size": [
+      1280,
+      720
+    ],
+    "full_ffmpeg_decode_passed": true,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "decode_log_sha256": "8023be6f04168613bd1bdc66317431259730b0599aa44f4d65111048854f8382",
+    "sha256": "89c55f32008f090e33ace4d69dacff36dec5f722da4532c36499e6653340b378",
+    "bytes": 15298587,
+    "repository_path": "docs/Mach_Jesus_Full_Flying_Lap_1x.mp4"
+  },
+  "clock_basis": "Simulation time for control, sensor and video cadences; native 1x means 1x simulated time.",
+  "recording_wall_cost": {
+    "launcher_wall_seconds": 807.9663809589983,
+    "captured_simulation_seconds": 373.24,
+    "captured_simulation_seconds_per_launcher_wall_second": 0.46194991375382577,
+    "scope": "Whole finite Webots launch including startup/shutdown; rendering is separate. This is an observed total cost, not a steady-state real-time benchmark.",
+    "terminal_sha256": "6b941226d2350c5359768ae321b2702ffa7b3f699ff5be08202fe6da520ee0e0",
+    "real_time_execution_claimed": false
+  },
+  "original_render_provenance_sha256": "131d06f19371a7e31f5ad23e7ea760c94e25e209a3467f51b52dcc25ba2d96c4",
+  "cut_card_label_corrected": true,
+  "cut_card_correction_provenance_sha256": "d1ad3ac66322a660a3bb147f862cd22cf0a8338b54c785bfb73a3d03c4b5aa00"
+}

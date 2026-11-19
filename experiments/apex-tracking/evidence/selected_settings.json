@@ -1,0 +1,151 @@
+{
+  "scope": "Portable review extract, not a directly runnable archived configuration",
+  "original_configuration_sha256": "4c37abad96351bcfd854323392630d25f9c1c81fd4f8c84b51a12a005aacd3de",
+  "original_preparation_sha256": "733a43cdf9fa6968a1867355a960f1239cd8a5c109fefa407e5ed89023144878",
+  "scene": {
+    "decorative_trackside_posts_enabled": false,
+    "removed_noncollidable_decorative_posts": 206
+  },
+  "sensor_period_ms": 200,
+  "video_period_ms": 40,
+  "telemetry_period_ms": 20,
+  "hero": {
+    "policy": "neural_rich005_seed7",
+    "label": "Rich005 seed7 / calibrated apex line / both sides + measured gaps /2tyres",
+    "model_path": "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001/source/models/neural_rich005_seed7.npz",
+    "car_id": "R20",
+    "grid_index": 19,
+    "start_progress_m": -228.0,
+    "start_lane_m": 2.5,
+    "seed": 626,
+    "color": ".95 .72 .10",
+    "record_video": true,
+    "vision_url": "__VISION_ENDPOINT__",
+    "pointcloud_stride_frames": 1,
+    "aggressive_hybrid": {
+      "version": "pass-first-bidirectional-racing-line-v1",
+      "commit_seconds": 2.5,
+      "switch_gain_mps": 4.0,
+      "relax_blanket_visibility_cap": true,
+      "racing_guard_parameters": {
+        "lane_rate_mps": 1.8,
+        "ego_half_width_m": 1.05,
+        "lateral_margin_m": 0.1,
+        "position_uncertainty_cap_m": 0.5,
+        "lead_speed_sigma_factor": 0.25,
+        "reaction_seconds": 0.2,
+        "following_gap_m": 5.0
+      },
+      "maximum_lane_m": 12.0,
+      "minimum_pass_gain_mps": 1.0,
+      "transient_conflict_hold_seconds": 0.6,
+      "adaptive_gap_passing": true,
+      "profile_preview_m": 0.0,
+      "rank_acceleration_reachable_pace": true,
+      "ranking_horizon_s": 2.5,
+      "spatially_coherent_pass_clearance": true,
+      "trajectory_planning": {
+        "enabled": true,
+        "horizon_s": 3.0,
+        "step_s": 0.1,
+        "hard_conflict_horizon_s": 1.2,
+        "risk_weight_mps": 0.0,
+        "maximum_risk_cost_mps": 2.0
+      },
+      "sweep_all_passing_routes": false,
+      "prefer_checked_nominal_return": false
+    },
+    "flat_out_no_lift": false,
+    "limits": {
+      "max_speed_mps": 100.0
+    },
+    "ignore_reference_source_speed": true,
+    "racing_guard_parameters": {
+      "lane_rate_mps": 1.8,
+      "ego_half_width_m": 1.05,
+      "lateral_margin_m": 0.1,
+      "position_uncertainty_cap_m": 0.5,
+      "lead_speed_sigma_factor": 0.25,
+      "reaction_seconds": 0.2,
+      "following_gap_m": 5.0
+    },
+    "racing_line_plan": "race-lidar/runs/apex-jitter-20261118-001/yaw-feature-off-chase-001/source/artifacts/map_line_plan.npz",
+    "racing_line_plan_sha256": "2e1de29366dca5ab281a9025ffe715b4b8cfb28c52d6dbab8d4783b25216ceea",
+    "maximum_lane_m": 12.0,
+    "path_tracking": {
+      "enabled": true,
+      "profile_preview_m": 0.0,
+      "profile_acceleration_feedforward": true,
+      "steering_method": "curvature_feedback",
+      "nominal_route_lane_rate_max_mps": 16.0,
+      "steering_lateral_reserve_factor": 1.6,
+      "understeer_gradient_s2_per_m": 0.002,
+      "feedforward_curvature_smoothing_sigma_m": 1.0,
+      "longitudinal_friction_estimator_enabled": true,
+      "longitudinal_accel_median_samples": 5,
+      "longitudinal_accel_filter_tau_s": 0.1,
+      "gross_heading_hold_enabled": false,
+      "continuous_reference_geometry_enabled": false,
+      "rejoin_trajectory": {
+        "enabled": false,
+        "attempt_interval_s": 0.2,
+        "allow_coasting_retention": false,
+        "coasting_brake_floor_mps2": 0.25,
+        "reference_progress_parameterization_enabled": false,
+        "allow_initial_coasting_return": false,
+        "replan_after_traffic_conflict": false,
+        "traffic_horizon_s": 2.0
+      },
+      "continuous_reference_feedforward_sigma_m": 1.0,
+      "yaw_sideslip_stability": {
+        "enabled": false
+      }
+    },
+    "telemetry_period_ms": 20,
+    "trail_braking": {
+      "enabled": true,
+      "release_strength": 1.0,
+      "release_rate_mps3": 40.0,
+      "profile_floor_margin_mps2": 0.15,
+      "release_headroom_band_mps": 0.0
+    }
+  },
+  "rules": {
+    "protocol": "race-improvement-v2",
+    "reference_length_m": 5227.131662140477,
+    "laps": 20,
+    "sensor_period_ms": 200,
+    "physics_step_ms": 20,
+    "max_speed_mps": 60.0,
+    "lateral_accel_budget_mps2": 8.0,
+    "friction_coefficient": 1.5,
+    "vehicle_model": "generic Webots Car 880kg electric",
+    "physics_threads": 8,
+    "field_size": 20,
+    "control_version": "predictive_v2",
+    "visible_distance_m": 70.0,
+    "grid_spacing_m": 12.0,
+    "post_finish_mode": "physical_staggered_runoff_parking",
+    "race_cutoff_seconds": 900.0,
+    "grid_jitter_m": 0.0,
+    "lidar_max_range_m": 100.0,
+    "brake_decel_mps2": 8.0,
+    "acceleration_mps2": 5.0,
+    "track_error_limit_m": 16.0,
+    "total_vehicle_mass_kg": 880.0,
+    "track_limit_definition": ">=2actual wheel contact centers on generated white-line/tarmac; kerbs excluded",
+    "original6mreference_cutoff_is_not_new_legality": true
+  },
+  "limits": {},
+  "stop_when_hero_leads": {
+    "hero_car_id": "R20",
+    "lead_margin_m": 2.5,
+    "lead_hold_seconds": 1.0,
+    "failure_hold_seconds": 1.0,
+    "minimum_hero_progress_m": 5227.131662140477
+  },
+  "reference_length_m": 5227.131662140477,
+  "path_rebinding_required": true,
+  "vision_endpoint_placeholder": "__VISION_ENDPOINT__",
+  "feature_benefit_claimed_for_disabled_options": false
+}

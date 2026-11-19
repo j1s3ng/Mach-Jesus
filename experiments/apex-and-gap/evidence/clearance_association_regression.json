@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "Targeted replay of actual003 clearance episode startingworld184.0s, using recorded measured hazards and supplied own progress; compares identity association only, not a new driving/race performance result.",
+  "episode_start_world_s": 184.0,
+  "episode_decisions": 220,
+  "initial_blocker_track_id": "geometry-392",
+  "initial_blocker_lateral_m": 11.929288986679598,
+  "legacy_status_at227_8": {
+    "world_s": 227.8,
+    "unresolved": true,
+    "reason": "blocking_or_alongside_traffic_not_cleared",
+    "matching_track_ids": [
+      "geometry-434",
+      "geometry-435",
+      "geometry-434",
+      "geometry-435"
+    ]
+  },
+  "coherent_status_at227_8": {
+    "world_s": 227.8,
+    "unresolved": false,
+    "reason": "spatially_bound_measurement_grace_expired",
+    "matching_track_ids": [],
+    "spatial_binding_used": true,
+    "rejected_lateral_only_aliases": [
+      {
+        "root_track_id": "geometry-392",
+        "candidate_track_id": "geometry-434",
+        "reason": "observation_gap_too_old"
+      }
+    ]
+  },
+  "first_coherent_release_world_s": 186.8,
+  "new_source_sha256": "08bc7b9ece1b2bf7f64227c7825fab705ec91b883e6deddd20c8c457154a9b35",
+  "frozen003_source_preserved": true,
+  "opponent_truth_used_for_association": false,
+  "models_or_physics_changed": false,
+  "new_physical_performance_claimed": false,
+  "source_regression_sha256": "5287666a5314bbfee00f3c87b9bc235af3dcff594a8ac6e3573ef4686aed2afb",
+  "source_closed_chase003_audit_sha256": "723856b5c79df18122f81cde5ac63a83ad5a289d47a1e59d4aa51bf34031fa24",
+  "coherent_prefix_summary": {
+    "reported_state_count": 219,
+    "reason_counts": {
+      "measurement_loss_grace": 6,
+      "spatially_coherent_blocking_or_alongside_track": 12,
+      "spatially_bound_pass_blockers_measured_behind": 4,
+      "spatially_bound_measurement_grace_expired": 197
+    }
+  },
+  "redactions": [
+    "Raw input trace hash/location map omitted.",
+    "Per-decision replay state sequence summarized by reason count; no raw logs included."
+  ]
+}

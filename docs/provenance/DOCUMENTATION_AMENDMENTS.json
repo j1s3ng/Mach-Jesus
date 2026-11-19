@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "CURRENT_DOCUMENTATION_AMENDMENTS_TO_FROZEN_EXPERIMENT_PACKAGES",
+  "amended_date": "2026-11-18",
+  "scope": "Frozen manifests retain their original bytes. Current experiment README navigation now links archived media through the local archive catalog and explains historical inventory scope. Source overlays, measured evidence, dependency manifests and experiment outcomes are unchanged.",
+  "historical_text_policy": "Exact original README bytes are retained as .txt files for hash verification; embedded links describe the historical snapshot, not current media availability.",
+  "amendments": [
+    {
+      "manifest_path": "experiments/apex-and-gap/manifest.json",
+      "unchanged_manifest_sha256": "01b53aa69f489c71ee2fdccad5053e76e20d2552d5e0186bc3e5384279ab1ef1",
+      "document_path": "experiments/apex-and-gap/README.md",
+      "manifest_pinned_original_sha256": "f4bfcd2ec420aef8616e64472eb008b568d306943d69e43873286c3c829df697",
+      "retained_original_path": "docs/provenance/history/apex-and-gap-README.original.txt",
+      "retained_original_sha256": "f4bfcd2ec420aef8616e64472eb008b568d306943d69e43873286c3c829df697",
+      "retained_original_bytes": 11802,
+      "current_document_sha256": "d60ebbc76f9d0c7eb932edab22a06dc26f9d1b1d37afa0415feb365882259b63",
+      "current_document_bytes": 12261,
+      "reason": "Historical media links lead to the verified local archive catalog; inventory wording now distinguishes the frozen original README from the current navigation copy.",
+      "source_and_evidence_changed": false
+    },
+    {
+      "manifest_path": "experiments/smooth-steering/manifest.json",
+      "unchanged_manifest_sha256": "682546a8cd846f8399b4050a89c6eb75e37310f56c54cf93b6486e1219ce9e2c",
+      "document_path": "experiments/smooth-steering/README.md",
+      "manifest_pinned_original_sha256": "dd574985aeb46f8dc51ab086f16eae42da01ec217cc23f400b7d600bd7ecc432",
+      "retained_original_path": "docs/provenance/history/smooth-steering-README.original.txt",
+      "retained_original_sha256": "dd574985aeb46f8dc51ab086f16eae42da01ec217cc23f400b7d600bd7ecc432",
+      "retained_original_bytes": 10031,
+      "current_document_sha256": "1a8302c30e3bf4996f122852098d5179845ea0af722be053601ee577259c6b38",
+      "current_document_bytes": 10468,
+      "reason": "Historical media links lead to the verified local archive catalog; inventory wording now distinguishes the frozen original README from the current navigation copy.",
+      "source_and_evidence_changed": false
+    },
+    {
+      "manifest_path": "experiments/trajectory-trail-brake/manifest.json",
+      "unchanged_manifest_sha256": "8327b2bee5a59e0616965d238aa3c69e1b0c44a877f41904b0d4250e2f342896",
+      "document_path": "experiments/trajectory-trail-brake/README.md",
+      "manifest_pinned_original_sha256": "595e4d6d8f88ca2be4cf58b0f5d2f9fd801a76b49bbc8d2a51f657326112d235",
+      "retained_original_path": "docs/provenance/history/trajectory-trail-brake-README.original.txt",
+      "retained_original_sha256": "595e4d6d8f88ca2be4cf58b0f5d2f9fd801a76b49bbc8d2a51f657326112d235",
+      "retained_original_bytes": 6399,
+      "current_document_sha256": "c7a72b04eac463eefc691c3e30252c4aea6a57bde7575a7c16dd9928d86174e8",
+      "current_document_bytes": 6847,
+      "reason": "Historical media links lead to the verified local archive catalog; inventory wording now distinguishes the frozen original README from the current navigation copy.",
+      "source_and_evidence_changed": false
+    }
+  ]
+}

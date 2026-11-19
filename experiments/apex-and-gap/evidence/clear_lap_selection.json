@@ -1,0 +1,1171 @@
+{
+  "schema_version": 1,
+  "export_scope": "Derived, sanitized closed clear-track calibration evidence; not a final traffic-race result.",
+  "source_audit_sha256": "ebef6a56241fb94414aba70ecfbad164097233fb8d19fbc4603e866c033fbc11",
+  "source_created_utc": "2026-11-17T18:20:58.388816+00:00",
+  "physical_race_status": "READY_FOR_LOCAL_REVIEW",
+  "selection": {
+    "selected_run": "wide8-calibrated-001",
+    "criterion": "Complete valid lap with zero actual two-wheel-center violations, no resets/collisions/source errors; choose faster observed clean lap. Capture quality reported separately; selected8 dominates10 in both pace and capture.",
+    "selected_lap_time_s": 189.90770705880996,
+    "same_xy_offset_heading_curvature_ds_original_progress_arrays": true,
+    "same_vehicle_physics_weights_K_and_reserve_factor": true,
+    "selection_scope": "One standing lap for each of three predeclared software lateral budgets; not a multi-seed champion or traffic-race promotion.",
+    "software_coupling": "Lateral budget retimes path speeds and also scales the software steering-correction budget before its unchanged friction estimate; this is not an isolated speed-profile-only ablation.",
+    "rejected_runs": {
+      "wide10-calibrated-001": "Clean but slower and less nominal capture than selected8",
+      "wide12-calibrated-001": "vehicle_left_reference_corridor_or_rolled"
+    }
+  },
+  "corner_anchor_definition": {
+    "original_reference_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e",
+    "method": "All original-map absolute-curvature peaks with height>.018/m, prominence>.009/m, separation>=25 original samples;18 fixed anchors, no performance-based selection.",
+    "anchors": [
+      {
+        "corner": "C01",
+        "original_progress_m": 361.8289211307665,
+        "original_curvature_per_m": 0.03368286568230875
+      },
+      {
+        "corner": "C02",
+        "original_progress_m": 623.6070275298533,
+        "original_curvature_per_m": 0.027423566308242196
+      },
+      {
+        "corner": "C03",
+        "original_progress_m": 767.472484340089,
+        "original_curvature_per_m": -0.0369843998084051
+      },
+      {
+        "corner": "C04",
+        "original_progress_m": 841.3314562921321,
+        "original_curvature_per_m": -0.02224206494883406
+      },
+      {
+        "corner": "C05",
+        "original_progress_m": 1403.050900160805,
+        "original_curvature_per_m": 0.04584255665138894
+      },
+      {
+        "corner": "C06",
+        "original_progress_m": 2610.439400324675,
+        "original_curvature_per_m": 0.08538290670400628
+      },
+      {
+        "corner": "C07",
+        "original_progress_m": 2662.0713661926334,
+        "original_curvature_per_m": -0.04758245644484364
+      },
+      {
+        "corner": "C08",
+        "original_progress_m": 3593.777196240377,
+        "original_curvature_per_m": 0.025104957434161412
+      },
+      {
+        "corner": "C09",
+        "original_progress_m": 3651.6304174004904,
+        "original_curvature_per_m": 0.04127849973868516
+      },
+      {
+        "corner": "C10",
+        "original_progress_m": 3801.2933165380446,
+        "original_curvature_per_m": 0.03517403499367751
+      },
+      {
+        "corner": "C11",
+        "original_progress_m": 4189.083447065769,
+        "original_curvature_per_m": -0.028750460616627907
+      },
+      {
+        "corner": "C12",
+        "original_progress_m": 4314.830473108133,
+        "original_curvature_per_m": -0.048122068965213746
+      },
+      {
+        "corner": "C13",
+        "original_progress_m": 4388.594957034398,
+        "original_curvature_per_m": 0.03499925926984878
+      },
+      {
+        "corner": "C14",
+        "original_progress_m": 4488.431597189924,
+        "original_curvature_per_m": 0.02484482862276951
+      },
+      {
+        "corner": "C15",
+        "original_progress_m": 4558.207219685118,
+        "original_curvature_per_m": 0.03785864167142016
+      },
+      {
+        "corner": "C16",
+        "original_progress_m": 4782.060345429304,
+        "original_curvature_per_m": -0.02802956104334128
+      },
+      {
+        "corner": "C17",
+        "original_progress_m": 4847.944240985181,
+        "original_curvature_per_m": -0.03358828679263865
+      },
+      {
+        "corner": "C18",
+        "original_progress_m": 5053.243464722782,
+        "original_curvature_per_m": -0.04431077931792176
+      }
+    ],
+    "pose_observation": "Physical saved10Hz pose/speed/yaw interpolated at identical original-progress crossing; circular yaw interpolation."
+  },
+  "white_line_metric_definition": {
+    "road": "Exact generated tarmac/white-line ribbon; kerbs excluded.",
+    "legality": "At least two actual wheel contact centers inside; finite-patch physics is not modeled.",
+    "inside_pair_gap": "Minimum signed gap of the corner-inside front/rear wheel centers to inside white line; negative can be legal when the other pair remains inside.",
+    "retained_pair_clearance": "Maximum of left/right same-side-pair minimum signed distance to nearest white boundary; positive means that complete pair remains inside.",
+    "timing": "Corner clearance uses interpolated10Hz physical poses. Whole-lap qualification comes from exact supervisor50Hz contact counts."
+  },
+  "old_clear_baseline": {
+    "name": "baseline8-clear",
+    "lap_time_s": 196.84059179542405,
+    "legacy_track_rule": "6m absolute original-reference error; not the new two-tyre rule",
+    "physical_limits": {
+      "max_speed_mps": 100.0,
+      "lateral_accel_mps2": 8.0,
+      "brake_decel_mps2": 8.0,
+      "acceleration_mps2": 5.0
+    },
+    "fixed_original_corner_observations": [
+      {
+        "corner": "C01",
+        "progress_m": 361.8289211307665,
+        "observed": true,
+        "original_curvature_per_m": 0.03368286568230875,
+        "speed_kph": 58.824036249342,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 6.983210269019591,
+        "best_retained_same_side_pair_white_clearance_m": 8.683076260297588
+      },
+      {
+        "corner": "C02",
+        "progress_m": 623.6070275298533,
+        "observed": true,
+        "original_curvature_per_m": 0.027423566308242196,
+        "speed_kph": 64.74340451930351,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 7.018756636602264,
+        "best_retained_same_side_pair_white_clearance_m": 8.718349015098845
+      },
+      {
+        "corner": "C03",
+        "progress_m": 767.472484340089,
+        "observed": true,
+        "original_curvature_per_m": -0.0369843998084051,
+        "speed_kph": 59.73838061665911,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 7.460548192020711,
+        "best_retained_same_side_pair_white_clearance_m": 9.159714983100342
+      },
+      {
+        "corner": "C04",
+        "progress_m": 841.3314562921321,
+        "observed": true,
+        "original_curvature_per_m": -0.02224206494883406,
+        "speed_kph": 71.56503141067586,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.285550672829778,
+        "best_retained_same_side_pair_white_clearance_m": 9.929390307687282
+      },
+      {
+        "corner": "C05",
+        "progress_m": 1403.050900160805,
+        "observed": true,
+        "original_curvature_per_m": 0.04584255665138894,
+        "speed_kph": 50.21259453776389,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.652283967093215,
+        "best_retained_same_side_pair_white_clearance_m": 9.60617900485202
+      },
+      {
+        "corner": "C06",
+        "progress_m": 2610.439400324675,
+        "observed": true,
+        "original_curvature_per_m": 0.08538290670400628,
+        "speed_kph": 38.068780613688084,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.412584934440654,
+        "best_retained_same_side_pair_white_clearance_m": 9.676386067222332
+      },
+      {
+        "corner": "C07",
+        "progress_m": 2662.0713661926334,
+        "observed": true,
+        "original_curvature_per_m": -0.04758245644484364,
+        "speed_kph": 44.967517036259174,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 7.714883231744949,
+        "best_retained_same_side_pair_white_clearance_m": 9.406791824222745
+      },
+      {
+        "corner": "C08",
+        "progress_m": 3593.777196240377,
+        "observed": true,
+        "original_curvature_per_m": 0.025104957434161412,
+        "speed_kph": 66.56043749000715,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.936151401403581,
+        "best_retained_same_side_pair_white_clearance_m": 9.303261527183894
+      },
+      {
+        "corner": "C09",
+        "progress_m": 3651.6304174004904,
+        "observed": true,
+        "original_curvature_per_m": 0.04127849973868516,
+        "speed_kph": 54.77156009576954,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.990824515047073,
+        "best_retained_same_side_pair_white_clearance_m": 9.23763309846939
+      },
+      {
+        "corner": "C10",
+        "progress_m": 3801.2933165380446,
+        "observed": true,
+        "original_curvature_per_m": 0.03517403499367751,
+        "speed_kph": 59.38253558818548,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.043970166063039,
+        "best_retained_same_side_pair_white_clearance_m": 9.743636812473937
+      },
+      {
+        "corner": "C11",
+        "progress_m": 4189.083447065769,
+        "observed": true,
+        "original_curvature_per_m": -0.028750460616627907,
+        "speed_kph": 69.19839900409215,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 9.127808786177209,
+        "best_retained_same_side_pair_white_clearance_m": 9.127808786177209
+      },
+      {
+        "corner": "C12",
+        "progress_m": 4314.830473108133,
+        "observed": true,
+        "original_curvature_per_m": -0.048122068965213746,
+        "speed_kph": 45.299971937094,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 7.961142625528807,
+        "best_retained_same_side_pair_white_clearance_m": 9.659355455835966
+      },
+      {
+        "corner": "C13",
+        "progress_m": 4388.594957034398,
+        "observed": true,
+        "original_curvature_per_m": 0.03499925926984878,
+        "speed_kph": 56.32355323068671,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 6.5261591520085185,
+        "best_retained_same_side_pair_white_clearance_m": 8.226129033596935
+      },
+      {
+        "corner": "C14",
+        "progress_m": 4488.431597189924,
+        "observed": true,
+        "original_curvature_per_m": 0.02484482862276951,
+        "speed_kph": 64.41623881634105,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 10.081346169454525,
+        "best_retained_same_side_pair_white_clearance_m": 9.70123145515641
+      },
+      {
+        "corner": "C15",
+        "progress_m": 4558.207219685118,
+        "observed": true,
+        "original_curvature_per_m": 0.03785864167142016,
+        "speed_kph": 56.386779555972424,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.485807560114285,
+        "best_retained_same_side_pair_white_clearance_m": 9.674189752022562
+      },
+      {
+        "corner": "C16",
+        "progress_m": 4782.060345429304,
+        "observed": true,
+        "original_curvature_per_m": -0.02802956104334128,
+        "speed_kph": 66.07049976651084,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.011575869131226,
+        "best_retained_same_side_pair_white_clearance_m": 9.711496978004433
+      },
+      {
+        "corner": "C17",
+        "progress_m": 4847.944240985181,
+        "observed": true,
+        "original_curvature_per_m": -0.03358828679263865,
+        "speed_kph": 62.87364960357629,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 8.278245025383375,
+        "best_retained_same_side_pair_white_clearance_m": 9.748644054387077
+      },
+      {
+        "corner": "C18",
+        "progress_m": 5053.243464722782,
+        "observed": true,
+        "original_curvature_per_m": -0.04431077931792176,
+        "speed_kph": 47.065847161999685,
+        "actual_tyre_count_on_track": 4,
+        "inside_pair_minimum_signed_white_gap_m": 7.9666252532871535,
+        "best_retained_same_side_pair_white_clearance_m": 9.664569612238422
+      }
+    ]
+  },
+  "candidates": {
+    "wide8-calibrated-001": {
+      "status": "completed",
+      "terminal_reason": "crossed_common_finish_after_full_ordered_path",
+      "qualified_clean_complete_lap": true,
+      "lap_time_s": 189.90770705880996,
+      "valid_lap": true,
+      "observed_active_duration_s": 189.90770705880996,
+      "final_progress_m": 5227.547454697876,
+      "time_saved_vs_old_clear_baseline_s": 6.932884736614085,
+      "runtime_source_sha256": {
+        "webots/controllers/tournament_racer/tournament_racer.py": "75944a30803d2eb9c65b25cfd2c7413cf57259a756c626118b12eaf59cb0dd46",
+        "src/race_lidar/race_policy.py": "c581e6da7a535fcfa4db6e807932140fc9684d30d3ca0b429e0a98e0b27ed2e0",
+        "src/race_lidar/race_control.py": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+        "src/race_lidar/hotlap_driver.py": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+        "src/race_lidar/learned_driver.py": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+        "src/race_lidar/lidar_hazards.py": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+        "src/race_lidar/rich_driver.py": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+        "src/race_lidar/remote.py": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+        "src/race_lidar/aggressive_hybrid.py": "08367743dadc0c8c55a58593ed64b2e41e3cdbcbe9021bbcb143f450dd789b1a",
+        "src/race_lidar/demo_chase.py": "41776c70201a0392f1dc6417b6be52fbae31ab6b1ec1ea04766f10d030462a10",
+        "src/race_lidar/smooth_racing_line.py": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+        "src/race_lidar/path_tracking.py": "32610b8cabfdb797bbc5080d17bd9624e404a8b4e9f07760401d8e37a06004a4",
+        "src/race_lidar/road_tyre_bounds.py": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf"
+      },
+      "model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+      "physical_limits": {
+        "max_speed_mps": 100.0,
+        "lateral_accel_mps2": 8.0,
+        "brake_decel_mps2": 8.0,
+        "acceleration_mps2": 5.0
+      },
+      "controller_config": {
+        "enabled": true,
+        "profile_preview_m": 0.0,
+        "profile_acceleration_feedforward": true,
+        "steering_method": "curvature_feedback",
+        "nominal_route_lane_rate_max_mps": 16.0,
+        "steering_lateral_reserve_factor": 1.6,
+        "understeer_gradient_s2_per_m": 0.002
+      },
+      "line_artifact_sha256": "2e1de29366dca5ab281a9025ffe715b4b8cfb28c52d6dbab8d4783b25216ceea",
+      "road_geometry_sha256": "0c62620ea6baed2c2aea837ebb6eafbef5f36e6ac9ab9113a3825794b7f50c3a",
+      "vehicle_world_block_identical_to_clear_baseline": true,
+      "two_contact_seconds": 18.76,
+      "three_contact_seconds": 7.32,
+      "collision_samples": 0,
+      "pose_resets": 0,
+      "peak_speed_kph": 259.9275717236132,
+      "maximum_original_reference_error_m": 10.206685202042694,
+      "mapped_nominal_captured_time_fraction": 0.993154569553107,
+      "mapped_nominal_proof_used_time_fraction": 0.9905217116889175,
+      "saved_pose_nominal_xy_distance_rms_m": 0.22028585855689922,
+      "saved_pose_nominal_xy_distance_max_m": 1.7732169719538045,
+      "independent_saved10hz_minimum_tyre_count": 2,
+      "all18_original_corner_anchors_reached": true,
+      "original_corner_anchors_observed": 18,
+      "fixed_original_corner_speed_delta_mean_kph": 10.806478704541858,
+      "fixed_original_corner_speed_delta_median_kph": 4.81716924611267,
+      "fixed_original_corners_faster_than_old_clear_baseline": 11,
+      "full_twenty_lap_race_or_traffic_performance_claimed": false,
+      "comparison_scope": "Combined new line, profile scheduling, mapped-route controller, K calibration and tyre rule; same physical vehicle, map, standing grid pose and learned weights. Not an isolated steering/model ablation.",
+      "director50hz_tyre_audit": {
+        "samples": 9497,
+        "minimum_on_track_count": 2,
+        "two_tyres_on_track_steps": 938,
+        "three_tyres_on_track_steps": 366,
+        "tyre_limit_violation_steps": 0,
+        "patch_margin_violation_steps": 0,
+        "diagonal_only_two_center_steps": 0,
+        "violation_clusters": [],
+        "first_violation_summary": null
+      },
+      "fixed_original_corner_observations": [
+        {
+          "corner": "C01",
+          "progress_m": 361.8289211307665,
+          "observed": true,
+          "original_curvature_per_m": 0.03368286568230875,
+          "speed_kph": 48.62037725192006,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.4903633165531595,
+          "best_retained_same_side_pair_white_clearance_m": 1.209588013171607,
+          "nominal_profile_speed_kph": 52.00599132644276,
+          "actual_nominal_xy_distance_m": 0.10787001571779128,
+          "actual_nominal_cross_error_m": -0.10769328359587178,
+          "actual_nominal_heading_error_rad": -0.024224747750527076
+        },
+        {
+          "corner": "C02",
+          "progress_m": 623.6070275298533,
+          "observed": true,
+          "original_curvature_per_m": 0.027423566308242196,
+          "speed_kph": 121.71966542194303,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.9799671846987187,
+          "best_retained_same_side_pair_white_clearance_m": 0.720009816316673,
+          "nominal_profile_speed_kph": 136.13857940863437,
+          "actual_nominal_xy_distance_m": 0.04981824213283175,
+          "actual_nominal_cross_error_m": -0.04978737833436037,
+          "actual_nominal_heading_error_rad": 0.009447159021513496
+        },
+        {
+          "corner": "C03",
+          "progress_m": 767.472484340089,
+          "observed": true,
+          "original_curvature_per_m": -0.0369843998084051,
+          "speed_kph": 88.83935266658334,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.6724874154317171,
+          "best_retained_same_side_pair_white_clearance_m": 1.0071114629449718,
+          "nominal_profile_speed_kph": 92.15151354878428,
+          "actual_nominal_xy_distance_m": 0.2873860536384203,
+          "actual_nominal_cross_error_m": -0.24203368824222926,
+          "actual_nominal_heading_error_rad": -0.02327467289895191
+        },
+        {
+          "corner": "C04",
+          "progress_m": 841.3314562921321,
+          "observed": true,
+          "original_curvature_per_m": -0.02224206494883406,
+          "speed_kph": 63.90622042858574,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 6.4510892650329925,
+          "best_retained_same_side_pair_white_clearance_m": 7.931587075254807,
+          "nominal_profile_speed_kph": 73.84858403695264,
+          "actual_nominal_xy_distance_m": 0.0958180202082659,
+          "actual_nominal_cross_error_m": -0.09581802009863132,
+          "actual_nominal_heading_error_rad": -0.0068694461023719455
+        },
+        {
+          "corner": "C05",
+          "progress_m": 1403.050900160805,
+          "observed": true,
+          "original_curvature_per_m": 0.04584255665138894,
+          "speed_kph": 41.53782247057021,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.7720904685796706,
+          "best_retained_same_side_pair_white_clearance_m": 0.924134909497091,
+          "nominal_profile_speed_kph": 42.37369785863071,
+          "actual_nominal_xy_distance_m": 0.23990010080685947,
+          "actual_nominal_cross_error_m": -0.1439230101172451,
+          "actual_nominal_heading_error_rad": -0.021937150029194274
+        },
+        {
+          "corner": "C06",
+          "progress_m": 2610.439400324675,
+          "observed": true,
+          "original_curvature_per_m": 0.08538290670400628,
+          "speed_kph": 44.098940162480766,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 2.2488926511762304,
+          "best_retained_same_side_pair_white_clearance_m": 3.945310019328645,
+          "nominal_profile_speed_kph": 45.94043797641593,
+          "actual_nominal_xy_distance_m": 0.46431075851763337,
+          "actual_nominal_cross_error_m": 0.4303292890271867,
+          "actual_nominal_heading_error_rad": 0.03070651816692349
+        },
+        {
+          "corner": "C07",
+          "progress_m": 2662.0713661926334,
+          "observed": true,
+          "original_curvature_per_m": -0.04758245644484364,
+          "speed_kph": 28.67174063227241,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.7425513548603184,
+          "best_retained_same_side_pair_white_clearance_m": 0.9547981514618066,
+          "nominal_profile_speed_kph": 30.350706097848548,
+          "actual_nominal_xy_distance_m": 0.14792783454602873,
+          "actual_nominal_cross_error_m": 0.14039924649992097,
+          "actual_nominal_heading_error_rad": 0.00835939400049135
+        },
+        {
+          "corner": "C08",
+          "progress_m": 3593.777196240377,
+          "observed": true,
+          "original_curvature_per_m": 0.025104957434161412,
+          "speed_kph": 76.27901517597849,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 10.730814134319626,
+          "best_retained_same_side_pair_white_clearance_m": 8.386506679853056,
+          "nominal_profile_speed_kph": 76.52858471002115,
+          "actual_nominal_xy_distance_m": 0.0977105047039536,
+          "actual_nominal_cross_error_m": -0.0665073750836849,
+          "actual_nominal_heading_error_rad": 0.00495534673102016
+        },
+        {
+          "corner": "C09",
+          "progress_m": 3651.6304174004904,
+          "observed": true,
+          "original_curvature_per_m": 0.04127849973868516,
+          "speed_kph": 98.1756404812241,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -1.0074065700459938,
+          "best_retained_same_side_pair_white_clearance_m": 0.6925684809273229,
+          "nominal_profile_speed_kph": 111.29742989373098,
+          "actual_nominal_xy_distance_m": 0.34988613101785826,
+          "actual_nominal_cross_error_m": 0.0641639113789814,
+          "actual_nominal_heading_error_rad": 0.001850701059210813
+        },
+        {
+          "corner": "C10",
+          "progress_m": 3801.2933165380446,
+          "observed": true,
+          "original_curvature_per_m": 0.03517403499367751,
+          "speed_kph": 99.72645563731722,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -1.0625222667904148,
+          "best_retained_same_side_pair_white_clearance_m": 0.6372949986149679,
+          "nominal_profile_speed_kph": 113.52472232207998,
+          "actual_nominal_xy_distance_m": 0.20522886647719046,
+          "actual_nominal_cross_error_m": 0.12552497526508596,
+          "actual_nominal_heading_error_rad": 0.005292723649871434
+        },
+        {
+          "corner": "C11",
+          "progress_m": 4189.083447065769,
+          "observed": true,
+          "original_curvature_per_m": -0.028750460616627907,
+          "speed_kph": 83.52981109649679,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.5948601169059935,
+          "best_retained_same_side_pair_white_clearance_m": 1.0975810352797624,
+          "nominal_profile_speed_kph": 90.89828274794998,
+          "actual_nominal_xy_distance_m": 0.22285690499811048,
+          "actual_nominal_cross_error_m": -0.2111499828191184,
+          "actual_nominal_heading_error_rad": 0.007688918457632532
+        },
+        {
+          "corner": "C12",
+          "progress_m": 4314.830473108133,
+          "observed": true,
+          "original_curvature_per_m": -0.048122068965213746,
+          "speed_kph": 46.688493873277864,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.5736074068158677,
+          "best_retained_same_side_pair_white_clearance_m": 1.1263332478691552,
+          "nominal_profile_speed_kph": 48.28159753732673,
+          "actual_nominal_xy_distance_m": 0.26803111897158877,
+          "actual_nominal_cross_error_m": 0.16304467603760922,
+          "actual_nominal_heading_error_rad": 0.0407093375792984
+        },
+        {
+          "corner": "C13",
+          "progress_m": 4388.594957034398,
+          "observed": true,
+          "original_curvature_per_m": 0.03499925926984878,
+          "speed_kph": 82.03783035642978,
+          "actual_tyre_count_on_track": 3,
+          "inside_pair_minimum_signed_white_gap_m": -0.13552566132838656,
+          "best_retained_same_side_pair_white_clearance_m": 1.5631729262653677,
+          "nominal_profile_speed_kph": 88.80109732972537,
+          "actual_nominal_xy_distance_m": 0.1334859496858545,
+          "actual_nominal_cross_error_m": -0.09883112027267238,
+          "actual_nominal_heading_error_rad": 0.0041299047594378635
+        },
+        {
+          "corner": "C14",
+          "progress_m": 4488.431597189924,
+          "observed": true,
+          "original_curvature_per_m": 0.02484482862276951,
+          "speed_kph": 60.01630104899235,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 18.053754967912603,
+          "best_retained_same_side_pair_white_clearance_m": 1.828247814442184,
+          "nominal_profile_speed_kph": 63.26727517346599,
+          "actual_nominal_xy_distance_m": 0.32716221577316174,
+          "actual_nominal_cross_error_m": -0.07443445120189866,
+          "actual_nominal_heading_error_rad": 0.00375019738378235
+        },
+        {
+          "corner": "C15",
+          "progress_m": 4558.207219685118,
+          "observed": true,
+          "original_curvature_per_m": 0.03785864167142016,
+          "speed_kph": 83.2999781513371,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.8266772122280857,
+          "best_retained_same_side_pair_white_clearance_m": 0.8709987236901324,
+          "nominal_profile_speed_kph": 98.57071624123455,
+          "actual_nominal_xy_distance_m": 0.19312948788516926,
+          "actual_nominal_cross_error_m": 0.12193846995527054,
+          "actual_nominal_heading_error_rad": -0.001165671199015339
+        },
+        {
+          "corner": "C16",
+          "progress_m": 4782.060345429304,
+          "observed": true,
+          "original_curvature_per_m": -0.02802956104334128,
+          "speed_kph": 69.67467870994349,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 8.524600311100754,
+          "best_retained_same_side_pair_white_clearance_m": 8.524600311100754,
+          "nominal_profile_speed_kph": 78.43702410565486,
+          "actual_nominal_xy_distance_m": 0.2203038318207506,
+          "actual_nominal_cross_error_m": 0.1873017465573939,
+          "actual_nominal_heading_error_rad": 0.012462263620065528
+        },
+        {
+          "corner": "C17",
+          "progress_m": 4847.944240985181,
+          "observed": true,
+          "original_curvature_per_m": -0.03358828679263865,
+          "speed_kph": 56.60980515003145,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.3403955107030281,
+          "best_retained_same_side_pair_white_clearance_m": 1.3594454551322253,
+          "nominal_profile_speed_kph": 61.979516458270126,
+          "actual_nominal_xy_distance_m": 0.23166289185727265,
+          "actual_nominal_cross_error_m": -0.20226794076173527,
+          "actual_nominal_heading_error_rad": 0.014303154442309118
+        },
+        {
+          "corner": "C18",
+          "progress_m": 5053.243464722782,
+          "observed": true,
+          "original_curvature_per_m": -0.04431077931792176,
+          "speed_kph": 37.55370520029622,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.614310522222856,
+          "best_retained_same_side_pair_white_clearance_m": 1.0819410314340918,
+          "nominal_profile_speed_kph": 40.55351356394511,
+          "actual_nominal_xy_distance_m": 0.038483588419765465,
+          "actual_nominal_cross_error_m": -0.03369316305906847,
+          "actual_nominal_heading_error_rad": 0.05911272963047942
+        }
+      ]
+    },
+    "wide10-calibrated-001": {
+      "status": "completed",
+      "terminal_reason": "crossed_common_finish_after_full_ordered_path",
+      "qualified_clean_complete_lap": true,
+      "lap_time_s": 201.4684834614812,
+      "valid_lap": true,
+      "observed_active_duration_s": 201.4684834614812,
+      "final_progress_m": 5227.537049711243,
+      "time_saved_vs_old_clear_baseline_s": -4.627891666057167,
+      "runtime_source_sha256": {
+        "webots/controllers/tournament_racer/tournament_racer.py": "75944a30803d2eb9c65b25cfd2c7413cf57259a756c626118b12eaf59cb0dd46",
+        "src/race_lidar/race_policy.py": "c581e6da7a535fcfa4db6e807932140fc9684d30d3ca0b429e0a98e0b27ed2e0",
+        "src/race_lidar/race_control.py": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+        "src/race_lidar/hotlap_driver.py": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+        "src/race_lidar/learned_driver.py": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+        "src/race_lidar/lidar_hazards.py": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+        "src/race_lidar/rich_driver.py": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+        "src/race_lidar/remote.py": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+        "src/race_lidar/aggressive_hybrid.py": "08367743dadc0c8c55a58593ed64b2e41e3cdbcbe9021bbcb143f450dd789b1a",
+        "src/race_lidar/demo_chase.py": "41776c70201a0392f1dc6417b6be52fbae31ab6b1ec1ea04766f10d030462a10",
+        "src/race_lidar/smooth_racing_line.py": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+        "src/race_lidar/path_tracking.py": "32610b8cabfdb797bbc5080d17bd9624e404a8b4e9f07760401d8e37a06004a4",
+        "src/race_lidar/road_tyre_bounds.py": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf"
+      },
+      "model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+      "physical_limits": {
+        "max_speed_mps": 100.0,
+        "lateral_accel_mps2": 10.0,
+        "brake_decel_mps2": 8.0,
+        "acceleration_mps2": 5.0
+      },
+      "controller_config": {
+        "enabled": true,
+        "profile_preview_m": 0.0,
+        "profile_acceleration_feedforward": true,
+        "steering_method": "curvature_feedback",
+        "nominal_route_lane_rate_max_mps": 16.0,
+        "steering_lateral_reserve_factor": 1.6,
+        "understeer_gradient_s2_per_m": 0.002
+      },
+      "line_artifact_sha256": "5ab9e90bf4d0f5450953086292d8edc0aa3cb5aefc5e04c15296036c027b8c87",
+      "road_geometry_sha256": "0c62620ea6baed2c2aea837ebb6eafbef5f36e6ac9ab9113a3825794b7f50c3a",
+      "vehicle_world_block_identical_to_clear_baseline": true,
+      "two_contact_seconds": 8.64,
+      "three_contact_seconds": 2.8000000000000003,
+      "collision_samples": 0,
+      "pose_resets": 0,
+      "peak_speed_kph": 259.58717456932266,
+      "maximum_original_reference_error_m": 10.257335302078221,
+      "mapped_nominal_captured_time_fraction": 0.4912355608236015,
+      "mapped_nominal_proof_used_time_fraction": 0.4862720053194415,
+      "saved_pose_nominal_xy_distance_rms_m": 4.625393734967355,
+      "saved_pose_nominal_xy_distance_max_m": 13.177999017202104,
+      "independent_saved10hz_minimum_tyre_count": 2,
+      "all18_original_corner_anchors_reached": true,
+      "original_corner_anchors_observed": 18,
+      "fixed_original_corner_speed_delta_mean_kph": -3.545496381955899,
+      "fixed_original_corner_speed_delta_median_kph": -10.153243051911623,
+      "fixed_original_corners_faster_than_old_clear_baseline": 3,
+      "full_twenty_lap_race_or_traffic_performance_claimed": false,
+      "comparison_scope": "Combined new line, profile scheduling, mapped-route controller, K calibration and tyre rule; same physical vehicle, map, standing grid pose and learned weights. Not an isolated steering/model ablation.",
+      "director50hz_tyre_audit": {
+        "samples": 10075,
+        "minimum_on_track_count": 2,
+        "two_tyres_on_track_steps": 432,
+        "three_tyres_on_track_steps": 140,
+        "tyre_limit_violation_steps": 0,
+        "patch_margin_violation_steps": 0,
+        "diagonal_only_two_center_steps": 0,
+        "violation_clusters": [],
+        "first_violation_summary": null
+      },
+      "fixed_original_corner_observations": [
+        {
+          "corner": "C01",
+          "progress_m": 361.8289211307665,
+          "observed": true,
+          "original_curvature_per_m": 0.03368286568230875,
+          "speed_kph": 53.90059592132799,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.4783861399258107,
+          "best_retained_same_side_pair_white_clearance_m": 1.221552156851697,
+          "nominal_profile_speed_kph": 57.52840821695429,
+          "actual_nominal_xy_distance_m": 0.18560327590119136,
+          "actual_nominal_cross_error_m": -0.12386945709362021,
+          "actual_nominal_heading_error_rad": -0.02327162200653543
+        },
+        {
+          "corner": "C02",
+          "progress_m": 623.6070275298533,
+          "observed": true,
+          "original_curvature_per_m": 0.027423566308242196,
+          "speed_kph": 133.30083172471237,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.8809682979300244,
+          "best_retained_same_side_pair_white_clearance_m": 0.8189664897995683,
+          "nominal_profile_speed_kph": 149.88333270484102,
+          "actual_nominal_xy_distance_m": 0.2263684891666438,
+          "actual_nominal_cross_error_m": -0.15945978920605164,
+          "actual_nominal_heading_error_rad": 0.013004499872341757
+        },
+        {
+          "corner": "C03",
+          "progress_m": 767.472484340089,
+          "observed": true,
+          "original_curvature_per_m": -0.0369843998084051,
+          "speed_kph": 100.06520354376372,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.7623161753440024,
+          "best_retained_same_side_pair_white_clearance_m": 0.9206357764607402,
+          "nominal_profile_speed_kph": 102.76604718438928,
+          "actual_nominal_xy_distance_m": 0.43814865739797165,
+          "actual_nominal_cross_error_m": -0.30238007888826907,
+          "actual_nominal_heading_error_rad": -0.03661392916290174
+        },
+        {
+          "corner": "C04",
+          "progress_m": 841.3314562921321,
+          "observed": true,
+          "original_curvature_per_m": -0.02224206494883406,
+          "speed_kph": 67.73950843291631,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 6.424470636489933,
+          "best_retained_same_side_pair_white_clearance_m": 7.90231481941887,
+          "nominal_profile_speed_kph": 78.91076163527745,
+          "actual_nominal_xy_distance_m": 0.1070176263843291,
+          "actual_nominal_cross_error_m": -0.10423867679186347,
+          "actual_nominal_heading_error_rad": -0.010036509839682406
+        },
+        {
+          "corner": "C05",
+          "progress_m": 1403.050900160805,
+          "observed": true,
+          "original_curvature_per_m": 0.04584255665138894,
+          "speed_kph": 45.21757476778157,
+          "actual_tyre_count_on_track": 2,
+          "inside_pair_minimum_signed_white_gap_m": -0.7371382203722064,
+          "best_retained_same_side_pair_white_clearance_m": 0.9574543095640652,
+          "nominal_profile_speed_kph": 47.3752344349679,
+          "actual_nominal_xy_distance_m": 0.23435119559479953,
+          "actual_nominal_cross_error_m": -0.1753119242247032,
+          "actual_nominal_heading_error_rad": -0.025339287416850098
+        },
+        {
+          "corner": "C06",
+          "progress_m": 2610.439400324675,
+          "observed": true,
+          "original_curvature_per_m": 0.08538290670400628,
+          "speed_kph": 33.765869984811964,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 14.869785746188855,
+          "best_retained_same_side_pair_white_clearance_m": 4.7549091957927665,
+          "nominal_profile_speed_kph": 51.126529301218675,
+          "actual_nominal_xy_distance_m": 12.433062796145718,
+          "actual_nominal_cross_error_m": -12.318515524826932,
+          "actual_nominal_heading_error_rad": 0.29536325302164546
+        },
+        {
+          "corner": "C07",
+          "progress_m": 2662.0713661926334,
+          "observed": true,
+          "original_curvature_per_m": -0.04758245644484364,
+          "speed_kph": 25.77377492314198,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 1.1149667823074867,
+          "best_retained_same_side_pair_white_clearance_m": 2.812588244389565,
+          "nominal_profile_speed_kph": 33.93312099995233,
+          "actual_nominal_xy_distance_m": 2.4236237301680132,
+          "actual_nominal_cross_error_m": 2.4215059595219803,
+          "actual_nominal_heading_error_rad": -0.22838615292952413
+        },
+        {
+          "corner": "C08",
+          "progress_m": 3593.777196240377,
+          "observed": true,
+          "original_curvature_per_m": 0.025104957434161412,
+          "speed_kph": 69.28679025890472,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 16.4425171516975,
+          "best_retained_same_side_pair_white_clearance_m": 3.334445989345371,
+          "nominal_profile_speed_kph": 85.56155881672889,
+          "actual_nominal_xy_distance_m": 4.919389245329191,
+          "actual_nominal_cross_error_m": -4.686151142425397,
+          "actual_nominal_heading_error_rad": -0.3375375213213516
+        },
+        {
+          "corner": "C09",
+          "progress_m": 3651.6304174004904,
+          "observed": true,
+          "original_curvature_per_m": 0.04127849973868516,
+          "speed_kph": 44.24584182386491,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 10.164680242524398,
+          "best_retained_same_side_pair_white_clearance_m": 9.474759840794913,
+          "nominal_profile_speed_kph": 119.05406296993166,
+          "actual_nominal_xy_distance_m": 11.454056346878094,
+          "actual_nominal_cross_error_m": -11.453648067703877,
+          "actual_nominal_heading_error_rad": 0.1562095312043259
+        },
+        {
+          "corner": "C10",
+          "progress_m": 3801.2933165380446,
+          "observed": true,
+          "original_curvature_per_m": 0.03517403499367751,
+          "speed_kph": 44.11591742128589,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 7.905575352568881,
+          "best_retained_same_side_pair_white_clearance_m": 9.604637354279129,
+          "nominal_profile_speed_kph": 119.20562742748284,
+          "actual_nominal_xy_distance_m": 9.101420018747477,
+          "actual_nominal_cross_error_m": -9.097940365470564,
+          "actual_nominal_heading_error_rad": 0.10314066705188996
+        },
+        {
+          "corner": "C11",
+          "progress_m": 4189.083447065769,
+          "observed": true,
+          "original_curvature_per_m": -0.028750460616627907,
+          "speed_kph": 47.680005505207504,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 6.671886544763854,
+          "best_retained_same_side_pair_white_clearance_m": 8.366009242012684,
+          "nominal_profile_speed_kph": 101.62736963120673,
+          "actual_nominal_xy_distance_m": 7.372718979940589,
+          "actual_nominal_cross_error_m": 7.353962982648136,
+          "actual_nominal_heading_error_rad": -0.19744189349493002
+        },
+        {
+          "corner": "C12",
+          "progress_m": 4314.830473108133,
+          "observed": true,
+          "original_curvature_per_m": -0.048122068965213746,
+          "speed_kph": 38.22891163964363,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 7.513600310293798,
+          "best_retained_same_side_pair_white_clearance_m": 9.213600139878153,
+          "nominal_profile_speed_kph": 53.980467077873634,
+          "actual_nominal_xy_distance_m": 8.478685157387844,
+          "actual_nominal_cross_error_m": 8.461128206411885,
+          "actual_nominal_heading_error_rad": -0.08148922826887217
+        },
+        {
+          "corner": "C13",
+          "progress_m": 4388.594957034398,
+          "observed": true,
+          "original_curvature_per_m": 0.03499925926984878,
+          "speed_kph": 44.01315291657445,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 8.60053997510213,
+          "best_retained_same_side_pair_white_clearance_m": 9.413233653126868,
+          "nominal_profile_speed_kph": 96.96338429473936,
+          "actual_nominal_xy_distance_m": 8.861360693843064,
+          "actual_nominal_cross_error_m": -8.77385064783785,
+          "actual_nominal_heading_error_rad": -0.003928315564862395
+        },
+        {
+          "corner": "C14",
+          "progress_m": 4488.431597189924,
+          "observed": true,
+          "original_curvature_per_m": 0.02484482862276951,
+          "speed_kph": 50.375531306977145,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 7.337723844172449,
+          "best_retained_same_side_pair_white_clearance_m": 9.031576288070367,
+          "nominal_profile_speed_kph": 70.73496401952704,
+          "actual_nominal_xy_distance_m": 10.637654392374952,
+          "actual_nominal_cross_error_m": 10.635384405395593,
+          "actual_nominal_heading_error_rad": -0.06340126572988591
+        },
+        {
+          "corner": "C15",
+          "progress_m": 4558.207219685118,
+          "observed": true,
+          "original_curvature_per_m": 0.03785864167142016,
+          "speed_kph": 38.65340046713827,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 5.548755634573434,
+          "best_retained_same_side_pair_white_clearance_m": 7.240685832548361,
+          "nominal_profile_speed_kph": 103.86688087895638,
+          "actual_nominal_xy_distance_m": 6.597500659628811,
+          "actual_nominal_cross_error_m": -6.578435241608635,
+          "actual_nominal_heading_error_rad": 0.09809626001280858
+        },
+        {
+          "corner": "C16",
+          "progress_m": 4782.060345429304,
+          "observed": true,
+          "original_curvature_per_m": -0.02802956104334128,
+          "speed_kph": 56.28973193459222,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 7.00911366975656,
+          "best_retained_same_side_pair_white_clearance_m": 8.70672587649193,
+          "nominal_profile_speed_kph": 83.83755979189169,
+          "actual_nominal_xy_distance_m": 1.1609269900894204,
+          "actual_nominal_cross_error_m": -1.0136553348917616,
+          "actual_nominal_heading_error_rad": -0.5105907681860788
+        },
+        {
+          "corner": "C17",
+          "progress_m": 4847.944240985181,
+          "observed": true,
+          "original_curvature_per_m": -0.03358828679263865,
+          "speed_kph": 44.66049930782894,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 8.323686243244909,
+          "best_retained_same_side_pair_white_clearance_m": 9.755969860379096,
+          "nominal_profile_speed_kph": 69.29520600663018,
+          "actual_nominal_xy_distance_m": 8.678259640175197,
+          "actual_nominal_cross_error_m": 8.65814134863634,
+          "actual_nominal_heading_error_rad": -0.04748749362013438
+        },
+        {
+          "corner": "C18",
+          "progress_m": 5053.243464722782,
+          "observed": true,
+          "original_curvature_per_m": -0.04431077931792176,
+          "speed_kph": 35.337140478247186,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 7.519057065766407,
+          "best_retained_same_side_pair_white_clearance_m": 9.217398702914087,
+          "nominal_profile_speed_kph": 45.34020652772208,
+          "actual_nominal_xy_distance_m": 8.511871949089526,
+          "actual_nominal_cross_error_m": 8.496044827650605,
+          "actual_nominal_heading_error_rad": -0.11621166119635395
+        }
+      ]
+    },
+    "wide12-calibrated-001": {
+      "status": "failed",
+      "terminal_reason": "vehicle_left_reference_corridor_or_rolled",
+      "qualified_clean_complete_lap": false,
+      "lap_time_s": null,
+      "valid_lap": false,
+      "observed_active_duration_s": 23.0,
+      "final_progress_m": 364.71288140094106,
+      "time_saved_vs_old_clear_baseline_s": null,
+      "runtime_source_sha256": {
+        "webots/controllers/tournament_racer/tournament_racer.py": "75944a30803d2eb9c65b25cfd2c7413cf57259a756c626118b12eaf59cb0dd46",
+        "src/race_lidar/race_policy.py": "c581e6da7a535fcfa4db6e807932140fc9684d30d3ca0b429e0a98e0b27ed2e0",
+        "src/race_lidar/race_control.py": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+        "src/race_lidar/hotlap_driver.py": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+        "src/race_lidar/learned_driver.py": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+        "src/race_lidar/lidar_hazards.py": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+        "src/race_lidar/rich_driver.py": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+        "src/race_lidar/remote.py": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+        "src/race_lidar/aggressive_hybrid.py": "08367743dadc0c8c55a58593ed64b2e41e3cdbcbe9021bbcb143f450dd789b1a",
+        "src/race_lidar/demo_chase.py": "41776c70201a0392f1dc6417b6be52fbae31ab6b1ec1ea04766f10d030462a10",
+        "src/race_lidar/smooth_racing_line.py": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+        "src/race_lidar/path_tracking.py": "32610b8cabfdb797bbc5080d17bd9624e404a8b4e9f07760401d8e37a06004a4",
+        "src/race_lidar/road_tyre_bounds.py": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf"
+      },
+      "model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+      "physical_limits": {
+        "max_speed_mps": 100.0,
+        "lateral_accel_mps2": 12.0,
+        "brake_decel_mps2": 8.0,
+        "acceleration_mps2": 5.0
+      },
+      "controller_config": {
+        "enabled": true,
+        "profile_preview_m": 0.0,
+        "profile_acceleration_feedforward": true,
+        "steering_method": "curvature_feedback",
+        "nominal_route_lane_rate_max_mps": 16.0,
+        "steering_lateral_reserve_factor": 1.6,
+        "understeer_gradient_s2_per_m": 0.002
+      },
+      "line_artifact_sha256": "8006c60a118ebe0585e01327feb2cf475328554d0b607ee6389143952b16703e",
+      "road_geometry_sha256": "0c62620ea6baed2c2aea837ebb6eafbef5f36e6ac9ab9113a3825794b7f50c3a",
+      "vehicle_world_block_identical_to_clear_baseline": true,
+      "two_contact_seconds": 1.76,
+      "three_contact_seconds": 1.06,
+      "collision_samples": 0,
+      "pose_resets": 0,
+      "peak_speed_kph": 150.38869532051496,
+      "maximum_original_reference_error_m": 16.01665896954406,
+      "mapped_nominal_captured_time_fraction": 0.5217391304347825,
+      "mapped_nominal_proof_used_time_fraction": 0.4739130434782609,
+      "saved_pose_nominal_xy_distance_rms_m": 3.0921940203442935,
+      "saved_pose_nominal_xy_distance_max_m": 6.735077150711341,
+      "independent_saved10hz_minimum_tyre_count": 0,
+      "all18_original_corner_anchors_reached": false,
+      "original_corner_anchors_observed": 1,
+      "fixed_original_corner_speed_delta_mean_kph": null,
+      "fixed_original_corner_speed_delta_median_kph": null,
+      "fixed_original_corners_faster_than_old_clear_baseline": null,
+      "full_twenty_lap_race_or_traffic_performance_claimed": false,
+      "comparison_scope": "Combined new line, profile scheduling, mapped-route controller, K calibration and tyre rule; same physical vehicle, map, standing grid pose and learned weights. Not an isolated steering/model ablation.",
+      "director50hz_tyre_audit": {
+        "samples": 1151,
+        "minimum_on_track_count": 0,
+        "two_tyres_on_track_steps": 88,
+        "three_tyres_on_track_steps": 53,
+        "tyre_limit_violation_steps": 126,
+        "patch_margin_violation_steps": 152,
+        "diagonal_only_two_center_steps": 46,
+        "violation_clusters": [
+          {
+            "first_race_time_s": 20.5,
+            "first_progress_m": 364.71288140094106,
+            "samples": 126,
+            "minimum_on_track_count": 0,
+            "last_race_time_s": 23.0,
+            "last_progress_m": 364.71288140094106,
+            "duration_s": 2.52
+          }
+        ],
+        "first_violation_summary": {
+          "race_time_s": 20.5,
+          "progress_m": 364.71288140094106
+        }
+      },
+      "fixed_original_corner_observations": [
+        {
+          "corner": "C01",
+          "progress_m": 361.8289211307665,
+          "observed": true,
+          "original_curvature_per_m": 0.03368286568230875,
+          "speed_kph": 13.572408051561279,
+          "actual_tyre_count_on_track": 4,
+          "inside_pair_minimum_signed_white_gap_m": 4.315290276547113,
+          "best_retained_same_side_pair_white_clearance_m": 4.315290276547113,
+          "nominal_profile_speed_kph": 62.5652648848147,
+          "actual_nominal_xy_distance_m": 4.329416878881294,
+          "actual_nominal_cross_error_m": -4.328373653443889,
+          "actual_nominal_heading_error_rad": 2.736744977091738
+        },
+        {
+          "corner": "C02",
+          "progress_m": 623.6070275298533,
+          "observed": false
+        },
+        {
+          "corner": "C03",
+          "progress_m": 767.472484340089,
+          "observed": false
+        },
+        {
+          "corner": "C04",
+          "progress_m": 841.3314562921321,
+          "observed": false
+        },
+        {
+          "corner": "C05",
+          "progress_m": 1403.050900160805,
+          "observed": false
+        },
+        {
+          "corner": "C06",
+          "progress_m": 2610.439400324675,
+          "observed": false
+        },
+        {
+          "corner": "C07",
+          "progress_m": 2662.0713661926334,
+          "observed": false
+        },
+        {
+          "corner": "C08",
+          "progress_m": 3593.777196240377,
+          "observed": false
+        },
+        {
+          "corner": "C09",
+          "progress_m": 3651.6304174004904,
+          "observed": false
+        },
+        {
+          "corner": "C10",
+          "progress_m": 3801.2933165380446,
+          "observed": false
+        },
+        {
+          "corner": "C11",
+          "progress_m": 4189.083447065769,
+          "observed": false
+        },
+        {
+          "corner": "C12",
+          "progress_m": 4314.830473108133,
+          "observed": false
+        },
+        {
+          "corner": "C13",
+          "progress_m": 4388.594957034398,
+          "observed": false
+        },
+        {
+          "corner": "C14",
+          "progress_m": 4488.431597189924,
+          "observed": false
+        },
+        {
+          "corner": "C15",
+          "progress_m": 4558.207219685118,
+          "observed": false
+        },
+        {
+          "corner": "C16",
+          "progress_m": 4782.060345429304,
+          "observed": false
+        },
+        {
+          "corner": "C17",
+          "progress_m": 4847.944240985181,
+          "observed": false
+        },
+        {
+          "corner": "C18",
+          "progress_m": 5053.243464722782,
+          "observed": false
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Same8m/s² label does not mean identical prior driver or qualification; broader road rule, line and controller changed.",
+    "18 fixed-corner speed mean/median is not a lap-time average; combined system result, one standing lap per configuration.",
+    "Understeer K is an empirical command-response approximation; no measured wheel-angle/tire-force model or real F1 equivalence.",
+    "Old20car001 values are traffic context only; no old-vs-new traffic superiority claim from these clear laps."
+  ],
+  "redactions": [
+    "Source filesystem location map and raw-trace hash index omitted.",
+    "Interpolated map positions, yaw, race/sample timestamps, nominal-point coordinates and individual wheel-coordinate records omitted.",
+    "Derived corner metrics and source/module/artifact hashes retained; source_audit_sha256 identifies the original audit, not this sanitized file."
+  ]
+}

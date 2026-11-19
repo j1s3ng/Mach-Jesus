@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "package": "trajectory-trail-brake",
+  "visibility": "LOCAL_REVIEW_ONLY",
+  "status": "READY_FOR_LOCAL_REVIEW",
+  "source_overlay_status": "READY_FOR_LOCAL_REVIEW",
+  "source_overlay_files": [
+    {
+      "path": "overlay/src/race_lidar/trail_braking.py",
+      "destination": "src/race_lidar/trail_braking.py",
+      "sha256": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+      "bytes": 13567
+    },
+    {
+      "path": "overlay/src/race_lidar/traffic_trajectories.py",
+      "destination": "src/race_lidar/traffic_trajectories.py",
+      "sha256": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+      "bytes": 21211
+    },
+    {
+      "path": "overlay/src/race_lidar/aggressive_hybrid.py",
+      "destination": "src/race_lidar/aggressive_hybrid.py",
+      "sha256": "a6bbb7bf68cd7345b0738e577b23949c8c6667861a0789b4f70a0412f0f7309e",
+      "bytes": 53883
+    },
+    {
+      "path": "overlay/src/race_lidar/race_policy.py",
+      "destination": "src/race_lidar/race_policy.py",
+      "sha256": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+      "bytes": 23310
+    },
+    {
+      "path": "overlay/webots/controllers/tournament_racer/tournament_racer.py",
+      "destination": "webots/controllers/tournament_racer/tournament_racer.py",
+      "sha256": "7b01d1da4f8f433f60a47b8a50cdbb71b3f822541743950beb58233d71052aaf",
+      "bytes": 39993
+    },
+    {
+      "path": "overlay/src/race_lidar/path_tracking.py",
+      "destination": "src/race_lidar/path_tracking.py",
+      "sha256": "cebd55228022f6a4498f568e31d1efbf0593b1a3c5f3fe12f9810a2c72e8818a",
+      "bytes": 37097
+    }
+  ],
+  "dependencies": [
+    {
+      "package": "apex-and-gap",
+      "manifest_sha256": "01b53aa69f489c71ee2fdccad5053e76e20d2552d5e0186bc3e5384279ab1ef1",
+      "relative_readme": "../apex-and-gap/README.md"
+    },
+    {
+      "package": "smooth-steering",
+      "manifest_sha256": "682546a8cd846f8399b4050a89c6eb75e37310f56c54cf93b6486e1219ce9e2c",
+      "relative_readme": "../smooth-steering/README.md"
+    }
+  ],
+  "final_configuration_sha256": "3b224d961fd000e34eccba9241ae1c9ba43ba29c760461e0df0dd21518f84f8c",
+  "final_preparation_sha256": "d7c36aefa3e95798c0ddd94a14f9bc806755df552745410a909f4ef0d3764fa8",
+  "final_pinned_source_asset_count": 64,
+  "final_combined_result": "SELECTED_ZERO_CLOSED_SOURCE_NATIVE_SAFETY_PASS",
+  "physical_safety_probes": "ZERO_RISK_THREE_FIXTURE_ELIGIBILITY_PASS",
+  "media_and_viewer_status": "READY_FOR_LOCAL_REVIEW",
+  "external_artifacts_required_not_distributed": [
+    {
+      "logical_name": "original_reference",
+      "suggested_filename": "reference.npz",
+      "sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e"
+    },
+    {
+      "logical_name": "generated_tarmac_white_line_geometry",
+      "suggested_filename": "road_tyre_bounds.npz",
+      "sha256": "0c62620ea6baed2c2aea837ebb6eafbef5f36e6ac9ab9113a3825794b7f50c3a"
+    },
+    {
+      "logical_name": "selected_8_8_5_mapped_line_plan",
+      "suggested_filename": "map_line_plan.npz",
+      "sha256": "2e1de29366dca5ab281a9025ffe715b4b8cfb28c52d6dbab8d4783b25216ceea"
+    },
+    {
+      "logical_name": "unchanged_selected_learned_model",
+      "suggested_filename": "neural_rich005_seed7.npz",
+      "sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989"
+    },
+    {
+      "logical_name": "unchanged_rival_learned_model_005_seed17",
+      "suggested_filename": "neural_rich005_seed17.npz",
+      "sha256": "d9837d76d29f80368dae8ec8f611aa67b4c3e7885ed5bab51876fbff34afd9da"
+    },
+    {
+      "logical_name": "unchanged_rival_learned_model_006_seed17",
+      "suggested_filename": "neural_rich006_seed17.npz",
+      "sha256": "730802bc23036458e76007f0f17b8f13a3894457e14d82b642f8f571f84d83c6"
+    },
+    {
+      "logical_name": "expected_external_perception_detector_checkpoint",
+      "sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b"
+    }
+  ],
+  "figure_provenance": {
+    "actual_clear_trace_sha256": {
+      "baseline": "65b509508846242dcc4480f847bedae6039ddeb1be4591a45cec4d50e4bac979",
+      "strong": "67136ac31deaa6422b9a2a08cbcbc704222c11811108ade0e9358127e4fed027"
+    },
+    "clear_window": {
+      "corner": "C01",
+      "original_progress_m": 361.8289211307665,
+      "half_width_m": 30,
+      "choice": "First pre-existing original-map anchor, selected without outcome ranking."
+    },
+    "all_drawn_clear_curves": "Actual recorded50Hz final brake/speed; no filtered surrogate.",
+    "predictor_table_source_audits": {
+      "risk075": "3f0bd5388580be655bc159ebb5ace9e7dc8970d36fb8449112c2312ca8736d08",
+      "risk025": "5b32549cf1ef7dcf96e2ab9c8a99f74a99a9ed50aefd17cc2b15edfb02992530"
+    },
+    "clearance_comparison_sha256": "b7ce3873f09c4afd82684832e22777004e46716c3b9bb4c9fb101b42c508bfc9",
+    "caption_revision": "Historical isolated-trial data unchanged; captions use plain English and normal spacing.",
+    "current_traffic_ablation_index_sha256": "8e621ff5d046ec7fff02a805293f7edf3f984b25e82c18a568f2aeab205754d8",
+    "zero_cost_values_filled_from_live_run": false,
+    "removed_historical_predictor_plot_from_this_stage_only": true,
+    "selected_zero_traffic_index_sha256": "326273314104320c30607e2d1da2f17af5b1039a4f6569252e30888c26f02a93"
+  },
+  "preservation": {
+    "old_public_snapshot_sha256": "f277191c77b26310345c4bcf60a652079cc4f9618968f7728a0f3ebb3875eea6",
+    "pinned_old_public_file_count": 407,
+    "allowed_existing_file_change": "top-level README.md only",
+    "export_agent_public_writes": false
+  },
+  "artifact_policy": {
+    "raw_logs_distributed": false,
+    "npz_archives_or_weights_distributed": false,
+    "private_paths_or_network_identities_distributed": false,
+    "new_neural_training": false,
+    "ground_truth_driver_input": false,
+    "offline_ground_truth_display_only": true
+  },
+  "inventory_excludes": "manifest.json (avoids recursive self-hash)",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6399,
+      "sha256": "595e4d6d8f88ca2be4cf58b0f5d2f9fd801a76b49bbc8d2a51f657326112d235"
+    },
+    {
+      "path": "evidence/baseline_cutin_probe.json",
+      "bytes": 9821,
+      "sha256": "38e40d8c04398bf7ccd66994d0a0f41ae1361e88d68e0c0067a4103f0fa3652e"
+    },
+    {
+      "path": "evidence/clear_tradeoffs.json",
+      "bytes": 55696,
+      "sha256": "3bccb9f861be896344e7b935c01a0b73cbf0b5bae719819b64dc8551991c59d0"
+    },
+    {
+      "path": "evidence/combined_failed_case.json",
+      "bytes": 22360,
+      "sha256": "abcffc146a05bb8bf2c4337a36df6240cf32b354c30f5cb8988fe7b8cefb08c6"
+    },
+    {
+      "path": "evidence/floor_scope.json",
+      "bytes": 72126,
+      "sha256": "0b80d436083a212aaf6773e4ea714d368b7c2c37c3e41a6d30afa04f48ac0170"
+    },
+    {
+      "path": "evidence/planner_comparison.json",
+      "bytes": 10114,
+      "sha256": "0835863d02ae86128d473a54347dfd3ea15a3548e6d6914d6f8d12c41d99d555"
+    },
+    {
+      "path": "evidence/predictor_audits.json",
+      "bytes": 65238,
+      "sha256": "a4d4284fdfcc5cabf79ae3db5d41b560aec3e2f22f5221e206f46a6019f540c3"
+    },
+    {
+      "path": "evidence/protocol.json",
+      "bytes": 6263,
+      "sha256": "986d9f07e4ff32c74f1d85a3e8af55fe8393dcd025c5d507e7c8178eedf522f4"
+    },
+    {
+      "path": "evidence/results.json",
+      "bytes": 854074,
+      "sha256": "c90c0ffd4b3ec6696c8e972f7091149e3b21c9e4ec934429e4e48858021190f4"
+    },
+    {
+      "path": "evidence/setup.json",
+      "bytes": 11020,
+      "sha256": "3ef55b395cda245729e4b62f9e89dc7988da6519eca982c418d3d3de8adb2d02"
+    },
+    {
+      "path": "evidence/stability_candidate.json",
+      "bytes": 198238,
+      "sha256": "7a9d332ad3772a84332167600c7aa2889cc767f074ae21d6d4e991dfa7853bec"
+    },
+    {
+      "path": "evidence/tests.json",
+      "bytes": 10924,
+      "sha256": "9ea0cf108155a91a267884c89413273679ace1c707fdfa6a3f92a7ae63251751"
+    },
+    {
+      "path": "figures/clear_brake_entry_speed.pdf",
+      "bytes": 70497,
+      "sha256": "ab910b1cc9657c5c816e6594b5fe48d73edf5a77d2a0b4cdefba0a1161e4de19"
+    },
+    {
+      "path": "figures/clear_brake_entry_speed.png",
+      "bytes": 334718,
+      "sha256": "908de1c75ed8185f93572f84d998fb0b2d56acbd92613e2c81200abd5f8b68e0"
+    },
+    {
+      "path": "figures/traffic_ablation.pdf",
+      "bytes": 24750,
+      "sha256": "c1bdba19e20d1d8109c89ca855ae1ca0b1f6250150b6052583faa44ebdc29afd"
+    },
+    {
+      "path": "figures/traffic_ablation.png",
+      "bytes": 172179,
+      "sha256": "dbfa69b96d76970fae247c725aa6f6da28edf4089589878a79c35ad1d4101bff"
+    },
+    {
+      "path": "media.json",
+      "bytes": 7636,
+      "sha256": "00ce590f5490ae087a8d4ee6ac18ceb960db461d82f1570c428a8fd441ebca1a"
+    },
+    {
+      "path": "overlay/src/race_lidar/aggressive_hybrid.py",
+      "bytes": 53883,
+      "sha256": "a6bbb7bf68cd7345b0738e577b23949c8c6667861a0789b4f70a0412f0f7309e"
+    },
+    {
+      "path": "overlay/src/race_lidar/path_tracking.py",
+      "bytes": 37097,
+      "sha256": "cebd55228022f6a4498f568e31d1efbf0593b1a3c5f3fe12f9810a2c72e8818a"
+    },
+    {
+      "path": "overlay/src/race_lidar/race_policy.py",
+      "bytes": 23310,
+      "sha256": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8"
+    },
+    {
+      "path": "overlay/src/race_lidar/traffic_trajectories.py",
+      "bytes": 21211,
+      "sha256": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86"
+    },
+    {
+      "path": "overlay/src/race_lidar/trail_braking.py",
+      "bytes": 13567,
+      "sha256": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a"
+    },
+    {
+      "path": "overlay/webots/controllers/tournament_racer/tournament_racer.py",
+      "bytes": 39993,
+      "sha256": "7b01d1da4f8f433f60a47b8a50cdbb71b3f822541743950beb58233d71052aaf"
+    }
+  ],
+  "source_snapshot": "combined-zero-risk-chase-001/source",
+  "experimental_traffic_snapshot": "combined-zero-risk-chase-001",
+  "previous_stage_manifest_sha256": "89d02f7fc70044a61292ec22496346015e149f297a639b73c49ab532f0554b20",
+  "previous_combined_result": "FAILED_NOT_SELECTED",
+  "failed_combined_audit_sha256": "4d4fa34d660571b8bb5cd300992c701112caa7d5c2499132365ab72a0231af70",
+  "experimental_stability_option_default_enabled": false,
+  "experimental_configuration_enables_stability_option": true,
+  "gross_heading_hold_enabled": false,
+  "stability_integration_sha256": "feed8d59ba0515c76d0643eb0090dbc8707964aaeeab78b49a14f3d05a7d4bfc",
+  "stability_offline_replay_sha256": "792a2e2d74ca56d87a3ca3e97d14baaf9113af18719314384b8e7da356be5275",
+  "baseline_cutin_audit_sha256": "7a9d5d0f4dbf2d2c74d3cc84bce0ff9fedb3d21a8a169c8f13513e97f1546501",
+  "stability_clear_postcap_audit_sha256": "8373ed6a3cb5abdc3e339c69ac2f370483f8077c507a0c8a69396144d3bd5abd",
+  "stability_clear_floor_audit_sha256": "a754029c01e9340e8442dfee5d21fa9d7cb8be8976263c73e2a0da46947ebc16",
+  "stability_clear_steering_report_sha256": "c46aa2d0a3d6a57046e3c2aad80b11ee952f309b63a7c6372c68832f5076cb0f",
+  "stability_clear_qualification": "CLOSED_INDEPENDENTLY_AUDITED_CLEAR_ONLY",
+  "risk025_main_audit_index_sha256": "8e621ff5d046ec7fff02a805293f7edf3f984b25e82c18a568f2aeab205754d8",
+  "risk025_safety_summary_sha256": "de790a042472e6aed833eeda8552acc365e99b7281671c73cd5e7865dd9507e0",
+  "zero_risk_ablation_protocol_sha256": "b5f47619538f5607464c669f1269de9eb5e0094798a583f02568ce62f4abe8cb",
+  "media_manifest_sha256": "00ce590f5490ae087a8d4ee6ac18ceb960db461d82f1570c428a8fd441ebca1a",
+  "media_handoff_sha256": "493de0eb544cc873479d6b839f0f3d434825af60d30e85b2c1944665371c232e",
+  "final_selection_pending": false,
+  "reviewed_media_risk_weight_mps": 0.0,
+  "README_word_count": 864,
+  "final_selected_risk_weight_mps": 0.0,
+  "selected_zero_main_audit_index_sha256": "326273314104320c30607e2d1da2f17af5b1039a4f6569252e30888c26f02a93",
+  "selected_zero_safety_index_sha256": "42952961a5fdfe213787a29b1c677bb1c21477f6a956022099b72c5f37ba67da",
+  "selected_zero_forecast_bound_exception_sha256": "6afd8884edfe3d385649ccee3d9bee4f02df2af2f43bcff2ab3440357a199b97",
+  "forecast_centers_all_self_enclosed": false,
+  "selected_zero_media_handoff_pending": false,
+  "operational_cleanup": {
+    "status": "CLOSED_VERIFIED",
+    "source_receipt_sha256": "dedd2e25f61ef9b3a6a602b975623420de331deaa726af60e0de116ec537fa32",
+    "all_owned_processes_absent": true,
+    "both_ports_closed_on_both_hosts": true,
+    "foreign_processes_signalled": false,
+    "infrastructure_details_omitted": true
+  },
+  "selected_zero_media_handoff_bound": true,
+  "public_assets": [
+    "../../docs/Trajectory_Trail_Brake_Demo.mp4",
+    "../../docs/Trajectory_Trail_Brake_Normal_Speed.mp4",
+    "../../docs/trajectory-trail-brake-demo.jpg",
+    "../../docs/Trajectory_Replay.html"
+  ]
+}

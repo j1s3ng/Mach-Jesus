@@ -1,0 +1,36 @@
+{
+  "fps": 25,
+  "period_s": 0.04,
+  "spans": [
+    {
+      "kind": "opening",
+      "start_frame": 0,
+      "end_frame_exclusive": 2625,
+      "source_start_world_s": 0.04,
+      "source_end_world_s": 105.0,
+      "frames": 2625,
+      "playback_speed": 1.0
+    },
+    {
+      "kind": "first_full_crossing_and_flying_excerpt",
+      "start_frame": 4946,
+      "end_frame_exclusive": 5197,
+      "source_start_world_s": 197.88,
+      "source_end_world_s": 207.88,
+      "frames": 251,
+      "playback_speed": 1.0
+    }
+  ],
+  "cards": {
+    "intro_frames": 60,
+    "cut_frames": 25,
+    "end_frames": 75
+  },
+  "frames": 3036,
+  "seconds": 121.44,
+  "whole_opening_through_first_observed_P1_retained": true,
+  "motion_interpolation": false,
+  "speed_changes": [],
+  "omissions_are_only_the_explicit_labelled_cut_and_final_trim": true,
+  "full_normal_speed_movie_retains_every_source_camera_frame": true
+}

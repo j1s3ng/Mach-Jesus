@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "inventory": {
+    "cars": 20,
+    "selected": true,
+    "actual_rows": 1072,
+    "forecasts": 1068,
+    "title": "APEX TRACKING / 20-CAR REPLAY",
+    "min": 0.2,
+    "max": 214.4
+  },
+  "play_pause_verified": true,
+  "car_and_follow_controls_verified": true,
+  "no_horizontal_overflow_1500_and_780": true,
+  "javascript_errors": [],
+  "external_page_requests": [],
+  "owned_browser_cleanup_passed": true,
+  "original_browser_report_sha256": "60594ecf6adc041b9f55251a2bf42ca13cc592c93b68b1f426b1f04256877a8f",
+  "visual_review": "Actual encoded samples at10,35,85.5,145,190s and final replay screenshot inspected; labels/panels readable. Final card also independently inspected by coordinator."
+}

@@ -1,0 +1,215 @@
+{
+  "scope": "Historical trail/planner tests and integration equivalences from before the new stability option; not current candidate physical qualification.",
+  "receipts": {
+    "brake": {
+      "source_receipt_sha256": "45e40ff58eb7e7bd29289a580d7e5b85ecb1d46746a6934777ce115c31cca9cd",
+      "receipt": {
+        "status": "SOURCE_FROZEN_READY_FOR_PHYSICAL_ABLATION",
+        "created_utc": "2026-11-17T20:06:30.750872+00:00",
+        "source_sha256": "bb1603e358238a5600b4c0e312c50acd89140db382c03b71642ab1f1d9457847",
+        "tests_sha256": "e4a2f649c7fcd335b5c3eb83204ac236d782c8d83192b2ae1713f1341d246981",
+        "targeted_tests": 23,
+        "test_exit_code": 0,
+        "test_elapsed_s": 0.9,
+        "default_disabled_actual_saved_actuator_inputs_exact": 608,
+        "saved_input_replay_sha256": "7f49f678351a840bba6b15b0f1b42eca5f88903728ed0cb1f563da24022cced7",
+        "replay_script_sha256": "5806d186e872e6b1032ef9562a4032389650d4a987de474ce4b74b7ef2c439a3",
+        "dense_floor_verification_sha256": "3afa4ffcf9b6535e17bb234d0e6fd2fdedd51018e98482d829c4767c2fbcd12b",
+        "mathematical_floor_reference_cases": 300,
+        "dense_points_each": 20000,
+        "first_trial_config": {
+          "enabled": true,
+          "release_strength": 1.0,
+          "release_rate_mps3": 40.0,
+          "profile_floor_margin_mps2": 0.15
+        },
+        "active_scope": "Only captured explicitly measured-clear nominal mapped route; all guards/externalcaps/overspeed/spin/unknown-or-fixedroutes bypass without weakening old outputs",
+        "control_binding": "after path_tracking.longitudinal, before path_tracking.stability_actuators and final guarded minimum-decel override",
+        "outputs": "throttle, brake, metadata; root adds tracking_metadata.trail_braking and separately logs final guard minimum_decel_mps2",
+        "unchanged": [
+          "Steering and feedback",
+          "Original speed profile and path geometry",
+          "Traffic/stopping/road/spin guard priorities",
+          "Vehicle hardware/grip and neural weights"
+        ],
+        "limitations": [
+          "Baseline already has substantial braking while turning; this explicitly releases discretionary excess under a future map-profile floor.",
+          "A constant-deceleration profile floor is a receding-horizon proxy based on the approved route, not measured tire force or a closed-loop safety proof.",
+          "Replay modified1600clear samples but only1traffic sample because explicit route approval is rare in passing; no global traffic gain is established.",
+          "Physical lap/incident/track-limit evaluation is required before adoption."
+        ]
+      }
+    },
+    "headroom_compatibility": {
+      "source_receipt_sha256": "69079223d9ca317257044f33276dc18be5eaf3c125f65effb3c58e32f63357c6",
+      "receipt": {
+        "status": "SOURCE_FROZEN_PHYSICAL_VALIDATION_REQUIRED",
+        "created_utc": "2026-11-17T20:21:54.497279+00:00",
+        "source_sha256": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+        "original_source_sha256": "bb1603e358238a5600b4c0e312c50acd89140db382c03b71642ab1f1d9457847",
+        "tests_sha256": "967243227bd587506c488b3fb478648a7965347b0303a83607228c61f2abc4d2",
+        "tests": 12,
+        "test_exit_code": 0,
+        "test_elapsed_s": 2.01,
+        "new_config": {
+          "release_headroom_band_mps": 0.75
+        },
+        "default_band_mps": 0.0,
+        "default_zero_enabled_saved_inputs_and_full_metadata_exact": 608,
+        "formula": "q=clip((target_speed-body_speed)/band,0,1); weight=q*q*(3-2*q); effective_corner_release_fraction=original_fraction*weight",
+        "new_temporal_state": false,
+        "unchanged_safety": [
+          "Current-target overspeed bypass",
+          "Profile-floor calculation",
+          "Traffic/road/stopping and minimum-deceleration bypass",
+          "Spin bypass",
+          "Grip proxy cap",
+          "No brake tail or throttle/brake overlap"
+        ],
+        "actual_threshold_evidence": {
+          "strong_reason_changes_at_target_boundary": 190,
+          "strong_target_boundary_pedal_total_variation": 14.740246830495623,
+          "example_race_time_s": 29.04,
+          "headroom_before_mps": 0.08187617258957403,
+          "headroom_after_mps": -0.031140878703741492,
+          "actual_final_brake_jump": 0.33122020634794125
+        },
+        "replay_sha256": "dfe643f89ee2de71148a76de0d7e0bac2047db80a0f605f25e04433ba8ade3cc",
+        "replay_script_sha256": "412bc5917c8a1c3b4c4605a4ed666e76d189d65b28702ad8e88f779412e6f523",
+        "counterfactual_replay_warning": "Fixed-state replay reduces target-boundary variation but slightly increases total coordinator-output variation; no physical smoothness, speed or safety gain is established.",
+        "strong_replay_summary": {
+          "actual_saved_coordinator_outputs_exactly_reproduced": 9353,
+          "changed_headroom_replay_samples": 502,
+          "protected_guard_samples_exact": 0,
+          "old_coordinator_output_TV": 71.46724413425554,
+          "new_headroom_output_replay_TV": 71.63737372475816,
+          "old_target_boundary_TV": 14.740246830495623,
+          "new_target_boundary_replay_TV": 9.114285318707323
+        },
+        "continuity_scope": "Discretionary target-speed taper tends smoothly to zero at the target when raw brake is inside the existing grip proxy. Hard safety proxy caps/guard overrides retain priority and may still make command jumps."
+      }
+    },
+    "planner": {
+      "source_receipt_sha256": "036a55cb9bec92721f1a732d84509e4b00b38170694e9b492159eacdc9f9a2b0",
+      "receipt": {
+        "status": "HISTORICAL_UNIT_TESTS_PASSED_LATER_PHYSICAL_AUDITS_RECORDED_SEPARATELY",
+        "utc": "2026-11-17T20:10:44.868272+00:00",
+        "source_sha256": {
+          "traffic_trajectories.py": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+          "aggressive_hybrid.py": "a6bbb7bf68cd7345b0738e577b23949c8c6667861a0789b4f70a0412f0f7309e",
+          "race_policy.py": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+          "test_trajectory_planning.py": "5c770c63bf2b5cd6eb8981d0f8f48001e4f17f73776cb6837a3c0c69b7542fbd"
+        },
+        "tests_passed": 28,
+        "test_scope": [
+          "608 actual saved hybrid inputs: disabled outputs exactly equal legacy",
+          "Default tracker row/state/covariance equivalence and opt-in motion extensions",
+          "Fresh cut-in/oncoming/closing-rear forecasts",
+          "Unknown/stale/unclassified tracks never authorize hard veto or guessed free departures",
+          "All observed tracks/no top-N and no legacy corridor truncation",
+          "Track-ID jump/history expiry",
+          "Inner-lane physical metric and untrackable cusp credibility",
+          "Captured variable-path actual arc metric and new-station actual XY",
+          "Continuous between-sample overlap interval detection",
+          "Recovery fallback cannot bypass hard veto",
+          "All-hard/no-safe-hold emergency and pure helper semantics/NaN fail-closed"
+        ],
+        "no_opponent_ground_truth_used": true,
+        "old_sources_and_runtime_untouched": true,
+        "physical_results_pending": false
+      }
+    },
+    "disabled_full_integration": {
+      "source_receipt_sha256": "7ad79176f9a42509051e79a3261f0974ec43583bf11abf9e1082714d56dc2635",
+      "receipt": {
+        "scope": "CLOSED full-integrated controller with both new features disabled versus selectedc54 FF1 clear baseline. Exact recorded command/pose equality; added diagnostic metadata excluded.",
+        "all_rows_compared": 9518,
+        "all_fields_bit_equal": true,
+        "field_mismatch_counts": {
+          "time_s": 0,
+          "simulation_time_s": 0,
+          "position_m": 0,
+          "yaw_rad": 0,
+          "speed_mps": 0,
+          "forward_speed_mps": 0,
+          "progress_m": 0,
+          "cross_track_error_m": 0,
+          "reference_distance_m": 0,
+          "target_speed_mps": 0,
+          "target_lane_offset_m": 0,
+          "steering_left_rad": 0,
+          "throttle": 0,
+          "brake": 0,
+          "roll_rad": 0
+        },
+        "runs": [
+          {
+            "logical_run": "ff-sigma1-clear-001",
+            "all_frozen_pins_verified": 68,
+            "runtime_import_pins_verified": 13,
+            "model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+            "minimum_actual_centers": 2,
+            "track_violation_steps": 0
+          },
+          {
+            "logical_run": "disabled-clear-001",
+            "all_frozen_pins_verified": 68,
+            "runtime_import_pins_verified": 15,
+            "model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+            "minimum_actual_centers": 2,
+            "track_violation_steps": 0
+          }
+        ],
+        "completed_lap_time_s": 189.036098729852
+      }
+    },
+    "empty_observation_combined_clear": {
+      "source_receipt_sha256": "2ff0339df26a939cebfa41e79179d968a7c4966cff73551f2c123d7cd85dbe80",
+      "receipt": {
+        "scope": "CLOSED full-integration planner+trail enabled with NO observations versus isolated strongtrailclear. Exact recorded command/pose equality; added predictor/diagnostic metadata excluded. Not a traffic equivalence proof.",
+        "all_rows_compared": 9403,
+        "all_fields_bit_equal": true,
+        "field_mismatch_counts": {
+          "time_s": 0,
+          "simulation_time_s": 0,
+          "position_m": 0,
+          "yaw_rad": 0,
+          "speed_mps": 0,
+          "forward_speed_mps": 0,
+          "progress_m": 0,
+          "cross_track_error_m": 0,
+          "reference_distance_m": 0,
+          "target_speed_mps": 0,
+          "target_lane_offset_m": 0,
+          "steering_left_rad": 0,
+          "throttle": 0,
+          "brake": 0,
+          "roll_rad": 0
+        },
+        "runs": [
+          {
+            "logical_run": "trail-clear-001",
+            "all_frozen_pins_verified": 67,
+            "runtime_import_pins_verified": 14,
+            "model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+            "minimum_actual_centers": 2,
+            "track_violation_steps": 0
+          },
+          {
+            "logical_run": "combined-clear-001",
+            "all_frozen_pins_verified": 68,
+            "runtime_import_pins_verified": 15,
+            "model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+            "minimum_actual_centers": 2,
+            "track_violation_steps": 0
+          }
+        ],
+        "completed_lap_time_s": 186.72998782284185
+      }
+    }
+  },
+  "counts_are_separate_suites_not_independent_saved_datasets": true,
+  "export_stage": "READY_FOR_LOCAL_REVIEW",
+  "historical_receipts_predate_new_stability_option": true,
+  "historical_receipt_qualification_status_updated_for_export": true
+}

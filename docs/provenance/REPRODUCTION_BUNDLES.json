@@ -1,0 +1,14 @@
+{
+  "controlled-rotation": {
+    "manifest_file_sha256": "5081891c41299c026f57779910832e97b8b464905975ad15ed6ed543cf4d06de",
+    "independent_review_file_sha256": "3a043362b22d3251de0bbff3476d837eed77ec7c9a49fcee6f64cc52109f76a4",
+    "independent_review_scope": "Actual isolated moved-folder CPU reproduction, exact source/cache/metric/cohort checks and privacy scan; no model query",
+    "review_original_preserved_in_private_study": true
+  },
+  "controlled-native": {
+    "manifest_file_sha256": "95dc6e6e43ad40990676e25a5279a046d8134f20e12c665889376f62e2784272",
+    "independent_review_file_sha256": "53c3ef79028d71bdb614b427aa0ac59cb2c285fa6664fe786de4c4c4db9412e7",
+    "independent_review_scope": "Actual isolated moved-folder CPU reproduction, exact source/cache/metric/cohort checks and privacy scan; no model query",
+    "review_original_preserved_in_private_study": true
+  }
+}

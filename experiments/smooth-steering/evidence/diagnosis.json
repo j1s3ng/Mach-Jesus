@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_diagnosis_sha256": "ed8e84a555b19414a984bdb9e59c9c9c9417b26875228f2bd668d0a527b238c5",
+  "scope": "Diagnosis from closed recorded runs; actual steering commands, not measured wheel angles or tire forces.",
+  "fresh_baseline_source_comparison_sha256": "106006d24fd0cceb93fbddac6247b7ac5529ecdfe4ca13af80532807bf85cfe5",
+  "matched_recording": {
+    "new_sample_period_ms": 20,
+    "old_sample_period_ms": 100,
+    "same_completed_clear_lap_time_s": 189.90770705880996,
+    "common_saved_timestamps": 1900,
+    "common_steering_speed_progress_lane_values_byte_identical": true,
+    "different_cadence_metrics_are_not_a_treatment_comparison": true
+  },
+  "identified_sources": [
+    {
+      "source": "map_curvature_feedforward",
+      "observation": "Rapid curvature-derived command changes occur on a captured clear route without method switching.",
+      "candidate_scope": "Symmetric finite-distance known-map curvature average only."
+    },
+    {
+      "source": "final_proxy_clamp",
+      "observation": "A speed/friction proxy cap after the slew limiter can create immediate command notches.",
+      "baseline_50hz_slew_setting_exceeded_intervals": 21,
+      "baseline_peak_command_rate_rad_per_s": 3.305236691150685,
+      "baseline_peak_command_acceleration_rad_per_s2": 215.26183455754878,
+      "candidate_scope": "Unchanged; this experiment does not stabilize the longitudinal proxy or hide safety interventions."
+    },
+    {
+      "source": "traffic_route_method_and_feedback_changes",
+      "observation": "Traffic adds route/method transitions and larger feedback increments.",
+      "candidate_scope": "Measured feedback, pursuit and guarded safety remain active. Final traffic and controlled-middle outcomes are separately audited."
+    }
+  ],
+  "acceptance_dimensions": [
+    "Closed clean physical completion, tyre-center legality, overlaps and resets.",
+    "Matched50Hz command total variation/time, rate/acceleration distributions, .005rad excursion reversals and power above1Hz.",
+    "Nominal capture and tracking at18 fixed original-map anchors and predefined windows.",
+    "Actual guarded encounter response and full-body clearance, followed by traffic testing."
+  ],
+  "candidate_clear_track_command_improvement_observed": true,
+  "candidate_traffic_improvement_claimed": true,
+  "candidate_traffic_improvement_scope": "Modest mixed single-run change; more reversals/method switches and lower nominal capture remain explicit."
+}

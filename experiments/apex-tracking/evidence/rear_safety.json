@@ -1,0 +1,297 @@
+{
+  "status": "STIMULUS_OBSERVED_CLEAR_RESPONSE",
+  "fixture": "closing_rear",
+  "scope": "Controlled own-clock physical safety fixture; actual body motion and50Hz safety audit, not a trained-racer or race-win result.",
+  "source_and_rule_checks": {
+    "terminal_closed_clean": true,
+    "all_runtime_files_pinned": true,
+    "configuration_pinned": true,
+    "fixture_definition_pinned": true,
+    "no_forced_hero_lane": true,
+    "no_actor_post_spawn_pose_or_velocity_writes": true,
+    "original_hero_weights": true,
+    "original_detector": true,
+    "original_detector_config": true,
+    "all_actual_controller_bindings_match": true,
+    "all_pace_actors_are_controlled": true,
+    "exact_requested_two_wheel_rule": true
+  },
+  "actor_checks": {
+    "R20": {
+      "runtime_source_pins_match": true,
+      "summary_source_pins_match": true,
+      "no_opponent_truth_control": true,
+      "physical_steps": 1550,
+      "failure": null,
+      "position_resets": 0,
+      "track_violations": 0
+    },
+    "P01": {
+      "runtime_source_pins_match": true,
+      "summary_source_pins_match": true,
+      "no_opponent_truth_control": true,
+      "physical_steps": 1550,
+      "failure": null,
+      "position_resets": 0,
+      "track_violations": 0,
+      "controlled_not_learned": true
+    },
+    "P02": {
+      "runtime_source_pins_match": true,
+      "summary_source_pins_match": true,
+      "no_opponent_truth_control": true,
+      "physical_steps": 1550,
+      "failure": null,
+      "position_resets": 0,
+      "track_violations": 0,
+      "controlled_not_learned": true
+    }
+  },
+  "safety50hz": {
+    "overlap_samples": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "tyre_violations": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "minimum_wheel_contacts": {
+      "R20": 2,
+      "P01": 4,
+      "P02": 4
+    },
+    "controller_track_violations": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "resets": {
+      "R20": 0,
+      "P01": 0,
+      "P02": 0
+    },
+    "audit_period_s": 0.02,
+    "all_zero": true
+  },
+  "actual_events": {
+    "fixture_stimulus_observed": true,
+    "actual_behind_positive_closing_ttc_events": [
+      {
+        "race_s": 2.2,
+        "actor": "P02",
+        "rear_body_gap_m": 6.128547207571321,
+        "closing_mps": 2.3606062192639,
+        "ttc_s": 2.5961751509247337
+      },
+      {
+        "race_s": 2.4,
+        "actor": "P02",
+        "rear_body_gap_m": 5.634529599464541,
+        "closing_mps": 2.482092433042453,
+        "ttc_s": 2.270072429396979
+      },
+      {
+        "race_s": 2.6,
+        "actor": "P02",
+        "rear_body_gap_m": 5.143666523401967,
+        "closing_mps": 2.4421561272229155,
+        "ttc_s": 2.1061988896062345
+      },
+      {
+        "race_s": 2.8,
+        "actor": "P02",
+        "rear_body_gap_m": 4.670398544048094,
+        "closing_mps": 2.40473108018341,
+        "ttc_s": 1.942170824228662
+      },
+      {
+        "race_s": 3.0,
+        "actor": "P02",
+        "rear_body_gap_m": 4.200450141338224,
+        "closing_mps": 2.385213983759968,
+        "ttc_s": 1.7610370264209088
+      },
+      {
+        "race_s": 3.2,
+        "actor": "P02",
+        "rear_body_gap_m": 3.743107677378501,
+        "closing_mps": 2.3474427238597855,
+        "ttc_s": 1.5945469677845394
+      },
+      {
+        "race_s": 3.4000000000000004,
+        "actor": "P02",
+        "rear_body_gap_m": 3.2939229952984053,
+        "closing_mps": 2.3304981879764455,
+        "ttc_s": 1.4133986511092267
+      },
+      {
+        "race_s": 3.5999999999999996,
+        "actor": "P02",
+        "rear_body_gap_m": 2.8406471563780866,
+        "closing_mps": 2.312923037253313,
+        "ttc_s": 1.2281632854292752
+      },
+      {
+        "race_s": 3.8,
+        "actor": "P02",
+        "rear_body_gap_m": 2.391472016714781,
+        "closing_mps": 2.2919961345187403,
+        "ttc_s": 1.0434014179596023
+      },
+      {
+        "race_s": 4.0,
+        "actor": "P02",
+        "rear_body_gap_m": 1.9425713992321012,
+        "closing_mps": 2.2811554598620205,
+        "ttc_s": 0.8515734387298624
+      },
+      {
+        "race_s": 4.2,
+        "actor": "P02",
+        "rear_body_gap_m": 1.4923127146361583,
+        "closing_mps": 2.275178776672874,
+        "ttc_s": 0.6559100893242569
+      },
+      {
+        "race_s": 4.4,
+        "actor": "P02",
+        "rear_body_gap_m": 1.0410817659639036,
+        "closing_mps": 2.282877737691706,
+        "ttc_s": 0.4560392126021502
+      },
+      {
+        "race_s": 4.6,
+        "actor": "P02",
+        "rear_body_gap_m": 0.5872806996288964,
+        "closing_mps": 2.3008594275279393,
+        "ttc_s": 0.2552440590687781
+      },
+      {
+        "race_s": 4.8,
+        "actor": "P02",
+        "rear_body_gap_m": 0.1283366409126292,
+        "closing_mps": 2.3011712644292857,
+        "ttc_s": 0.05577013884034312
+      },
+      {
+        "race_s": 5.0,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.27851472909515,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 5.2,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.2421316196741827,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 5.4,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.1382403079715004,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 5.6,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.0507014734548648,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 5.8,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.143036910360024,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 6.0,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.3006982701917877,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 6.2,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.2593792181251047,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 6.4,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.152265734421235,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 6.6,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.064270146779563,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 6.8,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 1.9222417234268505,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 7.0,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 1.8295423294230204,
+        "ttc_s": 0.0
+      },
+      {
+        "race_s": 7.199999999999999,
+        "actor": "P02",
+        "rear_body_gap_m": 0.0,
+        "closing_mps": 2.0280105818037555,
+        "ttc_s": 0.0
+      }
+    ],
+    "actual_ego_lateral_overlap_ttc_events": [],
+    "longitudinal_rear_closure_is_not_actual_lateral_overlap": true,
+    "ttc_limit_s": 3.0
+  },
+  "race_horizon_completed": true,
+  "actual_race_seconds": 30.0,
+  "actual_body_pose_period_s": 0.1999999999999993,
+  "ttc_speed_estimate": "finite differences of actual5Hz body-center progress; offline only",
+  "body_envelope_m": [
+    5.0,
+    2.1
+  ],
+  "body_center_local_offset_m": 1.6,
+  "config_sha256": "8f366ef3de1d36f11865747275ae22ad746fcf1a10663b561fb240e02bfeffb4",
+  "prepared_manifest_sha256": "f48c3f514b64b3f6011605758b75a46938338cb3b18a5f595b835fdc7198ce5c",
+  "input_sha256": {
+    "terminal.json": "396abafc4940549eec38207ece5c0627d67a9a21240a7a0afe220d1c3de28e5c",
+    "preparation.json": "f48c3f514b64b3f6011605758b75a46938338cb3b18a5f595b835fdc7198ce5c",
+    "race/config.json": "8f366ef3de1d36f11865747275ae22ad746fcf1a10663b561fb240e02bfeffb4",
+    "race/heat_results.json": "946797ef3a7fca17fbe508ee5b7d20ee7e7fca399d902de73b5bd32bc24a6591",
+    "race/gt_poses.jsonl": "d56424f7a40543abef91e498b804c1f737cb36844c6c1e6ed5ee5bb55bfb8ee5",
+    "race/leaderboard.jsonl": "96443d6d78c4e1792eaa5241f7c5a3257314d17fe530b22ca5afad2f4c88ed24"
+  },
+  "audit_source_sha256": "3d4444702c1795e22d7db692019da3fd94102a179eff7163f204c5367173e947",
+  "event_source_sha256": "3871b8a8fbcfa37069fa9355a148f506504f635cbab37572da38e2a8d96ff5b2",
+  "limitations": [
+    "Actual lateral-overlap and nominal-lane-intrusion TTC are reported separately.",
+    "A successful early evasion may remove actual ego lateral overlap.",
+    "No script target is accepted as proof that an event happened.",
+    "The wheel rule counts centers, not a full tire contact patch."
+  ],
+  "actual_figure_sha256": "9480051e55c43b5402fc787bfe1dbc73171bd6649b4974f2f3ba5ad4018939b6"
+}

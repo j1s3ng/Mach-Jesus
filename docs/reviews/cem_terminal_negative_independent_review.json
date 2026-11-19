@@ -1,0 +1,79 @@
+{
+  "status": "INDEPENDENT_REVIEW_CLEAR",
+  "reviewed_utc": "2026-11-14T17:19:15.498966+00:00",
+  "source_sha256": {
+    "scripts/audit_engineering_finalist_selection.py": "b519d20a31ee2e90c66d3cefd74b25b2a8a32328b7414a88476abc03c6b714ba",
+    "tests/test_cem_terminal_selection_audit.py": "debea4edee8538d357f0c144fca7edd399c961a4b2100dbe842b3f555783ab31"
+  },
+  "tests": {
+    "command": "python -m pytest -q tests/test_cem_terminal_selection_audit.py tests/test_engineering_finalist_audit.py tests/test_cem_selection_callback.py",
+    "passed": 56
+  },
+  "actual_independent_CPU_reaudit": {
+    "path": "runs/improvement-12h/analysis/cem-negative-independent-reaudit-001.json",
+    "sha256": "7c3eb3e8a5c6f3672b96dd939b9facba2f7dadd1c5b3b8af5a916ee31948f02f",
+    "known": true,
+    "eligible": false,
+    "current_fitness_records": 12,
+    "source_inventory_files": 1615,
+    "paired_validation_gain_s": -2.1868419185958032,
+    "actual_case_inventory": {
+      "fitness": 60,
+      "validation": 2
+    },
+    "latest_fitness_closed_utc": "2026-11-14T16:57:44.696620Z",
+    "first_validation_scheduled_utc": "2026-11-14T17:01:44.368788Z",
+    "validation_after_all_fitness_closed": true
+  },
+  "protected_six_source_unchanged": {
+    "scripts/race_reward_cem.py": {
+      "expected": "3f71bd907a9478999944ab88921794739b5fda01155604a0fc0c7a396aa698d0",
+      "current": "3f71bd907a9478999944ab88921794739b5fda01155604a0fc0c7a396aa698d0",
+      "frozen_copy": "3f71bd907a9478999944ab88921794739b5fda01155604a0fc0c7a396aa698d0"
+    },
+    "scripts/cem_evidence.py": {
+      "expected": "d6e766b56185e1d3dd282616667a3a11e6e4b9ed63c966531418f16d7bf599ad",
+      "current": "d6e766b56185e1d3dd282616667a3a11e6e4b9ed63c966531418f16d7bf599ad",
+      "frozen_copy": "d6e766b56185e1d3dd282616667a3a11e6e4b9ed63c966531418f16d7bf599ad"
+    },
+    "scripts/improvement_queue_edit.py": {
+      "expected": "333dd85ea16c76c06f88ea4e708fd06f5c0b7e11c291ef150ea394708bb07dc6",
+      "current": "333dd85ea16c76c06f88ea4e708fd06f5c0b7e11c291ef150ea394708bb07dc6",
+      "frozen_copy": "333dd85ea16c76c06f88ea4e708fd06f5c0b7e11c291ef150ea394708bb07dc6"
+    },
+    "scripts/training_sources.py": {
+      "expected": "9aeb717210627ba8952154ed312d39a05f5421856c2885de73e8bd324e3cf2fb",
+      "current": "9aeb717210627ba8952154ed312d39a05f5421856c2885de73e8bd324e3cf2fb",
+      "frozen_copy": "9aeb717210627ba8952154ed312d39a05f5421856c2885de73e8bd324e3cf2fb"
+    },
+    "scripts/evaluate_improvement_attempt.py": {
+      "expected": "02b74b1a80f2121fa4722ca4ea40295cbd08c55c6b90c56da63447ff87972481",
+      "current": "02b74b1a80f2121fa4722ca4ea40295cbd08c55c6b90c56da63447ff87972481",
+      "frozen_copy": "02b74b1a80f2121fa4722ca4ea40295cbd08c55c6b90c56da63447ff87972481"
+    },
+    "scripts/improvement_ledger.py": {
+      "expected": "ad88f0d53f41b7e6a43caa65a3da2a54d698eb3e2228ad8341f756d451b234f7",
+      "current": "ad88f0d53f41b7e6a43caa65a3da2a54d698eb3e2228ad8341f756d451b234f7",
+      "frozen_copy": "ad88f0d53f41b7e6a43caa65a3da2a54d698eb3e2228ad8341f756d451b234f7"
+    }
+  },
+  "checks": [
+    "All two generations of six bounded proposals, actual output-fold arrays, sampler/elite updates, model registrations and immutable reward artifacts are reproduced from current source-verified engineering cases.",
+    "The complete negative branch independently validates both exact seed211 cases and recomputes the unchanged one-second clean-gain predicate; genuine physical failure remains a negative observation, while missing/infrastructure evidence stays unknown.",
+    "Identity completion requires all12 verified proposals and the actual functional foundation clone; it does not invent validation that the protected producer never schedules.",
+    "Deadline stops remain unknown because historical queue/completion inputs were not preserved; saved aggregates alone are insufficient.",
+    "Whole omitted same-search candidates and extra/orphan/active attempts are included rather than hidden by state membership.",
+    "No CEM8/20 callback is eligible for this known negative. All primary engineering policy selection rules remain unchanged."
+  ],
+  "new_model_queries": false,
+  "actual_finalist_or_roster_freeze_by_reviewer": false,
+  "protected_runtime_CEM_or_queue_edits_by_reviewer": false,
+  "export_provenance": {
+    "original_review_sha256": "801878b558e7fa477cfa2542cd13641b13e4a91938acb1e7ef3a356c9be6bfac",
+    "export_only_path_fields_rebased": [
+      ".actual_independent_CPU_reaudit.path"
+    ],
+    "raw_original_review_unchanged": true,
+    "public_copy_is_explicit_sanitized_projection": true
+  }
+}

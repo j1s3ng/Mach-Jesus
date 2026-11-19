@@ -1,0 +1,5 @@
+{
+  "excluded_from_training": true,
+  "dataset_split": "cv_qualification",
+  "purpose": "cached reproduction of already completed fixed-model qualification; no new eligibility decision"
+}

@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "status": "READY_FOR_LOCAL_REVIEW",
+  "source_handoff_sha256": "b3ca008c3e499cf2f4bc8f7cb54af95cfe3566ec53ba512ca4abad5a60c6c31a",
+  "source_handoff_created_utc": "2026-11-17T19:04:48.171412+00:00",
+  "items": [
+    {
+      "kind": "main",
+      "physical_run": "chase-004",
+      "physical_audit_sha256": "f900f19fc832adaeafce883ac8b7d8b8f0dcb60bf2dac827c50b224bf9c5795a",
+      "status": "READY_FOR_LOCAL_REVIEW",
+      "presentation": {
+        "sha256": "0baecc3e10c633df941597c4f3b3f9beaf6c6612a4320353dd533c8103300a35",
+        "bytes": 11868930,
+        "frames": 3360,
+        "fps": 30.0,
+        "seconds": 112.0,
+        "size": [
+          1280,
+          720
+        ],
+        "codec": "h264",
+        "pixel_format": "yuv420p",
+        "full_ffmpeg_decode_passed": true,
+        "verification_method": "OpenCV container metadata plus full FFmpeg decode and final progress frame count",
+        "decode_log_sha256": "21964eaa6caa1d961bb07d60e873ebfa6a0ecd43b9ea8420eb8595ef52a574de",
+        "public_relative_link": "../../docs/Apex_Demo.mp4"
+      },
+      "normal_speed": {
+        "frames": 1180,
+        "fps": 5.0,
+        "size": [
+          1280,
+          720
+        ],
+        "sha256": "169ade8976903ad23811f6756203d91b6c2eced6c726157dda18d0eee9ca35bb",
+        "bytes": 15641018,
+        "full_ffmpeg_decode_passed": true,
+        "decode_log_sha256": "6bf917087dcb2d3760e9cdd67f71e5e8e5d842963ed4ad38528447936eb8eb0f",
+        "seconds": 236.0,
+        "public_relative_link": "../../docs/Apex_Normal_Speed.mp4"
+      },
+      "thumbnail": {
+        "public_relative_link": "../../docs/apex-demo.jpg",
+        "sha256": "75f0732d8bf00b09d6a0b6f0ac63e7f0573d7c0d29decd4b9467413599836a4f",
+        "bytes": 157224
+      },
+      "source_camera_frames": 1180,
+      "all_source_camera_frames_retained": true,
+      "driving_section_simulation_speed_multiplier": 2.36,
+      "builder": {
+        "logical_name": "build_full_circuit.py",
+        "sha256": "02e7afb44b122e18967eb56e05e434024d65d693b5fc74eaeac2d6d5bb0a937b",
+        "bytes": 74054
+      },
+      "qa": {
+        "status": "ACTUAL_ENCODED_FRAME_QA_PASS",
+        "full_decode_passed": true,
+        "sampled_encoded_frame_visual_review": "PASS_ROOT_REVIEW",
+        "inspected_frame_count": 8,
+        "frame_extraction": "sequential exact decoded frame indices, not timestamp-seek estimates",
+        "findings": [
+          "Full reference circuit + actual lead verified; no20lapracewin or every-apex-executed claim.",
+          "Actual2/4wheel frame visible, custom two-wheel rule and exact tyre audit retained.",
+          "FirstsavedP1 derivedfresh94.6s; full-circuitstop235.1s; actual19LEFT/0RIGHT crossings shown.",
+          "No claims of improvedtrafficapexexecution, lessbraking or globallysmoothersteering."
+        ],
+        "frame_qa_sha256": "b6fa52587f2fac029dbdfaf6665c54be4aea36340633f4ec5d7d7e0c4f00dfbf",
+        "provenance_sha256": "6a38655c7500e2b29c0aa5aa1fd420ae1c48d8f44aa9a8191970210028e908a3",
+        "source_binding_sha256": "3c99dbea1e4a3a05530de4237d2e58272f376a794b3777cd3ff64db103dae641",
+        "contact_sheet_sha256": "4ab3274774a56079f6a17680a63c79147758b15a4f82e1d889a480fe01c179bb",
+        "alignment_sha256": "3b3375576d33aeb7ac66867c482b52723137b7ed38b2ae17088c59f335e44fcc"
+      }
+    },
+    {
+      "kind": "middle",
+      "physical_run": "middle-003",
+      "physical_audit_sha256": "d3112c14284552717d58f2edf0c13158512e242f047e74c9a822d33715293bda",
+      "status": "READY_FOR_LOCAL_REVIEW",
+      "presentation": {
+        "sha256": "e23c83a2f45b14e625f2cfe948add37307f024f708f2f85dbcaa8af40c61cfd5",
+        "bytes": 759548,
+        "frames": 684,
+        "fps": 30.0,
+        "seconds": 22.8,
+        "size": [
+          1280,
+          720
+        ],
+        "codec": "h264",
+        "pixel_format": "yuv420p",
+        "full_ffmpeg_decode_passed": true,
+        "verification_method": "OpenCV container metadata plus full FFmpeg decode and final progress frame count",
+        "decode_log_sha256": "b113bcb30dbda42c88b02e156c95ecd758d33874e17b0aab7a7ee9cdc45f5964",
+        "public_relative_link": "../../docs/Middle_Pass_Demo.mp4"
+      },
+      "normal_speed": {
+        "frames": 54,
+        "fps": 5.0,
+        "size": [
+          1280,
+          720
+        ],
+        "sha256": "55358112fe335367c6575566a1ce649cab265ccaf53c5498598ef6d19a603924",
+        "bytes": 631703,
+        "full_ffmpeg_decode_passed": true,
+        "decode_log_sha256": "76222b43a09fd940e6d482d324fe0ca479f5775fab15c2faa13990e9694706d5",
+        "seconds": 10.8,
+        "public_relative_link": "../../docs/Middle_Pass_Normal_Speed.mp4"
+      },
+      "thumbnail": {
+        "public_relative_link": "../../docs/middle-pass-demo.jpg",
+        "sha256": "1dd043f8a62fe49bfebd516d28ba90af01009c3c8faececb0b29c19fd8f69900",
+        "bytes": 150882
+      },
+      "source_camera_frames": 54,
+      "all_source_camera_frames_retained": true,
+      "driving_section_simulation_speed_multiplier": 1.0,
+      "builder": {
+        "logical_name": "build_recorded_envelopes.py",
+        "sha256": "1dbce4933946496b86ac34e10ad831b143eb5a47eb2b538a22139c0a03cce179",
+        "bytes": 76123
+      },
+      "qa": {
+        "status": "ACTUAL_ENCODED_FRAME_QA_PASS",
+        "full_decode_passed": true,
+        "sampled_encoded_frame_visual_review": "PASS_ROOT_REVIEW",
+        "inspected_frame_count": 8,
+        "frame_extraction": "sequential exact decoded frame indices, not timestamp-seek estimates",
+        "findings": [
+          "Exact finalsource controlled3car/PACE scope, original NN/LiDAR hero, bound d311 actual full-body-between proof.",
+          "Inset3actors use actual saved positions/yaw and nearest-past samples, display-only labels visible, no inventedcamera/controlGT.",
+          "All54poses<=camera, no extras; zerooverlap/tyre/reset, allmin4."
+        ],
+        "frame_qa_sha256": "7b0db1cd53364b9807c9b8c3f7226131dd71311cab0c0ef8bb7181a803deb1a0",
+        "provenance_sha256": "6fab6cf010e9b30fd9dc72880b4a606d5aebe81155090d3084ef9bb78a24875c",
+        "source_binding_sha256": "c8397fb3512137786d5fe41cb4ffae33fec6f8022613cb746bbb4f7c40343941",
+        "contact_sheet_sha256": "99da5c1cf5cbec46be99f8bd1fa19a20e654c8ec40cd0dff0edec82040644b7d",
+        "alignment_sha256": "93ec9f412342fe2eceb278b78c6ef4e6ce7c860c809702e5e6ce853bbfd7ef5f"
+      }
+    }
+  ],
+  "scope": "Review media bound to closed engineering runs; no nominal20-lap win or material traffic-apex improvement claim. Recorded body-envelope overlays are offline displays, not driver inputs.",
+  "redactions": [
+    "Original absolute media, source and infrastructure paths omitted.",
+    "Raw logs, aligned per-frame pose/control records and source video frames are not included in this JSON."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "scope": "Known-map planned geometry and offline checks only; no final traffic-race claim.",
+  "source_report_sha256": "6c1ed2db38e4eb1810f3c1ab92629f2c4f93f9636a18d3730bd1e8c8502f44f7",
+  "source_dense_check_sha256": "4ba95df11235e27b2ab3e26d7c353112e13deae3491fe4afd7dbfe753eaecdcd",
+  "plan_sha256": "2e1de29366dca5ab281a9025ffe715b4b8cfb28c52d6dbab8d4783b25216ceea",
+  "road_geometry_sha256": "0c62620ea6baed2c2aea837ebb6eafbef5f36e6ac9ab9113a3825794b7f50c3a",
+  "original_reference_geometry_changed": false,
+  "reference_length_m_for_ranking": 5227.131662140477,
+  "path_geometry_representation": "smooth_xy_reindexed_by_original_ordered_projection",
+  "planning_limits": {
+    "max_speed": 100.0,
+    "lateral_accel": 8.0,
+    "brake_decel": 8.0,
+    "acceleration": 5.0
+  },
+  "profile_curvature_definition": "max(abs(raw geometric curvature), abs(short smoothed curvature)); smoothing never raises the raw-curvature speed limit",
+  "maximum_raw_geometric_lateral_accel_mps2": 8.000000000000405,
+  "computed_profile_estimates_only": {
+    "original_reference": {
+      "estimated_flying_lap_s": 184.5088034569617,
+      "integrated_squared_curvature": 0.6455553025014255,
+      "line_length_m": 5227.131662140477,
+      "maximum_absolute_curvature_per_m": 0.10000168534583231,
+      "maximum_profile_speed_mps": 84.18135522915544,
+      "minimum_profile_speed_mps": 8.94419653999489
+    },
+    "selected_geometry": {
+      "line_length_m": 5237.603218832008,
+      "integrated_squared_curvature": 0.670363532536552,
+      "maximum_absolute_curvature_per_m": 0.11255308159676675,
+      "estimated_flying_lap_s": 167.98257238773925,
+      "minimum_profile_speed_mps": 8.430751693846819,
+      "maximum_profile_speed_mps": 85.2253208092473
+    },
+    "estimated_lap_time_is_model_only_not_a_simulation_result": true
+  },
+  "solver": {
+    "method": "bounded_sparse_periodic_true_curvature_least_squares",
+    "nfev": 300,
+    "max_nfev": 300,
+    "solver_converged": false,
+    "success": false,
+    "global_optimum_claimed": false,
+    "message": "The maximum number of function evaluations is exceeded."
+  },
+  "rejected_lap_time_refinement": {
+    "method": "bounded_periodic_cubic_bspline_physical_lap_time",
+    "accepted": false,
+    "solver_converged": false,
+    "global_optimum_claimed": false,
+    "objective_calls": 50435,
+    "message": "STOP: TOTAL NO. OF F,G EVALUATIONS EXCEEDS LIMIT",
+    "input_estimated_lap_s": 174.3598513377508,
+    "candidate_estimated_lap_s": 189.99286069538965
+  },
+  "physical_xy_smoothing_and_pair_repair": {
+    "method": "physical_arc_length_xy_smoothing_and_local_tyre_pair_repair",
+    "selected_smoothing_distance_m": 8.0,
+    "original_progress_mapping_retained": true,
+    "original_ranking_reference_changed": false,
+    "planning_patch_margin_m": 0.6,
+    "candidates": [
+      {
+        "smoothing_distance_m": 8.0,
+        "repair_iterations": 3,
+        "planning_pair_violations_at_map_samples": 0,
+        "maximum_isotonic_progress_adjustment_m": 0.0,
+        "maximum_final_progress_projection_residual_m": 0.7406506801498836,
+        "p99_final_progress_projection_residual_m": 0.5013502355653595,
+        "line_length_m": 5237.603218832008,
+        "integrated_squared_curvature": 0.670363532536552,
+        "maximum_absolute_curvature_per_m": 0.11255308159676675,
+        "estimated_flying_lap_s": 167.98257238773925,
+        "minimum_profile_speed_mps": 8.430751693846819,
+        "maximum_profile_speed_mps": 85.2253208092473
+      }
+    ]
+  },
+  "constant_heading_passing_bound_range_m": [
+    -11.375,
+    11.375
+  ],
+  "maximum_nominal_excess_of_constant_heading_center_bounds_m": 0.4298694885397403,
+  "map_relative_offset_rate_actual_path_time_mps": {
+    "p50": 2.268228742373105,
+    "p90": 8.584651966240706,
+    "p95": 9.726150856664761,
+    "p99": 11.495405343681737,
+    "max": 12.212818839139251
+  },
+  "dense_planned_pose_checks": {
+    "scope": "planned geometry only, not actual simulator result",
+    "plan_sha256": "2e1de29366dca5ab281a9025ffe715b4b8cfb28c52d6dbab8d4783b25216ceea",
+    "dense_spacing_original_progress_m": 0.25,
+    "sample_count": 20909,
+    "minimum_raw_wheel_contact_count": 2,
+    "raw_two_tyre_violation_samples": 0,
+    "finite_patch_same_side_pair_violation_samples": 0,
+    "two_contact_straddling_samples": 1536,
+    "three_contact_samples": 629
+  }
+}

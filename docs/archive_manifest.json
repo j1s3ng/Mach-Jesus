@@ -1,0 +1,153 @@
+{
+  "archive_id": "Mach-Jesus-cleanup-20261118-001",
+  "status": "LOCAL_ARCHIVE_ONLY",
+  "archived_utc": "2026-11-18T12:47:45.956481+00:00",
+  "full_backup_preceded_all_moves": true,
+  "historical_media": [
+    {
+      "original_path": "docs/Apex_Demo.mp4",
+      "archive_path": "docs/Apex_Demo.mp4",
+      "sha256": "0baecc3e10c633df941597c4f3b3f9beaf6c6612a4320353dd533c8103300a35",
+      "bytes": 11868930,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Apex_Normal_Speed.mp4",
+      "archive_path": "docs/Apex_Normal_Speed.mp4",
+      "sha256": "169ade8976903ad23811f6756203d91b6c2eced6c726157dda18d0eee9ca35bb",
+      "bytes": 15641018,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Middle_Pass_Demo.mp4",
+      "archive_path": "docs/Middle_Pass_Demo.mp4",
+      "sha256": "e23c83a2f45b14e625f2cfe948add37307f024f708f2f85dbcaa8af40c61cfd5",
+      "bytes": 759548,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Middle_Pass_Normal_Speed.mp4",
+      "archive_path": "docs/Middle_Pass_Normal_Speed.mp4",
+      "sha256": "55358112fe335367c6575566a1ce649cab265ccaf53c5498598ef6d19a603924",
+      "bytes": 631703,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Pass_First_Demo.mp4",
+      "archive_path": "docs/Pass_First_Demo.mp4",
+      "sha256": "c638a04fff59495ad77a19cb53826e826239c7380896931786207e5e8e0fe4a1",
+      "bytes": 12438974,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Pass_First_Normal_Speed.mp4",
+      "archive_path": "docs/Pass_First_Normal_Speed.mp4",
+      "sha256": "3f7d403f9a6011f7f850fe5b99e330aa41c1088f39dcd6e13a41a7d59910738f",
+      "bytes": 18005624,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Smooth_Steering_Demo.mp4",
+      "archive_path": "docs/Smooth_Steering_Demo.mp4",
+      "sha256": "3e78f764361f5154396cf6fab3d1f31508bca36b5541f579e3d5081eece68118",
+      "bytes": 11915926,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Smooth_Steering_Normal_Speed.mp4",
+      "archive_path": "docs/Smooth_Steering_Normal_Speed.mp4",
+      "sha256": "d2b1ec8a6237e43d99cce686b6fc92ce6bac6fd6a806b4e8896ba24ebab36a66",
+      "bytes": 15670410,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Trajectory_Replay.html",
+      "archive_path": "docs/Trajectory_Replay.html",
+      "sha256": "e7992334791d2f421ee03d6b89a91c1870ec2747e54e19d2300aaae87f42ec41",
+      "bytes": 6627990,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Trajectory_Trail_Brake_Demo.mp4",
+      "archive_path": "docs/Trajectory_Trail_Brake_Demo.mp4",
+      "sha256": "11551374072785eed50ac940aae4d300b559c5bfc4418559b6a075bb135a38b0",
+      "bytes": 12312146,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/Trajectory_Trail_Brake_Normal_Speed.mp4",
+      "archive_path": "docs/Trajectory_Trail_Brake_Normal_Speed.mp4",
+      "sha256": "fe789d0d0eae6ee93c0bd21f875c02d6019dfeb81dddc6bda713d7aa702abb9c",
+      "bytes": 16278210,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/apex-demo.jpg",
+      "archive_path": "docs/apex-demo.jpg",
+      "sha256": "75f0732d8bf00b09d6a0b6f0ac63e7f0573d7c0d29decd4b9467413599836a4f",
+      "bytes": 157224,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/chase-demo.jpg",
+      "archive_path": "docs/chase-demo.jpg",
+      "sha256": "50b550499941d3c632aac3ab5e049cfb4d1d9f71f175c92eb4d35e33b795cde8",
+      "bytes": 158341,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/flat-out-test.mp4",
+      "archive_path": "docs/flat-out-test.mp4",
+      "sha256": "5ed885ce97767bfa915153f3148971250e5f023770e8feb98e6ba241e9d1d44c",
+      "bytes": 3607160,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/middle-pass-demo.jpg",
+      "archive_path": "docs/middle-pass-demo.jpg",
+      "sha256": "1dd043f8a62fe49bfebd516d28ba90af01009c3c8faececb0b29c19fd8f69900",
+      "bytes": 150882,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/pass-first-demo.jpg",
+      "archive_path": "docs/pass-first-demo.jpg",
+      "sha256": "193e2a8f39a75aabdd354a12f77d03933c71d0e414da51e9ec603aa94d4d2376",
+      "bytes": 157973,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/smooth-steering-demo.jpg",
+      "archive_path": "docs/smooth-steering-demo.jpg",
+      "sha256": "e2f116649c83d59702ff49cf5acb5a0c33391280dd11c8abf376417a4b936618",
+      "bytes": 175441,
+      "available_in_checkout": false
+    },
+    {
+      "original_path": "docs/trajectory-trail-brake-demo.jpg",
+      "archive_path": "docs/trajectory-trail-brake-demo.jpg",
+      "sha256": "f26090a8d67e9a8b35d46cb1ae110ec554544d46131a5d14f60d85ecb22efde7",
+      "bytes": 182884,
+      "available_in_checkout": false
+    }
+  ],
+  "generated_material_archived": {
+    "generated_run_output": {
+      "files": 49,
+      "bytes": 5054580
+    },
+    "python_bytecode_cache": {
+      "files": 65,
+      "bytes": 1661715
+    },
+    "pytest_cache": {
+      "files": 5,
+      "bytes": 23912
+    },
+    "finder_metadata": {
+      "files": 1,
+      "bytes": 6148
+    }
+  },
+  "preservation": "Original media/hash receipts remain historical evidence; source overlays, study caches and final deliverables remain in the checkout."
+}

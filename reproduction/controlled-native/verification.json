@@ -1,0 +1,147 @@
+{
+  "status": "VERIFIED_MOVED_ISOLATED_OFFLINE_NATIVE_REPRODUCTION",
+  "verified_utc": "2026-11-14T16:18:58.201398+00:00",
+  "command": "python -I reproduce.py --output reproduced.json",
+  "tests_command": "python -I test_reproduction.py",
+  "test_count": 12,
+  "python_version": "3.11.6",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "shapely": "2.1.2"
+  },
+  "isolated_interpreter": true,
+  "original_repository_clouds_weights_network_and_child_access_explicitly_forbidden": true,
+  "sanitized_environment_without_PYTHONPATH": true,
+  "moved_folder_outside_original_repository": true,
+  "audited_access_counts": {
+    "original_repo_file_opens": 0,
+    "cloud_or_weight_file_opens": 0,
+    "network_events": 0,
+    "child_process_events": 0
+  },
+  "elapsed_wall_seconds_not_a_benchmark": 3.2845415838528425,
+  "all_sealed_fields_within_1e_minus_12": true,
+  "all_original_core_native_metrics_exact": true,
+  "all_original_paired_center_summaries_exact": true,
+  "all_mixed_aug_metrics_and_geometry_exact": true,
+  "maximum_sealed_float_absolute_delta": 2.7755575615628914e-17,
+  "last_bit_delta_scope": "Deterministic sorted main-cohort center mean versus archived Python-set iteration only. Counts/IDs and all mixed/Aug geometry are exact.",
+  "models": 6,
+  "model_cutoff_summaries": 12,
+  "cutoffs": [
+    0.35,
+    0.425
+  ],
+  "GT_rows": 6144,
+  "visible_targets": 8155,
+  "prediction_rows": 36864,
+  "exported_cache_floor": 0.35,
+  "source_effective_floors_checked": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "source_exact_cache_writer_predicates_inspected": true,
+  "cohorts_by_cutoff": {
+    "0.35": {
+      "original_plus_core4": 3953,
+      "separate_all6": 3952,
+      "mixed_aug_pair": 7671
+    },
+    "0.425": {
+      "original_plus_core4": 2872,
+      "separate_all6": 2871,
+      "mixed_aug_pair": 7431
+    }
+  },
+  "new_descriptive_only_summaries": [
+    "original_pretrained@.425",
+    "head-lr1e-4-s7@.425",
+    "full-uniform-lr1e-4-s7@.425",
+    "full-uniform-lr1e-5-s7@.425"
+  ],
+  "manifest_file_sha256": "95dc6e6e43ad40990676e25a5279a046d8134f20e12c665889376f62e2784272",
+  "verified_output_sha256": "fa49855f81a26f364b36f1c8d42d4b19c7b1adaf2957c0854792295eff945484",
+  "isolated_output_sha256": "fa49855f81a26f364b36f1c8d42d4b19c7b1adaf2957c0854792295eff945484",
+  "privacy_scan": {
+    "files": [
+      {
+        "file": "README.md",
+        "scanned_bytes": 3936,
+        "decompressed": false
+      },
+      {
+        "file": "expected_cohorts.json.gz",
+        "scanned_bytes": 1236392,
+        "decompressed": true
+      },
+      {
+        "file": "expected_reports.json",
+        "scanned_bytes": 22517,
+        "decompressed": false
+      },
+      {
+        "file": "frames.jsonl.gz",
+        "scanned_bytes": 1940810,
+        "decompressed": true
+      },
+      {
+        "file": "manifest.json",
+        "scanned_bytes": 2112,
+        "decompressed": false
+      },
+      {
+        "file": "metric.py",
+        "scanned_bytes": 7973,
+        "decompressed": false
+      },
+      {
+        "file": "predictions.jsonl.gz",
+        "scanned_bytes": 11925958,
+        "decompressed": true
+      },
+      {
+        "file": "provenance.json",
+        "scanned_bytes": 22177,
+        "decompressed": false
+      },
+      {
+        "file": "reproduce.py",
+        "scanned_bytes": 11663,
+        "decompressed": false
+      },
+      {
+        "file": "requirements.txt",
+        "scanned_bytes": 29,
+        "decompressed": false
+      },
+      {
+        "file": "sealed_comparisons.json",
+        "scanned_bytes": 16097,
+        "decompressed": false
+      },
+      {
+        "file": "test_reproduction.py",
+        "scanned_bytes": 6124,
+        "decompressed": false
+      },
+      {
+        "file": "verified_output.json",
+        "scanned_bytes": 24653,
+        "decompressed": false
+      }
+    ],
+    "patterns_checked": [
+      "private_home",
+      "private_LAN",
+      "GPU_identifier",
+      "credential_material"
+    ],
+    "findings": [],
+    "all_gzip_payloads_scanned_after_decompression": true
+  },
+  "scope": "Known correlated development cache only. Frozen3return/50m labels cannot recompute observability; no fitting, inference, qualification, ranking or selection."
+}

@@ -1,0 +1,54 @@
+{
+  "status": "CORRECTED_CUT_LABEL_NATIVE1X_FULLY_DECODE_VERIFIED",
+  "correction": "The earlier card confused excerpt-start time with crossing time. The corrected card separately labels both on the race clock. Native footage, exact edit spans, frame count and duration are retained.",
+  "highlight": {
+    "frames": 3036,
+    "fps": 25.0,
+    "seconds": 121.44,
+    "size": [
+      1280,
+      720
+    ],
+    "full_ffmpeg_decode_passed": true,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "decode_log_sha256": "7aa254e2f549a6086d6783cd838dbe771ee0a788c9a16f3b90bcab99ba90699d",
+    "sha256": "ca7e8fa41531f469f2c24001c8c1b105508f4c30b45921092c2804fccfe7ed67",
+    "bytes": 10001512
+  },
+  "source_full_normal_speed": {
+    "sha256": "b120e817caa901c469ee80e5cf7101ceccb7020eadb272a97b938fe9579bcf4c",
+    "bytes": 34579619
+  },
+  "source_onboard_sha256": "ba369b03ab8437fe4b8ecd401c5fc74a8d252c1354eee6a8d8a89914950916f5",
+  "qualification_sha256": "e2d61fbd7c48dadc9f70ca86baf07e74cf081b446af8967e74ba833ca72c3856",
+  "original_provenance_sha256": "131d06f19371a7e31f5ad23e7ea760c94e25e209a3467f51b52dcc25ba2d96c4",
+  "old_highlight_sha256": "5ed4a67e5019388687d4c0824b2125aef3dbd9386c12eebf53852e57076f9909",
+  "edit_plan_sha256": "1b9779325fabec15bbac8262365ee121e37bdffc25e162b4de314c31118cf954",
+  "excerpt_start_race_s": 196.88,
+  "actual_first_crossing_race_s": 198.84572227309238,
+  "unchanged_source_spans": [
+    {
+      "kind": "opening",
+      "start_frame": 0,
+      "end_frame_exclusive": 2625,
+      "source_start_world_s": 0.04,
+      "source_end_world_s": 105.0,
+      "frames": 2625,
+      "playback_speed": 1.0
+    },
+    {
+      "kind": "first_full_crossing_and_flying_excerpt",
+      "start_frame": 4946,
+      "end_frame_exclusive": 5197,
+      "source_start_world_s": 197.88,
+      "source_end_world_s": 207.88,
+      "frames": 251,
+      "playback_speed": 1.0
+    }
+  ],
+  "motion_interpolation": false,
+  "playback_speed": 1,
+  "clock_basis": "simulation time",
+  "correction_script_sha256": "c58720a55258b23693c4cde991a1708dc1e2b61e4a2b0206b73c6f2af7fc31d7"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "models": [
+    "original",
+    "head-lr1e-4-s7",
+    "full-uniform-lr1e-4-s7",
+    "full-uniform-lr1e-5-s7",
+    "full-mixed-head1e-4-backbone1e-5-s7",
+    "full-mixed-rotaug4-s7"
+  ],
+  "angles": [
+    -90,
+    0,
+    90,
+    180
+  ],
+  "exported_prediction_floor": 0.425,
+  "GT_frame_rows": 512,
+  "prediction_rows": 3072,
+  "source_frames": 128,
+  "rotated_visible_target_count": 696,
+  "frame_identity_sha256": "28accc5fe818450325ba72a49f282dac30b541d8e75303ec1bb701c796d1fb6f",
+  "common_target_counts": {
+    "fixed_core4_all_angles": 102,
+    "fixed_core4_plus_original_all_angles": 41,
+    "optional_extended_all_angles": 41
+  },
+  "files": {
+    "README.md": {
+      "sha256": "cdc700ea9f625fc6d8c323221d1730d71b99b6cb583439ec6b60d2b4441974c4",
+      "bytes": 3599
+    },
+    "expected_cohorts.json": {
+      "sha256": "a8921783c5682692fe16a8c09bbe1ff44075585020c52058e94869689633a62d",
+      "bytes": 13741
+    },
+    "expected_reports.json": {
+      "sha256": "7d88c595c3fe50aafc476f561253db24b98b02a6f9ff98447934d4b70a4610a1",
+      "bytes": 179009
+    },
+    "frames.jsonl.gz": {
+      "sha256": "baa5c6499b9adb05054a177d4156eac760f18bda6648df68bbfe6675da972df3",
+      "bytes": 30316
+    },
+    "metric.py": {
+      "sha256": "1b20420837b923c6f8b2a03592677eabcf3dea8d64a6ad157d0edf548efbbf6f",
+      "bytes": 4845
+    },
+    "predictions.jsonl.gz": {
+      "sha256": "1d25983901a7a9cf87275fc281182ef54e2fa8abd6ce154497fb9afca1562e5c",
+      "bytes": 305089
+    },
+    "provenance.json": {
+      "sha256": "b3c15386cf39677ef3e59dfe8e6c9942e57cb92848cf1c8c1c703369ca8aee4b",
+      "bytes": 8826
+    },
+    "reproduce.py": {
+      "bytes": 13081,
+      "sha256": "ea93afb29dd91bb6fe7db3adfe47dc80bddb186ea9254a76d110585180bde4b5"
+    },
+    "requirements.txt": {
+      "sha256": "c36566988db1275e04db0e5b9201b3df7ba8d9d62fbe0c6711c0baf68a00959d",
+      "bytes": 29
+    },
+    "test_reproduction.py": {
+      "bytes": 6673,
+      "sha256": "bbd0591c9d7f309f52a3a73dbc77ea048930df6893eb9dd96c13f985d34800bc"
+    }
+  },
+  "manifest_sha256": "7020f24fe5a59b22c2d3ff05e4d4301db73100afeeafc1b5c2f4fb493d070e07"
+}

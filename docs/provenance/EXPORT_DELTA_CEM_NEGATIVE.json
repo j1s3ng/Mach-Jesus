@@ -1,0 +1,15 @@
+{
+  "status": "REVIEWED_SOURCE_DELTA_PREPARED",
+  "base_actual_commit": "9e8c8ca1cc38ab24bcf33ac9fbc4e164fb9bec37",
+  "changed_first_party_sources": {
+    "scripts/audit_engineering_finalist_selection.py": "b519d20a31ee2e90c66d3cefd74b25b2a8a32328b7414a88476abc03c6b714ba",
+    "tests/test_cem_terminal_selection_audit.py": "debea4edee8538d357f0c144fca7edd399c961a4b2100dbe842b3f555783ab31"
+  },
+  "independent_original_review_sha256": "801878b558e7fa477cfa2542cd13641b13e4a91938acb1e7ef3a356c9be6bfac",
+  "sanitized_review_projection": "docs/reviews/cem_terminal_negative_independent_review.json",
+  "protected_six_or_runtime_changed": false,
+  "final73_and_new116s_results_still_pending": true,
+  "actual_root_sources_edited": false,
+  "new_commit_created_by_stager": false,
+  "prepared_utc": "2026-11-14T17:28:24.780420+00:00"
+}

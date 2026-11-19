@@ -1,0 +1,410 @@
+{
+  "schema": "separate-altered-grid-single-pair-v1",
+  "status": "BOTH_CLOSED_QUALIFIED",
+  "protocol_frozen_before_both_runs": true,
+  "selection_B_frozen_before_this_check": true,
+  "pair_order": [
+    "A",
+    "B"
+  ],
+  "pairs": 1,
+  "independent_random_seeds": false,
+  "pooled_with_six_case_comparison": false,
+  "generalization_or_significance_claimed": false,
+  "scope": "One additional altered-grid pair after selection, on the separate original-server009 process context. Same009 processes within this pair. All outcomes retained; not pooled with002.",
+  "changes": "R01 and R19 exchange only initial grid index/progress and exact world translation/rotation; R20 remains P20. IDs, models, policies, routes, physical assets and17 actor imports unchanged.",
+  "metadata": "Fresh configs and world both declare10ms; earlier001/002 preparations rejected before any launch remain private. The six-case historical20ms label remains disclosed and unchanged.",
+  "same_registered_model_processes_within_pair": true,
+  "raw_transport": true,
+  "first_crossing_difference_percent_B_vs_A": -3.013966121322409,
+  "cases": [
+    {
+      "case_id": "a-swap-001",
+      "arm": "A",
+      "first_reference_crossing_s": 205.0215295043262,
+      "planned_targets_within_half_metre": 13,
+      "observed_map_anchors": 18,
+      "native_clean": true,
+      "all20_active": true,
+      "native_audit_counts": {
+        "all_native_overlap_samples": 0,
+        "all_native_wheel_violation_steps": 0,
+        "all_native_inward_patch_violation_steps": 0,
+        "all_pose_resets": 0
+      },
+      "recorded_active_command_audit_passed": true,
+      "rejection_tests": {
+        "real_preterminal_violation_rejected": true,
+        "first_terminal_command_violation_rejected": true,
+        "postterminal_cached_phase_excluded": true
+      },
+      "whole_active_episode_motion": {
+        "steering": {
+          "sample_count": 10302,
+          "continuous_interval_duration_s": 206.02,
+          "command_total_variation_rad": 21.799732031914413,
+          "total_variation_rad_per_s": 0.10581366873077572,
+          "absolute_steering_rate_radps": {
+            "50": 0.04409677516044211,
+            "90": 0.28930917680985224,
+            "95": 0.4610001243315663,
+            "99": 0.9999999999999765,
+            "100": 1.0000000000009104
+          },
+          "steering_rate_rms_radps": 0.20357227622420038,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.5482881394542825,
+            "90": 8.836015559186414,
+            "95": 21.592446826434355,
+            "99": 48.445170979978634,
+            "100": 86.83444175831353
+          },
+          "steering_acceleration_rms_radps2": 9.598249751465048,
+          "direction_changes_with_0point005rad_excursion": 477,
+          "rapid_successive_direction_changes_within1s": 434,
+          "highpass_above1hz_command_rms_rad": 0.00951035046823076,
+          "mean_speed_mps": 26.66761479331591,
+          "max_abs_path_cross_error_m": 2.2078511102646923,
+          "nominal_capture_fraction": 0.5482430596000777,
+          "lateral_proxy_limit_active_fraction": 0.00029120559114735004,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 80,
+          "geometry_switches": 6
+        },
+        "body": {
+          "measured_yaw_rate_rms_radps": 0.25119701597918126,
+          "measured_yaw_acceleration_rms_radps2": 0.5504381124706164,
+          "yaw_rate_above1hz_rms_radps": 0.03324360417308064,
+          "XY_difference_body_lateral_acceleration_rms_mps2": 4.592764118855749,
+          "XY_difference_body_lateral_jerk_rms_mps3": 14.240910216386153,
+          "body_lateral_acceleration_above1hz_rms_mps2": 0.7657412893609522,
+          "yaw_rate_band_1to6hz_power_rad2ps2": 0.0015449334523897163,
+          "steering_band_1to6hz_power_rad2": 0.00011608035160508181,
+          "forward_difference_yaw_rate_rms_radps": 0.2512722627000429,
+          "forward_difference_yaw_acceleration_rms_radps2": 0.5632126937242317,
+          "actual_XY_driven_distance_m": 5493.61671807675,
+          "steering_variation_rad_per_driven_km": 3.9681931140522377
+        }
+      },
+      "placement_proof": {
+        "changed_actor_ids": [
+          "R01",
+          "R19"
+        ],
+        "unchanged_other_actor_count": 18,
+        "nonactor_world_byte_identical": true,
+        "actual_pose_exchange": {
+          "R01": {
+            "old": {
+              "translation": [
+                73.40041,
+                207.51086,
+                0.35
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                0.1210922
+              ]
+            },
+            "new": {
+              "translation": [
+                -109.40607,
+                152.09159,
+                0.35
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                1.58818288
+              ]
+            }
+          },
+          "R19": {
+            "old": {
+              "translation": [
+                -109.40607,
+                152.09159,
+                0.35
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                1.58818288
+              ]
+            },
+            "new": {
+              "translation": [
+                73.40041,
+                207.51086,
+                0.35
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                0.1210922
+              ]
+            }
+          }
+        },
+        "R20_actual_node_byte_identical": true
+      }
+    },
+    {
+      "case_id": "b-swap-001",
+      "arm": "B",
+      "first_reference_crossing_s": 198.84225006364878,
+      "planned_targets_within_half_metre": 14,
+      "observed_map_anchors": 18,
+      "native_clean": true,
+      "all20_active": true,
+      "native_audit_counts": {
+        "all_native_overlap_samples": 0,
+        "all_native_wheel_violation_steps": 0,
+        "all_native_inward_patch_violation_steps": 0,
+        "all_pose_resets": 0
+      },
+      "recorded_active_command_audit_passed": true,
+      "rejection_tests": {
+        "real_preterminal_violation_rejected": true,
+        "first_terminal_command_violation_rejected": true,
+        "postterminal_cached_phase_excluded": true
+      },
+      "whole_active_episode_motion": {
+        "steering": {
+          "sample_count": 9993,
+          "continuous_interval_duration_s": 199.84,
+          "command_total_variation_rad": 22.89465786830806,
+          "total_variation_rad_per_s": 0.11456494129457595,
+          "absolute_steering_rate_radps": {
+            "50": 0.04425355519828132,
+            "90": 0.3279660932823464,
+            "95": 0.5186587682047854,
+            "99": 1.0000000000000213,
+            "100": 1.0000000000009104
+          },
+          "steering_rate_rms_radps": 0.2221527360875934,
+          "absolute_steering_acceleration_radps2": {
+            "50": 0.5391225119831294,
+            "90": 9.046221043262818,
+            "95": 24.357590363782066,
+            "99": 55.08276376613162,
+            "100": 97.50255680248613
+          },
+          "steering_acceleration_rms_radps2": 10.773879037043645,
+          "direction_changes_with_0point005rad_excursion": 497,
+          "rapid_successive_direction_changes_within1s": 454,
+          "highpass_above1hz_command_rms_rad": 0.010311959856272817,
+          "mean_speed_mps": 27.507421423786433,
+          "max_abs_path_cross_error_m": 2.1072322155528114,
+          "nominal_capture_fraction": 0.5460822575803063,
+          "lateral_proxy_limit_active_fraction": 0.0,
+          "physics_slew_limit_exceeded_intervals": 0,
+          "method_switches": 70,
+          "geometry_switches": 2
+        },
+        "body": {
+          "measured_yaw_rate_rms_radps": 0.25983224904575253,
+          "measured_yaw_acceleration_rms_radps2": 0.5990674014480417,
+          "yaw_rate_above1hz_rms_radps": 0.037271062493095385,
+          "XY_difference_body_lateral_acceleration_rms_mps2": 4.961895999951311,
+          "XY_difference_body_lateral_jerk_rms_mps3": 14.874490286500148,
+          "body_lateral_acceleration_above1hz_rms_mps2": 0.8137224809624112,
+          "yaw_rate_band_1to6hz_power_rad2ps2": 0.0021458344655470706,
+          "steering_band_1to6hz_power_rad2": 0.0001464344750442753,
+          "forward_difference_yaw_rate_rms_radps": 0.2599173064554947,
+          "forward_difference_yaw_acceleration_rms_radps2": 0.6122821207421201,
+          "actual_XY_driven_distance_m": 5496.560178853466,
+          "steering_variation_rad_per_driven_km": 4.165270118644218
+        }
+      },
+      "placement_proof": {
+        "changed_actor_ids": [
+          "R01",
+          "R19"
+        ],
+        "unchanged_other_actor_count": 18,
+        "nonactor_world_byte_identical": true,
+        "actual_pose_exchange": {
+          "R01": {
+            "old": {
+              "translation": [
+                73.40041,
+                207.51086,
+                0.35
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                0.1210922
+              ]
+            },
+            "new": {
+              "translation": [
+                -109.40607,
+                152.09159,
+                0.35
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                1.58818288
+              ]
+            }
+          },
+          "R19": {
+            "old": {
+              "translation": [
+                -109.40607,
+                152.09159,
+                0.35
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                1.58818288
+              ]
+            },
+            "new": {
+              "translation": [
+                73.40041,
+                207.51086,
+                0.35
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                1.0,
+                0.1210922
+              ]
+            }
+          }
+        },
+        "R20_actual_node_byte_identical": true
+      }
+    }
+  ],
+  "motion_scope": "Whole active recorded episodes;50Hz snapshots, not exact matched-first-circuit windows or all unrecorded100Hz commands.",
+  "interpretation": "B is faster and reaches one more planned target in this pair, while steering/body motion measures increase again. This single changed grid does not establish generalization.",
+  "source_runtime17_sha256": {
+    "webots/controllers/tournament_racer/tournament_racer.py": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a",
+    "src/race_lidar/race_policy.py": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+    "src/race_lidar/race_control.py": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+    "src/race_lidar/hotlap_driver.py": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+    "src/race_lidar/learned_driver.py": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+    "src/race_lidar/lidar_hazards.py": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+    "src/race_lidar/rich_driver.py": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+    "src/race_lidar/remote.py": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+    "src/race_lidar/aggressive_hybrid.py": "832cfb5c1f47eadeb8c327de2f32c762ebc3ddf242c0456ad1891caa63086362",
+    "src/race_lidar/demo_chase.py": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3",
+    "src/race_lidar/smooth_racing_line.py": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+    "src/race_lidar/path_tracking.py": "ea6644fdc9d61e587348af3c5e552b44f191ecee8a4f2a6b4578a02b1d3faef9",
+    "src/race_lidar/road_tyre_bounds.py": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf",
+    "src/race_lidar/trail_braking.py": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+    "src/race_lidar/traffic_trajectories.py": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+    "src/race_lidar/continuous_geometry.py": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+    "src/race_lidar/rejoin_trajectory.py": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7"
+  },
+  "source_input_sha256": {
+    "a-swap-001.terminal": "64f67ae048d13a5067dfbae4400cf27ce690fbc133d591a8592646768806255f",
+    "a-swap-001.preparation": "b8a22bab4ed6b82ec667d03abcc02aa80c075d9fe9a7ab1cc02ba3b2350d7a98",
+    "a-swap-001.config": "b41595380d07a1f0abcd72718765bb5f8eb4f28832b827880997356ba5c3c960",
+    "a-swap-001.world": "e4bdde203105ed4283650369061e51ac615fae3c41f3b33a28ee47b1dbe7c933",
+    "a-swap-001.heat": "a6d71dde6f92fe4a9213108bf5b069ee70fa19fe5a2491d5e91f780c22d3c17c",
+    "a-swap-001.evaluation": "e181cf88f6653cadf632052f24174781092084ee64f093a265892df4d6024f20",
+    "a-swap-001.commands": "b0d0b4022de85f0bf8feb95408519d48a4bea49654f9f5a5eda3d65e3d16677e",
+    "a-swap-001.root_admission": "f1918ce7eb4ca20e3132f0a26424500c5744c2de793af8a94ab7f382fd66c674",
+    "a-swap-001.placement_proof": "d05071b41993f6b1931dbe613ef6a192a8cbd4648ded3fd0a1d9a5372e0d3f9e",
+    "b-swap-001.terminal": "8cf79ac0c288c189c991aa0321d4d7e1daf423f0260c9dd0c82b2247c83d3946",
+    "b-swap-001.preparation": "b4c94ac51a325bbaa059cca725aed6c8d8ffe370092a4646811bf50150c7a1c1",
+    "b-swap-001.config": "c04094f4d5fdf3b77d92e2bee5ea747bbb971c7761e125bd5c9949fef79ca26f",
+    "b-swap-001.world": "c6e2eedb0fca69452ca6ef774d1af472d29aaff52907e094f4d5f9a4aa246b2b",
+    "b-swap-001.heat": "02d471bc49171b0cf6dbfdd06f5fa256d596a557484f05b5ef08390bbde09593",
+    "b-swap-001.evaluation": "914c32bf6447af01edb4776f9a4c2b4d30c84d92a054008865861b7eaf463245",
+    "b-swap-001.commands": "2e1ee8397aca76a11a1da813810691ceb9ac0ae6ef427b4782454e293202e662",
+    "b-swap-001.root_admission": "44070c9290e662e63a4b73423905583493df2088caf725c5aa5e0719cf0394e9",
+    "b-swap-001.placement_proof": "14e7e47156979641665f7c75815bf55a021778faafd7c2b36ee0a6ec2cd02043"
+  },
+  "preparation_manifest_sha256": "23e98410642ea8f536959f81ad0b968aef27f0cbff3a81397a6540aeca4cb89b",
+  "closure_verification_sha256": "db881074b988da1131a9a40270c53cd528c3761238fda7df178cd810c1afd82e",
+  "camera_capture_context": {
+    "cases": {
+      "a-r01": {
+        "actual_nonzero_video_frames": {
+          "R20": 5205
+        },
+        "declared_whitelist": [
+          "R20"
+        ],
+        "R20_summary_sha256": "c588957f84c41ec595e62444b87ee6ac39bedfb1b3062f1c2ef5781194ce7118"
+      },
+      "b-r01": {
+        "actual_nonzero_video_frames": {
+          "R20": 5008
+        },
+        "declared_whitelist": [
+          "R20"
+        ],
+        "R20_summary_sha256": "208eda91fe6501703af889d3491f9ae214f9b2fa3f72a5b1a40139288acf10d1"
+      },
+      "b-r02": {
+        "actual_nonzero_video_frames": {
+          "R20": 4976
+        },
+        "declared_whitelist": [
+          "R20"
+        ],
+        "R20_summary_sha256": "84b1c6296d8904e192576b26cf58416bfbe758d73305c979e987541e58964632"
+      },
+      "a-r02": {
+        "actual_nonzero_video_frames": {
+          "R20": 5305
+        },
+        "declared_whitelist": [
+          "R20"
+        ],
+        "R20_summary_sha256": "484402721e5025fa761b55200ff9752e7689ae9f37e41b8144dba46ce2e8c16b"
+      },
+      "a-r03": {
+        "actual_nonzero_video_frames": {
+          "R20": 5146
+        },
+        "declared_whitelist": [
+          "R20"
+        ],
+        "R20_summary_sha256": "b45c8c33e019b36916fb87a9469837019b21893bfa79461a1e13118031bd4133"
+      },
+      "b-r03": {
+        "actual_nonzero_video_frames": {
+          "R20": 5031
+        },
+        "declared_whitelist": [
+          "R20"
+        ],
+        "R20_summary_sha256": "ddc390715011b94ebbdc1b220350b562edd9009115d2a1379618d4ff37b4a9af"
+      },
+      "a-swap-001": {
+        "actual_nonzero_video_frames": {},
+        "declared_whitelist": [],
+        "R20_summary_sha256": "e4b5869f67fbb9b1e16aec340998530f626d6dd0240ae68031f3d43ed9d45941"
+      },
+      "b-swap-001": {
+        "actual_nonzero_video_frames": {},
+        "declared_whitelist": [],
+        "R20_summary_sha256": "02ab0ec979cd4a3d4feb4c1c89283bd1d89ea00dc25ec9cc69685764c7438926"
+      }
+    },
+    "pair_cameras_enabled": false,
+    "parent_cohort_actual_camera_ids": [
+      "R20"
+    ],
+    "interpretation": "Both altered-grid cases disable camera capture; parent six-case runs captured R20. This pair is not an isolated grid-only ablation against the parent cohort. It remains an internally matched A/B pair, separate and unpooled."
+  }
+}

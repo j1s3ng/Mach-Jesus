@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "scope": "KNOWN_DEVELOPMENT_CACHED_DIAGNOSTIC_ONLY",
+  "source_inputs": [
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-mixed-head1e-4-backbone1e-5-s7/adapted_metrics.json",
+      "sha256": "fb026454d4aa3f3b97e90397363a7c71e4702a76c6fa3f773225cee6f85e248b"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-mixed-head1e-4-backbone1e-5-s7/adapted_predictions.jsonl",
+      "sha256": "d6b79ef1824bb1d118f3d100d70be1d227d7c4102914cddd75c922b2c43ab59d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-mixed-head1e-4-backbone1e-5-s7/effective_config.json",
+      "sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-mixed-rotaug4-v2-s7/adapted_metrics.json",
+      "sha256": "aea14a488f438ee960df2cfda78213f92e3cab10e28ae481fe742f36741d9d8f"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-mixed-rotaug4-v2-s7/adapted_predictions.jsonl",
+      "sha256": "bda92422b521e60dafb604d8835070869c9b300255d30a28e6b60ebd2f015d18"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-mixed-rotaug4-v2-s7/effective_config.json",
+      "sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-4-s7/adapted_metrics.json",
+      "sha256": "d7ee3e832f737a14fe020748399f5b71059fad3bce982553a9c80b3a7f834bd6"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-4-s7/adapted_predictions.jsonl",
+      "sha256": "a27e22a819fad53511e2c2025ce2e546b5e3a8843a0c60d4be0233cc97d33aab"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-4-s7/effective_config.json",
+      "sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-5-s7/adapted_metrics.json",
+      "sha256": "5f92db8ccadce4209591a0d2dd3ea280017e8e168bedd09dcc143e87fe4614d6"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-5-s7/adapted_predictions.jsonl",
+      "sha256": "17106a35324698448cddd3fd35d82b6c4533a062b7192dba2e910befd23cde8c"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-5-s7/effective_config.json",
+      "sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-head-lr1e-4-s7/adapted_metrics.json",
+      "sha256": "cd8c4047fe4f51fd054564d67bc18e34289e689d25ff6e87007c2c3f88104b5e"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-head-lr1e-4-s7/adapted_predictions.jsonl",
+      "sha256": "6a5772a60b77ad06e449e3dc18657b0bfec1c682043c2b66127a77ced9183931"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-head-lr1e-4-s7/effective_config.json",
+      "sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-rotation-eval-001/execution_binding_with_actual_aug.json",
+      "sha256": "58a1e133cc220c6c16308fed5d48477aff8be2a24cb88ad28f690c55e066b1b5"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled_ablation_analysis_core4_closed.json",
+      "sha256": "16b25cb28442b09b6da474622baf7b2d38508d1df976df1e74c1aec8ba521586"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled_ablation_plan_v2.json",
+      "sha256": "d234ec2802d0b713829a3ef8c28645a0af4df85e44347b256bed438c99f515fe"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/detector-dense-dataset-001/val.jsonl",
+      "sha256": "669517b1dd279ba18a42f4b7812c7c5b8b8a0d4d3e54e310bf2a4ef55107dcea"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/detector-full-dense1200-s7/effective_config.json",
+      "sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/detector-full-dense1200-s7/pretrained_metrics.json",
+      "sha256": "2fa0b4f7d65b21cbd6938141aefdbe67f389bdc47ce7e239b1286676e281935d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/detector-full-dense1200-s7/pretrained_predictions.jsonl",
+      "sha256": "afca770a0ef81169b965f436773573c5c9d44e6dcc12159ee4e77127656b365f"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/rotation-augmentation-unrotated-analysis-001/result.json",
+      "sha256": "01f942744a697f14ea75b7e2130ab2bf7673bc42a842d83f74ada154eb325a3f"
+    },
+    {
+      "relative_input_name": "scripts/analyze_matched_box_geometry.py",
+      "sha256": "3391fdf1f5314b44f91b136cba2c2a1ae419abda095debe8222be891cdbe3e41"
+    },
+    {
+      "relative_input_name": "scripts/compare_controlled_ablation.py",
+      "sha256": "f400b51952ff66ea55eebc843f9b8f7eded78752bc7d77243aac2515930191bd"
+    },
+    {
+      "relative_input_name": "scripts/export_controlled_native_reproduction.py",
+      "sha256": "1656c26de33deee3bf4a0055426cd205401e6a8c361d190ca52fe6fb10ecec2f"
+    },
+    {
+      "relative_input_name": "scripts/qualify_sim_detector.py",
+      "sha256": "4e8d86c19641f8d7ad0fe712ed32ff666dda97a0ba3264752f7d5692bd4bfaf1"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/detector-full-dense1200-s7/trainer_source.py",
+      "sha256": "252614dd8ac8ce15b6aba29127c823df993c9636e8302b049b5cda0248111a40"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-head-lr1e-4-s7/trainer_source.py",
+      "sha256": "48b2546747bcb4a20977266da977fca9695c1786528d7bc5c653782ebb5cb6df"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-4-s7/trainer_source.py",
+      "sha256": "48b2546747bcb4a20977266da977fca9695c1786528d7bc5c653782ebb5cb6df"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-5-s7/trainer_source.py",
+      "sha256": "48b2546747bcb4a20977266da977fca9695c1786528d7bc5c653782ebb5cb6df"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-mixed-head1e-4-backbone1e-5-s7/trainer_source.py",
+      "sha256": "48b2546747bcb4a20977266da977fca9695c1786528d7bc5c653782ebb5cb6df"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-full-mixed-rotaug4-v2-s7/trainer_source.py",
+      "sha256": "48fde40695729da472e459aa31352b0b34d8392552ed2c96d0ee253ad945e282"
+    }
+  ],
+  "models": [
+    {
+      "model": "original_pretrained",
+      "checkpoint_sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "tensor_state_sha256": null,
+      "tensor_state_scope": "Not recorded in the original cached endpoint proof; no weights reopened for this export.",
+      "effective_exported_prediction_floor": 0.35
+    },
+    {
+      "model": "head-lr1e-4-s7",
+      "checkpoint_sha256": "26fbe1e89849f560acdef019f74aa34607cd19327ee388e17c17b3216e23c893",
+      "tensor_state_sha256": "b7aa8a339165178b007a3738c98e17ea788217af4695ec501cbcd41f60682eef",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/head-lr1e-4-s7_loaded_model.json",
+      "loaded_proof_sha256": "d6194b9cf3ac3c1803618a0349ee350e6fbf7d43de9932322f30d45af8833a23",
+      "effective_exported_prediction_floor": 0.35
+    },
+    {
+      "model": "full-uniform-lr1e-4-s7",
+      "checkpoint_sha256": "dfc7d9fabbb06f8634651d7fcfa7106981707e5618dd5c03430509a017afbe6c",
+      "tensor_state_sha256": "25b5c5a25627ee2f604738a961c4375d1803c314c247c38a0525fd4478e20ef0",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/full-uniform-lr1e-4-s7_loaded_model.json",
+      "loaded_proof_sha256": "a5c9bb2e77f5656ff06d1eaa506954212661d7beda359593e442603566936171",
+      "effective_exported_prediction_floor": 0.35
+    },
+    {
+      "model": "full-uniform-lr1e-5-s7",
+      "checkpoint_sha256": "bd8c1ecf79bfd9f1f783131f057ad4763e8eb71df9814175dbe5dc4f34bf5b41",
+      "tensor_state_sha256": "2fc68419cc13581782aaa1ceab898774b349b4b4dc8d04d175f78abd3790192f",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/full-uniform-lr1e-5-s7_loaded_model.json",
+      "loaded_proof_sha256": "b2a2dc959ad4c350d5a2d0df945091f3b8634ae3291258f2bdb866d64b9f32f3",
+      "effective_exported_prediction_floor": 0.35
+    },
+    {
+      "model": "full-mixed-head1e-4-backbone1e-5-s7",
+      "checkpoint_sha256": "1767d6a1b460b3b415ea0b3448ce49ac09cff45703d4b9ce8c3c813fa40e5125",
+      "tensor_state_sha256": "35f831fcfcfa48395c70a2b24cd3542c943b968d0e14106d13436ba975415a10",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/full-mixed-head1e-4-backbone1e-5-s7_loaded_model.json",
+      "loaded_proof_sha256": "43576191516a533ed06be16aff41248139a9dfe4ff2cfa389000305253ca08ba",
+      "effective_exported_prediction_floor": 0.35
+    },
+    {
+      "model": "full-mixed-rotaug4-s7",
+      "checkpoint_sha256": "d83d7e1b4b19c40c5e72ac86712a8141a6ea2e9e1037cd918a76df2dd3c4da9e",
+      "tensor_state_sha256": "61bb4f7cdf730903cbf378918867da621ea424f631ac853a85d275a8f7e50748",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/full-mixed-rotaug4-s7_loaded_model.json",
+      "loaded_proof_sha256": "696e7045afb6f523c4ac61c06665040d0e4e7a3838d87afb3d77e225a9f6171f",
+      "effective_exported_prediction_floor": 0.35
+    }
+  ],
+  "source_cache_floor_proofs": {
+    "original_pretrained": {
+      "source_model_POST_PROCESSING_SCORE_THRESH": 0.1,
+      "source_effective_prediction_score_floor_field": null,
+      "asserted_source_effective_floor": 0.1,
+      "exported_floor": 0.35,
+      "source_cache_retains_all_detections_at_or_above_export_floor": true,
+      "source_predictions_relative_name": "runs/improvement-12h/training/detector-full-dense1200-s7/pretrained_predictions.jsonl",
+      "source_predictions_sha256": "afca770a0ef81169b965f436773573c5c9d44e6dcc12159ee4e77127656b365f",
+      "source_metrics_sha256": "2fa0b4f7d65b21cbd6938141aefdbe67f389bdc47ce7e239b1286676e281935d",
+      "source_effective_config_sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d",
+      "legacy_missing_writer_floor_scope": "Original cache uses frozen model postprocessing floor; no extra writer filter recorded.",
+      "source_writer_relative_name": "runs/improvement-12h/training/detector-full-dense1200-s7/trainer_source.py",
+      "source_writer_sha256": "252614dd8ac8ce15b6aba29127c823df993c9636e8302b049b5cda0248111a40",
+      "source_writer_evaluate_function_sha256": "368a44bf40af8805f4a3b30b122443d82528e15f9883585a5626b11902776e70",
+      "asserted_exact_car_append_predicate": "int(cls) == 1 and np.linalg.norm(box[:2]) <= metadata[\"evaluation_radius_m\"]"
+    },
+    "head-lr1e-4-s7": {
+      "source_model_POST_PROCESSING_SCORE_THRESH": 0.1,
+      "source_effective_prediction_score_floor_field": 0.0,
+      "asserted_source_effective_floor": 0.1,
+      "exported_floor": 0.35,
+      "source_cache_retains_all_detections_at_or_above_export_floor": true,
+      "source_predictions_relative_name": "runs/improvement-12h/training/controlled-head-lr1e-4-s7/adapted_predictions.jsonl",
+      "source_predictions_sha256": "6a5772a60b77ad06e449e3dc18657b0bfec1c682043c2b66127a77ced9183931",
+      "source_metrics_sha256": "cd8c4047fe4f51fd054564d67bc18e34289e689d25ff6e87007c2c3f88104b5e",
+      "source_effective_config_sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d",
+      "legacy_missing_writer_floor_scope": null,
+      "source_writer_relative_name": "runs/improvement-12h/training/controlled-head-lr1e-4-s7/trainer_source.py",
+      "source_writer_sha256": "48b2546747bcb4a20977266da977fca9695c1786528d7bc5c653782ebb5cb6df",
+      "source_writer_evaluate_function_sha256": "95d2fecac2adcfdeddf6c2ff11c9a1410245ca46fd86f97a4c86967104e5f5d2",
+      "asserted_exact_car_append_predicate": "int(cls) == 1 and score >= output_score_floor and np.linalg.norm(box[:2]) <= metadata[\"evaluation_radius_m\"]"
+    },
+    "full-uniform-lr1e-4-s7": {
+      "source_model_POST_PROCESSING_SCORE_THRESH": 0.1,
+      "source_effective_prediction_score_floor_field": 0.0,
+      "asserted_source_effective_floor": 0.1,
+      "exported_floor": 0.35,
+      "source_cache_retains_all_detections_at_or_above_export_floor": true,
+      "source_predictions_relative_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-4-s7/adapted_predictions.jsonl",
+      "source_predictions_sha256": "a27e22a819fad53511e2c2025ce2e546b5e3a8843a0c60d4be0233cc97d33aab",
+      "source_metrics_sha256": "d7ee3e832f737a14fe020748399f5b71059fad3bce982553a9c80b3a7f834bd6",
+      "source_effective_config_sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d",
+      "legacy_missing_writer_floor_scope": null,
+      "source_writer_relative_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-4-s7/trainer_source.py",
+      "source_writer_sha256": "48b2546747bcb4a20977266da977fca9695c1786528d7bc5c653782ebb5cb6df",
+      "source_writer_evaluate_function_sha256": "95d2fecac2adcfdeddf6c2ff11c9a1410245ca46fd86f97a4c86967104e5f5d2",
+      "asserted_exact_car_append_predicate": "int(cls) == 1 and score >= output_score_floor and np.linalg.norm(box[:2]) <= metadata[\"evaluation_radius_m\"]"
+    },
+    "full-uniform-lr1e-5-s7": {
+      "source_model_POST_PROCESSING_SCORE_THRESH": 0.1,
+      "source_effective_prediction_score_floor_field": 0.0,
+      "asserted_source_effective_floor": 0.1,
+      "exported_floor": 0.35,
+      "source_cache_retains_all_detections_at_or_above_export_floor": true,
+      "source_predictions_relative_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-5-s7/adapted_predictions.jsonl",
+      "source_predictions_sha256": "17106a35324698448cddd3fd35d82b6c4533a062b7192dba2e910befd23cde8c",
+      "source_metrics_sha256": "5f92db8ccadce4209591a0d2dd3ea280017e8e168bedd09dcc143e87fe4614d6",
+      "source_effective_config_sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d",
+      "legacy_missing_writer_floor_scope": null,
+      "source_writer_relative_name": "runs/improvement-12h/training/controlled-full-uniform-lr1e-5-s7/trainer_source.py",
+      "source_writer_sha256": "48b2546747bcb4a20977266da977fca9695c1786528d7bc5c653782ebb5cb6df",
+      "source_writer_evaluate_function_sha256": "95d2fecac2adcfdeddf6c2ff11c9a1410245ca46fd86f97a4c86967104e5f5d2",
+      "asserted_exact_car_append_predicate": "int(cls) == 1 and score >= output_score_floor and np.linalg.norm(box[:2]) <= metadata[\"evaluation_radius_m\"]"
+    },
+    "full-mixed-head1e-4-backbone1e-5-s7": {
+      "source_model_POST_PROCESSING_SCORE_THRESH": 0.1,
+      "source_effective_prediction_score_floor_field": 0.0,
+      "asserted_source_effective_floor": 0.1,
+      "exported_floor": 0.35,
+      "source_cache_retains_all_detections_at_or_above_export_floor": true,
+      "source_predictions_relative_name": "runs/improvement-12h/training/controlled-full-mixed-head1e-4-backbone1e-5-s7/adapted_predictions.jsonl",
+      "source_predictions_sha256": "d6b79ef1824bb1d118f3d100d70be1d227d7c4102914cddd75c922b2c43ab59d",
+      "source_metrics_sha256": "fb026454d4aa3f3b97e90397363a7c71e4702a76c6fa3f773225cee6f85e248b",
+      "source_effective_config_sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d",
+      "legacy_missing_writer_floor_scope": null,
+      "source_writer_relative_name": "runs/improvement-12h/training/controlled-full-mixed-head1e-4-backbone1e-5-s7/trainer_source.py",
+      "source_writer_sha256": "48b2546747bcb4a20977266da977fca9695c1786528d7bc5c653782ebb5cb6df",
+      "source_writer_evaluate_function_sha256": "95d2fecac2adcfdeddf6c2ff11c9a1410245ca46fd86f97a4c86967104e5f5d2",
+      "asserted_exact_car_append_predicate": "int(cls) == 1 and score >= output_score_floor and np.linalg.norm(box[:2]) <= metadata[\"evaluation_radius_m\"]"
+    },
+    "full-mixed-rotaug4-s7": {
+      "source_model_POST_PROCESSING_SCORE_THRESH": 0.1,
+      "source_effective_prediction_score_floor_field": 0.0,
+      "asserted_source_effective_floor": 0.1,
+      "exported_floor": 0.35,
+      "source_cache_retains_all_detections_at_or_above_export_floor": true,
+      "source_predictions_relative_name": "runs/improvement-12h/training/controlled-full-mixed-rotaug4-v2-s7/adapted_predictions.jsonl",
+      "source_predictions_sha256": "bda92422b521e60dafb604d8835070869c9b300255d30a28e6b60ebd2f015d18",
+      "source_metrics_sha256": "aea14a488f438ee960df2cfda78213f92e3cab10e28ae481fe742f36741d9d8f",
+      "source_effective_config_sha256": "d2cd3b2e1a6808212a192114651192eed926c0584828f7296f17e75907646d0d",
+      "legacy_missing_writer_floor_scope": null,
+      "source_writer_relative_name": "runs/improvement-12h/training/controlled-full-mixed-rotaug4-v2-s7/trainer_source.py",
+      "source_writer_sha256": "48fde40695729da472e459aa31352b0b34d8392552ed2c96d0ee253ad945e282",
+      "source_writer_evaluate_function_sha256": "95d2fecac2adcfdeddf6c2ff11c9a1410245ca46fd86f97a4c86967104e5f5d2",
+      "asserted_exact_car_append_predicate": "int(cls) == 1 and score >= output_score_floor and np.linalg.norm(box[:2]) <= metadata[\"evaluation_radius_m\"]"
+    }
+  },
+  "metric_function_attribution": {
+    "matches": {
+      "original_relative_source": "scripts/qualify_sim_detector.py",
+      "verbatim_function_sha256": "6e6cb2e711317332044f7ba1644d64499652bb3ca6ba589694866892650bbffa"
+    },
+    "key": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "f996c4ee0c0e6e6be18b5a3f1f89a362aa985d03371125ed2b89b4ee635397a6"
+    },
+    "heading_error": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "80111ba291a74afe40300f40417d63c03c560eeccd9d5bc4cadf813cf535fdb8"
+    },
+    "footprint": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "87a0375d7d938b86ee9f111890abcfbc61d6c6381800e1c90ddbb1ec3551ec48"
+    },
+    "box_iou": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "95806dd0c18610410ee01163cc29aaf3f7a8ad8e38a4fe2094f27247b057b7df"
+    },
+    "assign_boxes": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "1c62d849fcd47bf34edce45858336ccee901acb15e87b6ad51b6f15973d5af23"
+    },
+    "summary": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "b67509f77772b9b8e17f97564204d12aa14931638b2bbaa25aa0c6c6b1fccc4b"
+    },
+    "geometry": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "6a4a009919ffdddb44d5f4bbf13c60024ad71eaec4cba1926b6a0f6175817880"
+    },
+    "frame_key": {
+      "original_relative_source": "scripts/compare_controlled_ablation.py",
+      "verbatim_function_sha256": "df086bc7b92d3d128a1456899cc220d04b34d5ca0699e72b80f8c7e1c962f28c"
+    },
+    "matched_errors": {
+      "original_relative_source": "scripts/compare_controlled_ablation.py",
+      "verbatim_function_sha256": "27055e280a640b1c2430bb4251991535b34780c0c92e3d41af8ba3c6df2df990"
+    },
+    "paired_errors": {
+      "original_relative_source": "scripts/compare_controlled_ablation.py",
+      "verbatim_function_sha256": "8ca29e7c92c50ed09f352fb95d82bcbf2b24dc14e8ab21a449d48ca909f0a127"
+    }
+  },
+  "historical_comparisons": [
+    "Original+four core fits: all archived native metrics and original-paired center summaries at.35.",
+    "Original+four core fits: exact3953 common GT identities; center means use deterministic sorted IDs here. The original report iterated a Python set, so last-bit roundoff up to1e-12 is allowed and actual maximum difference is reported.",
+    "Mixed/Aug pair: all archived metrics+all common geometry at.35 and.425, matched7671/7431 targets."
+  ],
+  "new_descriptive_cache_summaries": [
+    "Original/head/uniform-high/uniform-low at.425 were not operating points in the historical native summary; these four are explicitly new descriptive cache recomputations, not claimed historical parity.",
+    "All-six common intersections are separate from the original+core4 comparison and never replace its target population."
+  ],
+  "visibility_limit": "Frozen at-least3 measured-return/50m target labels only. No raw clouds; sensor observability cannot be recomputed.",
+  "excluded": [
+    "raw clouds",
+    "weights",
+    "private absolute paths",
+    "LAN addresses",
+    "GPU identifiers",
+    "credentials"
+  ],
+  "new_inference_fitting_or_selection": false
+}

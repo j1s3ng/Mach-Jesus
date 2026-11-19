@@ -1,0 +1,198 @@
+{
+  "cases": [
+    {
+      "configuration_sha256": "800b4b3ab3595b7e0fbe953284a83fca3c503cfa82d0ea0b84d4ba724e1795d1",
+      "evaluation_sha256": "586bd8531352477559496a888460f21aa543ba3199a235f90eb70b34d98eb972",
+      "evaluator_sha256": "46f012aaa2b96eef8f736aa8ee5e8048f8cf8b298af17caaf739e65c86074f49",
+      "native_archive_sha256": "f882b92d4d2421dbb4b5e64d73bb4b7c283e66581ac3fb8a6ff3c48e813a352d",
+      "physical_world_sha256": "9e6efe609cd4e3c07b6cd05f6bae5c4778f542f1b82d69205c7ba9f4e1cd02f6",
+      "policy_model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+      "preparation_sha256": "7901d58236b08c3fcbdb506ae88efa80615a52d1f21777b1251a7c5121186490",
+      "raw_trace_sha256": "8406d28b2b0a393e9d475db986fc1b3c52e2b326c90b69372308fd11f9350d72",
+      "reference_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e",
+      "runtime_module_sha256": {
+        "runtime-module-01": "832cfb5c1f47eadeb8c327de2f32c762ebc3ddf242c0456ad1891caa63086362",
+        "runtime-module-02": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+        "runtime-module-03": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3",
+        "runtime-module-04": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+        "runtime-module-05": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+        "runtime-module-06": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+        "runtime-module-07": "ea6644fdc9d61e587348af3c5e552b44f191ecee8a4f2a6b4578a02b1d3faef9",
+        "runtime-module-08": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+        "runtime-module-09": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+        "runtime-module-10": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7",
+        "runtime-module-11": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+        "runtime-module-12": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+        "runtime-module-13": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf",
+        "runtime-module-14": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+        "runtime-module-15": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+        "runtime-module-16": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+        "runtime-module-17": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a"
+      },
+      "source_id": "solo_20ms",
+      "terminal_sha256": "cdae4b8c323b4b680ffe8ccbffa1ddb91b4071ba37f4ee253f3b709fd2901236"
+    },
+    {
+      "configuration_sha256": "3b237e27dfe2f1f5a0a673cc2c5dc533d32e15a43b19320065415ab889181eca",
+      "evaluation_sha256": "0419def2339dfef60b6202db9584d6a6fc16ad451675b0c11a82d54063c67a30",
+      "evaluator_sha256": "0306cdae3f3e1b582f2b41a1550153cad458a25f2df00e991e0b707f027b1fbf",
+      "native_archive_sha256": "a634f39673abcfe577c57c3a9322d086c9c3c0c2c3bde587450178e57e3d9f41",
+      "physical_world_sha256": "cf0a00c1bf6c7f4eeda10688a93a36d385ba88c071c1c7bb72a4602bdf50a938",
+      "policy_model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+      "preparation_sha256": "21da6880741db9974ba112a28ca8218a682377db033ed1fe930a2e5662b47a06",
+      "raw_trace_sha256": "5b1ed1587b625be8cf1fd323686006df908973e88d7800b722636bae3bd5172f",
+      "reference_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e",
+      "runtime_module_sha256": {
+        "runtime-module-01": "832cfb5c1f47eadeb8c327de2f32c762ebc3ddf242c0456ad1891caa63086362",
+        "runtime-module-02": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+        "runtime-module-03": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3",
+        "runtime-module-04": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+        "runtime-module-05": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+        "runtime-module-06": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+        "runtime-module-07": "ea6644fdc9d61e587348af3c5e552b44f191ecee8a4f2a6b4578a02b1d3faef9",
+        "runtime-module-08": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+        "runtime-module-09": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+        "runtime-module-10": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7",
+        "runtime-module-11": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+        "runtime-module-12": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+        "runtime-module-13": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf",
+        "runtime-module-14": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+        "runtime-module-15": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+        "runtime-module-16": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+        "runtime-module-17": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a"
+      },
+      "source_id": "solo_10ms",
+      "terminal_sha256": "d0db4de19e1a107bf065a64fe060996c5db7c46f09febd58f112cd1f304e9a5e"
+    },
+    {
+      "configuration_sha256": "3776783b147b743248f00d00fe4c24f3c54d954d783c75e6f8ed0cb4077bd6ee",
+      "evaluation_sha256": "b616a20a1f3dfe1b65ecab841128c25cd899b4d960b2d3a57ed1dfd23ff98e9f",
+      "evaluator_sha256": "7761262c35784b42c70e8cee664cbd617d0ab349015c1bc93c9ebb5d7ad5ced7",
+      "native_archive_sha256": "7752985250e1f95cdbc6f0762c3c330d6901682632dd10a25aee27fdc6eae27e",
+      "physical_world_sha256": "4951e6e4cf8d170e64362576ff4d3ad632e1fbc9fafcb665afec96877ff1102c",
+      "policy_model_sha256": "89bafe77e99d160aa97aab5510f587112a6c461e2cd7383a381a4af429c94989",
+      "preparation_sha256": "f7ff858aaa04efe09075a0df4340f1d2f424a0e99a7a33e539d9ab243ebd37b7",
+      "raw_trace_sha256": "ac1125baca412ade37d2dd1113c7e05f31387963418aa697a4790b6d4075959d",
+      "reference_sha256": "cfdea80ff8fb7f1e221d7eb4f9b2b8d4a18f8191c7eddc2e60f56d988e02df3e",
+      "runtime_module_sha256": {
+        "runtime-module-01": "832cfb5c1f47eadeb8c327de2f32c762ebc3ddf242c0456ad1891caa63086362",
+        "runtime-module-02": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+        "runtime-module-03": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3",
+        "runtime-module-04": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+        "runtime-module-05": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+        "runtime-module-06": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+        "runtime-module-07": "ea6644fdc9d61e587348af3c5e552b44f191ecee8a4f2a6b4578a02b1d3faef9",
+        "runtime-module-08": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+        "runtime-module-09": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+        "runtime-module-10": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7",
+        "runtime-module-11": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+        "runtime-module-12": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+        "runtime-module-13": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf",
+        "runtime-module-14": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+        "runtime-module-15": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+        "runtime-module-16": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+        "runtime-module-17": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a"
+      },
+      "source_id": "solo_5ms",
+      "terminal_sha256": "787518d3cf24d2eed9f1abf9d503b32933dd3bdcf8174e3d20983011592216f5"
+    }
+  ],
+  "function_ast_provenance": [
+    {
+      "exported_function_ast_sha256": "e85576cf66617f5936a35f01ba321b18037eaf94a5266ec5a6bb6f771d7ef040",
+      "function": "percentile",
+      "source_function_ast_sha256": "e85576cf66617f5936a35f01ba321b18037eaf94a5266ec5a6bb6f771d7ef040",
+      "source_id": "steering-metric",
+      "source_line": 29
+    },
+    {
+      "exported_function_ast_sha256": "8d54dc7071799fa487585e7458db308363997f598f4e0b3bb95d5fe7726f0832",
+      "function": "direction_changes",
+      "source_function_ast_sha256": "8d54dc7071799fa487585e7458db308363997f598f4e0b3bb95d5fe7726f0832",
+      "source_id": "steering-metric",
+      "source_line": 33
+    },
+    {
+      "exported_function_ast_sha256": "66d0db8fd1559b8b9436ea129352e7b6bf32b946da84945b7a5e0f0974460e1f",
+      "function": "metric",
+      "source_function_ast_sha256": "66d0db8fd1559b8b9436ea129352e7b6bf32b946da84945b7a5e0f0974460e1f",
+      "source_id": "steering-metric",
+      "source_line": 53
+    },
+    {
+      "exported_function_ast_sha256": "930bab0f77c74345a142187d62835c94601e86e03e0c21e29fb3519bb454e711",
+      "function": "rms",
+      "source_function_ast_sha256": "930bab0f77c74345a142187d62835c94601e86e03e0c21e29fb3519bb454e711",
+      "source_id": "measurement-evaluator",
+      "source_line": 58
+    },
+    {
+      "exported_function_ast_sha256": "195e8899d183dfecca523d27d32b619f594cc1453584cd096f8213fc5defb5af",
+      "function": "highpass",
+      "source_function_ast_sha256": "195e8899d183dfecca523d27d32b619f594cc1453584cd096f8213fc5defb5af",
+      "source_id": "measurement-evaluator",
+      "source_line": 68
+    },
+    {
+      "exported_function_ast_sha256": "2a56ce2f8a45a0075ac79a0f4b360af719ecd5978eaa580c28dd83f1b65af5b6",
+      "function": "band_power",
+      "source_function_ast_sha256": "2a56ce2f8a45a0075ac79a0f4b360af719ecd5978eaa580c28dd83f1b65af5b6",
+      "source_id": "measurement-evaluator",
+      "source_line": 75
+    },
+    {
+      "exported_function_ast_sha256": "c5e6b00df756e5ac66b6f91a65b81ea4db528149466f17e90cf42ca45645a5ed",
+      "function": "motion_metrics",
+      "source_function_ast_sha256": "c5e6b00df756e5ac66b6f91a65b81ea4db528149466f17e90cf42ca45645a5ed",
+      "source_id": "measurement-evaluator",
+      "source_line": 219
+    },
+    {
+      "copied_statement_ast_sha256": [
+        "daa2a075a33c5525df6c1b6d6e9c1ac33a9ee68ad9ce46bec1718b59cb1dcda3",
+        "0381331ab9a6629a94562e3cd06ccdc743bca4d5e658e3ae7523d0e77cd38ec9",
+        "b0aefe4cb3fb4e25f35db2573bef8d00110775453719046c0e4e029a32f6f7ae",
+        "8be2bd6c6068aa80ea29d22feda95ab62834e8554ae252ab66a46cbffd2a67a2",
+        "b067614fe03640adde5b360d0fafa57f0944cf4fc43818c62725afa8b80ee532",
+        "1b6ef0f8fdfbb0d242b90b9d1c69dd6e748cea03a0c31ba2d4b16a2278b0d287",
+        "c2896ed5a27755c368f300a7d94b5f8f4cff69a12de213496b6cfc4db56ef412",
+        "d9adc1692c18729088a4d9b8e3969eca5ee29ba4bfcadb5b5db612afa6b923b7",
+        "0d8127f5c2870e21e0cef0437e3ad55d85d16d25a51bdc53ca3d01c11b6bb8e2",
+        "96da12bafe66cb36dc925990764508b7dfbf9ce177ecce67f440271774c74479",
+        "594f861a1fa7da2daa913ce95a8935b06fe8fb5ea6e0a540c688c1d128e614fe",
+        "6543133233a38c2d55e9a6ce1f8742ea88423a75748468d50f76e0c00bc2a3eb",
+        "531d1481173580a6b8d58eefb927e9e17c9ad47b0e94017302651d5d1127fc6f",
+        "72851d085f50b7fa5d89b7f3c600247184607bfa061a2b80f2151290267da2a0"
+      ],
+      "extraction": "Unchanged tail from dt=np.diff(a['time']) through body_lat_highpass; return adapter only.",
+      "function": "array_records",
+      "source_function_ast_sha256": "4ddf3b58269de25a3ce0848967d8d22408f5ce3298b95a8c861ca39e5c262b35",
+      "source_id": "measurement-evaluator",
+      "source_line": 174
+    }
+  ],
+  "method_sources": [
+    {
+      "sha256": "46f012aaa2b96eef8f736aa8ee5e8048f8cf8b298af17caaf739e65c86074f49",
+      "source_id": "measurement-evaluator"
+    },
+    {
+      "sha256": "a0c3dd76ea7022fb44c1296c6d6a2e323f8bbabefc1eebe9681db5f436cd130c",
+      "source_id": "steering-metric"
+    }
+  ],
+  "new_inference_training_or_simulation": false,
+  "same_runtime_source_and_model_bytes": true,
+  "scalar_timing_ast_provenance": {
+    "function": "evaluate",
+    "scalar_crossing_statement_ast_sha256": [
+      "7b37b2201863f60de092a5493933da89b46cc0251657c9ab23dd204e1b8a0570",
+      "60c6533d4885f22ecd56500fa20141e75bf835e5552be8ae06eeb439d127997d"
+    ],
+    "scope": "Only the scalar clock is interpolated between actual poses; metric arrays never receive an endpoint sample.",
+    "source_function_ast_sha256": "3462663978b7c1378d5ee07120a88490eedd1aef585e23038a261f42ea948bce",
+    "source_id": "measurement-evaluator"
+  },
+  "schema_version": 1,
+  "source_path_policy": "Logical source IDs and SHA256 only; no local paths or raw logs shipped."
+}

@@ -1,0 +1,111 @@
+{
+  "scope": "Exact closed main source; five copied runtime modules and two prepared generator edits",
+  "source_case": "yaw-feature-off-chase-001",
+  "configuration_sha256": "4c37abad96351bcfd854323392630d25f9c1c81fd4f8c84b51a12a005aacd3de",
+  "preparation_sha256": "733a43cdf9fa6968a1867355a960f1239cd8a5c109fefa407e5ed89023144878",
+  "runtime_source_sha256": {
+    "webots/controllers/tournament_racer/tournament_racer.py": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a",
+    "src/race_lidar/race_policy.py": "1eb78e36b5cace83203cdc1b71e0eb4f248462b099b3863c847f9a0cebb7b1d8",
+    "src/race_lidar/race_control.py": "4469def3e34fa69d7b8e79883c8023a7ed977e6ac9a9c2db04e602d9ab65b2d9",
+    "src/race_lidar/hotlap_driver.py": "76a6d725d2f5bbedbad536e472cbc8f9a9738751aa638341d7d02f8959f853ad",
+    "src/race_lidar/learned_driver.py": "a521d8443f31465bf247ea713214bc5d324842b2261e9f232832a9d80ce0b75d",
+    "src/race_lidar/lidar_hazards.py": "676127302f7b53d628f56fe85accf2c6d06b1de56795e7ef8b0e3faf7df470dd",
+    "src/race_lidar/rich_driver.py": "f166443aa654c3aa24d03de969fc6f7a89e4c65039a4739bcf424c5cdb737617",
+    "src/race_lidar/remote.py": "09eb5de1e83af1c1cb2823c07cad904dd23a9791c49e3b1d37ccca5f9f44d85d",
+    "src/race_lidar/aggressive_hybrid.py": "e2f71cd3048ce3d41a93bde7c4ba3dd7c2260254f25867dbdf0adddfb37ea6e0",
+    "src/race_lidar/demo_chase.py": "3f526f603c9b0ef537eb92d3adf685f61becbe3ff416ee8bbb1aa9c901975bc3",
+    "src/race_lidar/smooth_racing_line.py": "3fc12d2e76212ce7be0507e3edbfcbf2d1dbbc2cdac0632fe7098df05d74ff99",
+    "src/race_lidar/path_tracking.py": "4ebe4956cd2bb6f7a78e122c9fec14ed1837d48a45e62be0cd2561d06c1ee840",
+    "src/race_lidar/road_tyre_bounds.py": "03bf5055f6c9d5b2d139ca442a8ed2967a28255513772e373349bf720fdc6baf",
+    "src/race_lidar/trail_braking.py": "f5a18b89688203b4a8dc3f1867ae439d74e1ad2bd8235816dd188edf19ed9a5a",
+    "src/race_lidar/traffic_trajectories.py": "39d866d77a558d0c4b74408883781ce4493d03e6242da3abf89b6273f9728f86",
+    "src/race_lidar/continuous_geometry.py": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+    "src/race_lidar/rejoin_trajectory.py": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7"
+  },
+  "copied_files": {
+    "src/race_lidar/continuous_geometry.py": {
+      "sha256": "e64e789cac79bc03979e152aedaf994963e476b5585a9c8483b462bf797f45ca",
+      "bytes": 10524
+    },
+    "src/race_lidar/path_tracking.py": {
+      "sha256": "4ebe4956cd2bb6f7a78e122c9fec14ed1837d48a45e62be0cd2561d06c1ee840",
+      "bytes": 64351
+    },
+    "src/race_lidar/rejoin_trajectory.py": {
+      "sha256": "c188af662efbe3874dc13ccf8911c84e16a7cce283915bf801c98136321ebfc7",
+      "bytes": 65859
+    },
+    "src/race_lidar/aggressive_hybrid.py": {
+      "sha256": "e2f71cd3048ce3d41a93bde7c4ba3dd7c2260254f25867dbdf0adddfb37ea6e0",
+      "bytes": 58676
+    },
+    "webots/controllers/tournament_racer/tournament_racer.py": {
+      "sha256": "6ca87c9cf1640e6bfc60d81687ce21989fb7cf592bc45fa5e28600788eb4ac2a",
+      "bytes": 48050
+    },
+    "scripts/generate_hotlap_world.py": {
+      "sha256": "d1eff323d56b270a0b6e3c1ac01ba45f822e93beab8ae248aeb667b561878e2b",
+      "bytes": 12380
+    },
+    "scripts/generate_tournament_world.py": {
+      "sha256": "efb62bb40c8bce2bc7bc35a672badd01297de833c15ee5bfc39d489f3d6badf3",
+      "bytes": 2980
+    }
+  },
+  "runtime_imported_changed_files": [
+    "src/race_lidar/continuous_geometry.py",
+    "src/race_lidar/path_tracking.py",
+    "src/race_lidar/rejoin_trajectory.py",
+    "src/race_lidar/aggressive_hybrid.py",
+    "webots/controllers/tournament_racer/tournament_racer.py"
+  ],
+  "prepared_generation_changed_files_not_runtime_imports": [
+    "scripts/generate_hotlap_world.py",
+    "scripts/generate_tournament_world.py"
+  ],
+  "sanitized_evidence_transformations": [
+    {
+      "name": "selected_demo_metrics.json",
+      "original_sha256": "74a09af99d9683920702fa5fad3da2ae267d0b550f56bf5fea0c50716d437e19",
+      "review_sha256": "91cb8ec22f21116fdb5a5cbb7013ad85fc41bb4e6e3ab14d482d8ad6f0eb158c",
+      "transformation": "Filesystem identities/endpoints replaced with portable labels; measured values and source hashes retained"
+    },
+    {
+      "name": "matched_first_circuit.json",
+      "original_sha256": "6d23be7ac437524e550fd73f1c4c7c9574614fd58267466c1274c9f157d3e95c",
+      "review_sha256": "02e2e4ae84e8f30f17c6ddfe719164530002adbd053dae8acb1c939778d592b2",
+      "transformation": "Filesystem identities/endpoints replaced with portable labels; measured values and source hashes retained"
+    },
+    {
+      "name": "native_source_and_motion.json",
+      "original_sha256": "38ae40300b76042f4ef54624e1a285fc8a353b6638edeaba0b9b8cf21fcdc090",
+      "review_sha256": "ec66f5a6512b96ba54ca3934b87eeec453e1fed114bf88153d2f17b4bdcd93f5",
+      "transformation": "Filesystem identities/endpoints replaced with portable labels; measured values and source hashes retained"
+    },
+    {
+      "name": "cutin_safety.json",
+      "original_sha256": "c766cce1f9e521a7e3c1a5ab7bceecc565510c7d8c099c381e580974ab3cf687",
+      "review_sha256": "c766cce1f9e521a7e3c1a5ab7bceecc565510c7d8c099c381e580974ab3cf687",
+      "transformation": "Filesystem identities/endpoints replaced with portable labels; measured values and source hashes retained"
+    },
+    {
+      "name": "rear_safety.json",
+      "original_sha256": "895927c94185adbca37fb91f4a0788cf2bee2430d19d33dbeb059e040fcbcea6",
+      "review_sha256": "895927c94185adbca37fb91f4a0788cf2bee2430d19d33dbeb059e040fcbcea6",
+      "transformation": "Filesystem identities/endpoints replaced with portable labels; measured values and source hashes retained"
+    },
+    {
+      "name": "controlled_middle_pass.json",
+      "original_sha256": "db3a420ba4685f35d5a0e19ab8e4d19e3945dd5026367052ce0a4a3f4b89a988",
+      "review_sha256": "db3a420ba4685f35d5a0e19ab8e4d19e3945dd5026367052ce0a4a3f4b89a988",
+      "transformation": "Filesystem identities/endpoints replaced with portable labels; measured values and source hashes retained"
+    },
+    {
+      "name": "command_priority_and_feature_usage.json",
+      "original_sha256": "ca8fa9b2d8a4e81faecdcdc7e4b495da1dc80c58efb749a4e5270a4ae8b771af",
+      "review_sha256": "da18b53f60c949b1404212702e7b4ad2bb4e35ee2b4a1d81cdc993f35aefa365",
+      "transformation": "Filesystem identities/endpoints replaced with portable labels; measured values and source hashes retained"
+    }
+  ],
+  "source_bytes_modified_for_export": false
+}

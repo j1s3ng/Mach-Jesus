@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "scope": "KNOWN_DEVELOPMENT_CACHED_DIAGNOSTIC_ONLY",
+  "source_inputs": [
+    {
+      "relative_input_name": "runs/improvement-12h/training/rotation-probe-001/frames.jsonl",
+      "sha256": "b6f594f525d6099ed31c3a3271644d3764a01244a6a7d6e1c29dc44597fd8310"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/rotation-probe-001/attempt-001/predictions.jsonl",
+      "sha256": "f2fc0c51b516c819ee251d09a7bcae2a0c79c01ed1a0ca1795de663018e5795d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/rotation-probe-001/attempt-001/authorization_and_provenance.json",
+      "sha256": "61d8b3e046f22236ea6b6a17359f0bb6c886d5f89e3ae04f84bc1555c06db661"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/rotation-probe-001/attempt-001/outcome.json",
+      "sha256": "82a16127dae16f70db0cf202a19437aa20c15edb987b4dee9c5969ffe7a9dcdd"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/predictions.jsonl",
+      "sha256": "3755e2bcb44e2469174ddf84b6902c88767dca95bc267a002f888cd8bdb49e24"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/authorization_and_provenance.json",
+      "sha256": "24965f2cb57eee5b3dccd0178842b93772f9d2963241da5ae9d561bbe9d20826"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/outcome.json",
+      "sha256": "35ffe91e5b64cb076008d872f413628314ca4fa0c21453001c54d89b7bc0672d"
+    },
+    {
+      "relative_input_name": "runs/improvement-12h/training/controlled-rotation-eval-001/analysis-001/result_scope_corrected_v2.json",
+      "sha256": "252cae798a3ad20930dfceb43c8e339fc20009ff028481fe47673da7084f2f6a"
+    },
+    {
+      "relative_input_name": "scripts/analyze_matched_box_geometry.py",
+      "sha256": "3391fdf1f5314b44f91b136cba2c2a1ae419abda095debe8222be891cdbe3e41"
+    },
+    {
+      "relative_input_name": "scripts/qualify_sim_detector.py",
+      "sha256": "4e8d86c19641f8d7ad0fe712ed32ff666dda97a0ba3264752f7d5692bd4bfaf1"
+    },
+    {
+      "relative_input_name": "scripts/analyze_controlled_rotation.py",
+      "sha256": "b33985df343cd2cd469d3c74a0faa613c076d587432277e28dee8fa5f000ccea"
+    },
+    {
+      "relative_input_name": "scripts/export_controlled_rotation_reproduction.py",
+      "sha256": "782e9b9efe6d1c7e408098605566f90209cd2b0eb267d66502a84934c6793e70"
+    }
+  ],
+  "models": [
+    {
+      "model": "original",
+      "checkpoint_sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "tensor_state_sha256": null,
+      "tensor_state_scope": "Not recorded in the original cached endpoint proof; no weights reopened for this export.",
+      "effective_exported_prediction_floor": 0.425
+    },
+    {
+      "model": "head-lr1e-4-s7",
+      "checkpoint_sha256": "26fbe1e89849f560acdef019f74aa34607cd19327ee388e17c17b3216e23c893",
+      "tensor_state_sha256": "b7aa8a339165178b007a3738c98e17ea788217af4695ec501cbcd41f60682eef",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/head-lr1e-4-s7_loaded_model.json",
+      "loaded_proof_sha256": "d6194b9cf3ac3c1803618a0349ee350e6fbf7d43de9932322f30d45af8833a23",
+      "effective_exported_prediction_floor": 0.425
+    },
+    {
+      "model": "full-uniform-lr1e-4-s7",
+      "checkpoint_sha256": "dfc7d9fabbb06f8634651d7fcfa7106981707e5618dd5c03430509a017afbe6c",
+      "tensor_state_sha256": "25b5c5a25627ee2f604738a961c4375d1803c314c247c38a0525fd4478e20ef0",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/full-uniform-lr1e-4-s7_loaded_model.json",
+      "loaded_proof_sha256": "a5c9bb2e77f5656ff06d1eaa506954212661d7beda359593e442603566936171",
+      "effective_exported_prediction_floor": 0.425
+    },
+    {
+      "model": "full-uniform-lr1e-5-s7",
+      "checkpoint_sha256": "bd8c1ecf79bfd9f1f783131f057ad4763e8eb71df9814175dbe5dc4f34bf5b41",
+      "tensor_state_sha256": "2fc68419cc13581782aaa1ceab898774b349b4b4dc8d04d175f78abd3790192f",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/full-uniform-lr1e-5-s7_loaded_model.json",
+      "loaded_proof_sha256": "b2a2dc959ad4c350d5a2d0df945091f3b8634ae3291258f2bdb866d64b9f32f3",
+      "effective_exported_prediction_floor": 0.425
+    },
+    {
+      "model": "full-mixed-head1e-4-backbone1e-5-s7",
+      "checkpoint_sha256": "1767d6a1b460b3b415ea0b3448ce49ac09cff45703d4b9ce8c3c813fa40e5125",
+      "tensor_state_sha256": "35f831fcfcfa48395c70a2b24cd3542c943b968d0e14106d13436ba975415a10",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/full-mixed-head1e-4-backbone1e-5-s7_loaded_model.json",
+      "loaded_proof_sha256": "43576191516a533ed06be16aff41248139a9dfe4ff2cfa389000305253ca08ba",
+      "effective_exported_prediction_floor": 0.425
+    },
+    {
+      "model": "full-mixed-rotaug4-s7",
+      "checkpoint_sha256": "d83d7e1b4b19c40c5e72ac86712a8141a6ea2e9e1037cd918a76df2dd3c4da9e",
+      "tensor_state_sha256": "61bb4f7cdf730903cbf378918867da621ea424f631ac853a85d275a8f7e50748",
+      "config_sha256": "84f5ddcab780ef108af77412f9bad587c21299419530c8708121442449115a0d",
+      "loaded_model_tensors": 542,
+      "model_tensors": 542,
+      "loaded_proof_source": "runs/improvement-12h/training/pro-rotation-window-002/attempt-001/full-mixed-rotaug4-s7_loaded_model.json",
+      "loaded_proof_sha256": "696e7045afb6f523c4ac61c06665040d0e4e7a3838d87afb3d77e225a9f6171f",
+      "effective_exported_prediction_floor": 0.425
+    }
+  ],
+  "metric_function_attribution": {
+    "matches": {
+      "original_relative_source": "scripts/qualify_sim_detector.py",
+      "verbatim_function_sha256": "6e6cb2e711317332044f7ba1644d64499652bb3ca6ba589694866892650bbffa"
+    },
+    "key": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "f996c4ee0c0e6e6be18b5a3f1f89a362aa985d03371125ed2b89b4ee635397a6"
+    },
+    "heading_error": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "80111ba291a74afe40300f40417d63c03c560eeccd9d5bc4cadf813cf535fdb8"
+    },
+    "footprint": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "87a0375d7d938b86ee9f111890abcfbc61d6c6381800e1c90ddbb1ec3551ec48"
+    },
+    "box_iou": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "95806dd0c18610410ee01163cc29aaf3f7a8ad8e38a4fe2094f27247b057b7df"
+    },
+    "assign_boxes": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "1c62d849fcd47bf34edce45858336ccee901acb15e87b6ad51b6f15973d5af23"
+    },
+    "summary": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "b67509f77772b9b8e17f97564204d12aa14931638b2bbaa25aa0c6c6b1fccc4b"
+    },
+    "geometry": {
+      "original_relative_source": "scripts/analyze_matched_box_geometry.py",
+      "verbatim_function_sha256": "6a4a009919ffdddb44d5f4bbf13c60024ad71eaec4cba1926b6a0f6175817880"
+    }
+  },
+  "numeric_source_field_selection": "Only frame identities, quarter-turn angle, frozen point/visibility counts, GT box numbers and RAW.425 predicted box numbers. Original array ordering and numeric values are retained.",
+  "GT_population": "Frozen ego-upright physical-asset boxes with at least3 measured LiDAR returns and original50m evaluation-radius filter; rotated offline sidecars. This cache cannot recompute sensor observability.",
+  "original_vs_fits": "512 previously measured original service rows plus2560 independently loaded fitted-model rows. No original model rerun.",
+  "excluded": [
+    "raw point clouds",
+    "model weights",
+    "private absolute paths",
+    "LAN addresses",
+    "GPU identifiers",
+    "credentials"
+  ],
+  "new_inference_training_or_network_queries": false
+}

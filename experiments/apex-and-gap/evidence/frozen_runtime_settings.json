@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "scope": "Sanitized review extract of the frozen chase configuration; not a standalone runnable configuration.",
+  "source_config_sha256": "10c59fb1d1ce447199f60677ed4b63682e8bdcefd6632f7b664c8797b13ee408",
+  "source_preparation_sha256": "381eda763745dfe81576255e5f97be2545125e47518a10e540a98398c277df06",
+  "pinned_source_and_asset_count": 63,
+  "physical_race_status": "READY_FOR_LOCAL_REVIEW",
+  "hero": {
+    "policy": "neural_rich005_seed7",
+    "label": "Rich005 seed7 / calibrated apex line / both sides + measured gaps /2tyres",
+    "car_id": "R20",
+    "grid_index": 19,
+    "start_progress_m": -228.0,
+    "start_lane_m": 2.5,
+    "seed": 626,
+    "color": ".95 .72 .10",
+    "record_video": true,
+    "pointcloud_stride_frames": 1,
+    "aggressive_hybrid": {
+      "version": "pass-first-bidirectional-racing-line-v1",
+      "commit_seconds": 2.5,
+      "switch_gain_mps": 4.0,
+      "relax_blanket_visibility_cap": true,
+      "racing_guard_parameters": {
+        "lane_rate_mps": 1.8,
+        "ego_half_width_m": 1.05,
+        "lateral_margin_m": 0.1,
+        "position_uncertainty_cap_m": 0.5,
+        "lead_speed_sigma_factor": 0.25,
+        "reaction_seconds": 0.2,
+        "following_gap_m": 5.0
+      },
+      "maximum_lane_m": 12.0,
+      "minimum_pass_gain_mps": 1.0,
+      "transient_conflict_hold_seconds": 0.6,
+      "adaptive_gap_passing": true,
+      "profile_preview_m": 0.0,
+      "rank_acceleration_reachable_pace": true,
+      "ranking_horizon_s": 2.5,
+      "spatially_coherent_pass_clearance": true
+    },
+    "flat_out_no_lift": false,
+    "limits": {
+      "max_speed_mps": 100.0
+    },
+    "ignore_reference_source_speed": true,
+    "racing_guard_parameters": {
+      "lane_rate_mps": 1.8,
+      "ego_half_width_m": 1.05,
+      "lateral_margin_m": 0.1,
+      "position_uncertainty_cap_m": 0.5,
+      "lead_speed_sigma_factor": 0.25,
+      "reaction_seconds": 0.2,
+      "following_gap_m": 5.0
+    },
+    "racing_line_plan_sha256": "2e1de29366dca5ab281a9025ffe715b4b8cfb28c52d6dbab8d4783b25216ceea",
+    "maximum_lane_m": 12.0,
+    "path_tracking": {
+      "enabled": true,
+      "profile_preview_m": 0.0,
+      "profile_acceleration_feedforward": true,
+      "steering_method": "curvature_feedback",
+      "nominal_route_lane_rate_max_mps": 16.0,
+      "steering_lateral_reserve_factor": 1.6,
+      "understeer_gradient_s2_per_m": 0.002
+    },
+    "model_artifact": "models/neural_rich005_seed7.npz",
+    "racing_line_plan_artifact": "artifacts/map_line_plan.npz"
+  },
+  "global": {
+    "reference_length_m": 5227.131662140477,
+    "laps": 20,
+    "max_sim_seconds": 901.0,
+    "sensor_period_ms": 200,
+    "perception_enabled": true,
+    "expected_detector_checkpoint_sha256": "9409dd8c13c8c8ca546c8c5af024856d03029e2def8d5fc0fa3bfe4477e7d88b",
+    "mode": "race",
+    "seed": 607,
+    "max_speed_mps": 60.0,
+    "lateral_accel_mps2": 8.0,
+    "brake_decel_mps2": 8.0,
+    "acceleration_mps2": 5.0,
+    "control_version": "predictive_v2",
+    "visible_distance_m": 70.0,
+    "post_finish_mode": "park",
+    "hero_car_id": "R20",
+    "hero_start_position": 20,
+    "objective": "20-car engineering chase: calibrated whole-road apex tracking and measured passing gaps with custom2tyre limits",
+    "stop_when_hero_leads": {
+      "hero_car_id": "R20",
+      "lead_margin_m": 2.5,
+      "lead_hold_seconds": 1.0,
+      "failure_hold_seconds": 1.0,
+      "minimum_hero_progress_m": 5227.131662140477
+    },
+    "chase_result_is_not_full_distance_race_win": true,
+    "new_model_training": false,
+    "racing_line_scope": "Whole generated-road apex line with explicit >=2wheel-center track rule and .6m planned pair reserve",
+    "track_error_limit_m": 16.0,
+    "catastrophic_reference_error_limit_m": 16.0,
+    "detector_track_max_lateral_m": 14.0,
+    "geometry_hazard_corridor_half_width_m": 14.0
+  },
+  "tyre_track_limits": {
+    "enabled": true,
+    "geometry_sha256": "0c62620ea6baed2c2aea837ebb6eafbef5f36e6ac9ab9113a3825794b7f50c3a",
+    "minimum_tyres_on_track": 2,
+    "kerbs_count_as_track": false,
+    "geometry_artifact": "artifacts/road_tyre_bounds.npz"
+  },
+  "redactions": [
+    "Filesystem locations replaced by source-relative logical artifact names.",
+    "Service addresses, output/operator paths and world paths omitted.",
+    "Rival entries omitted here; the unchanged base setup supplies them."
+  ],
+  "logical_snapshot": "chase-004",
+  "main_run_outcome_status": "CLOSED_CLEAN_FULL_REFERENCE_CIRCUIT",
+  "nominal_20_laps_completed_claimed": false,
+  "formal_full_distance_race_win_claimed": false,
+  "physical_qualification_required_before_promotion": false,
+  "media_qa_required_before_promotion": false
+}

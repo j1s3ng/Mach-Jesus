@@ -1,0 +1,28 @@
+{
+  "status": "MINIMAL_ROSTER_ARGUMENT_REPLAY_REPAIR_INDEPENDENT_REVIEW_CLEAR",
+  "created_utc": "2026-11-14T20:39:27.765808+00:00",
+  "source_sha256": {
+    "scripts/final_evidence.py": "88c08afc0acae0e871e24829a36f7287c43863bf1d192c1fd0a560e5c2197fba",
+    "tests/test_final_evidence.py": "3be39e9ac9bfa208c4c17f9efe9e9cdf313b7a9241f7b3f05b284b19b7106a15",
+    "scripts/analyze_final_championship.py": "bc1775a4bb8be7e5a5ac300bc7beb5d50b542a772c1ee442c22e0336dfa95f5c"
+  },
+  "preservation_manifest_sha256": "373a27b8e7f5398790040b9401bab33a115e80e3f237869c86230289cae8bdcb",
+  "original_strict_results_sha256": "dde4806157d745c233c31c3cc9aa1143cef91393abf93e2a4fd7e857db89ea27",
+  "tests": {
+    "passed": 35,
+    "wall_seconds": 7.04,
+    "nice": 10,
+    "threads": 1
+  },
+  "checks": {
+    "only_fresh_championship_report_changed_AST": true,
+    "exactly_one_original_argument_resolves_verified_roster": true,
+    "relative_and_absolute_original_arguments_supported_without_alias_collapse": true,
+    "full_current_not_equal_old_comparison_over_every_field_retained": true,
+    "saved_actual_diagnostic_full_object_parity_after_exact_argument_replay": true,
+    "changed_finish_source_qualification_and_ambiguous_missing_roster_rejected": true,
+    "all55_preserved_incident_copy_hashes_valid": true
+  },
+  "actual_002_rescore_still_required_at_review": true,
+  "manual_decision_model_or_physical_calls": false
+}

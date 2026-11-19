@@ -1,0 +1,103 @@
+{
+  "status": "READY_FOR_LOCAL_REVIEW_FULL_DECODE_BROWSER_VISUAL_PASS",
+  "source_case": "yaw-feature-off-chase-001",
+  "source_configuration_sha256": "4c37abad96351bcfd854323392630d25f9c1c81fd4f8c84b51a12a005aacd3de",
+  "source_preparation_sha256": "733a43cdf9fa6968a1867355a960f1239cd8a5c109fefa407e5ed89023144878",
+  "frozen_demo_metrics_manifest_sha256": "74a09af99d9683920702fa5fad3da2ae267d0b550f56bf5fea0c50716d437e19",
+  "files": [
+    {
+      "public_relative_path": "../../docs/Apex_Tracking_Demo.mp4",
+      "sha256": "2d4e6cc141380a081026963e88674cdd1ac1cbef27604e752a499307225af435",
+      "bytes": 21740627,
+      "fps": 30,
+      "frames": 5720,
+      "seconds": 190.66666666666666,
+      "size": [
+        1280,
+        720
+      ],
+      "full_ffmpeg_decode_passed": true
+    },
+    {
+      "public_relative_path": "../../docs/Apex_Tracking_Normal_Speed.mp4",
+      "sha256": "0fa0501238abab62a536d22f553366ac3d1e6fd4cb46940289bac424f17e45fb",
+      "bytes": 22920115,
+      "fps": 25,
+      "frames": 5360,
+      "seconds": 214.4,
+      "size": [
+        1280,
+        720
+      ],
+      "full_ffmpeg_decode_passed": true
+    },
+    {
+      "public_relative_path": "../../docs/Apex_Tracking_Replay.html",
+      "sha256": "6e8c05171bd8e9be910d1d226fe713c267ba5b660b38f8d673491af4df5d1c36",
+      "bytes": 8081631,
+      "standalone_local_html": true,
+      "all_saved_forecasts_retained": 1068
+    },
+    {
+      "public_relative_path": "../../docs/apex-tracking-demo.jpg",
+      "sha256": "1d7cda2ae733b71085b8fdf50033ba417c590c7c959a6d6d06b6bdf537822d3e",
+      "bytes": 182459,
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "native_camera_frames_retained": 5360,
+  "native_camera_fps": 25,
+  "sensor_policy_hz": 5,
+  "control_body_telemetry_hz": 50,
+  "source_composition_reused_for_final_cards": true,
+  "native_normal_speed_camera_frame_count_verified": 5360,
+  "motion_interpolation": false,
+  "display_command_smoothing": false,
+  "camera_cadence_is_viewing_only": true,
+  "short_driving_time_multiplier": 1.2,
+  "intro_seconds": 4,
+  "results_seconds": 8,
+  "short_target_extended_to_retain_every_frame": true,
+  "no_future_lidar_prediction_or_control_sample_used": true,
+  "timestamp_alignment_rows_verified": 5360,
+  "future_lidar_pair_violations": 0,
+  "actual_geometry_sources_observed": [
+    "prestart",
+    "guarded_constant_offset",
+    "variable_nominal_path"
+  ],
+  "disabled_C2_return_yaw_features_claimed_active": false,
+  "unused_driving_inset_rejoin_legend_disclosed": true,
+  "original_render_provenance_sha256": "8b6ebee75a685c3b0506436349b6f5b55186045ae4f9e808316f5e1223138137",
+  "polished_card_provenance_sha256": "9c3203503eb903cf90e0db9595380649596ff2442370a866c5313d11beb1a3f2",
+  "original_normal_full_decode_log_sha256": "2b7251c2ca4e6b3724487c66ca23d70cfb7975882dcc04cc8671e55e9b47fc4e",
+  "polished_short_full_decode_log_sha256": "62682f632ce71fe0ae1175cb0f8f8a5c204efa3d6ef99db8c88c7a5713e85820",
+  "replay_provenance_sha256": "a7b6bec456cefe645981ca26e5280ad6f5cc374f87229e84a9ee0179873acead",
+  "replay_forecast_diagnostics": {
+    "noncredible_anomaly_track_rows": 0,
+    "noncredible_anomaly_decisions": 0,
+    "hard_credible_anomaly_rows": 0,
+    "forced_retained_decision_world_s": [],
+    "details": [],
+    "raw_mean_and_tube_retained": true,
+    "intervals_are_not_a_guaranteed_enclosure": false
+  },
+  "trajectory_audit": {
+    "decisions": 1068,
+    "horizon_s": 3.0,
+    "opponent_GT_used": false,
+    "logged_candidate_and_hold_assessments": 5429,
+    "decisions_with_any_reported_hard_veto": 0,
+    "assessments_with_nonzero_reported_soft_risk_cost": 0,
+    "zero_is_not_a_triggered_hard_veto_demonstration": true,
+    "future_lines_are_predictions_not_actual_paths": true
+  },
+  "browser_and_visual_qa": "evidence/browser_and_visual_qa.json",
+  "qa_subfolders_not_distributed": true,
+  "full_20lap_race_win_claimed": false,
+  "own_state_and_known_map_are_control_inputs": true,
+  "opponent_ground_truth_used_for_control": false
+}

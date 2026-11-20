@@ -56,7 +56,7 @@ detector from the halt case. [Complete results](final_study.md)
 
 | Recording | What it shows | Limit |
 | --- | --- | --- |
-| [Original 112-second chase](LiDAR_Racing_Demo.mp4) | P20 to sustained P1 at 325.5 simulated race seconds; it matches the [original course deck](presentation.pdf). | Edited and accelerated; hero and rivals use 100 and 60 m/s planning ceilings. It is not a fair policy comparison or a completed 20-lap race. |
+| [Original 112-second chase](LiDAR_Racing_Demo.mp4) | P20 to sustained P1 at 325.5 simulated race seconds; it matches the [shortened course deck](presentation.pptx). | Edited and accelerated; hero and rivals use 100 and 60 m/s planning ceilings. It is not a fair policy comparison or a completed 20-lap race. |
 | [Later 121.44-second highlight](LiDAR_Racing_Qualified_Highlight.mp4) | A different two-circuit engineering chase, with observed P1 at 85.4 simulated seconds. | Hero and rivals have different software limits/policies; the clip exceeds the course's two-minute submission limit. |
 | [Later full flying lap](LiDAR_Racing_Full_Flying_Lap_1x.mp4) | The 172.44-second native-speed video enclosing a 172.390-second crossing-to-crossing circuit. | Same unequal-condition engineering demonstration, not a fair model ranking. |
 

@@ -10,7 +10,7 @@ conventional Reference policy remained ahead in the final comparison.
 
 Start with the [plain-language guide](docs/START_HERE.md), the
 [eight-page report](docs/report.pdf), or the
-[original presentation](docs/presentation.pdf) and its
+[course presentation (PowerPoint)](docs/presentation.pptx), its [PDF](docs/presentation.pdf), and the
 [112-second demo](docs/LiDAR_Racing_Demo.mp4). The GitHub demo is an interim
 reference; the course submission still requires an accessible YouTube or Google
 Drive link.
@@ -42,7 +42,7 @@ for viewing. See the [architecture](docs/architecture.md) for the full data flow
 ## Which video should I watch?
 
 The [original 112-second demo](docs/LiDAR_Racing_Demo.mp4) matches the
-[course presentation](docs/presentation.pdf). It shows an engineering chase from
+[course presentation](docs/presentation.pptx), which ends after slide 10 with a thank-you slide. It shows an engineering chase from
 P20 to sustained P1 at **325.5 simulated race seconds**. Its footage is edited
 and accelerated; the video duration is not the lap time. The hero uses a
 100 m/s planning ceiling versus 60 m/s for the rivals, so this is an

@@ -149,5 +149,43 @@
       "bytes": 6148
     }
   },
-  "preservation": "Original media/hash receipts remain historical evidence; source overlays, study caches and final deliverables remain in the checkout."
+  "preservation": "Original media/hash receipts remain historical evidence; source overlays, study caches and final deliverables remain in the checkout.",
+  "additional_archives": [
+    {
+      "archive_id": "course-deliverables-cleanup-20261119-001",
+      "status": "LOCAL_ARCHIVE_ONLY",
+      "reason": "Keep the course repository focused while preserving superseded media and the prior presentation.",
+      "files": [
+        {
+          "original_path": "docs/Apex_Tracking_Demo.mp4",
+          "archive_path": "docs/Apex_Tracking_Demo.mp4",
+          "sha256": "2d4e6cc141380a081026963e88674cdd1ac1cbef27604e752a499307225af435",
+          "bytes": 21740627,
+          "available_in_checkout": false
+        },
+        {
+          "original_path": "docs/Apex_Tracking_Normal_Speed.mp4",
+          "archive_path": "docs/Apex_Tracking_Normal_Speed.mp4",
+          "sha256": "0fa0501238abab62a536d22f553366ac3d1e6fd4cb46940289bac424f17e45fb",
+          "bytes": 22920115,
+          "available_in_checkout": false
+        },
+        {
+          "original_path": "docs/Apex_Tracking_Replay.html",
+          "archive_path": "docs/Apex_Tracking_Replay.html",
+          "sha256": "6e8c05171bd8e9be910d1d226fe713c267ba5b660b38f8d673491af4df5d1c36",
+          "bytes": 8081631,
+          "available_in_checkout": false
+        },
+        {
+          "original_path": "docs/presentation.pdf",
+          "archive_path": "docs/presentation.pdf",
+          "sha256": "adbac1ad417ebcd384f0e2072d5d0d78f3100ff7f1097609b6592aa6d1e28554",
+          "bytes": 1432113,
+          "available_in_checkout": false,
+          "note": "The current checkout has a revised presentation at the same path."
+        }
+      ]
+    }
+  ]
 }

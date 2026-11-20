@@ -5,7 +5,7 @@ untracked files and ignored working output. Superseded media and generated
 working files were then moved byte-for-byte to the local project archive
 `project-cleanup-20261118-001`. Nothing in this catalog is a hosted download.
 
-The latest demo, native recording, replay and poster remain in `docs/`, as do
+The latest engineering highlight, native flying lap and poster remain in `docs/`, as do
 the final report/presentation, original study demo and the presentation's
 matching chase recording. Source overlays, cached reproduction inputs, figures
 and scientific evidence remain in the checkout.
@@ -19,7 +19,7 @@ identities of the recorded artifact, not current availability assertions.
 original paths, sizes and SHA-256 values. Existing frozen JSON/source receipts
 were not rewritten during cleanup.
 
-Three experiment READMEs now use archive links and explain their frozen
+Four experiment READMEs now use archive links and explain their frozen
 inventory scope. Their historical manifest hashes therefore bind the original
 README bytes, not the edited navigation copies. The
 [documentation amendment ledger](provenance/DOCUMENTATION_AMENDMENTS.json)
@@ -45,6 +45,18 @@ binds each unchanged manifest, exact retained original text and current README.
 | <a id="pass-first-demo-jpg"></a>`pass-first-demo.jpg` | 0.15 MiB | Earlier presentation thumbnail |
 | <a id="smooth-steering-demo-jpg"></a>`smooth-steering-demo.jpg` | 0.17 MiB | Earlier presentation thumbnail |
 | <a id="trajectory-trail-brake-demo-jpg"></a>`trajectory-trail-brake-demo.jpg` | 0.17 MiB | Earlier presentation thumbnail |
+
+## <a id="apex-tracking-media"></a>Apex tracking media archived November 19
+
+The following files were moved from `docs/` to the class project archive `course-deliverables-cleanup-20261119-001/docs`. The original [media receipt](../experiments/apex-tracking/media.json) records their hashes and historical paths. They are no longer present in the current public checkout.
+
+| Archived file | Size | SHA-256 |
+| --- | ---: | --- |
+| `Apex_Tracking_Demo.mp4` | 21740627 bytes | `2d4e6cc141380a081026963e88674cdd1ac1cbef27604e752a499307225af435` |
+| `Apex_Tracking_Normal_Speed.mp4` | 22920115 bytes | `0fa0501238abab62a536d22f553366ac3d1e6fd4cb46940289bac424f17e45fb` |
+| `Apex_Tracking_Replay.html` | 8081631 bytes | `6e8c05171bd8e9be910d1d226fe713c267ba5b660b38f8d673491af4df5d1c36` |
+
+The prior 15-slide presentation PDF was also preserved in that archive before the 11-slide version replaced it.
 
 ## Restore an archived file locally
 

@@ -15,7 +15,7 @@ Start with the [plain-language guide](START_HERE.md) and [project overview](../R
 
 - [Final report](report.pdf) and [study results](final_study.md).
 - [Original study demo](demo.mp4) and [tournament protocol](tournament_protocol.md).
-- [Presentation slides](presentation.pdf), [speaker notes](presentation_notes.md), and [matching chase recording](LiDAR_Racing_Demo.mp4).
+- [Presentation slides (PowerPoint)](presentation.pptx), [PDF](presentation.pdf), [speaker notes](presentation_notes.md), and [matching chase recording](LiDAR_Racing_Demo.mp4). The revised deck contains slides 1–10 followed by a thank-you slide.
 - [Report source and build instructions](report-source/README.md), including the instructor-requested BEV AP analysis and CARLA setup findings.
 - [Final evidence](final_evidence.md) and [artifact provenance](final_artifact_provenance.json).
 - [Source/export provenance](provenance/README.md) and [independent reviews](reviews).
@@ -38,7 +38,7 @@ separate from the balanced original study.
 
 ## Prior apex demonstration
 
-- [Presentation video](Apex_Tracking_Demo.mp4), [normal-speed recording](Apex_Tracking_Normal_Speed.mp4), and [interactive replay](Apex_Tracking_Replay.html).
+- The earlier apex videos and replay are listed in the [local archive](archive.md#apex-tracking-media).
 - [Measurements, source overlays and limitations](../experiments/apex-tracking/README.md).
 - [Planned-target and motion figure](../experiments/apex-tracking/figures/planned-anchors-and-motion.png).
 

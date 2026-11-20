@@ -43,6 +43,19 @@
       "current_document_bytes": 6847,
       "reason": "Historical media links lead to the verified local archive catalog; inventory wording now distinguishes the frozen original README from the current navigation copy.",
       "source_and_evidence_changed": false
+    },
+    {
+      "manifest_path": "experiments/apex-tracking/manifest.json",
+      "unchanged_manifest_sha256": "69b57a4f22006f2019fe2dd0eeb7d276d26a99655e64a53d6745d0951f68c630",
+      "document_path": "experiments/apex-tracking/README.md",
+      "manifest_pinned_original_sha256": "53cdf000cc663ac0fcd3f999087d117e4f725e631237f4836e26dc231443c3c7",
+      "retained_original_path": "docs/provenance/history/apex-tracking-README.original.txt",
+      "retained_original_sha256": "53cdf000cc663ac0fcd3f999087d117e4f725e631237f4836e26dc231443c3c7",
+      "retained_original_bytes": 6178,
+      "current_document_sha256": "6ea98061c6aebd702e28dff303593b3104f52455534564576480946ffe78f923",
+      "current_document_bytes": 6154,
+      "reason": "Earlier apex media moved to the local archive; current navigation points to the archive catalog.",
+      "source_and_evidence_changed": false
     }
   ],
   "project_title_amendment_record": "project-rename.json"

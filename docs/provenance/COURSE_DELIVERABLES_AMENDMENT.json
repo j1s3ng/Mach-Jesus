@@ -1,0 +1,52 @@
+{
+  "scope": "Replace the course presentation with slides 1\u201310 and a thank-you slide, and archive three superseded apex media files. Scientific code and results are unchanged.",
+  "base_commit": "463879b6c7cec7aef2c3166a0579c4e99d01f8d3",
+  "historical_receipts_remain_snapshots": true,
+  "documents": [
+    {
+      "path": "README.md",
+      "previous_sha256": "939721fceec859fd8b0c1ea25d90443e3d412589a5d045e62f9ce01286c21961",
+      "current_sha256": "6838d11aa9841ee30c67d256240f2cec373af425b0cf66d1e13379e51959fd66"
+    },
+    {
+      "path": "docs/README.md",
+      "previous_sha256": "e57d0c335f125e049fb46b89a9d79bb24faec1263f7ae6b6c7929a6a01e3ac78",
+      "current_sha256": "cce0dce0b5776519b16a2e51eb0f249fbb631d5199c5721dacf6c8502ebaf170"
+    },
+    {
+      "path": "docs/START_HERE.md",
+      "previous_sha256": "3ebe46b19e7ff37a6fd730bdc5a8f1176f811db8ec2e3802902d2a6e96c062a8",
+      "current_sha256": "c4d43623580e729a4d2e40981fc43a171bec7058a4c28998fa897c4a515dcd01"
+    },
+    {
+      "path": "docs/archive.md",
+      "previous_sha256": "b9aa5ae4b6b551f8ab301a8f2db4c0dfa877ccad3bd366fca71254e814643d2a",
+      "current_sha256": "4208ad697270b2f0c569d0c8c547a3513b37e294cefb605578bd689d1c340dcc"
+    },
+    {
+      "path": "docs/archive_manifest.json",
+      "previous_sha256": "6035b72ed3e46c01bb2908a5eb2ad741a8e8ccf6a33a93562eea6b42348b540c",
+      "current_sha256": "647e1c932d257a28fd58c5d0c76c65ab4ec1eccb6e2ee672c97bf23d541b1383"
+    },
+    {
+      "path": "docs/provenance/DOCUMENTATION_AMENDMENTS.json",
+      "previous_sha256": "fed2009082e5480dbe67fe0e1cac9ca9af338b105c215c63059ed1a44d9c6a32",
+      "current_sha256": "238f7ac04003a525ec461516b630f1cbc5bd08a309e27328045e9b5cc2f82de9"
+    },
+    {
+      "path": "experiments/apex-tracking/README.md",
+      "previous_sha256": "53cdf000cc663ac0fcd3f999087d117e4f725e631237f4836e26dc231443c3c7",
+      "current_sha256": "6ea98061c6aebd702e28dff303593b3104f52455534564576480946ffe78f923"
+    },
+    {
+      "path": "docs/presentation.pdf",
+      "previous_sha256": "adbac1ad417ebcd384f0e2072d5d0d78f3100ff7f1097609b6592aa6d1e28554",
+      "current_sha256": "607f0955f2a8ab7e6cfa8879b478b9469938145c10d4d85e34a94d4640ebb0bb"
+    }
+  ],
+  "new_powerpoint": {
+    "path": "docs/presentation.pptx",
+    "sha256": "cf5370b2f850f19e92fdd46da23f82d66e0a70f560eceff8d15af2a57bf46c49"
+  },
+  "archived_media_manifest": "docs/archive_manifest.json"
+}

@@ -65,3 +65,5 @@ The [documentation clarity amendment](CLARITY_AMENDMENT.json) records later
 reader-facing corrections, including current video, repository and CI status.
 Earlier receipts retain their original snapshot hashes; scientific data and
 runtime source are unchanged.
+
+The [course-deliverables amendment](COURSE_DELIVERABLES_AMENDMENT.json) records the later shortened presentation and archive cleanup; earlier receipts remain historical snapshots.

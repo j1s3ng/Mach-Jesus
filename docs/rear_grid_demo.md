@@ -29,8 +29,10 @@ hero's experimental configuration removes the blanket visibility pace cap and
 recorded reference-speed constraint, narrows lateral uncertainty inflation,
 commits to lanes faster, and adjusts following/reaction margins. Map/curvature,
 braking and acceleration constraints remain. Actual power, grip and rival
-configurations are unchanged. The finite planning ceiling is 100 m/s; measured
-speed is determined by the vehicle and control constraints.
+configurations are unchanged. The hero's planning ceiling is 100 m/s; the
+19 rivals use 60 m/s. This unequal-configuration chase demonstrates overtaking,
+not a fair policy ranking. Measured speed is determined by the vehicle and
+control constraints.
 
 These changes were tested together, so the chase does not isolate the benefit
 of any one component. A frozen-decision replay separately confirms that an

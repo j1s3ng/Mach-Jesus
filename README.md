@@ -1,63 +1,67 @@
 # LiDAR Racing
 
-LiDAR perception and hybrid autonomous racing in Webots. A CMPE249 project by
-Bradley Yong, developed with AI coding assistance.
+**Do better car detections make a better autonomous racer?** This CMPE249
+project by Bradley Yong connects a LiDAR detector to a simulated racing system
+and evaluates both detection and driving. It was developed with AI coding assistance.
 
-[![Native two-circuit chase](docs/control-cadence-demo.png)](docs/LiDAR_Racing_Qualified_Highlight.mp4)
+The main finding is that better offline detection did not automatically produce
+better driving. A detector change exposed a downstream driver halt, and the
+conventional Reference policy remained ahead in the final comparison.
 
-[Watch the two-minute demo](docs/LiDAR_Racing_Qualified_Highlight.mp4) ·
-[Complete flying lap at 1x](docs/LiDAR_Racing_Full_Flying_Lap_1x.mp4) ·
-[Updated presentation](docs/Presentation_Update.pdf) ·
-[Measured results and source](experiments/local-optimization/README.md)
+Start with the [plain-language guide](docs/START_HERE.md), the
+[eight-page report](docs/report.pdf), or the
+[original presentation](docs/presentation.pdf) and its
+[112-second demo](docs/LiDAR_Racing_Demo.mp4). The GitHub demo is an interim
+reference; the course submission still requires an accessible YouTube or Google
+Drive link.
 
-The simulator runs wheel physics and LiDAR on a Mac, with VoxelNeXt inference
-on NVIDIA GPUs. A supervised neural driver works with tracking, a supplied map,
-and conventional planning/control guards on an approximate Yas Marina course.
-See the [system architecture](docs/architecture.md) for the actual data flow.
+## How the system works
 
-## What to review
+```text
+Webots LiDAR points → VoxelNeXt car boxes → tracks and geometric hazards
+                   → neural lane/speed proposal → guard and controller
+                   → steering and pedals → simulated vehicle → next observation
+```
 
-| Material | What it establishes |
+Webots runs vehicle physics on a Mac; NVIDIA GPUs run detector inference. A
+supervised neural driver proposes a lane and speed, while conventional guards
+and control decide how to execute them. The car receives its own localization
+and an approximate reference map. Opponent ground truth is reserved for labels,
+offline scoring and labeled replay; it is not a driving input. RGB is recorded
+for viewing. See the [architecture](docs/architecture.md) for the full data flow.
+
+## What the evidence says
+
+| Question | Result and scope |
 | --- | --- |
-| [Final report](docs/report.pdf) and [73-case study](docs/final_study.md) | Controlled detector/driving experiments and a balanced four-policy championship. |
-| [Latest engineering demo and comparison](experiments/local-optimization/README.md) | A qualified two-circuit chase, six matched traffic runs, exact source and motion tradeoffs. |
-| [CPU reproductions](reproduction/README.md) | Saved-prediction matching/counts that run without a GPU or simulator. |
-| [Saved motion ablation](reproduction/control-cadence/README.md) | Recomputable pace, motion and compute tradeoffs from three solo recordings. |
-| [Updated presentation](docs/Presentation_Update.pdf) and [speaker cues](docs/Presentation_Update_Notes.md) | Twelve slides; the ten-minute plan includes the two-minute native demo. |
-| [Original presentation](docs/presentation.pdf) and [matching recording](docs/LiDAR_Racing_Demo.mp4) | The retained course deck and its original linked chase video. |
+| Did detector fitting help? | On 6,144 known simulated development frames, custom center-match recall at score 0.35 rose from **51.98%** for the original model to **96.27%** for one full-model fit. The matched training comparison uses one seed. [Study](docs/final_study.md) |
+| What does a score sweep show? | On the same known development population, BEV IoU 0.5 AP101 is **81.56%** for the original and **97.67%** for that full fit. Outputs use a common post-NMS score floor of 0.1. These are fixed-postprocessing development results, not official benchmark AP. [AP protocol and reproduction](reproduction/controlled-bev-ap/README.md) |
+| Did it improve driving? | In a matched stopped-car case, the adapted detector pipeline exposed a driver halt. A frozen-state probe suggests sensitivity to an aged geometric fragment; it does not prove the cause of the entire trajectory. [Report](docs/report.pdf) |
+| Which driver ranked first? | In the **73-case study**, the neural finalist and Reference each completed 128/128 clean paired-confirmation laps, but the neural finalist was **3.74% slower** by paired median. Reference ranked first among four tested policies across balanced heats. The final races used the **original detector**. [Study](docs/final_study.md) |
 
-**Study finding:** higher offline detector recall did not guarantee better
-driving. The neural finalist was 3.74% slower by paired median and was not
-promoted; Reference ranked first across four balanced 20-car championship heats.
-All 80 championship entries finished clean. See the [study results](docs/final_study.md)
-and [original study demo](docs/demo.mp4).
+## Which video should I watch?
 
-**Instructor follow-up:** a score-swept BEV IoU 0.5 AP101 analysis on the same
-known simulated development set is [reproducible from saved predictions](reproduction/controlled-bev-ap/README.md).
-The original model scores 81.56% and the best full-network fit scores 97.67%;
-these are fixed-postprocessing DEV results, not official benchmark scores.
+The [original 112-second demo](docs/LiDAR_Racing_Demo.mp4) matches the
+[course presentation](docs/presentation.pdf). It shows an engineering chase from
+P20 to sustained P1 at **325.5 simulated race seconds**. Its footage is edited
+and accelerated; the video duration is not the lap time. The hero uses a
+100 m/s planning ceiling versus 60 m/s for the rivals, so this is an
+unequal-configuration demonstration. [Chase details](docs/rear_grid_demo.md)
 
-**Latest demo:** R20 starts last, first appears in P1 at 85.4 simulated seconds,
-and closes after two reference circuits. Its flying circuit takes **172.390 s**;
-the full native lap is available above. All 20 cars remain active with zero
-native overlap, wheel-rule, inward-patch or reset counts.
+The later [121.44-second engineering highlight](docs/LiDAR_Racing_Qualified_Highlight.mp4)
+and [complete flying lap](docs/LiDAR_Racing_Full_Flying_Lap_1x.mp4) show a
+different recording. The highlight is longer than the course's two-minute limit.
+In this later chase, the hero has a 100 m/s software limit versus 60 m/s for
+base rivals, with different policies. It is a demonstration, not a fair policy
+ranking. See the [engineering results and limits](experiments/local-optimization/README.md),
+[updated presentation](docs/Presentation_Update.pdf) and
+[timed cues](docs/Presentation_Update_Notes.md).
 
-**Measured tradeoff:** at 100 Hz control, the faster profile lowers mean first-
-reference crossing time by **4.14%** across three repeats per arm, with the same
-14/18 mean planned-target accuracy. Steering variation and several body-motion
-measures increase. The [complete results](experiments/local-optimization/README.md)
-retain every repeat, negative result and a disclosed legacy timestep-label mismatch.
+## Reproduce the saved results
 
-This is an engineering chase with supplied pose/map, original learned models,
-an approximate circuit and custom geometry audits. The inherited scene removes
-206 decorative posts, and the enhanced hero has a 100 m/s software limit versus
-60 m/s for base rivals with different policies. P1 does not establish a fair
-model ranking or a completed 20-lap race.
-
-## Run the portable checks
-
-Use Python 3.11. The cached recipes were verified with NumPy 1.26.4, SciPy
-1.16.2 and Shapely 2.1.2. Run from the repository root into fresh output directories:
+The CPU recipes operate on saved numeric predictions or measurements. They do
+not run detector inference, train a model, or reproduce Webots physics. Use
+Python 3.11 from the repository root:
 
 ```sh
 python3.11 -m venv .venv
@@ -72,42 +76,38 @@ python3.11 -m venv .venv
 .venv/bin/python -I reproduction/control-cadence/reproduce.py --output-dir runs/control-cadence
 ```
 
-See the [local verification record](docs/verification.md) for CPU tests,
-installed-wheel checks and the prepared CI workflow.
+Use fresh output paths; the recipes preserve existing results. The synthetic
+demo uses geometric clustering. The [reproduction index](reproduction/README.md)
+explains each saved input, and [verification](docs/verification.md) describes
+the CPU checks and CI.
 
-The synthetic demo uses geometric clustering. Cached comparisons recompute
-metrics on 8,955 qualification frames, 6,144 native development frames and a
-512-frame rotation diagnostic; they do not run a learned detector.
-
-Live inference, detector training and physical races require external weights,
-reference data, Webots and a compatible CUDA environment. Those downloads are
-not hosted with this source checkout. Follow [setup](docs/setup.md) and the
+Live inference, detector fitting and physical races require external weights,
+reference data, Webots and compatible CUDA hardware. These assets are not
+bundled here. See [setup](docs/setup.md) and the
 [artifact catalog](artifacts/README.md).
 
-## Repository guide
+## Where to look next
 
 | Location | Contents |
 | --- | --- |
+| [docs](docs/README.md) | Report, presentations, study protocol and evidence. |
 | [src/race_lidar](src/race_lidar) and [webots](webots) | Base-study perception, driving, control and simulation code. |
-| [scripts](scripts/README.md) and [training](training/README.md) | Entry-point catalog, preparation, training and evaluation tools. |
-| [tests](tests) | Portable regression tests and retained campaign checks. |
-| [reproduction](reproduction/README.md) and [examples](examples) | Compact CPU evidence and measured/synthetic fixtures. |
-| [experiments](experiments/README.md) | Engineering extensions, exact source overlays, ablations and negative results. |
-| [docs](docs/README.md) | Report, presentation, setup, study records and demo navigation. |
-| [research](research/rich006/README.md) | Frozen historical teacher/fitter source for audit. |
+| [scripts](scripts/README.md) and [training](training/README.md) | Commands, data preparation, training and evaluation. |
+| [tests](tests), [reproduction](reproduction/README.md) and [examples](examples) | Regression checks, saved evidence and fixtures. |
+| [experiments](experiments/README.md) | Later engineering changes, source overlays and negative results. |
+| [research](research/rich006/README.md) | Historical teacher and fitter source for audit. |
 
-The installed base source and the latest experimental overlay are distinct.
-Use the [latest apply-order recipe](experiments/local-optimization/APPLY_OVERLAY.md)
-to reconstruct its exact source; combining arbitrary snapshots will not do so.
-Earlier large media and generated working files are preserved in a verified
-local archive. The [archive catalog](docs/archive.md) records their identities
-and restoration instructions; source/evidence receipts remain in the repo.
+The installed base source and later experimental overlays are distinct. Use the
+[apply-order recipe](experiments/local-optimization/APPLY_OVERLAY.md) to
+reconstruct the latest version; the [local archive catalog](docs/archive.md)
+lists superseded media. The [original study demo](docs/demo.mp4) is another
+historical recording.
 
-This is a simulation study with supplied ego localization/map and custom
-matching/track rules. It does not claim real F1 performance, official benchmark
-AP, or reinforcement learning. RGB is recorded for viewing; opponent truth is
-used for offline labels/scoring and is excluded from driver control.
+CARLA 0.9.16 and a released camera-based LEAD checkpoint have been prepared for
+follow-up. Bounded startup tests did not produce a camera frame; there is **no
+learned-policy CARLA rollout or score yet**. This is an approximate simulation
+study with supplied pose/map and custom scoring, not a calibrated Formula 1 or
+real-world safety result.
 
-See [contributions](CONTRIBUTIONS.md), [source provenance](docs/provenance/README.md)
-and [third-party notices](NOTICE.md). Project code uses the [MIT license](LICENSE);
-external assets and dependencies retain their own terms.
+See [contributions](CONTRIBUTIONS.md), [source provenance](docs/provenance/README.md),
+[third-party notices](NOTICE.md) and the project [MIT license](LICENSE).

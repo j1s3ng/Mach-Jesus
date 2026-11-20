@@ -2,8 +2,8 @@
 
 Run commands from the repository root into fresh output directories. The
 [report](report.pdf), [116-second demo](demo.mp4) and [study summary](final_study.md)
-describe completed experiments. These additions are local review changes;
-this preparation step has not uploaded them.
+describe completed experiments. The source is public; model weights, complete
+datasets and the original runtime are separate artifacts.
 
 ## CPU installation and portable results
 
@@ -22,6 +22,7 @@ export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
 .venv/bin/python scripts/evaluate_cached_qualification.py --output runs/qualification.json
 .venv/bin/python -I reproduction/controlled-rotation/reproduce.py --output runs/rotation.json
 .venv/bin/python -I reproduction/controlled-native/reproduce.py --output runs/native.json
+.venv/bin/python reproduction/controlled-bev-ap/reproduce.py --output runs/bev-ap.json
 .venv/bin/python -I reproduction/control-cadence/reproduce.py --output-dir runs/control-cadence
 ```
 
@@ -29,10 +30,11 @@ The default test selection is recorded in `PORTABLE_TESTS.json`; other retained
 tests require explicit archived-context opt-in. Optional PyTorch tests are
 skipped when PyTorch is absent. `demo` creates a synthetic
 geometric-clustering fixture, which is separate from learned detector accuracy.
-The three cache recipes query no model and need no simulator, GPU or full cloud
-dataset. They verify saved inputs and recompute matching/counts from predictions
-and labels: 8,955 qualification frames, 512 rotated label frames and 6,144 native
-development frames. Native reproduction documents a historical 2.78e-17
+The saved-data recipes query no model and need no simulator, GPU or full cloud
+dataset. They reproduce detector qualification, native-view comparisons, BEV
+AP, rotation diagnostics and motion measurements. BEV AP uses the previously
+inspected 6,144-frame simulated development set, not an official benchmark or
+fresh test set. Native reproduction documents a historical 2.78e-17
 summation-order difference on its common-center cohort. See
 [reproduction details](../reproduction/README.md).
 

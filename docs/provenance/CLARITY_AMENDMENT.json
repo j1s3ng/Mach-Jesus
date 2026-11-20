@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "base_commit": "007e1701f868bc81fb828cdfb738b5051eeeb506",
+  "scope": "Reader-facing documentation, links and current-status corrections; no experiment data, metrics, model weights or runtime source changed.",
+  "historical_receipts": "Prior provenance and rename receipts describe earlier snapshots and retain their original hashes.",
+  "presentation_update_notes_previous_manifest_pin": "695e38bd4be95cbe0e73a84798ceceeb0ca895058137909be21bf580a371ed5a",
+  "presentation_update_notes_current_pin": "0325ee4167f05821d7bf9c016ed9e3ba8ce339081e73df028e0d556d945a1eb6",
+  "files": [
+    {
+      "path": "README.md",
+      "previous_sha256": "6b0f171ed81c9d7d47d899ea53a8a72865449f1746353b8b73780b571f90a112",
+      "current_sha256": "939721fceec859fd8b0c1ea25d90443e3d412589a5d045e62f9ce01286c21961"
+    },
+    {
+      "path": "docs/Presentation_Update_Notes.md",
+      "previous_sha256": "695e38bd4be95cbe0e73a84798ceceeb0ca895058137909be21bf580a371ed5a",
+      "current_sha256": "0325ee4167f05821d7bf9c016ed9e3ba8ce339081e73df028e0d556d945a1eb6"
+    },
+    {
+      "path": "docs/README.md",
+      "previous_sha256": "ee04c97aa22dd12c280bb18c2166baca1f58c04e794201f583b769d65ef70cbc",
+      "current_sha256": "e57d0c335f125e049fb46b89a9d79bb24faec1263f7ae6b6c7929a6a01e3ac78"
+    },
+    {
+      "path": "docs/START_HERE.md",
+      "previous_sha256": null,
+      "current_sha256": "3ebe46b19e7ff37a6fd730bdc5a8f1176f811db8ec2e3802902d2a6e96c062a8"
+    },
+    {
+      "path": "docs/architecture.md",
+      "previous_sha256": "3d8354443794f98d804bc0a2638726e70a97e2935da1361273bae18725479281",
+      "current_sha256": "f98f78d4676bf6d22f4c6e5fcb577ad2ce637ba3703c9e275d587efba81a3bef"
+    },
+    {
+      "path": "docs/final_study.md",
+      "previous_sha256": "c30c690357dde6b7ee62d4d0b8d8299aa6e2068b1213c301a95c90bdbd95e22a",
+      "current_sha256": "03d775cefe5f0fda3c418d97e2af16f639a234ebbf9e34626c31dc94a35dcd17"
+    },
+    {
+      "path": "docs/presentation_notes.md",
+      "previous_sha256": "ff914c9bc6dcd7788109252438e9af3d9bc515f9b03754485bf98df86acc5ee9",
+      "current_sha256": "c8a4767c2477c1d9a0589c11fba04bb0e4432afd104ae04175c2347e9eafbc6e"
+    },
+    {
+      "path": "docs/provenance/README.md",
+      "previous_sha256": "4b5b558c43641510fedcb51aa40b80e62604e8f473b181403f288ec0cda6cd9b",
+      "current_sha256": "fb426098a6dc6cc0fb564d9fe3ac936bc267b1551a94df4e31145d8f6d9b9046"
+    },
+    {
+      "path": "docs/rear_grid_demo.md",
+      "previous_sha256": "762cba6ff86da441bd7eadbaa81327a63e046d68c2c8741579de0bfe3fea9827",
+      "current_sha256": "6b3523c03c2cd42a30cfdf9bb257e797ffa5ea095680a93f7ff50cd8f1842178"
+    },
+    {
+      "path": "docs/setup.md",
+      "previous_sha256": "95a30eb6f167a7d432a6a1063fca0abd45e8150d2be0a46e8938dd9281134977",
+      "current_sha256": "4aecac676a1350bb06bef329ded9326b2f277184af6394e3c69350b1bb439e49"
+    },
+    {
+      "path": "experiments/local-optimization/manifest.json",
+      "previous_sha256": "bd2edf3e952b9b6edba68bfc5494ba8e80675d3100be06d7c4436b1b0cb80d78",
+      "current_sha256": "7fcc37735a4c290ed17a620024b2da8066bf9fbdcc12a84d5194abdbddfeca52"
+    },
+    {
+      "path": "experiments/rear-grid-chase/README.md",
+      "previous_sha256": "ed7167787fc2a425455dbf98d930a5923b87cf3a814416215b24bb0ed9988b51",
+      "current_sha256": "4a83c7e6c77eb7845d503b4a97c0488baebe661dc77bf6d3236f7322c1e4c2a7"
+    },
+    {
+      "path": "scripts/README.md",
+      "previous_sha256": "2be9c92a873750a5569cd70c8c489f77827bccdd3d628e5003415061f5d7b272",
+      "current_sha256": "4a7ae06951c7e549ead3edbe1b4d979458a14f745355c0d1fe304dc3ff3f091c"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Project documentation
 
-Start with the [project overview](../README.md), then choose the material below.
+Start with the [plain-language guide](START_HERE.md) and [project overview](../README.md), then choose the material below.
 
 ## Run and reproduce
 
@@ -26,7 +26,7 @@ comparison. Later chase demos are separate engineering extensions.
 
 ## Latest engineering demonstration
 
-- [Two-minute native demo](LiDAR_Racing_Qualified_Highlight.mp4), [complete flying lap at 1x](LiDAR_Racing_Full_Flying_Lap_1x.mp4), and [updated presentation](Presentation_Update.pdf), and [timed speaker cues](Presentation_Update_Notes.md).
+- [121.44-second native engineering highlight](LiDAR_Racing_Qualified_Highlight.mp4), [complete flying lap at 1x](LiDAR_Racing_Full_Flying_Lap_1x.mp4), [updated presentation](Presentation_Update.pdf), and [timed speaker cues](Presentation_Update_Notes.md). The 121.44-second highlight exceeds the course final video's 120-second limit; the original 112-second chase meets the duration limit.
 - [Six-run comparison, exact source and limitations](../experiments/local-optimization/README.md).
 - [Native media provenance](../experiments/local-optimization/media.json) and [timestep-label audit](../experiments/local-optimization/evidence/timestep-label-audit.json).
 - [Engineering experiment index](../experiments/README.md): evolution, ablations and negative cases.

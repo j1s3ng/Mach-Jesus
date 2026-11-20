@@ -19,7 +19,8 @@ the curvature/braking envelope, and logs the original learned outputs. Hero-only
 racing guards use less lateral uncertainty inflation, closer following and faster
 lane commitment. Recorded F1 pace is ignored for the hero, with a finite 100 m/s
 planning ceiling; actual power, grip, corner constraints and braking remain.
-Rival settings retain their defaults. All parameters and model hashes are in
+The 19 rivals use the default 60 m/s ceiling, so this chase is not a fair
+equal-configuration policy ranking. All parameters and model hashes are in
 [manifest.json](manifest.json).
 
 Files retain their original module paths under [source/](source/). They are

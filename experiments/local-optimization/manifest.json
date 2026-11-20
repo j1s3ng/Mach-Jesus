@@ -113,8 +113,8 @@
   "completion_curator_sha256": "e33bb66ee27f76a44067f1a9584f59a2c9fa870ef451e9853f1320f302c66d30",
   "supporting_repository_files": {
     "docs/Presentation_Update_Notes.md": {
-      "sha256": "695e38bd4be95cbe0e73a84798ceceeb0ca895058137909be21bf580a371ed5a",
-      "bytes": 9399
+      "sha256": "0325ee4167f05821d7bf9c016ed9e3ba8ce339081e73df028e0d556d945a1eb6",
+      "bytes": 9606
     }
   },
   "pre_clock_context_manifest_sha256": "c28152cb359d89c002fbcebb6f5bb23d2019771dbc6e8ce1239cf2a0191c4be1",
@@ -123,5 +123,6 @@
   "cut_card_label_corrected": true,
   "cut_label_curator_sha256": "7977cbf08a8fa7cc138cb439141019836641657eddc78699b9fdd602fb020752",
   "pre_presentation_rename_manifest_sha256": "89d3692a16c5ed9d3421501fd6f4f24c3f455e42eb4da1d2116891460de2d535",
-  "presentation_rename_record": "../../docs/provenance/project-rename.json"
+  "presentation_rename_record": "../../docs/provenance/project-rename.json",
+  "documentation_clarity_amendment": "../../docs/provenance/CLARITY_AMENDMENT.json"
 }

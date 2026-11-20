@@ -1,8 +1,10 @@
 # Explaining the project
 
-Working notes for Bradley Yong. Evidence cutoff: November 14, 2026, 20:47 UTC.
-The 73-case study is now source verified. Reference qualifies among the tested
-policies; the neural finalist is not promoted. The actual 116-second movie has passed full decode/source verification.
+Working notes for Bradley Yong. The original 73-case study has an evidence
+cutoff of November 14, 2026, 20:47 UTC. Reference qualifies among the tested
+policies; the neural finalist is not promoted. The current course deck pairs
+with the [112-second rear-grid chase](LiDAR_Racing_Demo.mp4). The earlier
+[116-second study movie](demo.mp4) is a different recording.
 Review the code and results yourself before presenting these explanations.
 
 ## A 30-second explanation
@@ -86,8 +88,8 @@ not a new qualification set.
 
 ## What is the strongest negative result?
 
-A detector that passed offline qualification caused the existing learned
-driver to halt in a known left-blocked scenario. A frozen-state intervention
+Switching to a detector pipeline that passed offline qualification exposed a
+halt in the existing learned driver in a known left-blocked scenario. A frozen-state intervention
 suggested sensitivity to an aged geometric fragment. That is a specific
 diagnostic hypothesis, not proof that false detections caused the halt.
 
@@ -138,9 +140,26 @@ policies. Rich005 seed 7 wins the first heat; Rich005 seed 17 has the fastest
 single finish. Explain why a single win, fastest lap and aggregate winner are
 different statements.
 
-The new 116-second same-heat movie has passed full source/decode checks, and the final deck embeds those exact bytes.
-Publication and hosting are deferred; there is no new hosted link. Keep the
-normal-speed full race and onboards separate from retimed presentation footage.
+The selected course presentation uses the 112-second rear-grid chase. Its
+recorded P20-to-P1 result is an unequal-configuration engineering demonstration,
+separate from the formal championship. The 116-second study movie is a
+different recording. The source is public at
+[github.com/j1s3ng/lidar-racing](https://github.com/j1s3ng/lidar-racing);
+a YouTube or shareable Drive link is still needed for the course final video.
+
+## What changed after instructor feedback?
+
+The [BEV AP analysis](../reproduction/controlled-bev-ap/README.md) reports
+score-ranked AP101 at IoU 0.5 on the known simulated development set: 81.557%
+for the original detector and 97.671% for the best full fit. These use the
+cached post-NMS score floor of 0.1; they are not official benchmark scores or
+the center-matched recall numbers at cutoff 0.35.
+
+CARLA 0.9.16 and the released camera-only LEAD environment were prepared for a
+recognized closed-loop baseline, but startup attempts timed out before a camera
+frame. There is no CARLA learned-policy rollout or benchmark score yet. The
+updated [report](report.pdf) discusses both this limitation and a temporal
+planning direction.
 
 ## What should the audience remember?
 
@@ -152,9 +171,9 @@ source audits are complete.
 
 ## Before presenting the delivered version
 
-Use the exact final paper, movie and source hashes from the delivery manifest.
+Use the current report and the 112-second movie paired with the course deck.
 Keep the verified negative confirmation, retained baseline DNF, CEM development
 failure and 64-car short-opener limitation. The qualified winner is Reference
-among four tested policies, not a global claim. Confirm that the final movie
-has completed its actual decode/source checks and that the deck embeds those
-same bytes. Publication remains deferred even when local delivery is complete.
+among four tested policies, not a global claim. The editable course PowerPoint
+embeds the 112-second movie; the PDF links to the same companion file. Test
+playback and rehearse the talk before presenting.

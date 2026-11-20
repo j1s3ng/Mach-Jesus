@@ -60,3 +60,8 @@ asset hashes and their original counterparts. It changes presentation titles,
 repository/media links and filenames, with unchanged experimental data, model
 weights, runtime source and numerical results. Original artifacts remain in the
 pre-revision Git commit and verified local backups.
+
+The [documentation clarity amendment](CLARITY_AMENDMENT.json) records later
+reader-facing corrections, including current video, repository and CI status.
+Earlier receipts retain their original snapshot hashes; scientific data and
+runtime source are unchanged.

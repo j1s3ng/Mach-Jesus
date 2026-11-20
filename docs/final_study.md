@@ -1,8 +1,9 @@
 # Source-verified study results
 
 The complete 73-case study is independently source verified as of November 14,
-2026, 20:47 UTC. This source copy includes compact cached reproductions and the
-report/demo; full model, dataset and raw-evidence downloads are not hosted.
+2026, 20:47 UTC. This is the historical study snapshot; the current report also
+includes a later [development-set BEV AP analysis](../reproduction/controlled-bev-ap/README.md)
+and CARLA setup findings. Full model, dataset and raw-evidence downloads are not hosted.
 Reference qualifies among four tested hybrid policies. The neural finalist is
 not promoted. The actual 116-second movie has passed full decode and source/frame verification.
 The 311-second normal-speed race is retained; the historical 75-second movie
@@ -128,4 +129,5 @@ The portable caches and [artifact catalog](../artifacts/downloads.json) support
 reproduction within their stated scope. Full clouds and original private
 provenance are separate verified local companions. See
 [the provenance summary](final_artifact_provenance.json) for source hashes and
-separate completion, promotion, championship and media fields. No hosted download or publication is claimed.
+separate completion, promotion, championship and media fields. Those records
+describe the historical export; the current source repository is public.

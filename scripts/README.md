@@ -13,7 +13,9 @@ receipts bind them.
 | `python -m race_lidar demo` | Generate and replay a synthetic geometric-clustering fixture. |
 | [evaluate_cached_qualification.py](evaluate_cached_qualification.py) | Recompute matching/counts from the included saved qualification inputs. |
 | [Native cached reproduction](../reproduction/controlled-native/README.md) | Recompute the controlled native-development comparison. |
+| [BEV AP reproduction](../reproduction/controlled-bev-ap/README.md) | Recompute score-ranked BEV AP on the known simulated development set. |
 | [Rotation cached reproduction](../reproduction/controlled-rotation/README.md) | Recompute the frozen rotation diagnostic. |
+| [Motion and cadence reproduction](../reproduction/control-cadence/README.md) | Recompute measurements from saved solo driving traces. |
 
 ## Simulator, races and viewing
 

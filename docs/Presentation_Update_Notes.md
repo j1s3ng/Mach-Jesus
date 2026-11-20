@@ -6,6 +6,10 @@ Canonical repository: [github.com/j1s3ng/lidar-racing](https://github.com/j1s3ng
 
 **Planned slot: 10:00 = 478.56 s spoken + 121.44 s playback.** The real [qualified highlight](LiDAR_Racing_Qualified_Highlight.mp4) plays after slide 8, from **5:10 to 7:11.44**. Keep the PDF and movie in the same folder. The video itself has no audio narration; speak briefly before/after it, within the spoken allocations. Do not add two minutes of commentary over the playback.
 
+This engineering highlight is 121.44 seconds and exceeds the course final video's
+120-second limit. The [original course demo](LiDAR_Racing_Demo.mp4) is 112 seconds;
+the required YouTube or shareable Drive link remains to be supplied.
+
 ## 1 · Three evidence tracks · 0:00–0:25
 
 - Introduce the project as LiDAR perception plus hybrid racing control, evaluated through actual closed-loop evidence.
@@ -69,7 +73,7 @@ The optional [complete flying lap at native 1×](LiDAR_Racing_Full_Flying_Lap_1x
 ## 10 · Portable reproduction · 8:06.44–8:31.44
 
 - Recompute 27,801 original native samples with hash/timestamp/metric-AST/frozen-value checks; no Webots, inference or GPU runs.
-- Existing isolated CPU checks report 284 passed and 7 optional skips. Installed-wheel checks pass outside the checkout without Torch. Hosted CI is prepared, not claimed as executed.
+- Earlier isolated CPU checks reported 284 passed and 7 optional skips. Installed-wheel checks passed outside the checkout without Torch. The source is now public and hosted CI has passed; see the repository's Actions tab for the latest run.
 
 ## 11 · D05 retained negative · 8:31.44–9:01.44
 
@@ -78,9 +82,9 @@ The optional [complete flying lap at native 1×](LiDAR_Racing_Full_Flying_Lap_1x
 
 ## 12 · Instructor discussion and repository · 9:01.44–10:00
 
-- Ask which next experiment is most valuable: hold control frequency/filter horizon fixed while changing integration; add independent traffic seeds/service repetitions; or define a clearer safety/pace/motion/compute acceptance rule.
+- Instructor feedback prioritizes standard BEV AP and a recognized closed-loop baseline. The simulated-DEV BEV AP analysis is complete; CARLA startup has not yet yielded a camera frame or learned-policy result.
 - Keep the original Reference ranking, unequal-cap chase, same-service budget comparison and solo sensitivity separate. A documented pace/motion tradeoff is useful without claiming universal improvement.
-- Point to the canonical repository, and distinguish existing repository access from these locally prepared updates. Give the instructor time to choose a direction. Do not claim any optional altered-grid result unless a later separately closed report is supplied.
+- Point to the public repository and distinguish the completed study from the later engineering demonstrations. Do not claim any optional altered-grid result unless its separate report is supplied.
 
 ## Evidence and playback bindings
 

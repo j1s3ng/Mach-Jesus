@@ -31,7 +31,7 @@ flowchart LR
 | Learned perception | Run the pinned upstream VoxelNeXt checkpoint in a compatible CUDA environment. | [Server entry point](../scripts/serve_exported_detector.py), [inference adapter](../training/inference.py). |
 | Tracking/hazards | Preserve temporal evidence and geometric obstacle information for control. | [LiDAR hazards](../src/race_lidar/lidar_hazards.py). |
 | Learned driver | Propose driving intent from measured observations and supplied map/ego state. | [Supervised driver](../src/race_lidar/rich_driver.py), [policy](../src/race_lidar/race_policy.py). |
-| Conventional planning/control | Select a feasible route, respect traffic and braking constraints, then command wheel steering/pedals. | [Base control](../src/race_lidar/race_control.py), [hotlap driver](../src/race_lidar/hotlap_driver.py), [latest overlays](../experiments/apex-tracking/APPLY_OVERLAY.md). |
+| Conventional planning/control | Select a feasible route, respect traffic and braking constraints, then command wheel steering/pedals. | [Base control](../src/race_lidar/race_control.py), [hotlap driver](../src/race_lidar/hotlap_driver.py), [latest overlay recipe](../experiments/local-optimization/APPLY_OVERLAY.md). |
 | Evaluation | Score saved outputs, audit native overlap/road limits and construct replay views. | [Race results](../src/race_lidar/race_results.py), [cached reproduction](../reproduction/README.md). |
 
 The neural policy does not directly bypass traffic guards or vehicle actuation
@@ -57,7 +57,7 @@ serve different purposes. A higher viewing cadence does not establish smoother
 physical motion or hard real-time performance.
 
 The [completed study](final_study.md) compares policies under its declared
-protocol. The [latest chase](../experiments/apex-tracking/README.md) is a separate
+protocol. The [latest chase](../experiments/local-optimization/README.md) is a separate
 engineering demonstration with an enhanced hero and explicit scene change.
 Both use simulation/custom metrics and supplied localization; neither
 establishes real-world F1 or official autonomous-racing benchmark performance.

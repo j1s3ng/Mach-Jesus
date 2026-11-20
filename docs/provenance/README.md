@@ -49,7 +49,7 @@ reproduction.
 
 | Included artifact | SHA-256 |
 | --- | --- |
-| [Report](../report.pdf) | `de0768ebf081319d252da4bad7e222d2b03c941f72270c9ca1bf8f7c22165d84` |
+| [Original November 14 report](https://github.com/j1s3ng/lidar-racing/blob/6ff9ef70dde7a50282f43bf612ac67a48df5ea26/docs/report.pdf) | `de0768ebf081319d252da4bad7e222d2b03c941f72270c9ca1bf8f7c22165d84` |
 | [116-second demo](../demo.mp4) | `9c9269968cc1af98287c8a645f6dede2ff5a02ec5e110369cb6c4ddc0fd3df6d` |
 
 The original measured source archives and immutable delivery remain separate

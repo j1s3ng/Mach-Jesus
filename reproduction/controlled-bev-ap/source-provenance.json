@@ -1,0 +1,15 @@
+{
+  "gt_sha256": "669517b1dd279ba18a42f4b7812c7c5b8b8a0d4d3e54e310bf2a4ef55107dcea",
+  "prediction_sha256": {
+    "original": "afca770a0ef81169b965f436773573c5c9d44e6dcc12159ee4e77127656b365f",
+    "head_lr1e-4": "6a5772a60b77ad06e449e3dc18657b0bfec1c682043c2b66127a77ced9183931",
+    "full_lr1e-4": "a27e22a819fad53511e2c2025ce2e546b5e3a8843a0c60d4be0233cc97d33aab",
+    "full_lr1e-5": "17106a35324698448cddd3fd35d82b6c4533a062b7192dba2e910befd23cde8c",
+    "full_mixed": "d6b79ef1824bb1d118f3d100d70be1d227d7c4102914cddd75c922b2c43ab59d",
+    "full_mixed_rotaug": "bda92422b521e60dafb604d8835070869c9b300255d30a28e6b60ebd2f015d18"
+  },
+  "source_role": "known simulated DEV",
+  "score_floor": 0.1,
+  "nms_iou": 0.2,
+  "post_nms_max": 83
+}

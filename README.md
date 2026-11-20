@@ -32,6 +32,11 @@ promoted; Reference ranked first across four balanced 20-car championship heats.
 All 80 championship entries finished clean. See the [study results](docs/final_study.md)
 and [original study demo](docs/demo.mp4).
 
+**Instructor follow-up:** a score-swept BEV IoU 0.5 AP101 analysis on the same
+known simulated development set is [reproducible from saved predictions](reproduction/controlled-bev-ap/README.md).
+The original model scores 81.56% and the best full-network fit scores 97.67%;
+these are fixed-postprocessing DEV results, not official benchmark scores.
+
 **Latest demo:** R20 starts last, first appears in P1 at 85.4 simulated seconds,
 and closes after two reference circuits. Its flying circuit takes **172.390 s**;
 the full native lap is available above. All 20 cars remain active with zero
@@ -62,6 +67,7 @@ python3.11 -m venv .venv
 .venv/bin/python -m race_lidar demo --output runs/cpu-demo --frames 20
 .venv/bin/python scripts/evaluate_cached_qualification.py --output runs/qualification.json
 .venv/bin/python -I reproduction/controlled-native/reproduce.py --output runs/native.json
+.venv/bin/python reproduction/controlled-bev-ap/reproduce.py --output runs/bev-ap.json
 .venv/bin/python -I reproduction/controlled-rotation/reproduce.py --output runs/rotation.json
 .venv/bin/python -I reproduction/control-cadence/reproduce.py --output-dir runs/control-cadence
 ```

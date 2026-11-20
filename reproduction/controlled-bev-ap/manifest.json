@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "protocol": "IoU>=0.5, score>=0.1, AP101, eligible first then reusable excluded-GT ignore",
+  "files": {
+    "PROTOCOL.md": {
+      "bytes": 1728,
+      "sha256": "97f6a178fd99d71884b8eaec6a35455b0e9435473636da2b51ff9607410e9001"
+    },
+    "README.md": {
+      "bytes": 1418,
+      "sha256": "8596c6f105258ff365314391e61365c908ec63b0513706e083592037b8c01918"
+    },
+    "expected.json": {
+      "bytes": 16240,
+      "sha256": "09f1b8ffcea1c19adc2a463ab9c9916c451f3a0c1c70fc02cfb025f42650754b"
+    },
+    "frames.jsonl.gz": {
+      "bytes": 1312421,
+      "sha256": "7536fb0885954627b6d20c8f6883cbe3f66dc83176020e946009220461e91ce4"
+    },
+    "metric.py": {
+      "bytes": 2124,
+      "sha256": "5f511bbd6219514f556e7da7cdbaa34693ec78b1e47616a2ec7d476962772f9b"
+    },
+    "predictions.jsonl.gz": {
+      "bytes": 5785640,
+      "sha256": "753d5408fea70eced6211dac0d3c3b564b9175e75e026893293287d9a518101f"
+    },
+    "reproduce.py": {
+      "bytes": 3058,
+      "sha256": "083ff3673f4db5ed3fd58e9c03f9bc5aaf6b1e797114a4a2e94f31399c137423"
+    },
+    "requirements.txt": {
+      "bytes": 43,
+      "sha256": "086b0a4635c615b441f261b29ca179cfcf03c28f83bcbb5a09aaebe39ec8b292"
+    },
+    "source-provenance.json": {
+      "bytes": 741,
+      "sha256": "124128a4969da98b7443707cd4b17c8a90e8955305918294a4afee80f4c3dc6b"
+    },
+    "test_metric.py": {
+      "bytes": 1325,
+      "sha256": "e25b1a5ca88f619e186441c9b523be63ecfa3adc0599dee667eff7459c805ff5"
+    }
+  },
+  "manifest_sha256": "d3fe3e99e2ee211356179150dcb0d2642d1a84265ff756827158b55be2201fa5"
+}

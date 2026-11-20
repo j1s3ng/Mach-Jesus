@@ -16,6 +16,7 @@ Start with the [project overview](../README.md), then choose the material below.
 - [Final report](report.pdf) and [study results](final_study.md).
 - [Original study demo](demo.mp4) and [tournament protocol](tournament_protocol.md).
 - [Presentation slides](presentation.pdf), [speaker notes](presentation_notes.md), and [matching chase recording](LiDAR_Racing_Demo.mp4).
+- [Report source and build instructions](report-source/README.md), including the instructor-requested BEV AP analysis and CARLA setup findings.
 - [Final evidence](final_evidence.md) and [artifact provenance](final_artifact_provenance.json).
 - [Source/export provenance](provenance/README.md) and [independent reviews](reviews).
 - [Track/reference provenance](f1_reference.md).

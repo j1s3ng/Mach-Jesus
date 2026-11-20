@@ -29,6 +29,6 @@ ignore rules, and the reproduction extra supplies the required dependency lock.
 - Installable distributions include the training/inference helper package required by the CLI's neural backend. No weights or vendor frameworks are bundled.
 - Nine previously omitted self-contained test files now run by default. New unlisted tests also run; only explicitly listed archived-campaign tests require opt-in. Their data requirements remain documented in [setup](setup.md).
 
-The [CPU CI workflow](../.github/workflows/ci.yml) checks installation, portable tests, four saved-data recipes and the synthetic demo on Ubuntu 24.04 / Python 3.11. It has read-only repository permissions. The workflow is prepared locally; a hosted run has not been triggered as part of this cleanup.
+The [CPU CI workflow](../.github/workflows/ci.yml) checks installation, portable tests, saved-data recipes and the synthetic demo on Ubuntu 24.04 / Python 3.11. It has read-only repository permissions. Hosted results are available in the repository's Actions tab; the original cleanup record above remains historical.
 
 These checks verify the public CPU paths and packaging. Live CUDA inference and Webots physics require the external artifacts described in [setup](setup.md). The [frozen study evidence](final_evidence.md) and [latest engineering measurements](../experiments/apex-tracking/README.md) are separate records of those experiments.

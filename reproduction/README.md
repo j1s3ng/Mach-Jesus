@@ -8,6 +8,7 @@ dependencies are installed.
 | --- | --- | --- |
 | [Detector qualification](../examples/qualification) | 8,955 frames | Matching and counts for the original detector qualification. |
 | [Native view](controlled-native/README.md) | 6,144 frames | Controlled detector-development comparisons. |
+| [BEV average precision](controlled-bev-ap/README.md) | 6,144 frames | Score-ranked 0.5-IoU AP101 for six detectors on known simulated development data. |
 | [Rotation diagnostic](controlled-rotation/README.md) | 512 frames | The saved rotation diagnostic. |
 | [Motion and cadence](control-cadence/README.md) | 27,801 native samples from three solo runs | Pace, steering variation, body motion and the original wall-time tradeoff. |
 
@@ -18,6 +19,7 @@ python3.11 -m venv .venv
 .venv/bin/python -m pip install -e '.[test,reproduction]'
 .venv/bin/python scripts/evaluate_cached_qualification.py --output runs/qualification.json
 .venv/bin/python -I reproduction/controlled-native/reproduce.py --output runs/native.json
+.venv/bin/python reproduction/controlled-bev-ap/reproduce.py --output runs/bev-ap.json
 .venv/bin/python -I reproduction/controlled-rotation/reproduce.py --output runs/rotation.json
 .venv/bin/python -I reproduction/control-cadence/reproduce.py --output-dir runs/control-cadence
 ```

@@ -35,6 +35,10 @@ jobs:
         run: python scripts/evaluate_cached_qualification.py --output "$RUNNER_TEMP/qualification.json"
       - name: Reproduce cached native-view metrics
         run: python -I reproduction/controlled-native/reproduce.py --output "$RUNNER_TEMP/native.json"
+      - name: Check and reproduce cached BEV average precision
+        run: |
+          python -m pytest -q -p no:cacheprovider reproduction/controlled-bev-ap/test_metric.py
+          python reproduction/controlled-bev-ap/reproduce.py --output "$RUNNER_TEMP/bev-ap.json"
       - name: Reproduce cached rotation metrics
         run: python -I reproduction/controlled-rotation/reproduce.py --output "$RUNNER_TEMP/rotation.json"
       - name: Reproduce saved motion measurements

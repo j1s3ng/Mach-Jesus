@@ -1,0 +1,17 @@
+{
+  "scope": "Correct the historical engineering notes to describe the shortened public course presentation; refresh the current supporting-document hash. Source and experimental results are unchanged.",
+  "base_commit": "9bc4f677b862642cac16461c3b390018468537d4",
+  "historical_receipts_remain_snapshots": true,
+  "files": [
+    {
+      "path": "docs/Presentation_Update_Notes.md",
+      "previous_sha256": "0325ee4167f05821d7bf9c016ed9e3ba8ce339081e73df028e0d556d945a1eb6",
+      "current_sha256": "2fc1a6ff315f80042c137f59b931f462be96816e4e51047f80654880fef614d8"
+    },
+    {
+      "path": "experiments/local-optimization/manifest.json",
+      "previous_sha256": "7fcc37735a4c290ed17a620024b2da8066bf9fbdcc12a84d5194abdbddfeca52",
+      "current_sha256": "eadee51306606589a015130d128709ecec37643116f6a017b6efb0e9b85bf63b"
+    }
+  ]
+}

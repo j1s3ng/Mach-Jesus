@@ -113,8 +113,8 @@
   "completion_curator_sha256": "e33bb66ee27f76a44067f1a9584f59a2c9fa870ef451e9853f1320f302c66d30",
   "supporting_repository_files": {
     "docs/Presentation_Update_Notes.md": {
-      "sha256": "0325ee4167f05821d7bf9c016ed9e3ba8ce339081e73df028e0d556d945a1eb6",
-      "bytes": 9606
+      "sha256": "2fc1a6ff315f80042c137f59b931f462be96816e4e51047f80654880fef614d8",
+      "bytes": 9641
     }
   },
   "pre_clock_context_manifest_sha256": "c28152cb359d89c002fbcebb6f5bb23d2019771dbc6e8ce1239cf2a0191c4be1",

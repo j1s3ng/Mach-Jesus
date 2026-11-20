@@ -67,3 +67,5 @@ Earlier receipts retain their original snapshot hashes; scientific data and
 runtime source are unchanged.
 
 The [course-deliverables amendment](COURSE_DELIVERABLES_AMENDMENT.json) records the later shortened presentation and archive cleanup; earlier receipts remain historical snapshots.
+
+The [presentation-notes amendment](PRESENTATION_NOTES_AMENDMENT.json) records the later correction to the engineering notes and its supporting-file hash.

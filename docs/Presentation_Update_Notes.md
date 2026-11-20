@@ -91,7 +91,7 @@ The optional [complete flying lap at native 1×](LiDAR_Racing_Full_Flying_Lap_1x
 - [Final deck](Presentation_Update.pdf) · [real poster](control-cadence-demo.png) · [source/media hashes](../experiments/local-optimization/media.json)
 - Original study: `docs/final_study.md`; matched public citation: `experiments/local-optimization/evidence/matched-budget-report.json`.
 - Qualification SHA256: `e2d61fbd7c48dadc9f70ca86baf07e74cf081b446af8967e74ba833ca72c3856`. Highlight SHA256: `ab5da08ebb671561be6b7f9793884a91b630ff0ba31c50be173f559235050905`.
-- Earlier working decks remain in the local project; the original course deck is preserved in this repository. No optional grid outputs or incomplete media are read by the final builder. The complete normal-speed movie/source bindings remain in the private project.
+- Earlier working decks and the original full course deck remain in the local project; the shortened course deck is preserved in this repository. No optional grid outputs or incomplete media are read by the final builder. The complete normal-speed movie/source bindings remain in the private project.
 
 ## Optional Q&A: later grid check
 
